@@ -1,0 +1,332 @@
+<Menu alt="true"/>
+
+<nav id="menu">
+    <Menu/>
+</nav>
+<!-- load page-->
+<div class="wrapper"
+     {{#if page && page !='loading' }}style="display: none" {{/if}}>
+<div class="contents">
+    <div>
+        <div class="header">
+        </div>
+
+
+        <div class="content-nh">
+
+            <div class="fixed-loader"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!--// load page-->
+<div id="contentApplication"
+     style="min-height: 100%; {{#if pageActive != 'contentApplication'}}display: none;{{/if}}"></div>
+<div id="contentApplication_more"
+     style="min-height: 100%; {{#if pageActive != 'contentApplication_more'}}display: none;{{/if}}"></div>
+
+
+<!--dialog page-->
+<div class="wrapper сhat-wrapper" {{#if page !='dialog' && page !='Chatinfo' }}style="display: none" {{/if}}>
+<div class="contents">
+    <div>
+        <div class="header chat-hr">
+            <a href="#menu">
+                <span></span>
+            </a>
+
+            <div class="chat-block">
+                <div class="status-bar pointer">
+                    <!--on click="setPage:Chatinfo"-->
+                    {{#if open_threads.type_threads == 'group'}}
+
+                    {{#if open_threads.group_photo}}
+                    <img class="flsg" src="{{open_threads.group_photo}}" on-error="errorAvatarGroup_open_threads"/>
+                    {{else}}
+                    <div class="chat-in-im_dialog_no_avatars user_bgcolor_12"
+                         style="float: left; margin-top:0 !important;">{{open_threads.name_short}}
+                    </div>
+                    {{/if}}
+
+                    {{else}}
+                    {{#if open_threads.avatar_path}}
+
+                    <img class="flsg" src="{{open_threads.avatar_path}}" on-error="errorAvatar_open_threads"/>
+                    {{else}}
+                    <div class="chat-in-im_dialog_no_avatars user_bgcolor_12"
+                         style="float: left; margin-top:0 !important;">{{open_threads.name_short}}
+                    </div>
+                    {{/if}}
+                    {{/if}}
+
+                    <div class="stlk">
+                        {{#open_threads.type_threads == 'group'}}
+                        {{open_threads.group_name}}
+                        {{#if open_threads.group_verefy}}
+                        <span class="ustr">{{_e('Официальная группа')}}</span>
+                        {{/if}}
+                        {{else}}
+                        {{open_threads.full_name}}
+                        <span class="ustr">User ID: {{open_threads.webtransfer_id}}</span>
+                        {{/if}}
+                    </div>
+                    {{#if open_threads.type_threads != 'group'}}
+                    <rating rating="{{open_threads.rating}}" count="{{open_threads.count_reviews}}" fullname=""/>
+                    <div class="status-area active-status">{{_e('был ')}}{{open_threads.last_online}}</div>
+                    {{else}}
+                    {{#if open_threads.group_verefy}}
+                    <rating rating="5" count="0" fullname=""/>
+                    {{else}}
+                    <rating rating="1" count="0" fullname=""/>
+                    {{/if}}
+                    <div class="status-area active-status">{{_e('Количество учасников:')}} {{open_threads.user_count}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="close-block"></div>
+        <div class="close-blocks">
+            {{#if open_threads.type_threads != 'group'}}
+            <div class="cls3" on-click="setPage:sendmoney:{{open_threads.webtransfer_id}}"></div>
+            <div class="cls1" on-click="setPage:guarantee:create:{{open_threads.webtransfer_id}}"></div>
+            {{/if}}
+
+        </div>
+
+        <div class="icon-area drop obms">
+
+            <div class="hide-xts stz">
+                <!--<a href="#" on-click="setPage:Chatinfo">{{_e('Детали чата')}}</a>-->
+                <a href="#">{{_e('Удалить чат')}}</a>
+
+                <!--<a href="#">{{_e('Блокировать')}}</a>-->
+                <!--<a href="#">{{_e('Кредиты')}}</a>-->
+                <!--<a href="#">{{_e('Перевести')}}</a>-->
+                <!--<a href="#">{{_e('Выпустить гарантию')}}</a>-->
+
+
+            </div>
+
+        </div>
+
+        <div class="content-nh frz-vr">
+
+            <div id="contentMessageScroll" class="scroller-b nano">
+                <div class="nano-content" id="chat-content_message" style="outline:0!important;">
+
+                    <div class="fixed-loader"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="bottom-panel chat-bottom" {{#if open_threads.id== '58fab03a54f348857cad8bf4'}}style="display:none;"{{/if}}>
+<span class="smile_element">
+        <div class="smile_content">
+    <div class="chat-area-icn-header">
+        <span class="namels-icn">{{_e('Смайлы')}}</span>
+    </div>
+    <scroll class_scroll="scroller-b-Smile chat-area-icn" class_content="" id_content="">
+
+
+        <Smile/>
+    </scroll>
+
+<div class="chat-area-icn2">
+    <div class="ul-icns">
+        <div class="uls-aa pointer"><div class="icon icon-smiling icon-smiling-dims" data-smile="icon-smiling"
+                                         data-index="27" data-type="standart"
+                                         on-click="setSmileType:standart"></div></div>
+        <div class="uls-aa pointer"><div class="icon icon-graph-5 icon-graph-5-dims" data-smile="icon-graph-5"
+                                         data-index="27" data-type="finance"
+                                         on-click="setSmileType:finance"></div></div>
+    </div>
+</div>
+
+</div>
+        <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="smile" x="0px" y="0px" width="103.695px" height="103.695px" viewBox="0 0 103.695 103.695" xml:space="preserve">
+<g style="fill: rgb(7, 82, 171);">
+	<path d="M76.169,64.236l-48.638-0.059c-0.001,0-0.002,0-0.002,0c-0.479,0-0.926,0.237-1.192,0.637   c-0.266,0.398-0.315,0.904-0.131,1.348c4.134,9.951,14.228,18.383,25.714,18.383c11.245,0,21.278-8.4,25.562-18.305   c0.191-0.443,0.146-0.953-0.117-1.355C77.102,64.48,76.651,64.237,76.169,64.236z M51.92,80.543   c-8.401,0-15.917-5.962-20.132-12.361l40.065,0.049C67.564,74.6,60.124,80.543,51.92,80.543z M32.059,37.488   c0-3.424,2.777-6.201,6.2-6.201c3.423,0,6.2,2.777,6.2,6.201c0,3.426-2.777,6.203-6.2,6.203   C34.836,43.691,32.059,40.913,32.059,37.488z M60.176,37.488c0-3.424,2.78-6.201,6.203-6.201c3.424,0,6.2,2.777,6.2,6.201   c0,3.426-2.776,6.203-6.2,6.203C62.956,43.691,60.176,40.913,60.176,37.488z M40.227,74.006c-0.083-0.121-0.061-0.258,0.06-0.365   c0.121-0.108,0.324-0.174,0.54-0.174c0,0,0,0,0.001,0l22.042,0.016c0.22,0,0.422,0.066,0.542,0.177   c0.121,0.108,0.141,0.248,0.055,0.369c-1.941,2.688-6.49,4.968-11.585,4.968C46.676,78.995,42.101,76.707,40.227,74.006z    M85.467,103.695H18.23C8.178,103.695,0,95.518,0,85.465V18.23C0,8.177,8.178,0,18.23,0h67.235c10.053,0,18.23,8.178,18.23,18.23   v67.235C103.696,95.518,95.518,103.695,85.467,103.695z M18.23,8.577c-5.321,0-9.651,4.33-9.651,9.652v67.234   c0,5.322,4.33,9.652,9.651,9.652h67.235c5.321,0,9.651-4.33,9.651-9.652V18.23c0-5.322-4.33-9.652-9.651-9.652L18.23,8.577   L18.23,8.577z" style="fill: rgb(7, 82, 171);"></path>
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+<g style="fill: rgb(7, 82, 171);">
+</g>
+</svg>
+
+    </span>
+<div contenteditable="true" class="textarea" id="send_text" rows='1' on-enter="send_message"
+     placeholder="{{_e('Введите собщение...')}}"></div>
+<div style="   border: 0;position: absolute;
+    {{#if record =='end'}}
+    display: none;
+    {{/if}}
+    background-size: contain;
+    background: #0753ab;
+        bottom: 0px;
+    right: 55px;
+    width: 220px;
+    height: 55px;
+    border-radius: 17px;">
+    <div class=" ">
+
+        <div style="    width: 30px;
+    height: 30px;
+    /* display: inline-block; */
+    float: left;
+    padding: 7px 21px;">
+            <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+<g>
+	<path d="M44,28c-0.552,0-1,0.447-1,1v6c0,7.72-6.28,14-14,14s-14-6.28-14-14v-6c0-0.553-0.448-1-1-1s-1,0.447-1,1v6   c0,8.485,6.644,15.429,15,15.949V56h-5c-0.552,0-1,0.447-1,1s0.448,1,1,1h12c0.552,0,1-0.447,1-1s-0.448-1-1-1h-5v-5.051   c8.356-0.52,15-7.465,15-15.949v-6C45,28.447,44.552,28,44,28z" style="    fill: #ffffff;"/>
+	<path d="M29,46c6.065,0,11-4.935,11-11V11c0-6.065-4.935-11-11-11S18,4.935,18,11v24C18,41.065,22.935,46,29,46z M20,11   c0-4.963,4.038-9,9-9s9,4.037,9,9v24c0,4.963-4.038,9-9,9s-9-4.037-9-9V11z" style="    fill: #ffffff;"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+        </div>
+        <div class="chats-area-bl"><h4 style="    margin: 12px 0px 3px;" id="voice_time_record">00:00.00</h4>
+            <div class="id-area" style="margin-top: -8px;font-size: 8px;">Voice Message</div>
+            <p style="    margin-top: -6px;    margin-bottom: 0;">
+                {{#if record =='start'}}
+                {{_e('Идет запись...')}}
+                {{/if}}
+                {{#if record =='send'}}
+                {{record_progress}}% {{_e('обработка...')}}
+                {{/if}}
+                {{#if record =='end'}}
+                {{_e('Загрузка...')}}
+                {{/if}}
+            </p></div>
+    </div>
+</div>
+{{#if message_enter_length < 2}}
+<div on-click="start_record" style="  cursor: pointer;   border: 0;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background-size: contain;
+    top: 5px;
+    right: 5px;">
+    {{#if record =='end'}}
+    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 496.158 496.158" style="enable-background:new 0 0 496.158 496.158;" xml:space="preserve"><path style="fill: #fff;" d="M496.158,248.085c0-137.022-111.07-248.082-248.076-248.082C111.07,0.003,0,111.063,0,248.085  c0,137.001,111.07,248.07,248.082,248.07C385.088,496.155,496.158,385.086,496.158,248.085z"></path> <path style="fill: #0752ab;" d="M303.303,239.168c0,30.498-24.722,55.224-55.225,55.224l0,0c-30.501,0-55.226-24.726-55.226-55.224  v-82.836c0-30.497,24.725-55.222,55.226-55.222l0,0c30.503,0,55.225,24.725,55.225,55.222V239.168z"></path> <path style="fill: #0752ab;" d="M285.229,190.05h-74.3v-31.669c0-20.516,16.632-37.15,37.149-37.15l0,0  c20.521,0,37.151,16.634,37.151,37.15L285.229,190.05L285.229,190.05z"></path> <path style="fill: #0752ab;" d="M337.034,198.308c-6.456,0-11.689,5.232-11.689,11.687v31.184c0,42.606-34.66,77.266-77.267,77.266  c-42.604,0-77.266-34.66-77.266-77.266v-31.184c0-6.455-5.232-11.687-11.688-11.687c-6.454,0-11.688,5.232-11.688,11.687v31.184  c0,51.54,38.949,94.129,88.956,99.941v30.554h-27.137c-6.454,0-11.686,5.234-11.686,11.688c0,6.455,5.231,11.687,11.686,11.687  h77.648c6.454,0,11.686-5.231,11.686-11.687c0-6.454-5.231-11.688-11.686-11.688h-27.137v-30.555  c50.007-5.812,88.956-48.401,88.956-99.941v-31.184C348.723,203.54,343.488,198.308,337.034,198.308z"></path> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g></svg>
+    {{/if}}
+    {{#if record =='start'}}
+    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M44,44H16V16h28V44z" style="fill: #0c61c7;"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+    {{/if}}
+</div>
+{{else}}
+<button class="sparrow" on-click="send_message"></button>
+{{/if}}
+</div>
+
+<div class="arrow-st"></div>
+
+<div class="chat-panel-bottom">
+    <div class="ltos"></div>
+    <h1>{{_e('Чаты')}} <i class="fa fa-commenting-o" aria-hidden="true"></i></h1>
+    <div class="spl-icn"></div>
+    <scroll class_scroll="scroller-b-App" class_content="" id_content="">
+
+
+        <Chats/>
+    </scroll>
+</div>
+
+
+</div>
+
+<!--// dialog page-->
+
+<!--loan boroww-->

@@ -1,0 +1,182 @@
+<div class="wrapper cards-wrapper sendmoney-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Переводы')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Переводы')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <scroll class_scroll="scroller-b-Sendmoney" class_content="" id_content="">
+
+
+                <div class="form-area">
+                    <form id="sendMoney_forma">
+
+
+                        <div class="select-form">
+                            <label>{{_e('С карты')}}</label>
+                            <select class="sels" id="mycard-sendmoney" name="from_card" onchange="change_cardSendmoneyApp(this.value)">
+                                {{#if finance_cards_load}}
+                                {{#finance_cards}}
+                                <option class="lts" value="{{card_id}}">{{card_name.replace(/(^|\s)Webtransfer(\s|$)/g, '')}} ${{last_balance}}</option>
+                                {{else}}
+                                <option class="" disabled selected>{{_e('У вас нет активных карт')}}</option>
+                                {{/}}
+                                {{else}}
+                                <option class="">{{_e('Загрузка...')}}</option>
+                                {{/if}}
+                            </select>
+                        </div>
+                        <div class="select-form">
+                            <label>{{_e('Получатель')}}</label>
+                            <select class="sels" id="recipents_variant-sendmoney" name="recipient"
+                                    onchange="select_user_send_money(this.value)">
+                                <option class="" value="id">{{_e('Перевод по ID')}}</option>
+                                <option class="" value="{{MyProfile.webtransfer_id}}">{{_e('Перевод на свою карту')}}</option>
+                                {{#if recipents_contacts && recipents_contacts.length > 0}}
+                                <optgroup label="{{_e('Друзья')}}">
+                                    {{#recipents_contacts}}
+                                    <option class="" value="{{webtransfer_id}}">{{full_name}} ({{webtransfer_id}})
+                                    </option>
+                                    {{else}}
+                                    <option class="">{{_e('Загрузка...')}}</option>
+                                    {{/}}
+                                </optgroup>
+                                {{/if}}
+                            </select>
+                        </div>
+                        {{#if byUserId}}
+<div>
+                        <UserByID value="{{form.user_id}}" name="wtc-SendmoneyApp" title="User ID"/>
+</div>
+                        {{/if}}
+                        {{#if (scanUserByID_status && scanUserByID_status == 'ok') || (scanUserByID_status_list &&
+                        scanUserByID_status_list == 'ok')}}
+                        <div class="select-form">
+                            <label style="width: 50%">{{_e('На карту')}}</label>
+                            <select class="sels" id="recipent-card-sendmoney" name="to_card">
+                                <option class="">{{_e('Загрузка...')}}</option>
+                            </select>
+                        </div>
+                        <script>
+                            $('input, select').styler({
+                                selectSearch: false
+                            });
+                        </script>
+                        {{/if}}
+
+
+                        <div class="select-form">
+                            <label>{{_e('Сумма')}} ({{currency_symbool}})</label>
+                            <input class="line-input" value="50" name="ammount" autocomplete="off">
+                        </div>
+                        {{#finance_cards}}
+                        {{#if select_card == card_id && card_start_balanses >0}}
+                        <div class="alert alert-warning">
+                            <div style="width: 10%; display: inline-block;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                            </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+                            <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('У вас  имеется  бонус')}} {{card_start_balanses}} {{currency}} {{_e("Вы можете выдать бонусом займ в разделе 'Кредиты'. Доступная сумма для перевода с карты с учетом коммисии:")}} <strong style="font-weight: 600 !important;">{{max_ammount}} {{currency}}</strong>
+                        </div>
+                        </div>
+                        {{/if}}
+                        {{/}}
+
+                        <div class="clearfix"></div>
+                        <br>
+                        <button class="button-n" on-click="send_money_step_1" type="button">{{_e('Перевести')}}</button>
+
+                    </form>
+                </div>
+            </scroll>
+
+
+        </div>
+
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="ltos"></div>
+
+            <ul class="nav-nt">
+                <li class="active">
+                    <a href="#">{{_e('Активные карты')}}</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                <!--</li>-->
+
+            </ul>
+
+            <div class="spl-icn"></div>
+            <scroll class_scroll="" class_content="" id_content="">
+
+                <Cards/>
+                <button class="add-btns" on-click="setPage:cards">View all cards</button>
+
+
+            </scroll>
+        </div>
+    </div>
+
+    {{#if load}}
+    <div class="_load_action">
+        <div class="fixed-loader"></div>
+    </div>
+    {{/if}}
+</div>

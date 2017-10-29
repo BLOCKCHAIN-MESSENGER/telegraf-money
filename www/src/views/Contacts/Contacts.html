@@ -1,0 +1,389 @@
+<div class="wrapper">
+
+    <div class="contents">
+        <div>
+            <div class="header">
+                <a href="#menu">
+                    <span></span>
+                </a>
+                <strong>{{_e('Контакты')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Контакты')}}</h3>
+                    <ul class="ulck-menu">
+
+                        <li on-click="SetTabContacts:'partners'" {{#if tab=='partners'}} class="active" {{/if}}>
+                        <a href="#contacts-partners">{{_e('Партнеры')}}</a>
+                        </li>
+                        <li on-click="SetTabContacts:'loans'" {{#if tab=='loans'}} class="active" {{/if}}>
+                        <a href="#contacts-loans">{{_e('Заемщики')}}</a>
+                        </li>
+                        <li on-click="SetTabContacts:'credit'" {{#if tab=='credit'}} class="active" {{/if}}>
+                        <a href="#contacts-credit">{{_e('Кредиторы')}}</a>
+                        </li>
+                        <li on-click="SetTabContacts:'friends'" {{#if tab=='friends'}} class="active" {{/if}}>
+                        <a href="#contacts-friends">{{_e('Друзья')}}</a>
+                        </li>
+                    </ul>
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="icon-area chat"></div>
+
+            <div class="content-nh">
+
+                <ul class="nav-nt no-shows">
+                    <li on-click="SetTabContacts:'partners'" {{#if tab=='partners'}} class="active" {{/if}}>
+                    <a href="#contacts-partners">{{_e('Партнеры')}}</a>
+                    </li>
+                    <li on-click="SetTabContacts:'loans'" {{#if tab=='loans'}} class="active" {{/if}}>
+                    <a href="#contacts-loans">{{_e('Заемщики')}}</a>
+                    </li>
+                    <li on-click="SetTabContacts:'credit'" {{#if tab=='credit'}} class="active" {{/if}}>
+                    <a href="#contacts-credit">{{_e('Кредиторы')}}</a>
+                    </li>
+                    <li on-click="SetTabContacts:'friends'" {{#if tab=='friends'}} class="active" {{/if}}>
+                    <a href="#contacts-friends">{{_e('Друзья')}}</a>
+                    </li>
+                </ul>
+
+
+                <scroll class_scroll="scroller-b-Contacts" class_content="" id_content="">
+
+
+                    {{#if tab == 'partners'}}
+                    <div class="colv-3">
+                        {{#if partners_finish}}
+                        {{#if partners.length > 0}}
+                        <div class="contacts">
+                            <div class="chats-blk">
+                                <button class="button-n" on-click="addPartner">{{_e('Пригласить партнера')}}</button>
+
+                            </div>
+                        </div>
+                        {{#partners:i}}
+                        {{#if full_name && ~full_name.toLowerCase().indexOf(search_text.toLowerCase())}}
+                        <div class="contacts" on-click="openChats:{{i}}">
+
+
+                            <div class="chats-blk">
+
+                                <div class="im_dialog_photo2 pull-left">
+
+                                    <avatar src="{{avatar_path}}" label="{{short_name}}" class_img="account-img-area-n avatar-contact" class_label="chat-in-im_dialog_no_avatars avatar-contact"/>
+
+
+                                </div>
+                                <div class="chat-in-im_dialog_message_wraps">
+                                    <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                    <div class="id-area">user id : {{webtransfer_id}}</div>
+
+                                    <div class="chat-in-im_dialog_messages name_area">
+                                        <div class="stars-area">
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="no-star"></div>
+                                            <div class="no-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{/}}
+                        {{else}}
+                        <div class="mv-area">
+
+                            <img class="img-main-section" src="./src/img/chats2.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                            <h2>
+                                {{_e('У вас нет партнеров')}}
+                            </h2>
+
+                            <button class="button-n" on-click="addPartner">{{_e('Пригласить партнера')}}</button>
+
+                            <br>
+
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <div class="fixed-loader"></div>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'loans'}}
+                    <div class="colv-3">
+                        {{#if loans_finish}}
+                        {{#if loans.length > 0}}
+                        {{#loans:i}}
+                        {{#if full_name && ~full_name.toLowerCase().indexOf(search_text.toLowerCase())}}
+                        <div class="contacts" on-click="openChats:{{i}}">
+
+
+                            <div class="chats-blk">
+
+                                <div class="im_dialog_photo2 pull-left">
+                                    {{#if avatar_path}}
+
+                                    <img class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n"
+                                         src="{{avatar_path}}" on-error="errorAvatar:{{i}}">
+
+                                    {{else}}
+                                    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n">
+                                        {{short_name}}
+                                    </div>
+                                    {{/if}}
+                                    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n"></div>
+
+                                </div>
+                                <div class="chat-in-im_dialog_message_wraps">
+                                    <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                    <div class="id-area">user id : {{webtransfer_id}}</div>
+
+                                    <div class="chat-in-im_dialog_messages name_area">
+                                        <div class="stars-area">
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="no-star"></div>
+                                            <div class="no-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{/}}
+                        {{else}}
+                        <div class="mv-area">
+
+                            <img class="img-main-section" src="./src/img/chats2.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                            <h2>
+                                {{_e('У вас нет заемщиков')}}
+                            </h2>
+
+                            <button class="button-n" on-click="setPage:credit:loans">{{_e('Выдать кредит')}}</button>
+
+                            <br>
+
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <div class="fixed-loader"></div>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'credit'}}
+                    <div class="colv-3">
+                        {{#if credit_finish}}
+                        {{#if credit.length > 0}}
+                        {{#credit:i}}
+                        {{#if full_name && ~full_name.toLowerCase().indexOf(search_text.toLowerCase())}}
+                        <div class="contacts" on-click="openChats:{{i}}">
+
+
+                            <div class="chats-blk">
+
+                                <div class="im_dialog_photo2 pull-left">
+                                    {{#if avatar_path}}
+
+                                    <img class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n"
+                                         src="{{avatar_path}}" on-error="errorAvatar:{{i}}">
+
+                                    {{else}}
+                                    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n">
+                                        {{short_name}}
+                                    </div>
+                                    {{/if}}
+                                    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n"></div>
+
+                                </div>
+                                <div class="chat-in-im_dialog_message_wraps">
+                                    <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                    <div class="id-area">user id : {{webtransfer_id}}</div>
+
+                                    <div class="chat-in-im_dialog_messages name_area">
+                                        <div class="stars-area">
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="full-star"></div>
+                                            <div class="no-star"></div>
+                                            <div class="no-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{/}}
+                        {{else}}
+                        <div class="mv-area">
+
+                            <img class="img-main-section" src="./src/img/chats2.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                            <h2>
+                                {{_e('У вас нет кредиторов')}}
+                            </h2>
+
+                            <button class="button-n" on-click="setPage:credit:borrow">{{_e('Взять кредит')}}</button>
+
+                            <br>
+
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <div class="fixed-loader"></div>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'friends'}}
+
+                    <div class="colv-3">
+                        {{#if friends_finish}}
+
+                        {{#if friends.length > 0}}
+                        <div class="contacts">
+                            <div class="chats-blk">
+                                <button class="button-n" on-click="addfriends">{{_e('Добавить друга')}}</button>
+
+                            </div>
+                        </div>
+
+                        {{#friends:i}}
+                        {{#if full_name && ~full_name.toLowerCase().indexOf(search_text.toLowerCase())}}
+                        <div class="contacts" on-click="openChats:{{i}}">
+
+
+                            <div class="chats-blk">
+
+                                <div class="im_dialog_photo2 pull-left">
+                                    {{#if avatar_path}}
+
+                                    <img class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n"
+                                         src="{{avatar_path}}" on-error="errorAvatar:{{i}}">
+
+                                    {{else}}
+                                    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n">
+                                        {{short_name}}
+                                    </div>
+                                    {{/if}}
+                                </div>
+                                <div class="chat-in-im_dialog_message_wraps">
+                                    <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                    <div class="id-area">user id : {{webtransfer_id}}</div>
+
+                                    <div class="chat-in-im_dialog_messages name_area">
+
+                                        <rating rating="{{rating}}" count="{{count_reviews}}" fullname=""/>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{/}}
+                        {{else}}
+                        <div class="mv-area">
+
+                            <img class="img-main-section" src="./src/img/chats2.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                            <h2>
+                                {{_e('У вас нет друзей')}}<br>{{_e('в вашем списке')}}
+                            </h2>
+
+                            <button class="button-n" on-click="addfriends">{{_e('Добавить друга')}}</button>
+
+                            <br>
+
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <div class="fixed-loader"></div>
+                        {{/if}}
+
+
+                    </div>
+
+                    {{/if}}
+
+
+                </scroll>
+
+            </div>
+
+            <div class="ltos"></div>
+
+        </div>
+
+
+        <div class="block-bgl" style="display: none">
+
+            <div class="bottom-panel top-pan">
+                <ul>
+
+                    <li class="ps25">{{_e('Поиск пользователей')}}</li>
+                    <li>
+					<span class="spns">
+						<a href="#" class="pan-4b plus-nt"></a>
+					</span>
+                    </li>
+
+                </ul>
+                <ul>
+
+                    <li class="ps25">{{_e('Пригласить друзей')}}</li>
+                    <li>
+					<span class="spns">
+						<a href="#" class="pan-4a plus-nt"></a>
+					</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                        <a href="#" class="pan-4 plus-nt"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+

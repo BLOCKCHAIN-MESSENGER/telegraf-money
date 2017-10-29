@@ -1,0 +1,95 @@
+/* line 2, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\000032}}
+.form-area {
+  max-width: 430px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* line 9, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\000039}}
+.size-tx {
+  font-size: 14px !important;
+}
+/* line 13, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000313}}
+.useridInput {
+  font-size: 15px !important;
+  height: 20px !important;
+}
+/* line 18, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000318}}
+.profile {
+  position: absolute;
+  margin-top: -46px;
+  color: #fff;
+  margin-left: 62px;
+  font-weight: bold;
+  max-width: 230px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 30, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000330}}
+#social_chat-window-content-body-sendmoney {
+  height: calc(100vh - 142px);
+}
+/* line 34, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000334}}
+.useridInput {
+  width: calc(100% - 57px) !important;
+}
+/* line 38, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000338}}
+li.lts {
+  padding-left: 38px;
+}
+/* line 42, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000342}}
+li.lts2 {
+  padding-left: 38px;
+}
+/* line 46, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000346}}
+.col-50-430 {
+  width: 50%;
+  float: left;
+}
+/* line 51, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000351}}
+.userRecip {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+@media (max-width: 430px) {
+  /* line 57, Sendmoney.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000357}}
+  .col-50-430 {
+    width: 100%;
+    float: left;
+  }
+  /* line 62, Sendmoney.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000362}}
+  .userRecip {
+    margin-top: 5px;
+    margin-left: 57px;
+  }
+}
+/* line 69, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000369}}
+.scroller-b {
+  height: calc(100vh - 142px);
+}
+/* line 73, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000373}}
+.button-n {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 80, Sendmoney.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Sendmoney\/Sendmoney\.less}line{font-family:\0000380}}
+.cards-wrapper .button-n {
+  margin: 12px auto 0;
+}
+/*# sourceMappingURL=Sendmoney.css.map */

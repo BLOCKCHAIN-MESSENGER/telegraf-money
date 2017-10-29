@@ -1,0 +1,345 @@
+
+
+<div class="wrapper cards-wrapper credit-wrapper" >
+<div class="contents">
+    <div id="page">
+        <div class="header chat-hr">
+            <a href="#menu">
+                <span></span>
+            </a> <strong>{{_e('Кредиты')}}</strong>
+            <div class="contact-panel">
+                <h3>{{_e('Кредиты')}}</h3>
+                <!--<ul class="ulck-menu">-->
+                <!--<li class="active">-->
+                <!--<a href="#">Партнеры</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#">Заемщики</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#">Кредиторы</a>-->
+                <!--</li>-->
+
+                <!--</ul>-->
+
+                <div class="close-blocks">
+                    <div class="cls3" on-click="setPage:sendmoney"></div>
+                    <div class="cls1" on-click="setPage:guarantee"></div>
+                    <div class="cls2" on-click="setPage:credit"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <scroll class_scroll="scroller-b-Credit" class_content="" id_content="">
+
+
+        <div class="tabs-credit">
+    <div class="crd1 {{#if tabPage == 'borrow'}}active{{/if}} gvc1" on-click="setPage:credit:borrow">{{_e('Взять кредит')}}
+    </div>
+    <div class="crd1 {{#if tabPage == 'loans'}}active{{/if}} gvc2" on-click="setPage:credit:loans">{{_e('Дать кредит')}}
+    </div>
+    <div class="crd1 {{#if tabPage == 'active'}}active{{/if}} gvc3" on-click="setPage:credit:active">{{_e('Мои кредиты')}}
+    </div>
+</div>
+
+<div class="credit-area">
+    {{#if finance_cards_load}}
+
+    <div class="credit-main-area" {{#if tabPage=='active' }}style="display: none" {{/if}}>
+    <div class="card-area-inner">
+
+        <div class="select-form">
+            {{#if tabPage == 'borrow'}}
+            <label>{{_e('Карта пополнения')}}</label>
+            {{/if}}
+            {{#if tabPage == 'loans'}}
+            <label>{{_e('Карта списания')}}</label>
+            {{/if}}
+            <select class="sels" name="card_id" id="card_id_credit" onchange="change_card(this.value)">
+                {{#if finance_cards_load}}
+                {{#cards}}
+
+                <option value="{{card_id}}">{{card_name.replace(/(^|\s)Webtransfer(\s|$)/g, '')}} {{last_balance}}</option>
+                {{else}}
+                <option class="" disabled selected>{{_e('У вас нет активных карт')}}</option>
+                {{/}}
+                {{else}}
+                <option class="" disabled selected>{{_e('Загрузка...')}}</option>
+                {{/if}}
+            </select>
+        </div>
+        {{#if tabPage == 'loans'}}
+        <div class="select-form">
+
+            <label>{{_e('Ставки')}}</label>
+
+            <select class="sels" name="user_id" id="user_id_operator">
+                <option class="" disabled selected>{{_e('Выберите оператора')}}</option>
+
+                {{#list_creditors}}
+                <option value="{{user_id}}" data-type_creditor="{{type}}" data-name_creditor="{{info.name}}">{{info.name}} {{card_demand}}% </option>
+                {{else}}
+                <option>{{_e('Загрузка...')}}</option>
+                {{/}}
+            </select>
+        </div>
+        {{/if}}
+
+        <div class="select-form" id="select_ammount">
+            <label>{{_e('Сумма')}} ({{currency_symbool}})</label>
+            <input class="line-input" type="tel" value="0" name="amount" id="amount_credit">
+        </div>
+        {{#if tabPage == 'loans'}}
+        {{#cards}}
+        {{#if select_card == card_id && card_start_balanses >0}}
+        <div class="alert alert-warning">
+            <div style="width: 10%; display: inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+            </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+            <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('У вас  имеется  бонус')}} {{card_start_balanses}} {{currency}} {{_e('его нужно выдать в  первую очередь!')}}
+        </div>
+        </div>
+        {{/if}}
+        {{/}}
+        {{/if}}
+        <div class="clearfix"></div>
+        {{#if tabPage == 'borrow'}}
+        <button class="button-n" on-click="startBorrow">{{_e('Взять кредит')}}</button>
+        {{/if}}
+
+        {{#if tabPage == 'loans'}}
+        <button class="button-n" on-click="startLoans">{{_e('Дать кредит')}}</button>
+        {{/if}}
+
+        <div class="txt-ls">
+
+            {{#if tabPage == 'borrow'}}
+            <h2>{{_e('Ставка:')}} 1.2%{{_e('/сутки')}}</h2>
+            {{/if}}
+
+            {{_e('Минимальная / максимальная сумма (на один кредит) - 1/200')}} {{currency}}
+            <br>
+            {{_e('При выдаче Кредита до Востребования вы оплачиваете комиссию в соответствии с тарифом в размере ')}}{{currency_symbool}}{{_e('0.10+0.5% (от суммы займа).')}}
+            {{#if tabPage == 'loans'}}
+            <br><br>
+            <div style="padding: 0 10px;font-size: 12px">
+                {{_e('Выдача займов (инвестирование) частным лицам, как и любой другой бизнес, включает в себя риски, в том числе потери капитала, неликвидности, отсутствие прибыли и просрочки, и должно быть сделано только в рамках диверсифицированного портфеля. Выдавать займы, должны только инвесторы, которые понимают эти риски. Необеспеченные кредиты, полученные индивидуальными заемщиками, не покрываются институтами по страхованию вкладов или любыми другими правительственными учреждениями.')}}
+
+            </div>
+            {{/if}}
+
+        </div>
+    </div>
+</div>
+<div class="credit-main-area" style="padding: 0 !important;margin-bottom: 70px;{{#if tabPage !='active' }}display: none;{{/if}}">
+    {{#finance_cards}}
+    {{#if demand}}
+    <div>
+        <div class="date-area mx-data">
+            <!--<div class="ars-bg">{{_e('Кредит До Востребования')}} [{{card_name_short}}] ({{last_balance}} + {{demand_ammount}} = {{total_balance}})</div>-->
+            <div class="ars-bg">{{_e('Кредит До Востребования')}} [{{card_name_short}}] ({{demand_ammount}} )</div>
+        </div>
+
+        {{#demand}}
+        <div class="toggle">
+            <div class="title" on-click="openCredit:{{id}}">
+
+                <h6>
+                    Credit on Demand #{{id}}</h6>
+
+                <div class="garant_state">
+                </div>
+
+                <div class="date"> {{date}}
+                </div>
+
+                <div class="buttons">
+                    {{+(+summa+current_income).toFixed(2)}} {{currency}}
+                </div>
+            </div>
+            <div class="content-detali-guatantee body-{{id}}" style="display: none;">
+                <fieldset style="width:100%" class="blank_info">
+                    <div class="formRow">
+                        <label>{{_e('Сумма')}}</label>
+                        <div class="formRight">
+          <span class="twoFour" style="float: left;height: 15px;">
+            <div> <span class="dst">{{summa}} {{currency}}</span></div>
+
+          </span>
+                            <span class="twoFour"
+                                  style="font-size:15px;text-align:center; display: inline-block">
+                                          {{_e('Credit on Demand')}}<br>
+                            <span style="font-size:11px">(VISA)</span>
+
+          </span>
+
+                            <span class="oneFour" style="width:auto;"></span>
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        </div>
+                    </div>
+
+                    <div class="formRow last">
+                        <div class="ws25">
+                            <label>{{_e('Детали')}}</label>
+                        </div>
+
+                        <div class="ws25"><span class="oneFour" style=""><span
+                                class="dst">{{current_minutes}}</span><br>{{_e('Время (мин)')}}</span></div>
+                        <div class="ws25">
+                      <span class="oneFour" style=""><span class="dst">{{percent}}%</span><br>
+                              {{_e('Процент (в день)')}} </span></div>
+                        <div class="ws25"><span class="oneFour" style="">              <span
+                                class="oneFour out-summa"
+                                style="margin-right:0px;">
+                                  <span class="dst">{{+(+summa+current_income).toFixed(2)}} {{currency}}</span><br> {{_e('Сумма возврата')}} </span></span>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="drop_down">
+                        <div class="content_drop">
+                        </div>
+
+                        <div class="list_applications">
+                        </div>
+
+
+
+
+                        <ul class="nav-nt">
+                            <!--<li class="active">-->
+                                <!--<a class="pointer" on-click="accept:{{id}}">{{_e('Принять')}}</a>-->
+                            <!--</li>-->
+                            <li class="blue-otc pointer" on-click="stopCredit:{{.}}">
+                                <a class="pointer" >{{_e('Остановить')}}</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+
+        {{/}}
+        <div class="nsrov-nt_credit">
+            <div class="clbv_credit">
+                <div class="dv1_credit">
+                    <p>{{invest_ammount}} {{card_currency}}</p>
+                    <span class="prx">{{_e('Вложенно')}}</span>
+                </div>
+                <div class="dv1_credit">
+                    <p>+{{profit_ammount}} {{card_currency}}</p>
+                    <span class="prx">{{_e('Доход')}}</span>
+                </div>
+                <div class="dv2_credit">
+                    <p>{{demand_ammount}} {{card_currency}}</p>
+                    <span class="prx">{{_e('Итого')}}</span>
+                </div>
+            </div>
+        </div>
+        <!--<button class="button-n" on-click="stop">Stop</button>-->
+
+    </div>
+
+
+    {{/if}}
+
+    {{/}}
+    {{#if microinvests.length == 0}}
+    <h2 style="padding: 10px">{{_e('Вы не выдали/получили кредиты')}}</h2>
+    {{/if}}
+
+
+</div>
+{{#if load_invest}}
+<div style="position: absolute;top: 61px;width: 100%;height: calc(100% - 62px);background: rgb(13, 99, 202);opacity: 0.9;z-index: 999">
+    <div class="fixed-loader"></div>
+</div>
+{{/if}}
+{{else}}
+<div class="fixed-loader"></div>
+
+{{/if}}
+
+<div class="clearfix"></div>
+<div class="close-block"></div>
+
+
+        </scroll>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+
+        <ul class="nav-nt">
+            <li class="active">
+                <a class="pointer">{{_e('Активные карты')}}</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+            <!--</li>-->
+
+        </ul>
+
+        <div class="spl-icn"></div>
+        <scroll class_scroll="" class_content="" id_content="">
+            <Cards/>
+            <button class="add-btns" on-click="setPage:cards">View all cards</button>
+
+        </scroll>
+    </div>
+</div>
+</div>
+

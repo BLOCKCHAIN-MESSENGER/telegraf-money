@@ -1,0 +1,361 @@
+<div class="wrapper cards-wrapper new-cards-area">
+    <div class="contents">
+        <div id="">
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Карты')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Карты')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<div class="icon-area chat"></div>-->
+            <scroll class_scroll="scroller-b-Cards" class_content="" id_content="">
+
+                {{#if finance_cards_load}}
+
+                {{#finance_cards}}
+                <div class="clzs">
+
+                    <div class="cards-area">
+
+                        <div>
+
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front card-full {{#if card_type ==0}}
+                                card-real
+                                {{else}}
+                                card-virtual
+                                {{/if}}">
+                                        <div class="img-l">
+                                            <div class="prise-art">
+
+                                                {{last_balance}}
+                                                <strong>
+                                                    <i>{{card_currency}}</i></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="img-ls">
+                                            {{#if card_system !='master_card'}}
+                                            <!--visa-->
+                                            <img src="./src/img/v1.svg" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                            {{else}}
+                                            <!--master card-->
+                                            <img src="./src/img/v2.svg" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                            {{/if}}
+                                        </div>
+
+                                        <div class="numb-card">{{card_name_short.replace(card_currency, '')}}</div>
+                                        <span class="dbts">{{card_currency}}</span>
+
+                                        <div class="card-h">
+                                            <div class="fll">{{name_on_card}}</div>
+                                            <div class="flr">
+                                                {{#if card_type ==0}}
+                                                Black
+                                                {{else}}
+                                                Virtual
+                                                {{/if}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back card-full">
+                                        <div class="hover-area-card">
+                                            <div class="card-line"><!--2345--></div>
+                                            <h5>VISA {{card_currency}} {{card_name_short.replace(card_currency,
+                                                '')}}</h5>
+                                            <p class="ppls">
+                                                0 % USD purchases fee<br>
+                                                2 % Other currency transactions<br>
+                                                1.99{{card_currency}} ATM withdraw in {{card_currency}}<br>
+                                                2.99{{card_currency}} ATM withdraw in other currencies
+                                            </p>
+
+                                            <div class="clast-dv tk1" on-click="openCard:{{id}}">{{_e('Информация')}}</div>
+
+                                            <div class="block-icon"></div>
+                                            <div class="img-l2">
+                                                <div class="balance-nv"></div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="clact">
+                            <h3>
+                                VISA <span
+                                    style="font-size: 9px;">{{card_name_short.replace(card_currency, '')}} </span>
+                                {{#if card_type ==0}}
+                                Black
+                                {{else}}
+                                Virtual
+                                {{/if}}
+                                <span class="sta">{{card_currency}} </span>
+                            </h3>
+                            <div class="blko">
+                                <span class="summ"></span>
+                            </div>
+
+                            <div class="balance-nv">
+                                <h5>
+                                    {{demand_ammount}} <i>USD</i>
+                                </h5>
+                                <p>
+                                    {{_e('Сумма')}}
+                                    <br>{{_e('в займах')}}</p>
+                                <a class="info-areas pointer" on-click="openCard:{{id}}">{{_e('Информация')}}</a>
+                            </div>
+
+                            <div class="block-bts m-blk">
+                                <a class="blks-btn block-button pointer" style="text-align: center;text-decoration: none;" on-click="setPage:topup:{{cloud_card_id}}">{{_e('Пополнить')}}
+                                    <!--<span>{{_e('+ 50% Бонус')}}</span>-->
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                {{else}}
+                {{#if !finance_cards_ALL.READY_TO_ACTIVE || finance_cards_ALL.READY_TO_ACTIVE.lenght ==0 }}
+                <div class="clzs">
+
+                    <div class="cards-area">
+
+                        <div>
+
+                            <div class="flip-container" >
+                                <div class="flipper">
+                                    <div class="front card-full card-virtual">
+                                        <div class="img-l">
+                                            <div class="prise-art">
+
+                                                #.##
+                                                <strong>
+                                                    <i>USD</i></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="img-ls">
+                                            <img src="./src/img/v1.svg" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                        </div>
+
+                                        <div class="numb-card">#### **** **** ####</div>
+                                        <span class="dbts">USD</span>
+
+                                        <div class="card-h">
+                                            <div class="fll">{{MyProfile.first_name}} {{MyProfile.last_name}}</div>
+                                            <div class="flr">
+
+                                                Virtual
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back card-full">
+                                        <div class="hover-area-card">
+                                            <div class="card-line"><!--2345--></div>
+                                            <h5>VISA {{card_currency}} {{card_name_short.replace(card_currency,
+                                                '')}}</h5>
+                                            <p class="ppls">
+                                                {{_e('Виртуальная карта еще не активирована')}} <br>
+                                                {{_e('вы можете ее актвировать совершенно бесплатно')}}
+                                            </p>
+
+                                            <div class="clast-dv tk1" on-click="activeCard:virtual">{{_e('Активировать')}}</div>
+
+                                            <div class="block-icon"></div>
+                                            <div class="img-l2">
+                                                <div class="balance-nv"></div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="clact">
+                            <h3>
+                                VISA <span style="font-size: 9px;">1234 **** **** 1234 </span>
+
+                                Virtual
+
+                                <span class="sta">USD </span>
+                            </h3>
+                            <div class="blko">
+                                <span class="summ"></span>
+                            </div>
+
+                            <div class="balance-nv">
+                                <h5>
+                                    0.00 <i>USD</i>
+                                </h5>
+                                <p>
+                                    {{_e('Стоимость')}}
+                                    <br>{{_e('активации')}}
+                                </p>
+                                <a class="info-areas pointer" on-click="activeCard:virtual">{{_e('Активировать')}}</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <a class="button-n flr-btn pointer mobile_btn" on-click="activeCard:virtual">{{_e('Активировать')}}</a>
+
+                {{/if}}
+                {{/}}
+                {{#finance_cards_ALL.READY_TO_ACTIVE}}
+                <div class="clzs">
+
+                    <div class="cards-area">
+
+                        <div>
+
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front card-full card-virtual">
+                                        <div class="img-l">
+                                            <div class="prise-art">
+                                                #
+                                                <strong><i>{{id}}</i></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="img-ls">
+                                            <img src="./src/img/v1.svg" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                        </div>
+
+                                        <div class="numb-card">{{pan}}</div>
+                                        <span class="dbts">USD</span>
+
+                                        <div class="card-h">
+                                            <div class="fll">{{name_on_card}}</div>
+                                            <div class="flr">
+
+                                                {{type}}
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back card-full">
+                                        <div class="hover-area-card">
+                                            <div class="card-line"><!--2345--></div>
+                                            <h5>VISA {{pan}}</h5>
+                                            <p class="ppls">
+                                                {{_e('Виртуальная карта еще не активирована')}} <br>
+                                                {{_e('вы можете ее актвировать совершенно бесплатно')}}
+                                            </p>
+
+                                            <div class="clast-dv tk1" on-click="activeCard:virtual">{{_e('Активировать')}}</div>
+
+                                            <div class="block-icon"></div>
+                                            <div class="img-l2">
+                                                <div class="balance-nv"></div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="clact">
+                            <h3>
+                                VISA <span style="font-size: 9px;">{{pan}}</span>
+
+                                {{type}}
+
+                                <span class="sta">USD </span>
+                            </h3>
+                            <div class="blko">
+                                <span class="summ"></span>
+                            </div>
+
+                            <div class="balance-nv">
+                                <h5>
+                                    0.00 <i>USD</i>
+                                </h5>
+                                <p>
+                                    {{_e('Стоимость')}}
+                                    <br>{{_e('активации')}}
+                                </p>
+                                <a class="info-areas pointer" on-click="activeCard:{{id}}">{{_e('Активировать')}}</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <a class="button-n flr-btn pointer mobile_btn" on-click="activeCard:{{id}}">{{_e('Активировать')}}</a>
+
+
+                {{/}}
+
+                <!--<button class="button-n flr-btn" on-click="openCard:add">{{_e('Добавить карту')}}</button>-->
+
+                {{else}}
+                <div class="cards-area" style="height: 89vh;">
+                    <div class="fixed-loader"></div>
+                </div>
+                {{/if}}
+
+            </scroll>
+
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+
+        <ul class="nav-nt">
+            <li class="active">
+                <a class="pointer">{{_e('Активные карты')}}</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+            <!--</li>-->
+
+        </ul>
+
+        <div class="spl-icn"></div>
+        <scroll class_scroll="scroller-b-Cards-component-cards" class_content="" id_content="">
+
+            <Cards/>
+        </scroll>
+    </div>
+
+</div>

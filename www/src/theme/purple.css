@@ -1,0 +1,811 @@
+
+.list-dialog-wrapper .chat-in_dialog_persons,
+.user-id-a,
+.cards-wrapper .ntra,
+.crd1,
+.select-form label,
+.txt-ls,
+body .credit-main-area input,
+.list-dialog-wrapper .chat-in_dialog_persons,
+.user-id-a,
+.list-dialog-wrapper .chat-in_dialog_persons,
+.mobile-mn .sets-up a,
+.contacts .chat-in_dialog_persons,
+body .profile-wrapper .chat-panel-bottom h1,
+body .chat-icon .chats-area-bl h4,
+body .id-area,
+body span.snd,
+
+body .mobile-mn .ntu li a,
+body .mobile-mn .id-area,
+body span.lt1,
+body span.lt2 {
+  color: #737373 !important;
+}
+
+.cards-wrapper button.add-btns {
+  border: 2px solid #000;
+  color: #000;
+}
+
+body .profile-wrapper .chat-panel-bottom {
+  background: #fff !important;
+}
+
+body .contact-panel {
+  background: #AB5E93 !important;
+}
+
+body .colv-3 {
+  background: #fdfdfd;
+}
+
+body .ltos {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0, #ffffff 100%) !important;
+}
+@media (min-width: 1200px) {
+  body .colv-3:first-child {
+    border-left: 1px solid #fff !important;
+  }
+}
+
+body .jq-selectbox__select {
+  width: 100%;
+  height: 38px;
+  padding: 0 20px 0 10px;
+  border: 1px solid #000;
+  background: none!important;
+  font: 14px/32px "Lato", sans-serif;
+  color: #191919;
+  text-shadow: 1px 1px #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.select-form input {
+  color: #000 !important;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 15px;
+  right: 9px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #000!important;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.mobile-mn,
+.cards-wrapper .chat-panel-bottom {
+  background: #ffffff !important;
+}
+
+.acc-nt {
+  background: #d4d4d4;
+}
+
+body {
+  background: #f4f4f4 !important;
+  background-size: contain !important;
+}
+
+.new-cards-area .chat-panel-bottom {
+  margin-top: 87px;
+}
+
+.profile-wrapper .contact-panel {
+  padding: 20px !important;
+  background: #fb9355 !important;
+  overflow: hidden !important;
+}
+
+body .profile-wrapper .contact-panel h3 {
+  color: #fff !important;
+}
+
+.acc-nts h4 {
+  color: #000 !important;
+}
+
+.profile-wrapper .contact-panel {
+  padding: 20px;
+  background: #ffbc93;
+  overflow: hidden;
+}
+
+ul.ntu.mm-listview a:before,
+.setts:before {
+  display: none !important;
+}
+
+.mobile-mn .ntu li a {
+  margin-left: 0 !important;
+}
+
+.mobile-mn .sets-up a {
+  padding-left: 0 !important;
+}
+
+
+
+.cards-wrapper .contact-panel {
+  background: #AB5E93 !important;
+}
+
+.cards-wrapper .contact-panel h3 {
+  color: #fff !important;
+}
+
+.date-area.mx-data {
+  background: #AB5E93 !important;
+}
+
+.acc-nt {
+  background: #AB5E93 !important;
+}
+
+.button-n {
+  background: #AB5E93;
+  color: #000 !important;
+}
+
+body .nav-nt .active a {
+  color: #fff !important;
+}
+
+.jq-selectbox__select-text {
+  color: #000 !important;
+}
+
+body .cards-wrapper .cards-ns.active {
+  background: #e0e0e0 !important
+}
+
+body .cards-wrapper .cards-ns:hover {
+  background: #e0e0e0 !important;
+}
+
+body .menu-hh {
+  color: #000 !important;
+}
+
+body .in-divs span.cnvl {
+  margin-top: 0!important;
+  color: #000 !important;
+}
+
+.credit-main-area,
+.crd1.active {
+  background: #fff !important;
+}
+
+.cards-wrapper .cards-ns {
+  border-left: 3px solid #e8e8e8 !important;
+}
+
+.profile-wrapper .contact-panel {
+  padding: 20px !important;
+  background: #AB5E93 !important;
+  overflow: hidden !important;
+}
+
+body .profile-wrapper .contact-panel h3 {
+  color: #fff !important;
+}
+
+body .credit-main-area,
+body .crd1.active {
+  background: #f3f3f3!important;
+}
+
+.nav-nt li a {
+  color: #000 !important;
+}
+
+.swal2-modal.swal-telegraf-modal.show-swal2.visible {
+  background: #dcdcdc!important;
+}
+
+.list-dialog-wrapper .colv-3 {
+  background: #fff !important;
+}
+
+body .mm-menu.mm-offcanvas.mm-current {
+  display: block;
+  background: #fff !important;
+}
+
+body .ntu li a {
+  margin-left: 0 !important;
+  color: #000 !important;
+}
+
+body .sets-up a {
+  margin-left: 0px !important;
+  padding-left: 0 !important;
+  color: #000 !important;
+}
+
+body .header {
+ background: #AB5E93 !important;
+}
+
+body .chat-icon .chats-area-bl {
+  max-width: calc(100% - 25px) !important;
+}
+
+body .сhat-wrapper .chat-panel-bottom {
+  background: #fff !important;
+}
+
+body .сhat-wrapper .header.chat-hr {
+  padding-bottom: 0 !important;
+  background: #e2e2e2 !important;
+  border: 0;
+  padding: 24px;
+  height: 90px !important;
+}
+
+body .сhat-wrapper .stlk {
+  color: #000 !important;
+}
+
+body .сhat-wrapper .status-area {
+  color: #000 !important;
+}
+
+body .сhat-wrapper .chat-panel-bottom h1 {
+  color: #000 !important;
+}
+
+body .сhat-wrapper .header.chat-hr {
+  background: #efefef !important;
+}
+
+.fixed-loader {
+  display: none !important;
+}
+
+body h2 {
+  color: #000;
+}
+
+body .сhat-wrapper .chat-in-date-cloud {
+  background: #bdbdbd;
+}
+
+body .сhat-wrapper .bg-my {
+  background: #EFFDDE !important;
+  color: #000 !important;
+}
+
+body .сhat-wrapper .chat-in-messenge-my .time-ns {
+  color: #000 !important;
+}
+
+body .сhat-wrapper .chat-in-messenge-my .bg-my:after {
+  border-left: 9px solid #EFFDDE !important;
+}
+
+body span.namels strong {
+  color: #91bff7;
+}
+
+body .сhat-wrapper .bg-my1 {
+  font-size: 13px;
+      background: #fff;
+  color: #000;
+}
+
+body .сhat-wrapper .time-ns {
+  color: #000;
+}
+
+body .сhat-wrapper .chat-in-messenge-me .bg-my1:before {
+  border-right: 9px solid #fff;
+}
+
+.mobile-mn .p-title,
+.mm-panels .p-title {
+  color: #000 !important;
+}
+
+body .editProfile-wrapps .chat-panel-bottom {
+  background: #fff;
+}
+
+body .editProfile-wrapps .chat-panel-bottom h1 {
+  color: #000 !important;
+}
+
+body .input-User-by-id {
+  border-color: #000 !important;
+}
+
+body .line-input {
+  border-bottom: 1px solid #000 !important;
+}
+
+body .header {
+  background: #AB5E93 !important;
+}
+
+body .cards-wrapper button.blks-btn {
+  background: #AB5E93;
+  color: #fff !important;
+}
+
+body .cards-wrapper .clzs {
+  background: #fff !important;
+}
+
+body .cards-wrapper .ics-nb h4 {
+  color: #000 !important;
+}
+
+body .cards-wrapper .all-nts {
+  color: #000 !important;
+}
+
+body .cards-wrapper .clk-1 {
+  background: #AB5E93 !important;
+  color: #000 !important;
+}
+
+body .cards-wrapper .pod-cards {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #e8e8e8;
+  padding-top: 0px;
+}
+
+body h3.pluso-s strong {
+  color: #000;
+}
+
+body .cards-wrapper .minus-s {
+  color: #000;
+}
+
+body .cards-wrapper .fll-p h3 {
+  color: #000;
+}
+
+body .cards-wrapper .min-ar.prv-ns.stl-creds:before {
+  background: #000 !important;
+}
+
+body .date-area {
+  background: #AB5E93 !important;
+  color: #000 !important;
+}
+
+body .date-area .plus-stl {
+  color: #3ba6bf;
+}
+
+body .cards-wrapper .oparation-blk h3 {
+  color: #000;
+}
+
+body .cards-wrapper .cvlk {
+  color: #000 !important;
+}
+
+body .cards-wrapper .cl-ic2 {
+  color: #000 !important;
+}
+
+body .date-area .minus-stl {
+  color: #000 !important;
+}
+
+body .cards-wrapper .cards-ns {
+  border-left: 3px solid #E8E8E8;
+}
+
+body .cards-wrapper .cards-ns {
+  border-bottom: 1px solid #eee;
+}
+
+body .balance-nv h5 {
+  color: #000 !important;
+}
+
+body .cards-wrapper .clact h3 {
+  color: #000 !important;
+}
+
+body .cards-wrapper button.blks-btn:hover {
+  background: #D63749;
+  color: #fff !important;
+}
+
+body .new-cards-area .clzs {
+  background: #fff !important;
+}
+
+body .new-cards-area .clact h3 {
+  color: #000 !important;
+}
+
+body .new-cards-area button.blks-btn {
+  background: #AB5E93;
+  color: #000;
+}
+
+body .new-cards-area a.info-areas {
+  background: #AB5E93;
+  color: #fff;
+}
+
+
+
+
+body .form-control[disabled], body .form-control[readonly], body fieldset[disabled] .form-control {
+    background-color: #bbbbbb !important;
+}
+
+
+body .editProfile-wrapps.editProfile-wrapps input, body .editProfile-wrapps.editProfile-wrapps textarea {
+    border: 1px solid #000 !important;
+}
+
+body .content-nh.frz-vr .header {
+    background: none !important;
+}
+
+body .ntu li a {
+    padding-left: 19px !important;
+}
+
+@media (max-width: 699px)
+ {
+	body .ntu li a {
+    padding-left: 0 !important;
+} 
+ }
+
+
+body .button-n {
+    background: #e6e6e6;
+}
+
+body img.img-main-section {
+    opacity: 0 !important;
+    height: 1px;
+}
+
+body .crd1:before {
+    display: none !important;
+}
+@media (min-width: 700px)
+ {
+body .crd1 {
+    padding-left: 25px !important;
+}
+}
+
+
+
+.chat-in-im_dialog_messages{
+	color: #69a5fb !important;
+}
+
+.сhat-wrapper .content-nh.frz-vr {
+    background: #AB5E93;
+}
+
+body .сhat-wrapper .chat-in-date-cloud {
+    background: rgba(189, 189, 189, 0.6);
+}
+
+body .button-n {
+    background: #AB5E93;
+    color: #fff !important;
+}
+
+
+body .swal2-confirm.button-n {
+    background: #AB5E93;
+}
+
+body .ars-bg{
+color: #fff !important;	
+}
+
+
+.lange-icon {
+    color: #b1b1b1 !important;
+}
+
+
+
+body ::-webkit-input-placeholder {color:#737373 !important;}
+body ::-moz-placeholder          {color:#737373 !important;}/* Firefox 19+ */
+body :-moz-placeholder           {color:#737373 !important;}/* Firefox 18- */
+body :-ms-input-placeholder      {color:#737373 !important;}
+
+
+.list-dialog-wrapper .colv-3 {
+    background: #fafafa !important;
+}
+
+div#contentMessageScroll h2 {
+    color: #fff !important;
+}
+
+body .сhat-wrapper .status-area {
+    color: #636363 !important;
+}
+
+body span.p-title {
+    color: #000 !important;
+}
+
+body .inputfile-1+label {
+    color: #feffff;
+    background-color: #BBBBBB !important;
+    border: 2px solid;
+}
+
+body .inputfile-1:focus+label, body .inputfile-1.has-focus+label, body .inputfile-1+label:hover {
+    color: #fff !important;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+body .editProfile-wrapps.editProfile-wrapps input,body .editProfile-wrapps.editProfile-wrapps textarea {
+    color: #000!important;
+}
+
+body .fa.fa-qrcode.fa-4x {
+    color: #b1b1b1 !important;
+}
+
+
+body .select-form input {
+    font-size: 15px;
+    border: 1px solid #000;
+    width: 100% !important;
+}
+
+
+body .сhat-wrapper .header.chat-hr {
+    background: #d6d6d6 !important;
+}
+
+
+body .modal-chat-area-info {
+    background: #636363 !important;
+}
+
+body .modal-chat-area-info strong {
+    color: #cecece !important;
+}
+
+
+
+body .select-form label span {
+    color: #666 !important;
+}
+
+body .cards-wrapper button.blks-btn {
+    background: #54c3f3;
+    color: #fff!important;
+}
+
+.info-card-wrapper .stl-creds .fll-p p span {
+    color: #000 !important;
+    margin-left: 5px;
+}
+
+.info-card-wrapper .search-line input{
+	color: #000 !important;
+	border-bottom: solid #000 !important;
+}
+
+.chat-in-user_bgcolor_12 {
+    background: #AB5E93 !important;
+}
+
+ul.ulck-menu .active a {
+    color: #000 !important;
+}
+
+.contacts .chat-in-im_dialog_no_avatars{
+	 background: #AB5E93 !important;
+}
+
+.cards-wrapper .cvlk span{
+	color: #000 !important;
+}
+
+.list-dialog-wrapper .notif-numbers {
+    border: 4px solid #fff !important;
+}
+
+body .number-n {
+    border: 4px solid #fff !important;
+}
+
+
+.nsrov-nt_credit {
+    background: #AB5E93 !important;
+}
+
+.nsrov-nt_credit .clbv_credit span{
+	color: #fff !important;
+}
+
+.nsrov-nt_credit .dv1_credit:after{
+	display: none !important;
+}
+
+.swal2-modal.show-swal2.visible {
+    background: #797979 !important;
+}
+
+.swal2-modal.show-swal2.visible {
+    background: #797979 !important;
+}
+
+
+
+
+
+
+
+
+body .chat-icon .chats-area-bl h4 {
+    font-size: 13px !important;
+}
+
+.scroller-b-Dialogs .chats-blk {
+    background: #ffffff !important;
+}
+
+.list-dialog-wrapper .pos-abs-time {
+    color: #7C7373 !important;
+}
+@media (min-width: 1200px) {
+	.list-dialog-wrapper .colv-3 .slider {
+    border-right: 1px solid #C1C1C1 !important;
+}
+}
+
+.group_icon {
+    position: absolute;
+    top: 4px;
+    left: 45px;
+    border-radius: 50%;
+    border: solid 3px #a0a0a0;
+    background: #b7b4b4;
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    padding: 2px;
+}
+
+
+i.fa.fa-server.fa-4x {
+    color: #B1B1B1 !important;
+}
+
+.select-form a {
+    color: #B1B1B1 !important;
+}
+
+.сhat-wrapper .arrow-st {
+    background-color: rgba(0, 0, 0, 0.39) !important;
+}
+
+body .сhat-wrapper .chat-in-messenge-me .bg-my1:before {
+    background: none !important;
+}
+
+i.fa.fa-usd, i.fa.fa-file-text {
+    opacity: 0;
+    }
+    
+      .wrapper.cards-wrapper.сhat-wrapper.card-wrapps.chat-info-wrapper {
+    background: #fff !important;
+}
+
+
+body.style-main header.main-header, footer, body.style-main .сhat-wrapper .chat-panel-bottom {
+    background: #843d6e !important;
+}
+
+a#btn_aff {
+    background: #AB5E93 !important;
+}
+
+
+
+span.cnvl {
+    color: #000;
+}
+
+.psh-id {
+    color: #000 !important;
+}
+
+span.cnvl {
+    color: #000 !important;
+    max-width: 153px !important;
+    line-height: 14px !important;
+}
+
+.table-block-ex tbody tr td, .scroller-b.nano.__nano.scroller-b-Topup h1, .txt-modal-area {
+    color: #000;
+}
+
+.btn-area-cards button.button-n.right-btn{
+	border: 1px solid #000 !important;
+    color: #000 !important;
+}
+
+
+.credit-main-area.padding-fx * {
+    color: #000 !important;
+}
+
+div#contentMessageScroll h2, i.fa.fa-comment-o.fa-5x {
+    color: #000!important;
+}
+
+
+
+body .btn-area-cards button.button-n.right-btn {
+    border: 1px solid #000!important;
+    color: #000!important;
+}
+
+body .dbt-ns.fll, body  .mnt-s, body .mnt-s2, body .tls-ls{
+	   color: #000!important;
+}
+
+body .tls-ls p {
+    border-bottom: 1px solid #333 !important;
+}
+
+li.fsl-b img {
+    display: none !important;
+}
+
+
+
+.deposits-wrapper .slider.slider-horizontal .slider-tick-label-container .slider-tick-label, .deposits-wrapper p.ppls, .deposits-wrapper span#profit_total_sum, .vlm, .deposits-wrapper .profit__descr, .profit__total-title, .deposits-wrapper .profit__total span.vlm.percent_profit, .deposits-wrapper .profit__descr {
+    color: #737373 !important;
+}
+
+body .deposits-wrapper .btn-area-cards button.button-n.right-btn {
+    border: 1px solid #000!important;
+    color: #000!important;
+}
+
+
+
+
+body .deposits-wrapper button.button-n.__no {
+    border: 1px solid #000!important;
+    color: #000!important;
+}
+
+
+body .guarantee-wrapper .credit-main-area .title {
+    background: #fff !important;
+}
+
+.guarantee-wrapper .toggle .content-detali-guatantee, .guarantee-wrapper .toggle .menu_body {
+    background: #fff !important;
+}
+
+body .debit-wrapper .scroller-b-debitcoin .credit-area {
+    background: #fff !important;
+}

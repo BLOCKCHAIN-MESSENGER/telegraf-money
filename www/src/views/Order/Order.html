@@ -1,0 +1,758 @@
+<div class="wrapper editProfile-wrapps order_card-wrapps">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>
+
+                {{_e('Заказ карты')}}
+            </strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Заказ карты')}}</h3>
+
+                </div>
+
+            </div>
+
+            <scroll class_scroll="scroller-b-ProfileEdit" class_content="" id_content="">
+
+                <div class="acc-nts" style="text-align: center"><img
+                        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgNjIuMTEgNjIuMTEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYyLjExIDYyLjExOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE5LjcsMzMuNTY0Yy0wLjIwOCwwLTAuMzQ2LDAuMTAzLTAuNDEzLDAuMzFjLTAuMDY4LDAuMjA1LTAuMTAyLDAuNTI0LTAuMTAyLDAuOTU0YzAsMC40MDgsMC4wMzQsMC43MjIsMC4xMDIsMC45MzkgICAgYzAuMDY3LDAuMjE4LDAuMjA1LDAuMzI1LDAuNDEzLDAuMzI1czAuMzQ0LTAuMTA3LDAuNDEtMC4zMjVjMC4wNjQtMC4yMTgsMC4wOTctMC41MywwLjA5Ny0wLjkzOWMwLTAuNDMtMC4wMzItMC43NDktMC4wOTctMC45NTQgICAgQzIwLjA0NCwzMy42NjgsMTkuOTA4LDMzLjU2NCwxOS43LDMzLjU2NHoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNOC41ODcsNDEuNjdsLTAuMTI5LDAuMDI0Yy0wLjEyMSwwLjAyMS0wLjIwOCwwLjA0Ny0wLjI2MSwwLjA3N2MtMC4wODksMC4wNTEtMC4xMzMsMC4xMzItMC4xMzMsMC4yNDEgICAgYzAsMC4wOTcsMC4wMjcsMC4xNjcsMC4wODEsMC4yMWMwLjA1NCwwLjA0MywwLjEyMSwwLjA2MywwLjE5OSwwLjA2M2MwLjEyNCwwLDAuMjM4LTAuMDM0LDAuMzQyLTAuMTA2ICAgIGMwLjEwNC0wLjA3MiwwLjE1OS0wLjIwMiwwLjE2My0wLjM5MnYtMC4yMTFjLTAuMDM3LDAuMDIxLTAuMDczLDAuMDQxLTAuMTA5LDAuMDU0QzguNzAzLDQxLjY0Niw4LjY1Miw0MS42NTgsOC41ODcsNDEuNjd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE0LjQyNiw0MC44NzRjLTAuMTQ1LDAtMC4yNTgsMC4wNDItMC4zMzcsMC4xMjRjLTAuMDgxLDAuMDgyLTAuMTMsMC4xOTQtMC4xNTEsMC4zMzZoMC45NzUgICAgYy0wLjAxLTAuMTUtMC4wNjEtMC4yNjUtMC4xNTEtMC4zNDJDMTQuNjcyLDQwLjkxNCwxNC41NTksNDAuODc0LDE0LjQyNiw0MC44NzR6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE0LjEwMSwzNi4wOTZjMC4yMDgsMCwwLjM0NC0wLjEwOSwwLjQwOS0wLjMyN2MwLjA2NS0wLjIxOCwwLjA5Ny0wLjUyOSwwLjA5Ny0wLjk0YzAtMC40My0wLjAzMi0wLjc0Ny0wLjA5Ny0wLjk1NCAgICBjLTAuMDY1LTAuMjA2LTAuMjAxLTAuMzEtMC40MDktMC4zMWMtMC4yMDgsMC0wLjM0NiwwLjEwNC0wLjQxNCwwLjMxYy0wLjA2OCwwLjIwNy0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NCAgICBjMCwwLjQwOSwwLjAzMywwLjcyMywwLjEwMSwwLjk0UzEzLjg5MywzNi4wOTYsMTQuMTAxLDM2LjA5NnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNS42OTksMzYuMDk2YzAuMjA4LDAsMC4zNDMtMC4xMDksMC40MDktMC4zMjdjMC4wNjQtMC4yMTgsMC4wOTctMC41MjksMC4wOTctMC45NGMwLTAuNDMtMC4wMzMtMC43NDctMC4wOTctMC45NTQgICAgYy0wLjA2NS0wLjIwNi0wLjIwMS0wLjMxLTAuNDA5LTAuMzFjLTAuMjA5LDAtMC4zNDYsMC4xMDQtMC40MTQsMC4zMWMtMC4wNjgsMC4yMDctMC4xMDEsMC41MjQtMC4xMDEsMC45NTQgICAgYzAsMC40MDksMC4wMzMsMC43MjMsMC4xMDEsMC45NFM1LjQ5LDM2LjA5Niw1LjY5OSwzNi4wOTZ6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTguNDk5LDMzLjU2NGMtMC4yMDgsMC0wLjM0NiwwLjEwMy0wLjQxNCwwLjMxYy0wLjA2OCwwLjIwNS0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NGMwLDAuNDA4LDAuMDMzLDAuNzIyLDAuMTAxLDAuOTM5ICAgIGMwLjA2OCwwLjIxOCwwLjIwNSwwLjMyNSwwLjQxNCwwLjMyNWMwLjIwOCwwLDAuMzQzLTAuMTA3LDAuNDA5LTAuMzI1YzAuMDY1LTAuMjE4LDAuMDk3LTAuNTMsMC4wOTctMC45MzkgICAgYzAtMC40My0wLjAzMi0wLjc0OS0wLjA5Ny0wLjk1NEM4Ljg0MywzMy42NjgsOC43MDcsMzMuNTY0LDguNDk5LDMzLjU2NHoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMjIuMjI3LDQxLjY3bC0wLjEyOSwwLjAyNGMtMC4xMjEsMC4wMjEtMC4yMDcsMC4wNDctMC4yNiwwLjA3N2MtMC4wOSwwLjA1MS0wLjEzMywwLjEzMi0wLjEzMywwLjI0MSAgICBjMCwwLjA5NywwLjAyNywwLjE2NywwLjA4MSwwLjIxczAuMTIxLDAuMDYzLDAuMTk5LDAuMDYzYzAuMTI0LDAsMC4yMzctMC4wMzQsMC4zNDItMC4xMDZjMC4xMDQtMC4wNzIsMC4xNTgtMC4yMDIsMC4xNjItMC4zOTIgICAgdi0wLjIxMWMtMC4wMzYsMC4wMjEtMC4wNzMsMC4wNDEtMC4xMDksMC4wNTRDMjIuMzQyLDQxLjY0NiwyMi4yOTIsNDEuNjU4LDIyLjIyNyw0MS42N3oiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMjUuMzAxLDM2LjA5NmMwLjIwOCwwLDAuMzQ0LTAuMTA5LDAuNDEtMC4zMjdjMC4wNjQtMC4yMTgsMC4wOTctMC41MjksMC4wOTctMC45NGMwLTAuNDMtMC4wMzItMC43NDctMC4wOTctMC45NTQgICAgYy0wLjA2NS0wLjIwNi0wLjIwMi0wLjMxLTAuNDEtMC4zMWMtMC4yMDgsMC0wLjM0NiwwLjEwNC0wLjQxNCwwLjMxYy0wLjA2NywwLjIwNy0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NCAgICBjMCwwLjQwOSwwLjAzNCwwLjcyMywwLjEwMSwwLjk0QzI0Ljk1NSwzNS45ODYsMjUuMDkzLDM2LjA5NiwyNS4zMDEsMzYuMDk2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik0xMS4zLDM2LjA5NmMwLjIwOCwwLDAuMzQzLTAuMTA5LDAuNDEtMC4zMjdjMC4wNjQtMC4yMTgsMC4wOTctMC41MjksMC4wOTctMC45NGMwLTAuNDMtMC4wMzMtMC43NDctMC4wOTctMC45NTQgICAgYy0wLjA2Ni0wLjIwNi0wLjIwMi0wLjMxLTAuNDEtMC4zMWMtMC4yMDgsMC0wLjM0NiwwLjEwNC0wLjQxNCwwLjMxYy0wLjA2OCwwLjIwNy0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NCAgICBjMCwwLjQwOSwwLjAzMywwLjcyMywwLjEwMSwwLjk0QzEwLjk1NCwzNS45ODUsMTEuMDkxLDM2LjA5NiwxMS4zLDM2LjA5NnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMjguMDY1LDQwLjg3NGMtMC4xNDUsMC0wLjI1OCwwLjA0Mi0wLjMzNywwLjEyNGMtMC4wOCwwLjA4Mi0wLjEzLDAuMTk0LTAuMTUxLDAuMzM2aDAuOTc1ICAgIGMtMC4wMTEtMC4xNS0wLjA2MS0wLjI2NS0wLjE1MS0wLjM0MkMyOC4zMSw0MC45MTQsMjguMTk5LDQwLjg3NCwyOC4wNjUsNDAuODc0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik00My41OTcsNDIuNTY4aC0wLjE5MWwwLjAzOCwwLjExOUM0My40OTYsNDIuNjQ2LDQzLjUzNyw0Mi41OTgsNDMuNTk3LDQyLjU2OHoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMjIuNTAxLDMzLjU2NGMtMC4yMDgsMC0wLjM0NiwwLjEwMy0wLjQxNCwwLjMxYy0wLjA2NywwLjIwNS0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NGMwLDAuNDA4LDAuMDM0LDAuNzIyLDAuMTAxLDAuOTM5ICAgIGMwLjA2OCwwLjIxOCwwLjIwNSwwLjMyNSwwLjQxNCwwLjMyNWMwLjIwOCwwLDAuMzQ0LTAuMTA3LDAuNDEtMC4zMjVjMC4wNjQtMC4yMTgsMC4wOTYtMC41MywwLjA5Ni0wLjkzOSAgICBjMC0wLjQzLTAuMDMyLTAuNzQ5LTAuMDk2LTAuOTU0QzIyLjg0NSwzMy42NjgsMjIuNzA5LDMzLjU2NCwyMi41MDEsMzMuNTY0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik0yNy42ODgsMzMuODc0Yy0wLjA2OCwwLjIwNy0wLjEwMSwwLjUyNC0wLjEwMSwwLjk1NGMwLDAuNDA5LDAuMDMzLDAuNzIzLDAuMTAxLDAuOTQgICAgYzAuMDY3LDAuMjE4LDAuMjA1LDAuMzI3LDAuNDE0LDAuMzI3YzAuMjA4LDAsMC4zNDQtMC4xMDksMC40MDktMC4zMjdjMC4wNjUtMC4yMTgsMC4wOTctMC41MjksMC4wOTctMC45NCAgICBjMC0wLjQzLTAuMDMyLTAuNzQ3LTAuMDk3LTAuOTU0Yy0wLjA2NS0wLjIwNi0wLjIwMS0wLjMxLTAuNDA5LTAuMzFDMjcuODk0LDMzLjU2NCwyNy43NTYsMzMuNjY4LDI3LjY4OCwzMy44NzR6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTU5LjkzMSw0Mi4xNzdjMC4wNDYsMCwwLjA3NiwwLjAxOSwwLjExOSwwLjAyNHYtMC4yMjNjLTAuMTExLDAuMDczLTAuMjI0LDAuMTQxLTAuMzQyLDAuMjAxICAgIEM1OS43ODQsNDIuMTc5LDU5Ljg1Nyw0Mi4xNzcsNTkuOTMxLDQyLjE3N3oiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMzkuOTI3LDQ3LjAwMmMtMC4wNC0wLjA4Ni0wLjA3OS0wLjE3NC0wLjEwOC0wLjI2N2wtMC4yNDQtMC43NzRsLTIuNTMyLTguMDY5bC0xLjUzNy00LjY3NSAgICBjLTAuMDY4LTAuMjEtMC4xMTUtMC40MjYtMC4xMzktMC42NmwtMC4zNjUtMS4xNjJoLTQuMjA3Yy0xLjI4NywwLTIuMzM1LTEuMDQ4LTIuMzM1LTIuMzM1YzAtMS4yODgsMS4wNDgtMi4zMzUsMi4zMzUtMi4zMzUgICAgaDUuOTIyYzEuMDI1LDAsMS45MjEsMC42NTcsMi4yMjgsMS42MzVsMC4yNzksMC44OTFoMTguNzQ0aDEuMDQxaDEuMDRoMC4wMDJWMTMuNzE3YzAtMi4yMjUtMS43ODgtNC4wMzYtMy45ODMtNC4wMzZIMy45ODMgICAgQzEuNzg3LDkuNjgxLDAsMTEuNDkyLDAsMTMuNzE3djMwLjI5MmMwLDIuMjI1LDEuNzg3LDQuMDM1LDMuOTgzLDQuMDM1aDM2Ljg4QzQwLjQ1Nyw0Ny44MDQsNDAuMTI4LDQ3LjQ0NywzOS45MjcsNDcuMDAyeiAgICAgTTI2LjAyLDQxLjA1Yy0wLjA1LTAuMTAzLTAuMTQzLTAuMTUxLTAuMjc4LTAuMTUxYy0wLjE1NiwwLTAuMjYzLDAuMDY0LTAuMzI0LDAuMTk0Yy0wLjAzLDAuMDY4LTAuMDQ2LDAuMTUyLTAuMDQ2LDAuMjQ3djEuMjg5ICAgIGgtMC41N1Y0MS4zNGMwLTAuMTI4LTAuMDE0LTAuMjIyLTAuMDQtMC4yNzljLTAuMDQ4LTAuMTA0LTAuMTQyLTAuMTU3LTAuMjgtMC4xNTdjLTAuMTYxLDAtMC4yNywwLjA1My0wLjMyNiwwLjE1NyAgICBjLTAuMDMsMC4wNi0wLjA0NiwwLjE0Ny0wLjA0NiwwLjI2NnYxLjMwM2gtMC41NzRWNDAuNDdoMC41NXYwLjMxNWMwLjA3LTAuMTEzLDAuMTM2LTAuMTkzLDAuMTk5LTAuMjQxICAgIGMwLjEwOS0wLjA4NSwwLjI1Mi0wLjEyNywwLjQyNy0wLjEyN2MwLjE2NiwwLDAuMjk5LDAuMDM2LDAuNDAxLDAuMTA5YzAuMDgzLDAuMDY3LDAuMTQ0LDAuMTU0LDAuMTg3LDAuMjYxICAgIGMwLjA3NC0wLjEyNywwLjE2Ni0wLjIyMiwwLjI3Ni0wLjI4MWMwLjExNy0wLjA1OSwwLjI0Ni0wLjA4OSwwLjM5LTAuMDg5YzAuMDk2LDAsMC4xODksMC4wMTgsMC4yODIsMC4wNTUgICAgYzAuMDkzLDAuMDM4LDAuMTc3LDAuMTAzLDAuMjUyLDAuMTk1YzAuMDYyLDAuMDc2LDAuMTAyLDAuMTY5LDAuMTIzLDAuMjc4YzAuMDEzLDAuMDcyLDAuMDIsMC4xOCwwLjAyLDAuMzE5bC0wLjAwNCwxLjM2NGgtMC41OCAgICB2LTEuMzc4QzI2LjA1OSw0MS4xNjksMjYuMDQ1LDQxLjEwMywyNi4wMiw0MS4wNXogTTIyLjM5Niw0MC45MTljLTAuMDYyLTAuMDMzLTAuMTU0LTAuMDUxLTAuMjc1LTAuMDUxICAgIGMtMC4xMzUsMC0wLjIzMSwwLjAzNS0wLjI4OCwwLjFjLTAuMDQxLDAuMDQ5LTAuMDY2LDAuMTE0LTAuMDgsMC4xOTloLTAuNTQ2YzAuMDEyLTAuMTg5LDAuMDY1LTAuMzQ2LDAuMTYtMC40NjcgICAgYzAuMTQ5LTAuMTksMC40MDgtMC4yODUsMC43NzMtMC4yODVjMC4yMzgsMCwwLjQ0OSwwLjA0NiwwLjYzNCwwLjE0czAuMjc3LDAuMjcxLDAuMjc3LDAuNTMzdjAuOTkzICAgIGMwLDAuMDY4LDAuMDAxLDAuMTUxLDAuMDA0LDAuMjVjMC4wMDQsMC4wNzMsMC4wMTYsMC4xMjQsMC4wMzMsMC4xNWMwLjAxOSwwLjAyNiwwLjA0NiwwLjA0OSwwLjA4MywwLjA2NXYwLjA4M2gtMC42MTYgICAgYy0wLjAxNy0wLjA0NC0wLjAyOS0wLjA4My0wLjAzNS0wLjEyMmMtMC4wMDYtMC4wMzgtMC4wMTItMC4wODMtMC4wMTYtMC4xMzJjLTAuMDc5LDAuMDg1LTAuMTY4LDAuMTU3LTAuMjcxLDAuMjE4ICAgIGMtMC4xMjMsMC4wNjktMC4yNjIsMC4xMDQtMC40MTYsMC4xMDRjLTAuMTk3LDAtMC4zNi0wLjA1Ni0wLjQ4OC0wLjE2OGMtMC4xMjgtMC4xMTEtMC4xOTMtMC4yNzEtMC4xOTMtMC40NzYgICAgYzAtMC4yNjYsMC4xMDQtMC40NTgsMC4zMTEtMC41NzhjMC4xMTQtMC4wNjUsMC4yOC0wLjExMiwwLjUtMC4xMzlsMC4xOTQtMC4wMjRjMC4xMDUtMC4wMTQsMC4xOC0wLjAzLDAuMjI2LTAuMDQ5ICAgIGMwLjA4MS0wLjAzNCwwLjEyMi0wLjA4OCwwLjEyMi0wLjE2QzIyLjQ5LDQxLjAxNCwyMi40NTksNDAuOTUyLDIyLjM5Niw0MC45MTl6IE0yMi41MDEsMzYuNjY1Yy0wLjQ1NSwwLTAuNzczLTAuMTYtMC45NTUtMC40NzggICAgYy0wLjE4NC0wLjMxOC0wLjI3NS0wLjc3MS0wLjI3NS0xLjM1OWMwLTAuNTg5LDAuMDkyLTEuMDQ0LDAuMjc1LTEuMzYzYzAuMTgzLTAuMzE5LDAuNTAxLTAuNDc5LDAuOTU1LTAuNDc5ICAgIHMwLjc3MSwwLjE2LDAuOTU1LDAuNDc5YzAuMTgzLDAuMzE5LDAuMjc1LDAuNzc0LDAuMjc1LDEuMzYzYzAsMC41ODgtMC4wOTIsMS4wNDEtMC4yNzUsMS4zNTkgICAgQzIzLjI3MSwzNi41MDYsMjIuOTU0LDM2LjY2NSwyMi41MDEsMzYuNjY1eiBNMjQuMDcxLDM0LjgyOGMwLTAuNTg4LDAuMDkxLTEuMDQyLDAuMjc1LTEuMzYyICAgIGMwLjE4My0wLjMxOSwwLjUwMS0wLjQ3OSwwLjk1NS0wLjQ3OWMwLjQ1NSwwLDAuNzcyLDAuMTYsMC45NTYsMC40NzljMC4xODMsMC4zMiwwLjI3NCwwLjc3NCwwLjI3NCwxLjM2MiAgICBjMCwwLjU4OS0wLjA5MSwxLjA0MS0wLjI3NCwxLjM2Yy0wLjE4NCwwLjMxNy0wLjUwMSwwLjQ3OC0wLjk1NiwwLjQ3OGMtMC40NTUsMC0wLjc3My0wLjE2LTAuOTU1LTAuNDc4ICAgIEMyNC4xNjIsMzUuODY5LDI0LjA3MSwzNS40MTcsMjQuMDcxLDM0LjgyOHogTTIwLjY1NSwzNi4xODhjLTAuMTg0LDAuMzE3LTAuNTAxLDAuNDc4LTAuOTU0LDAuNDc4ICAgIGMtMC40NTYsMC0wLjc3My0wLjE2LTAuOTU2LTAuNDc4Yy0wLjE4NC0wLjMxOC0wLjI3NS0wLjc3MS0wLjI3NS0xLjM1OWMwLTAuNTg5LDAuMDkxLTEuMDQ0LDAuMjc1LTEuMzYzICAgIGMwLjE4My0wLjMxOSwwLjUwMS0wLjQ3OSwwLjk1Ni0wLjQ3OWMwLjQ1NCwwLDAuNzcxLDAuMTYsMC45NTQsMC40NzljMC4xODMsMC4zMTksMC4yNzQsMC43NzQsMC4yNzQsMS4zNjMgICAgQzIwLjkyOSwzNS40MTcsMjAuODM3LDM1Ljg2OSwyMC42NTUsMzYuMTg4eiBNMjAuNzU3LDM5LjcwMnYyLjkyN2gtMC42MTFsLTEuMTkyLTIuMDc2djIuMDc2aC0wLjU3di0yLjkyN2gwLjY0MmwxLjE2MiwyLjA0MSAgICB2LTIuMDQxSDIwLjc1N3ogTTE0LjE1LDQyLjE2MmMwLjA4NiwwLjA1NSwwLjE5LDAuMDgxLDAuMzEyLDAuMDgxYzAuMTI5LDAsMC4yMzQtMC4wMzIsMC4zMTUtMC4wOTkgICAgYzAuMDQ0LTAuMDM1LDAuMDgzLTAuMDg1LDAuMTE3LTAuMTQ5aDAuNTc4Yy0wLjAxNSwwLjEyOS0wLjA4NSwwLjI1OS0wLjIwOSwwLjM5M2MtMC4xOTQsMC4yMS0wLjQ2NSwwLjMxNS0wLjgxNCwwLjMxNSAgICBjLTAuMjg4LDAtMC41NDItMC4wODgtMC43NjItMC4yNjdjLTAuMjItMC4xNzctMC4zMzEtMC40NjctMC4zMzEtMC44NjZjMC0wLjM3NiwwLjA5OS0wLjY2MywwLjI5OC0wLjg2MiAgICBjMC4xOTktMC4yLDAuNDU2LTAuMzAxLDAuNzc0LTAuMzAxYzAuMTg4LDAsMC4zNTgsMC4wMzUsMC41MDgsMC4xMDNjMC4xNTEsMC4wNjcsMC4yNzYsMC4xNzMsMC4zNzQsMC4zMTkgICAgYzAuMDg4LDAuMTMsMC4xNDYsMC4yNzgsMC4xNzIsMC40NDhjMC4wMTYsMC4xLDAuMDIyLDAuMjQyLDAuMDE5LDAuNDI5aC0xLjU3N0MxMy45MzIsNDEuOTIzLDE0LjAwOCw0Mi4wNzUsMTQuMTUsNDIuMTYyeiAgICAgTTEyLjM4LDQxLjA1Yy0wLjA1LTAuMTAzLTAuMTQzLTAuMTUxLTAuMjc4LTAuMTUxYy0wLjE1NywwLTAuMjY1LDAuMDY0LTAuMzI0LDAuMTk0Yy0wLjAzMSwwLjA2OC0wLjA0NiwwLjE1Mi0wLjA0NiwwLjI0N3YxLjI4OSAgICBoLTAuNTdWNDEuMzRjMC0wLjEyOC0wLjAxMy0wLjIyMi0wLjA0LTAuMjc5Yy0wLjA0OC0wLjEwNC0wLjE0Mi0wLjE1Ny0wLjI4LTAuMTU3Yy0wLjE2MiwwLTAuMjcsMC4wNTMtMC4zMjYsMC4xNTcgICAgYy0wLjAzLDAuMDYtMC4wNDYsMC4xNDctMC4wNDYsMC4yNjZ2MS4zMDNIOS44OTZWNDAuNDdoMC41NXYwLjMxNWMwLjA3LTAuMTEzLDAuMTM3LTAuMTkzLDAuMTk5LTAuMjQxICAgIGMwLjExLTAuMDg1LDAuMjUyLTAuMTI3LDAuNDI3LTAuMTI3YzAuMTY2LDAsMC4yOTksMC4wMzYsMC40MDEsMC4xMDljMC4wODIsMC4wNjcsMC4xNDMsMC4xNTQsMC4xODYsMC4yNjEgICAgYzAuMDc0LTAuMTI3LDAuMTY2LTAuMjIyLDAuMjc2LTAuMjgxYzAuMTE3LTAuMDU5LDAuMjQ2LTAuMDg5LDAuMzktMC4wODljMC4wOTYsMCwwLjE5LDAuMDE4LDAuMjgzLDAuMDU1ICAgIGMwLjA5MiwwLjAzOCwwLjE3NywwLjEwMywwLjI1MiwwLjE5NWMwLjA2MSwwLjA3NiwwLjEwMiwwLjE2OSwwLjEyMywwLjI3OGMwLjAxNCwwLjA3MiwwLjAyLDAuMTgsMC4wMiwwLjMxOWwtMC4wMDQsMS4zNjRoLTAuNTgxICAgIHYtMS4zNzhDMTIuNDE5LDQxLjE2OSwxMi40MDcsNDEuMTAzLDEyLjM4LDQxLjA1eiBNOC43NTgsNDAuOTE5Yy0wLjA2Mi0wLjAzMy0wLjE1NC0wLjA1MS0wLjI3NS0wLjA1MSAgICBjLTAuMTM1LDAtMC4yMzEsMC4wMzUtMC4yODgsMC4xYy0wLjA0MSwwLjA0OS0wLjA2NiwwLjExNC0wLjA4LDAuMTk5SDcuNTY5YzAuMDExLTAuMTg5LDAuMDY1LTAuMzQ2LDAuMTU5LTAuNDY3ICAgIGMwLjE1LTAuMTksMC40MDgtMC4yODUsMC43NzQtMC4yODVjMC4yMzgsMCwwLjQ0OSwwLjA0NiwwLjYzNCwwLjE0YzAuMTg0LDAuMDk0LDAuMjc3LDAuMjcxLDAuMjc3LDAuNTMzdjAuOTkzICAgIGMwLDAuMDY4LDAuMDAxLDAuMTUxLDAuMDA0LDAuMjVjMC4wMDQsMC4wNzMsMC4wMTUsMC4xMjQsMC4wMzMsMC4xNXMwLjA0NiwwLjA0OSwwLjA4MywwLjA2NXYwLjA4M0g4LjkxOCAgICBjLTAuMDE3LTAuMDQ0LTAuMDI5LTAuMDgzLTAuMDM2LTAuMTIyYy0wLjAwNi0wLjAzOC0wLjAxMS0wLjA4My0wLjAxNS0wLjEzMmMtMC4wNzksMC4wODUtMC4xNjksMC4xNTctMC4yNzIsMC4yMTggICAgYy0wLjEyMywwLjA2OS0wLjI2MiwwLjEwNC0wLjQxNiwwLjEwNGMtMC4xOTcsMC0wLjM2MS0wLjA1Ni0wLjQ4OS0wLjE2OGMtMC4xMjgtMC4xMTEtMC4xOTMtMC4yNzEtMC4xOTMtMC40NzYgICAgYzAtMC4yNjYsMC4xMDMtMC40NTgsMC4zMTEtMC41NzhjMC4xMTQtMC4wNjUsMC4yOC0wLjExMiwwLjUtMC4xMzlsMC4xOTQtMC4wMjRjMC4xMDUtMC4wMTQsMC4xOC0wLjAzLDAuMjI2LTAuMDQ5ICAgIGMwLjA4MS0wLjAzNCwwLjEyMi0wLjA4OCwwLjEyMi0wLjE2QzguODUyLDQxLjAxNCw4LjgyLDQwLjk1Miw4Ljc1OCw0MC45MTl6IE05LjQ1NCwzNi4xODhjLTAuMTg0LDAuMzE3LTAuNTAxLDAuNDc4LTAuOTU1LDAuNDc4ICAgIGMtMC40NTUsMC0wLjc3My0wLjE2LTAuOTU1LTAuNDc4Yy0wLjE4NC0wLjMxOC0wLjI3NS0wLjc3MS0wLjI3NS0xLjM1OWMwLTAuNTg4LDAuMDkyLTEuMDQyLDAuMjc1LTEuMzYyICAgIGMwLjE4My0wLjMxOSwwLjUwMS0wLjQ3OSwwLjk1NS0wLjQ3OWMwLjQ1NCwwLDAuNzcxLDAuMTYsMC45NTUsMC40NzljMC4xODMsMC4zMiwwLjI3NSwwLjc3NCwwLjI3NSwxLjM2MiAgICBDOS43MjksMzUuNDE3LDkuNjM3LDM1Ljg2OSw5LjQ1NCwzNi4xODh6IE02LjE4OCwyNC42ODhWMjIuNkg4LjN2Mi4xMzZINi4xOTNDNi4xOTMsMjQuNzE5LDYuMTg4LDI0LjcwNCw2LjE4OCwyNC42ODh6ICAgICBNMTQuNDI1LDI0LjY4OGMwLDAuMDE2LTAuMDA0LDAuMDMxLTAuMDA1LDAuMDQ4aC0yLjEwNlYyMi42aDIuMTEyVjI0LjY4OHogTTEyLjMxMywyNS44MzZoMS44NzcgICAgYy0wLjM0MSwwLjgwMi0xLjAzNCwxLjQwOS0xLjg3NywxLjY2VjI1LjgzNnogTTExLjc2NCwyMS40OTlWMjEuNWgtMC41NTF2My4yMzVIOS40di01LjM0MmgyLjA4MyAgICBjMS4zMjksMCwyLjQ0MywwLjg5MywyLjgwNSwyLjEwNUgxMS43NjR6IE04LjMsMjEuNDk5SDYuMzI1YzAuMjgzLTAuOTQ4LDEuMDI2LTEuNjg5LDEuOTc1LTEuOTcyVjIxLjQ5OXogTTguMywyNS44MzZ2MS42NiAgICBjLTAuODQzLTAuMjUxLTEuNTM2LTAuODU4LTEuODc3LTEuNjZIOC4zeiBNOS40LDI1LjgzNmgxLjgxM3YxLjc5M0g5LjRWMjUuODM2eiBNMTEuMywzMi45ODZjMC40NTUsMCwwLjc3MiwwLjE2LDAuOTU2LDAuNDc5ICAgIGMwLjE4MywwLjMyLDAuMjc0LDAuNzc0LDAuMjc0LDEuMzYyYzAsMC41ODktMC4wOTEsMS4wNDEtMC4yNzQsMS4zNmMtMC4xODQsMC4zMTctMC41MDEsMC40NzgtMC45NTYsMC40NzggICAgYy0wLjQ1NSwwLTAuNzczLTAuMTYtMC45NTUtMC40NzhjLTAuMTg0LTAuMzE5LTAuMjc1LTAuNzcxLTAuMjc1LTEuMzZjMC0wLjU4OCwwLjA5MS0xLjA0MiwwLjI3NS0xLjM2MiAgICBDMTAuNTI3LDMzLjE0NiwxMC44NDYsMzIuOTg2LDExLjMsMzIuOTg2eiBNNS42OTksMzIuOTg2YzAuNDU0LDAsMC43NzEsMC4xNiwwLjk1NSwwLjQ3OWMwLjE4MywwLjMyLDAuMjc0LDAuNzc0LDAuMjc0LDEuMzYyICAgIGMwLDAuNTg5LTAuMDkxLDEuMDQxLTAuMjc0LDEuMzZjLTAuMTg0LDAuMzE3LTAuNTAxLDAuNDc4LTAuOTU1LDAuNDc4Yy0wLjQ1NiwwLTAuNzczLTAuMTYtMC45NTYtMC40NzggICAgYy0wLjE4NC0wLjMxOS0wLjI3NS0wLjc3MS0wLjI3NS0xLjM2YzAtMC41ODgsMC4wOTEtMS4wNDIsMC4yNzUtMS4zNjJDNC45MjYsMzMuMTQ2LDUuMjQ0LDMyLjk4Niw1LjY5OSwzMi45ODZ6IE00Ljc0NSwzOS43MDIgICAgaDAuNjQybDEuMTYzLDIuMDQxdi0yLjA0MWgwLjU3djIuOTI3SDYuNTA2bC0xLjE5Mi0yLjA3NnYyLjA3NmgtMC41N1YzOS43MDJ6IE0xMi44NzEsMzQuODI4YzAtMC41ODgsMC4wOTItMS4wNDIsMC4yNzUtMS4zNjIgICAgYzAuMTgzLTAuMzE5LDAuNTAxLTAuNDc5LDAuOTU1LTAuNDc5czAuNzcxLDAuMTYsMC45NTQsMC40NzljMC4xODMsMC4zMiwwLjI3NCwwLjc3NCwwLjI3NCwxLjM2MmMwLDAuNTg5LTAuMDkxLDEuMDQxLTAuMjc0LDEuMzYgICAgYy0wLjE4NCwwLjMxNy0wLjUwMSwwLjQ3OC0wLjk1NCwwLjQ3OGMtMC40NTUsMC0wLjc3My0wLjE2LTAuOTU1LTAuNDc4QzEyLjk2MiwzNS44NjksMTIuODcxLDM1LjQxNywxMi44NzEsMzQuODI4eiAgICAgTTI3Ljc4OSw0Mi4xNjJjMC4wODYsMC4wNTUsMC4xOTEsMC4wODEsMC4zMTMsMC4wODFjMC4xMjksMCwwLjIzMy0wLjAzMiwwLjMxNC0wLjA5OWMwLjA0My0wLjAzNSwwLjA4My0wLjA4NSwwLjExNy0wLjE0OWgwLjU3OCAgICBjLTAuMDE0LDAuMTI5LTAuMDg1LDAuMjU5LTAuMjA5LDAuMzkzYy0wLjE5NCwwLjIxLTAuNDY2LDAuMzE1LTAuODE0LDAuMzE1Yy0wLjI4OCwwLTAuNTQzLTAuMDg4LTAuNzYzLTAuMjY3ICAgIGMtMC4yMi0wLjE3Ny0wLjMzLTAuNDY3LTAuMzMtMC44NjZjMC0wLjM3NiwwLjA5OS0wLjY2MywwLjI5OC0wLjg2MmMwLjE5OS0wLjIsMC40NTctMC4zMDEsMC43NzQtMC4zMDEgICAgYzAuMTg4LDAsMC4zNTgsMC4wMzUsMC41MDksMC4xMDNjMC4xNTEsMC4wNjcsMC4yNzUsMC4xNzMsMC4zNzQsMC4zMTljMC4wODgsMC4xMywwLjE0NiwwLjI3OCwwLjE3MiwwLjQ0OCAgICBjMC4wMTYsMC4xLDAuMDIyLDAuMjQyLDAuMDE5LDAuNDI5aC0xLjU3N0MyNy41NzEsNDEuOTIzLDI3LjY0Nyw0Mi4wNzUsMjcuNzg5LDQyLjE2MnogTTI5LjA1NywzMy40NjYgICAgYzAuMTgzLDAuMzIsMC4yNzUsMC43NzQsMC4yNzUsMS4zNjJjMCwwLjU4OS0wLjA5MiwxLjA0MS0wLjI3NSwxLjM2Yy0wLjE4NCwwLjMxNy0wLjUwMSwwLjQ3OC0wLjk1NSwwLjQ3OCAgICBjLTAuNDU1LDAtMC43NzMtMC4xNi0wLjk1NS0wLjQ3OGMtMC4xODQtMC4zMTktMC4yNzUtMC43NzEtMC4yNzUtMS4zNmMwLTAuNTg4LDAuMDkyLTEuMDQyLDAuMjc1LTEuMzYyICAgIGMwLjE4My0wLjMxOSwwLjUwMS0wLjQ3OSwwLjk1NS0wLjQ3OVMyOC44NzQsMzMuMTQ2LDI5LjA1NywzMy40NjZ6IE00OC4zMjgsMjUuMzc4Yy0wLjgyOCwwLTEuNjA1LTAuMjA1LTIuMzA4LTAuNTQxICAgIGMtMC44NTQsMC41NDQtMS44NjEsMC44Ny0yLjk0NywwLjg3Yy0zLjA0MiwwLTUuNTE5LTIuNDc2LTUuNTE5LTUuNTJjMC0zLjA0MywyLjQ3Ny01LjUyLDUuNTE5LTUuNTIgICAgYzAuOTQzLDAsMS44MiwwLjI2LDIuNTk4LDAuNjhjMC43ODctMC40NTIsMS42ODctMC43MywyLjY1Ny0wLjczYzIuOTY3LDAsNS4zODEsMi40MTMsNS4zODEsNS4zODEgICAgQzUzLjcwOCwyMi45NjUsNTEuMjkzLDI1LjM3OCw0OC4zMjgsMjUuMzc4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik00NC4wMDMsMTkuODU1aC0wLjUyMWgtMC41MjFjMC4wMDYtMC4yMzksMC4wMzMtMC40NzIsMC4wNy0wLjcwMmgwLjUyMWgwLjUyMWgyLjk1NGMtMC4wNTYtMC4yOS0wLjEzOS0wLjU2Ni0wLjI0NS0wLjgzNSAgICBoLTIuNDU1aC0wLjU0NWgtMC41NDJjMC4wODMtMC4yNSwwLjE4LTAuNDg5LDAuMjk3LTAuNzIyaDAuNTg3aDAuNTkyaDEuNzAxYy0wLjE4NS0wLjMwMS0wLjM5MS0wLjU4My0wLjYzNS0wLjgzNmgtMC4zMTdoLTAuNzM5ICAgIGgtMC42NjhjMC4yLTAuMjYyLDAuNDItMC41MDYsMC42NjQtMC43MjhjLTAuNTEzLTAuMjA0LTEuMDY1LTAuMzI0LTEuNjQ5LTAuMzI0Yy0yLjQ2OSwwLTQuNDc4LDIuMDEtNC40NzgsNC40NzggICAgYzAsMi40NjksMi4wMDksNC40NzksNC40NzgsNC40NzljMC42OTcsMCwxLjM1My0wLjE3NSwxLjk0MS0wLjQ2MWMtMC4xOS0wLjE1MS0wLjM3OS0wLjMwMi0wLjU0OC0wLjQ3NmgwLjc4MWgwLjA1MSAgICBjMC4xMy0wLjEwMSwwLjIyOC0wLjIzNCwwLjM0Ni0wLjM0N2MwLjE2NS0wLjE2LDAuMzQ0LTAuMzA1LDAuNDg0LTAuNDg4aC0xLjAxaC0wLjY3NWgtMC42MzcgICAgYy0wLjEzNC0wLjIwNS0wLjI0OC0wLjQyMi0wLjM1My0wLjY0NmgwLjU4OGgwLjU5M2gxLjkwNmMwLjE0My0wLjI2NSwwLjI1Ni0wLjU0MywwLjM0Ni0wLjgzNWgtMi42NDNINDMuN2gtMC41NDIgICAgYy0wLjA2NC0wLjIzNS0wLjEwOS0wLjQ3NS0wLjE0My0wLjcyMmgwLjUyMWgwLjUyMWgyLjk5MmMwLjAzMS0wLjIxNSwwLjA2NS0wLjQzLDAuMDY1LTAuNjU2YzAtMC4wNjItMC4wMTUtMC4xMTgtMC4wMTgtMC4xOCAgICBMNDQuMDAzLDE5Ljg1NUw0NC4wMDMsMTkuODU1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik02MC4wNSwzMC4yOTNMNjAuMDUsMzAuMjkzaC0xLjA0MmgtMS4wNDFIMzguNDZsLTAuNTA5LTEuNjIxYy0wLjE2OS0wLjU0LTAuNjY5LTAuOTA2LTEuMjM0LTAuOTA2aC01LjkyMiAgICBjLTAuNzE0LDAtMS4yOTQsMC41NzktMS4yOTQsMS4yOTNjMCwwLjcxNCwwLjU4LDEuMjk0LDEuMjk0LDEuMjk0aDQuOTcybDAuNjI4LDJjMC4wMTMsMC4xNzgsMC4wNDEsMC4zNTgsMC4xMDEsMC41MzcgICAgbDEuNTM2LDQuNjc2bDIuNjM2LDguMzk2bDAuMTQ1LDAuNDYzYzAuMDczLDAuMjMyLDAuMjE4LDAuNDI1LDAuMzkzLDAuNTc4YzAuMjI5LDAuMjAxLDAuNTIxLDAuMzI3LDAuODQzLDAuMzI3SDU3LjggICAgYzAuNzE0LDAsMS4yOTQtMC41NzksMS4yOTQtMS4yOTNjMC0wLjMyNS0wLjEzMS0wLjYxMS0wLjMyOC0wLjg0Yy0wLjIzMS0wLjI2Ny0wLjU2Mi0wLjQ0Mi0wLjk0MS0wLjQ0OSAgICBjLTAuMDA4LDAtMC4wMTYtMC4wMDUtMC4wMjQtMC4wMDVINDIuOTk3bC0xLjAwOS0zLjIxNmgxNS45ODFoMC4xODdjMC4yOTYsMCwwLjU4NC0wLjA1OSwwLjg1NC0wLjE2MyAgICBjMC40MDUtMC4xNTQsMC43NjQtMC40MTcsMS4wNDItMC43NDhjMC4yNDgtMC4yOTYsMC40MzQtMC42NDYsMC41MTctMS4wM2wxLjQ5LTYuNzk1YzAuMTM4LTAuNjI4LTAuMDA1LTEuMjYzLTAuMzktMS43NDIgICAgQzYxLjI4NCwzMC41NjgsNjAuNjkzLDMwLjI5Myw2MC4wNSwzMC4yOTN6IE01OC4wNzYsMzguOTM4aC0wLjEwOGwtMTYuNzA4LDAuMDA1Yy0wLjAxNi0wLjAwNi0wLjA0Mi0wLjAyMi0wLjA1My0wLjAyMiAgICBjLTAuMDAyLDAtMC4wMDQsMC4wMDItMC4wMDQsMC4wMDhsLTAuNTY2LTEuNzI2aDE3LjMzMWgwLjQ4NEw1OC4wNzYsMzguOTM4eiBNNTkuMDE1LDM0LjYxNmgtMC4wMDdoLTEuMDQxaC0xOC4xNWgtMC4wMzIgICAgbC0wLjU2OS0xLjczNWgwLjA1N2gxOC42OTVoMS4wNDFoMC4zODNMNTkuMDE1LDM0LjYxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8Y2lyY2xlIGN4PSI0NC41NDIiIGN5PSI1MC41ODMiIHI9IjEuODQ2IiBmaWxsPSIjRkZGRkZGIi8+CgkJPGNpcmNsZSBjeD0iNTUuOTczIiBjeT0iNTAuNTgzIiByPSIxLjg0NiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                        style="
+                    width: 100%;
+    margin-top: 10px;
+    max-width: 120px;
+    margin-bottom: -10px;
+"></div>
+                <div class="date-area mx-data">
+                    <div class="ars-bg">
+
+                        {{_e('Информация')}}
+                    </div>
+                </div>
+                <form action="#" onsubmit="return false;" id="order__card_form">
+                    <div class="ars-bg mbl-sw">
+
+                        <div class="select-form">
+                            <label>{{_e('ID пользователя')}}</label>
+                            <input class="form-control" value="{{MyProfile.webtransfer_id}}" disabled></div>
+                        <div class="row">
+                            <div class="select-form col-sm-6">
+                                <label>{{_e('Имя')}}</label>
+                                <input class="form-control" name="first_name" placeholder="{{_e('Пример:')}} John"
+                                       value="{{MyProfile.first_name}}"></div>
+
+                            <div class="select-form col-sm-6">
+                                <label>{{_e('Фамилия')}}</label>
+                                <input class="form-control" name="last_name" placeholder="{{_e('Пример:')}} Smith"
+                                       value="{{MyProfile.last_name}}"></div>
+                        </div>
+
+                        <div class="select-form">
+                            <label>{{_e('Страна')}}</label>
+                            <select class="sels" name="place" id="place_filed">
+                                <option value="AF" selected="">Afghanistan</option>
+                                <option value="AX">Alandislands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="ATA">Antarctica</option>
+                                <option value="AG">Antiguaand Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonair</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BR">Brazil</option>
+                                <option value="VG">British Virgin Islands</option>
+                                <option value="BN">Brunei</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">BurkinaFaso</option>
+                                <option value="MM">Burma(Myanmar)</option>
+                                <option value="BI">Burundi</option>
+                                <option value="BT">Butane</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">CapeVerde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote d Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">CzechRepublic</option>
+                                <option value="CD">Democratic Republicofthe Congo</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French polynesia</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="SCG">Gaza Sector</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="GP">Gvadelupa</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IMN">Isle Of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Laos</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macau</option>
+                                <option value="MK">Macedonia</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia</option>
+                                <option value="MD">Moldova</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="NX">Nagorni-Karabakh</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">NewCaledonia</option>
+                                <option value="NZ">NewZealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NFK">NorfolkIslands</option>
+                                <option value="KP">NorthKorea</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn Islands</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto-Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="CG">Republic of the Congo</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russia</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="SH">Saint Helena Island</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MAF">Saint Marten</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent</option>
+                                <option value="SV">Salvador</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San-Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomonis lands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="KR">South Korea</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="BQ1">St Estatius</option>
+                                <option value="BLM">St. Barthelemy</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Surinam</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syria</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="AE">UAE</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VI">US Virgin Islands</option>
+                                <option value="US">USA</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VA">VaticanCity</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">West Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="select-form col-xs-7">
+                                <label>{{_e('Город')}}</label>
+                                <input class="form-control" name="adr_town" placeholder="{{_e('Пример:')}} New York"
+                                       value="{{MyProfile.adr_town}}"></div>
+                            <div class="select-form col-xs-5">
+                                <label>{{_e('Индекс')}}</label>
+                                <input class="form-control" name="adr_index" placeholder="{{_e('Пример:')}} 10120"
+                                       value="{{MyProfile.adr_index}}"></div>
+                        </div>
+
+                        <div class="select-form">
+                            <label>{{_e('Адрес')}}</label>
+                            <input class="form-control" name="adr_street" placeholder="Пример: E Houston St"
+                                   value="{{MyProfile.adr_street}}"></div>
+                        <div class="select-form">
+                            <label>{{_e('Пол')}}</label>
+                            <select class="sels" name="sex" id="sex_filed">
+                                <option value="" selected="selected" disabled>{{_e('Не указано')}}</option>
+                                <option value="1">{{_e('Мужской')}}</option>
+                                <option value="2">{{_e('Женский')}}</option>
+                            </select>
+                        </div>
+                        <!--<div class="select-form">-->
+                        <!--<label>Отчество</label>-->
+                        <!--<input class="form-control" placeholder="Пример: Ivanovich" value="{{MyProfile.webtransfer_id}}"></div>-->
+
+                        <div class="select-form">
+                            <label>{{_e('Дата рождения')}} <span style="    color: rgb(97, 172, 255);
+    font-size: 12px;
+    font-weight: 200;
+    font-style: italic;
+    font-family: -webkit-body;">   {{_e('(дд мм гггг)')}}</span></label>
+
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <select class="sels" name="born_0" id="born2">
+                                        <option selected disabled>{{_e('День')}}</option>
+
+                                        {{#dd}}
+                                        <option>{{.}}</option>
+                                        {{/}}
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
+                                    <select class="sels" name="born_1" id="born1">
+                                        <option selected disabled>{{_e('Месяц')}}</option>
+
+                                        {{#mm}}
+                                        <option>{{.}}</option>
+                                        {{/}}
+
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
+                                    <select class="sels" name="born_2" id="born0">
+                                        <option selected disabled>{{_e('Год')}}</option>
+                                        {{#yyyy}}
+                                        <option>{{.}}</option>
+                                        {{/}}
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    {{#if tabPage =='plastic'}}
+                    <div class="date-area mx-data">
+                        <div class="ars-bg">{{_e('Адрес доставки')}}</div>
+                    </div>
+
+                    <div class="ars-bg mbl-sw">
+
+                        <div class="select-form">
+                            <label>{{_e('Страна')}}</label>
+                            <select class="sels" name="place_delivery" id="place_filed_delivery">
+                                <option value="AF" selected="">Afghanistan</option>
+                                <option value="AX">Alandislands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="ATA">Antarctica</option>
+                                <option value="AG">Antiguaand Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonair</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BR">Brazil</option>
+                                <option value="VG">British Virgin Islands</option>
+                                <option value="BN">Brunei</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">BurkinaFaso</option>
+                                <option value="MM">Burma(Myanmar)</option>
+                                <option value="BI">Burundi</option>
+                                <option value="BT">Butane</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">CapeVerde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote d Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">CzechRepublic</option>
+                                <option value="CD">Democratic Republicofthe Congo</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French polynesia</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="SCG">Gaza Sector</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="GP">Gvadelupa</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IMN">Isle Of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Laos</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macau</option>
+                                <option value="MK">Macedonia</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia</option>
+                                <option value="MD">Moldova</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="NX">Nagorni-Karabakh</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">NewCaledonia</option>
+                                <option value="NZ">NewZealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NFK">NorfolkIslands</option>
+                                <option value="KP">NorthKorea</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn Islands</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto-Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="CG">Republic of the Congo</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russia</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="SH">Saint Helena Island</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MAF">Saint Marten</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent</option>
+                                <option value="SV">Salvador</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San-Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomonis lands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="KR">South Korea</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="BQ1">St Estatius</option>
+                                <option value="BLM">St. Barthelemy</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Surinam</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syria</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="AE">UAE</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VI">US Virgin Islands</option>
+                                <option value="US">USA</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VA">VaticanCity</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">West Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="select-form col-xs-7">
+                                <label>{{_e('Город')}}</label>
+                                <input class="form-control" name="adr_town_delivery"
+                                       placeholder="{{_e('Пример:')}} New York"
+                                       value="{{MyProfile.adr_town}}"></div>
+                            <div class="select-form col-xs-5">
+                                <label>{{_e('Индекс')}}</label>
+                                <input class="form-control" name="adr_index_delivery"
+                                       placeholder="{{_e('Пример:')}} 10120"
+                                       value="{{MyProfile.adr_index}}"></div>
+                        </div>
+
+                        <div class="select-form">
+                            <label>{{_e('Аддрес')}}</label>
+                            <input class="form-control" name="adr_street_delivery" placeholder="Пример: E Houston St"
+                                   value="{{MyProfile.adr_street}}"></div>
+
+
+                    </div>
+                    {{/if}}
+                    <div class="date-area mx-data">
+                        <div class="ars-bg">{{_e('Контактные данные')}}</div>
+                    </div>
+
+                    <div class="ars-bg mbl-sw">
+
+                        <div class="select-form">
+                            <label>{{_e('Почта')}}</label>
+                            <input class="form-control" name="email"
+                                   placeholder="{{_e('Пример:')}} example@telegraf.money"
+                                   value="{{MyProfile.email}}"></div>
+                        <div class="form-wrapper cf select-form" style="    margin-bottom: 26px;">
+                            <label>{{_e('Телефон')}}</label>
+
+                            <input type="tel" name="phone" placeholder="Phone number" class="phone-inp" required=""
+                                   {{#if MyProfile.phone !='' }}disabled="true" {{/if}}>
+                            {{#if MyProfile.phone == ''}}
+                            <button type="button"
+                                    on-click="set_phone">
+                                {{_e('Верифицировать')}}
+                            </button>
+                            {{/if}}
+                        </div>
+
+
+                    </div>
+                    <div class="date-area mx-data">
+                        <div class="ars-bg">{{_e('Детали карты')}}</div>
+                    </div>
+
+                    <div class="ars-bg mbl-sw" style="    padding: 0px 5px;">
+                        <div class="select-form" style="padding: 0 15px 11px 15px;">
+                            <label>{{_e('Имя на карте')}}</label>
+                            <input class="form-control" name="holder_name" type="tel"
+                                   placeholder="{{_e('Пример:')}} JON GRAF"
+                                   value="{{MyProfile.first_name.toUpperCase()}} {{MyProfile.last_name.toUpperCase()}}">
+                        </div>
+                        <!--<div class="select-form" style="margin-bottom: 10px;margin-top: 0;">-->
+                        <!--<label>{{_e('Вид карты')}}</label>-->
+                        <input class="sels" name="card_type" type="hidden" value="virtual"/>
+                        <input class="sels" name="agree" type="hidden" value="true"/>
+                        <!--</div>-->
+                        <div class="select-form col-xs-6" style="margin-bottom: 10px;margin-top: 0;">
+                            <label>{{_e('Тип карты')}}</label>
+                            <select class="sels" name="card_system">
+
+                                <option value="visa">VISA</option>
+                                <option value="mastercard" disabled>MasterCard</option>
+                            </select>
+                        </div>
+                        <div class="select-form col-xs-6" style="margin-bottom: 10px;margin-top: 0;">
+                            <label>{{_e('Валюта карты')}}</label>
+                            <select class="sels" name="card_currency">
+
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{#if tabPage =='plastic'}}
+
+                    <div class="date-area mx-data">
+                        <div class="ars-bg">{{_e('Оплата за выпуск и доставку карты')}}</div>
+                    </div>
+                    {{/if}}
+
+
+                    <div class="ars-bg mbl-sw" style="    padding: 0px 5px;">
+                        {{#if tabPage =='plastic'}}
+                        <div class="select-form col-xs-6" style="margin-bottom: 10px;margin-top: 0;">
+                            <label>{{_e('Способ доставки')}}</label>
+                            <select class="sels" name="delivery">
+
+                                <option value="standatr">{{_e('Обычная: $10')}}</option>
+                                <option value="express">{{_e('Экспресс: $75')}}</option>
+                            </select>
+                        </div>
+                        <div class="select-form col-xs-6" style="margin-bottom: 10px;margin-top: 0;">
+                            <label>{{_e('Метод оплаты')}}</label>
+                            <select class="sels" name="pay">
+                                <option value="" selected="selected" disabled>{{_e('— Выбрать —')}}</option>
+
+                                <option value="payeer">Payeer</option>
+                                <option value="okpay">OkPay</option>
+                                <option value="perfect">Perfect Money</option>
+                            </select>
+                        </div>
+                        {{/if}}
+
+                        <div class="clearfix"></div>
+                        <br>
+                        <button class="button-n" on-click="order">
+                            {{_e('Заказать карту')}}
+
+                        </button>
+                        <button class="button-n" on-click="setPage:cards"> {{_e('Отменить')}}</button>
+
+                    </div>
+
+                </form>
+                <div class="clearfix"></div>
+
+                <div class="close-block"></div>
+
+            </scroll>
+
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+        <h1>{{_e('Чаты')}} <i class="fa fa-commenting-o" aria-hidden="true"></i></h1>
+        <div class="spl-icn"></div>
+        <scroll class_scroll="" class_content="" id_content="">
+            <Chats/>
+        </scroll>
+
+    </div>
+
+</div>

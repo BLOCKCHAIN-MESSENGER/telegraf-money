@@ -1,0 +1,36 @@
+// English
+/* Structure example */
+
+/views/App/
+    App.element.min.js
+    App.html
+    App.min.css
+
+or
+
+/views/Example/
+    Example.element.min.js
+    Example.html
+    Example.min.css
+
+
+
+(/views/*/*.css /views/*/*.less /views/*/*.js files developer) (not upload in production server)
+
+// Руский
+/* Пример структуры views*/
+
+/views/App/
+    App.element.min.js
+    App.html
+    App.min.css
+
+еще один пример
+
+/views/Example/
+    Example.element.min.js
+    Example.html
+    Example.min.css
+
+НЕ рекомендуется изменять минимизированые файлы такие как .element.min.js .min.css  пользуйтесь сорцами для разроботки .element.js .less
+(/views/*/*.css /views/*/*.less /views/*/*.js файлы для разработки) (не рекомундуется загружать на продакшен сервер)

@@ -1,0 +1,1342 @@
+/* line 1, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031}}
+body .new-cards-area .clzs:hover {
+  z-index: 1 !important;
+  position: relative !important;
+}
+/* line 5, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000035}}
+.new-cards-area .clzs {
+  clear: both !important;
+  height: 214px;
+}
+/* line 9, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000039}}
+.new-cards-area .back.card-full {
+  margin-top: -174px !important;
+}
+/* line 12, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000312}}
+.new-cards-area p.ppls {
+  clear: both;
+  display: block;
+  width: 100%;
+  color: #fff;
+  line-height: 10px;
+  font-size: 10px;
+  margin-top: 101px;
+  position: absolute;
+}
+/* line 22, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000322}}
+.new-cards-area .block-icon {
+  width: 20px !important;
+  margin-top: 1px !important;
+}
+@media (min-width: 900px) {
+  /* line 27, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000327}}
+  .new-cards-area .back.card-full {
+    margin-top: -174px !important;
+    margin-left: 60px;
+    background: #dc323d;
+    background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: linear-gradient(to bottom, #dc323d 0%, #6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc323d', endColorstr='#6d0019', GradientType=0);
+  }
+}
+@media (min-width: 900px) and (max-width: 899px) {
+  /* line 39, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000339}}
+  .new-cards-area .back.card-full {
+    margin-top: -174px !important;
+    margin-left: 20px !important;
+    background: #dc323d;
+    background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: linear-gradient(to bottom, #dc323d 0%, #6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc323d', endColorstr='#6d0019', GradientType=0);
+  }
+}
+@media (max-width: 600px) {
+  /* line 50, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000350}}
+  .new-cards-area .clzs:first-child .back.card-full {
+    margin-top: -200px !important;
+  }
+  /* line 53, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000353}}
+  .new-cards-area .clzs .back.card-full {
+    margin-top: -200px !important;
+  }
+}
+/* line 57, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000357}}
+body .new-cards-area .clzs .card-full {
+  box-shadow: 1px 1px 13px 0px rgba(50, 50, 50, 0.28) !important;
+}
+/* line 60, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000360}}
+.new-cards-area .flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+/* line 66, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000366}}
+.new-cards-area .flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 72, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000372}}
+.new-cards-area .prise-art strong {
+  margin-left: -6px;
+}
+/* line 75, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000375}}
+.new-cards-area .flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+/* line 86, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000386}}
+.new-cards-area .front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 96, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000396}}
+.new-cards-area .front {
+  z-index: 2;
+}
+/* line 99, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\0000399}}
+.new-cards-area .back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border: 0;
+  background: #dc323d;
+  background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+  background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+  background: linear-gradient(to bottom, #dc323d 0%, #6d0019 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc323d', endColorstr='#6d0019', GradientType=0);
+}
+/* line 111, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003111}}
+.new-cards-area .block-icon {
+  top: 78px !important;
+}
+/* line 114, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003114}}
+.new-cards-area .balance-nv a {
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  padding: 9px 16px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #0b5bba;
+  width: 138px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+  font-size: 12px !important;
+  clear: both;
+  display: block;
+  margin-bottom: -36px;
+  text-decoration: none;
+  font-size: 11px;
+  margin-top: 24px !important;
+  width: 106px;
+  height: 19px;
+  padding-top: 7px;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 140, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003140}}
+body .new-cards-area .balance-nv a:hover {
+  background: #D63749 !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+/* line 145, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003145}}
+.new-cards-area .hover-area-card h5 {
+  position: absolute !important;
+  margin-top: 90px !important;
+}
+@media (max-width: 310px) {
+  /* line 150, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003150}}
+  body .new-cards-area .numb-card {
+    font-size: 13px !important;
+  }
+  /* line 153, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003153}}
+  body .new-cards-area .prise-art {
+    font-size: 19px !important;
+  }
+  /* line 156, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003156}}
+  body .new-cards-area .card-full {
+    height: 137px;
+  }
+}
+/* line 160, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003160}}
+.new-cards-area a.info-areas {
+  clear: both;
+  display: block;
+  margin-bottom: -22px;
+  text-decoration: none;
+  font-size: 11px;
+}
+/* line 167, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003167}}
+.new-cards-area a.info-areas:hover {
+  opacity: 0.8;
+}
+/* line 170, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003170}}
+.new-cards-area .hover-area-card h5 {
+  color: #fff;
+  margin-top: 0px;
+  height: 20px;
+  line-height: 1px;
+  padding-top: 0 !important;
+  margin-bottom: 7px !important;
+}
+@media (min-width: 900px) {
+  /* line 179, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003179}}
+  .new-cards-area .card-full a.info-areas {
+    display: none !important;
+  }
+  /* line 182, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003182}}
+  .new-cards-area .hover-area-card .clast-dv,
+  .new-cards-area .hover-area-card button.act-al {
+    display: none !important;
+  }
+}
+/* line 186, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003186}}
+body .new-cards-area .back.card-full:hover {
+  background: #dc323d;
+  background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+  background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+  background: linear-gradient(to bottom, #dc323d 0%, #6d0019 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc323d', endColorstr='#6d0019', GradientType=0);
+}
+/* line 193, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003193}}
+body .new-cards-area a.info-areas {
+  clear: both;
+  display: block;
+  margin-bottom: -36px;
+  text-decoration: none;
+  font-size: 11px;
+  margin-top: 24px !important;
+  height: 40px;
+  padding: 0;
+  width: 139px;
+  line-height: 37px;
+}
+/* line 205, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003205}}
+.new-cards-area .img-ls {
+  float: left;
+  right: auto;
+  left: 12px;
+}
+/* line 210, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003210}}
+.new-cards-area .card-full img {
+  display: block;
+  float: left !important;
+}
+@media (min-width: 360px) and (max-width: 699px) {
+  /* line 215, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003215}}
+  .new-cards-area .card-full {
+    position: relative;
+    max-width: 321px !important;
+    height: 173px !important;
+  }
+}
+/* line 221, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003221}}
+.new-cards-area a.info-areas:hover {
+  background: #DC323D !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+/* line 226, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003226}}
+.new-cards-area .img-l i {
+  font-style: normal;
+  font-size: 11px;
+  vertical-align: text-bottom;
+}
+/* line 231, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003231}}
+.new-cards-area .balance-nv h5 i {
+  font-style: normal;
+  font-size: 18px;
+  margin-left: -6px;
+  vertical-align: super;
+}
+/* line 237, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003237}}
+body .new-cards-area .clzs .card-full.card-real {
+  background: url(../../../src/img/rcard.png) 0 0 no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 1px 1px 13px 0px rgba(50, 50, 50, 0.28) !important;
+}
+/* line 242, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003242}}
+body .new-cards-area .clzs .card-full.card-virtual {
+  background: url(../../../src/img/vcard.png) 0 0 no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 1px 1px 13px 0px rgba(50, 50, 50, 0.28) !important;
+}
+/* line 247, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003247}}
+.new-cards-area .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+  float: right;
+  clear: both;
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+/* line 258, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003258}}
+.new-cards-area .card-full {
+  position: relative;
+  max-width: 255px;
+  height: 140px;
+}
+/* line 263, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003263}}
+.new-cards-area a.blks-btn {
+  background: #ffffff;
+  border: 0;
+  border-radius: 50px;
+  padding: 9px 16px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #0b5bba;
+  width: 138px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+/* line 277, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003277}}
+.new-cards-area a.blks-btn:hover {
+  background: #D63749;
+  color: #fff;
+}
+/* line 281, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003281}}
+.new-cards-area .chat-panel-bottom {
+  position: fixed;
+  background: #0753ab;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  height: 100%;
+}
+/* line 292, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003292}}
+.new-cards-area .chat-panel-bottom {
+  display: none;
+}
+@media (min-width: 900px) {
+  /* line 296, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003296}}
+  .new-cards-area.wrapper {
+    margin-right: 22% !important;
+  }
+}
+@media (min-width: 900px) {
+  /* line 301, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003301}}
+  .new-cards-area .colv-3 {
+    width: 33.33%;
+    float: left;
+  }
+  /* line 305, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003305}}
+  .new-cards-area .contact-panel {
+    margin-right: -40%;
+  }
+}
+@media (max-width: 899px) {
+  /* line 310, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003310}}
+  .new-cards-area .card-full {
+    position: relative;
+    max-width: 275px;
+    height: 140px;
+  }
+  /* line 315, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003315}}
+  .new-cards-area .close-blocks {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 267px;
+  }
+}
+/* line 323, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003323}}
+.new-cards-area .clzs {
+  padding: 20px;
+  background: #0C5CBD;
+}
+/* line 327, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003327}}
+.new-cards-area .card-h {
+  position: absolute;
+  bottom: 14px;
+  color: #fff;
+  width: 100%;
+}
+/* line 333, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003333}}
+.new-cards-area .card-full {
+  position: relative;
+}
+/* line 336, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003336}}
+.new-cards-area .card-h .flr {
+  float: right;
+}
+/* line 339, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003339}}
+.new-cards-area .card-h .fll {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 344, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003344}}
+.new-cards-area .card-h .flr {
+  float: right;
+  margin-right: 31px;
+  font-size: 13px;
+}
+/* line 349, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003349}}
+.new-cards-area .card-h .fll {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+  margin-top: 127px !important;
+  display: block;
+  position: absolute;
+  margin-top: 2px !important;
+}
+/* line 359, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003359}}
+.new-cards-area .form-control:focus {
+  border-color: #ED7A00 !important;
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 366, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003366}}
+.new-cards-area textarea:focus {
+  border-color: #ED7A00 !important;
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 373, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003373}}
+.new-cards-area .form-areant input:focus {
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 379, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003379}}
+.new-cards-area .hide-xts.stz a:hover {
+  opacity: 0.8;
+}
+/* line 382, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003382}}
+.card-full.new-cards-area {
+  border-radius: 12px;
+  padding: 17px;
+  position: relative;
+  height: 140px;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.56);
+  margin-top: -85px;
+}
+/* line 390, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003390}}
+.new-cards-area .numb-card {
+  color: #1d72de;
+  position: relative;
+  right: auto;
+  top: 23px;
+  color: #fff !important;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+/* line 401, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003401}}
+.new-cards-area .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+}
+/* line 407, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003407}}
+.new-cards-area .prise-art span {
+  font-size: 17px;
+  vertical-align: top;
+}
+/* line 411, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003411}}
+.new-cards-area .prise-art strong {
+  font-weight: normal;
+  font-size: 18px;
+}
+/* line 415, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003415}}
+.new-cards-area .img-ls {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+/* line 420, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003420}}
+.new-cards-area .visa {
+  background: #1F73D6;
+}
+/* line 424, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003424}}
+.new-cards-area .button-n {
+  margin: 26px auto 0;
+  margin-bottom: 20px;
+}
+/* line 428, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003428}}
+.new-cards-area .img-ls img {
+  width: 64px;
+  margin-right: 14px;
+  margin-top: 1px;
+}
+/* line 433, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003433}}
+.new-cards-area .card-h {
+  position: absolute;
+  bottom: 14px;
+  color: #fff;
+  width: 100%;
+}
+/* line 439, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003439}}
+.new-cards-area .card-full {
+  position: relative;
+}
+/* line 442, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003442}}
+.new-cards-area .card-h .flr {
+  float: right;
+}
+/* line 445, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003445}}
+.new-cards-area .card-h .fll {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 450, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003450}}
+.new-cards-area .card-h .flr {
+  float: right;
+  margin-right: 31px;
+  font-size: 13px;
+}
+/* line 455, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003455}}
+.new-cards-area .card-h .fll {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+/* line 461, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003461}}
+.new-cards-area .prv-ns.stl-creds:before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #1ACBF7 !important;
+  border-radius: 50px;
+  border: none;
+  margin-left: -18px;
+  margin-top: 10px;
+  z-index: 9;
+}
+/* line 473, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003473}}
+.new-cards-area .prv-ns.stl-creds:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #4892e9;
+  left: 26px;
+  top: 16px;
+}
+/* line 482, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003482}}
+.new-cards-area .prv-ns.stl-creds {
+  position: relative;
+}
+/* line 486, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003486}}
+.new-cards-area .min-ar.prv-ns.stl-creds:before {
+  background: #fff !important;
+}
+/* line 489, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003489}}
+.new-cards-area .dv1:after {
+  content: '';
+  position: absolute;
+  height: 42px;
+  width: 1px;
+  background: #4892e9;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 400px) {
+  /* line 499, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003499}}
+  .new-cards-area .clbv p {
+    text-align: center;
+    font-size: 19px;
+  }
+  /* line 503, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003503}}
+  .new-cards-area .card-full {
+    height: 155px;
+  }
+}
+/* line 507, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003507}}
+.new-cards-area .chat-panel-bottom {
+  margin-top: 100px;
+}
+/* line 510, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003510}}
+.new-cards-area .contact-panel {
+  padding: 20px;
+  background: #186bd1;
+  overflow: hidden;
+}
+/* line 515, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003515}}
+.new-cards-area .clzs {
+  padding: 20px;
+  background: #0C5CBD;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #2B6BB5;
+  padding-bottom: 25px;
+}
+@media (min-width: 900px) {
+  /* line 524, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003524}}
+  .new-cards-area .cards-area {
+    padding-left: 22px;
+    padding-right: 23px;
+    margin-top: 25px;
+    max-width: 350px;
+    margin: 0 auto;
+    min-width: 350px;
+    float: left;
+    padding-left: 0;
+  }
+}
+/* line 535, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003535}}
+.new-cards-area .clact {
+  position: absolute;
+  top: 0;
+  margin-left: 324px;
+}
+/* line 540, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003540}}
+.new-cards-area .clact {
+  color: #fff;
+}
+/* line 543, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003543}}
+.new-cards-area .bl1:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 553, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003553}}
+.new-cards-area .bl2:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 563, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003563}}
+.new-cards-area .bl3:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 573, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003573}}
+.new-cards-area .clact h3 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 22px;
+}
+/* line 578, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003578}}
+.new-cards-area .btns-area button:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../../../src/img/b2.png) 0 0 no-repeat;
+  right: 17px;
+  margin-top: -2px;
+}
+/* line 587, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003587}}
+.new-cards-area .btns-area button:hover {
+  background: #eee !important;
+  color: #0B5BBA !important;
+}
+/* line 591, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003591}}
+.new-cards-area .car-ur:after {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #6EA0DF;
+  margin-top: 7px;
+}
+@media (max-width: 899px) {
+  /* line 601, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003601}}
+  .new-cards-area a.blks-btn {
+    background: #ffffff;
+    border: 0;
+    border-radius: 50px;
+    padding: 9px 16px;
+    margin-right: 9px;
+    text-transform: uppercase;
+    color: #0b5bba;
+    width: 133px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 11px;
+  }
+  /* line 614, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003614}}
+  .new-cards-area .block-bts {
+    margin-top: 52px;
+    clear: both;
+    overflow: hidden;
+  }
+  /* line 619, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003619}}
+  .new-cards-area .clzs {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 623, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003623}}
+  .new-cards-area .clk-1 {
+    background: #1a6ed3;
+    padding: 20px;
+    float: left;
+    width: 28%;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  /* line 633, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003633}}
+  .new-cards-area .clzs {
+    padding: 35px;
+    background: #0C5CBD;
+    overflow: hidden;
+  }
+  /* line 638, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003638}}
+  .new-cards-area .clact {
+    color: #fff;
+    position: relative;
+    margin: 0;
+    width: 310px;
+    margin: 0 auto;
+  }
+  /* line 645, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003645}}
+  .new-cards-area .card-full:first-child {
+    box-shadow: none;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+}
+/* line 651, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003651}}
+.new-cards-area button.add-btns:hover {
+  opacity: 0.8;
+}
+/* line 654, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003654}}
+.new-cards-area .cards-ns {
+  border-left: 3px solid #0753AB;
+}
+/* line 657, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003657}}
+.new-cards-area .cards-ns:hover {
+  background: #1561b9;
+  border-left: 3px solid #05D0DB;
+}
+@media (min-width: 900px) {
+  /* line 662, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003662}}
+  .new-cards-area a.blks-btn {
+    margin-top: 49px;
+    clear: both;
+    float: left;
+  }
+}
+/* line 669, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003669}}
+.new-cards-area h3 .sta {
+  font-size: 11px !important;
+  padding-left: 40px !important;
+  vertical-align: middle !important;
+}
+/* line 674, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003674}}
+.new-cards-area h3 .sta:before {
+  content: '';
+  position: absolute;
+  background: url(../../../src/img/status.png) 0 0 no-repeat;
+  width: 20px;
+  height: 30px;
+  margin-left: -27px;
+  margin-top: -3px;
+  background-size: contain;
+}
+/* line 684, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003684}}
+.new-cards-area .balance-nv h5 {
+  font-size: 34px;
+  letter-spacing: 1px;
+  float: left;
+}
+/* line 689, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003689}}
+.new-cards-area .balance-nv span {
+  font-size: 20px;
+  margin-top: 3px;
+  display: block;
+  float: left;
+}
+/* line 695, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003695}}
+.new-cards-area .balance-nv p {
+  color: #328dfc;
+  max-width: 99px;
+  float: left;
+  line-height: 14px;
+  margin-top: 20px;
+  margin-left: 7px;
+  font-size: 11px;
+}
+/* line 704, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003704}}
+.new-cards-area .balance-nv {
+  margin-top: -14px;
+}
+@media (max-width: 899px) {
+  /* line 708, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003708}}
+  .new-cards-area h3 .sta {
+    font-size: 0 !important;
+  }
+  /* line 711, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003711}}
+  .new-cards-area h3 .sta:before {
+    margin-left: -39px;
+    margin-top: -4px;
+  }
+  /* line 715, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003715}}
+  .new-cards-area .clact h3 {
+    text-align: center;
+  }
+  /* line 718, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003718}}
+  .new-cards-area a.blks-btn {
+    margin: 20px auto 0;
+    display: block;
+  }
+  /* line 722, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003722}}
+  .new-cards-area .balance-nv h5 {
+    margin-top: 18px !important;
+  }
+  /* line 725, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003725}}
+  .new-cards-area .balance-nv p {
+    color: #fff !important;
+  }
+  /* line 728, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003728}}
+  .new-cards-area .balance-nv span {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+  }
+  /* line 733, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003733}}
+  body .new-cards-area .block-bts.m-blk {
+    margin-top: 9px !important;
+  }
+}
+@media (min-width: 900px) {
+  /* line 738, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003738}}
+  .new-cards-area .flr-btn {
+    float: left !important;
+    margin-left: 20px !important;
+  }
+}
+/* line 743, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003743}}
+.new-cards-area .img-ls img {
+  width: 57px !important;
+  margin-top: -16px !important;
+}
+/* line 747, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003747}}
+.new-cards-area .dbts {
+  color: #fff !important;
+  position: absolute;
+  bottom: 29px;
+  display: block;
+}
+@media (max-width: 899px) {
+  /* line 754, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003754}}
+  .new-cards-area .tab-cards .clact {
+    display: none;
+  }
+  /* line 757, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003757}}
+  .new-cards-area .tab-cards .clzs {
+    border: 0 !important;
+    background: none;
+  }
+  /* line 761, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003761}}
+  .new-cards-area .tab-cards .clzs:first-child {
+    margin-top: 0;
+    padding-top: 30px !important;
+  }
+  /* line 765, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003765}}
+  .new-cards-area .tab-cards .clzs {
+    margin-top: -140px;
+    padding-top: 0 !important;
+  }
+  /* line 769, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003769}}
+  .new-cards-area .tab-cards .card-full:hover .hover-area-card {
+    display: block;
+  }
+  /* line 772, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003772}}
+  .new-cards-area .tab-cards .balance-nv span {
+    margin-top: -6px;
+  }
+}
+/* line 776, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003776}}
+.new-cards-area .hover-area-card h5 {
+  color: #fff;
+  margin-top: 5px;
+}
+/* line 780, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003780}}
+.new-cards-area .clast-dv {
+  color: #fff !important;
+  float: left;
+  display: block;
+  clear: both;
+  position: absolute;
+  bottom: 15px;
+  font-size: 15px;
+}
+/* line 789, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003789}}
+.new-cards-area button.act-al {
+  position: absolute;
+  right: 12px;
+  bottom: 18px;
+  background: url(../../../src/img/arvs.png) 0 0 no-repeat;
+  width: 30px;
+  height: 20px;
+  background-size: cover;
+  border: 0;
+  cursor: pointer;
+}
+/* line 800, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003800}}
+.new-cards-area button.act-al:hover {
+  opacity: 0.8;
+}
+/* line 803, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003803}}
+.new-cards-area .clast-dv {
+  cursor: pointer;
+}
+/* line 806, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003806}}
+.new-cards-area .clast-dv:hover {
+  opacity: 0.8;
+}
+/* line 809, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003809}}
+.new-cards-area .block-area:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../../../src/img/blo.png) 0 0 no-repeat;
+  background-size: contain;
+  margin-left: -37px;
+  margin-top: -5px;
+}
+/* line 819, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003819}}
+.new-cards-area .block-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../../../src/img/abv.png) 0 0 no-repeat;
+  background-size: contain;
+  right: 12px;
+  top: 13px;
+}
+/* line 828, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003828}}
+.new-cards-area .card-line {
+  width: 100%;
+  background: #000;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: -17px;
+  position: absolute;
+  margin-top: 32px;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+/* line 843, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003843}}
+.mobile_btn {
+  display: block;
+}
+@media (min-width: 900px) {
+  /* line 848, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003848}}
+  .mobile_btn {
+    display: none;
+  }
+  /* line 852, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003852}}
+  body .new-cards-area .card-full {
+    max-width: 287px;
+  }
+  /* line 856, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003856}}
+  body .new-cards-area .back.card-full {
+    margin-top: -170px !important;
+    margin-left: 42px !important;
+  }
+}
+@media (min-width: 900px) {
+  /* line 865, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003865}}
+  body .new-cards-area .back.card-full {
+    margin-top: -170px !important;
+    margin-left: 40px !important;
+  }
+  /* line 871, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003871}}
+  body .new-cards-area .card-full {
+    height: 172px;
+  }
+  /* line 875, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003875}}
+  body .cards-wrapper .clact {
+    display: block !important;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* line 882, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003882}}
+  .new-cards-area.wrapper {
+    margin-right: 0 !important;
+  }
+  /* line 885, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003885}}
+  .new-cards-area a.blks-btn.block-button {
+    margin-top: 0 !important;
+  }
+  /* line 889, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003889}}
+  body .new-cards-area .back.card-full {
+    margin-left: 19px !important;
+  }
+}
+@media (max-width: 899px) {
+  /* line 897, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003897}}
+  body .new-cards-area .clzs {
+    height: auto !important;
+  }
+  /* line 901, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003901}}
+  body .cards-wrapper .clact {
+    display: none !important;
+  }
+  /* line 906, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003906}}
+  body .new-cards-area .clzs {
+    border-bottom: 0 !important;
+    background: none !important;
+  }
+  /* line 911, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003911}}
+  .clzs {
+    margin-top: -134px;
+  }
+  /* line 915, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003915}}
+  .clzs:first-child {
+    margin-top: 0 !important;
+  }
+  /* line 919, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003919}}
+  body .new-cards-area .card-full {
+    height: 184px !important;
+  }
+  /* line 924, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003924}}
+  body .card-full:nth-child(2n) {
+    background: #3285e6;
+    background: #dc323d;
+    background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
+    background: linear-gradient(to bottom, #dc323d 0%, #6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc323d', endColorstr='#6d0019', GradientType=0);
+  }
+}
+@media (min-width: 700px) and (max-width: 899px) {
+  /* line 939, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003939}}
+  body .new-cards-area .back.card-full {
+    margin-left: 15px !important;
+  }
+}
+/* line 944, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003944}}
+.new-cards-area .chat-panel-bottom {
+  margin-top: 87px;
+}
+@media (min-width: 1200px) {
+  /* line 951, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003951}}
+  .scroller-b.nano.__nano.scroller-b-Cards {
+    height: calc(100vh - 87px);
+  }
+}
+@media (max-width: 1199px) {
+  /* line 957, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003957}}
+  .scroller-b.nano.__nano.scroller-b-Cards {
+    height: calc(100vh - 40px) !important;
+  }
+}
+/* line 961, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003961}}
+.scroller-b-Cards .clast-dv.tk1 {
+  background: #fff;
+  color: #000 !important;
+  border-radius: 50px !important;
+  font-size: 14px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+/* line 969, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003969}}
+body .wrapper.new-cards-area .back.card-full {
+  z-index: 88;
+}
+/* line 973, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003973}}
+body .wrapper.new-cards-area .back.card-full {
+  margin-left: -1px !important;
+}
+/* line 977, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003977}}
+body .wrapper.new-cards-area .flipper {
+  width: 287px;
+}
+/* line 981, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003981}}
+body .wrapper.new-cards-area .blks-btn span {
+  color: #000;
+  background: #F2CD26;
+  border-radius: 50px;
+  font-weight: normal;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -15px;
+  padding: 0 10px;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 3px;
+}
+/* line 996, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\00003996}}
+.new-cards-area a.blks-btn {
+  background: #d63749;
+  color: #fff;
+}
+/* line 1000, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031000}}
+.new-cards-area a.blks-btn:hover {
+  background: #c23446;
+}
+/* line 1003, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031003}}
+.info-card-wrapper .numb-card {
+  letter-spacing: 4px !important;
+}
+/* line 1006, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031006}}
+.info-card-wrapper .block-bts {
+  overflow: visible !important;
+}
+@media (max-width: 1199px) {
+  /* line 1011, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031011}}
+  .info-card-wrapper .block-bts {
+    overflow: visible;
+  }
+}
+@media (max-width: 899px) {
+  /* line 1019, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031019}}
+  body .new-cards-area .block-bts.m-blk a {
+    float: left;
+    margin-top: 37px;
+    width: 140px;
+  }
+}
+/* line 1025, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031025}}
+body .wrapper.new-cards-area .back.card-full {
+  z-index: 88;
+}
+/* line 1029, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031029}}
+body .wrapper.new-cards-area .back.card-full {
+  margin-left: -1px !important;
+}
+/* line 1033, Cards.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031033}}
+body .wrapper.new-cards-area .flipper {
+  width: 287px;
+}
+@media (max-width: 1199px) {
+  /* line 1036, Cards.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cards\/Cards\.less}line{font-family:\000031036}}
+  .scroller-b.nano.__nano.scroller-b-Cards .cards-area {
+    padding-left: 14px !important;
+  }
+}
+/*# sourceMappingURL=Cards.css.map */

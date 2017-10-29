@@ -1,0 +1,803 @@
+/* line 1, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\000031}}
+.list-dialog-wrapper .dialogs-none-telegraf {
+  min-height: 300px;
+  height: calc(100% - 100px);
+  padding: calc(50%-200px) 0;
+  position: absolute;
+}
+/* line 7, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\000037}}
+.list-dialog-wrapper .add-icon-contacts {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../../../src/img/iconq.png) 0 0 no-repeat;
+  top: 16px;
+  right: 16px;
+  background-size: contain;
+}
+/* line 18, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000318}}
+.list-dialog-wrapper .download:before {
+  background: url(../../../src/img/p2.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  margin-left: 22px;
+}
+/* line 26, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000326}}
+.list-dialog-wrapper .del:before {
+  background: url(../../../src/img/p3.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  margin-left: 22px;
+}
+/* line 35, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000335}}
+.list-dialog-wrapper .bottom-panel ul li {
+  padding: 0;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+}
+/* line 45, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000345}}
+.list-dialog-wrapper .clk-sr {
+  position: absolute;
+  margin-top: -120px;
+}
+/* line 50, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000350}}
+.list-dialog-wrapper .mvs4 {
+  position: relative;
+}
+/* line 54, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000354}}
+.list-dialog-wrapper .obms {
+  position: relative;
+}
+/* line 59, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000359}}
+.list-dialog-wrapper .obn {
+  position: relative;
+}
+/* line 64, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000364}}
+.list-dialog-wrapper .hide-xts {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 324px;
+  margin-top: 81px;
+  background: rgba(222, 222, 221, 0.92);
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+/* line 77, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000377}}
+.list-dialog-wrapper .stz {
+  display: none;
+}
+/* line 81, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000381}}
+.list-dialog-wrapper .avst {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-top: -72px;
+  z-index: 22;
+  margin-left: 106px;
+  cursor: pointer;
+  background: #000;
+}
+/* line 93, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000393}}
+.list-dialog-wrapper .stz.show-main-navs {
+  display: block;
+}
+/* line 97, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\0000397}}
+.list-dialog-wrapper .hide-xts textarea {
+  width: 100%;
+  border: 0;
+  padding: 9px 20px 20px 20px;
+  margin-bottom: 20px;
+  height: 100px;
+}
+/* line 105, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003105}}
+.list-dialog-wrapper .hide-xts input {
+  border: 0;
+}
+/* line 109, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003109}}
+.list-dialog-wrapper .hide-xts input {
+  margin-bottom: 15px;
+}
+/* line 113, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003113}}
+.list-dialog-wrapper .hide-xts button.button {
+  width: 128px;
+}
+/* line 118, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003118}}
+.list-dialog-wrapper .form-control:focus {
+  border-color: #ED7A00 !important;
+  border: 1px solid #ED7A00 ;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 127, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003127}}
+input,
+textarea {
+  color: #000 !important;
+}
+/* line 131, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003131}}
+textarea:focus {
+  border-color: #ED7A00 !important;
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 140, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003140}}
+.list-dialog-wrapper .form-areant input:focus {
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 147, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003147}}
+.list-dialog-wrapper .hide-xts {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 174px;
+  margin-top: 35px;
+  background: #0b53a8;
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: none;
+  margin-right: 6px;
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 99;
+}
+/* line 162, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003162}}
+.list-dialog-wrapper .hide-xts.stz a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: bold;
+}
+/* line 170, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003170}}
+.list-dialog-wrapper .hide-xts.stz a:hover {
+  opacity: 0.8;
+}
+/* line 174, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003174}}
+.list-dialog-wrapper .close-block {
+  position: absolute;
+  width: 53px;
+  height: 47px;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+/* line 184, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003184}}
+.list-dialog-wrapper .add-icon-contacts {
+  position: absolute;
+  width: 41px;
+  height: 50px;
+  background: url(../../../src/img/iconq.png) 0 0 no-repeat;
+  top: 11px;
+  right: 6px;
+  background-size: contain;
+}
+/* line 194, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003194}}
+.list-dialog-wrapper .full-star {
+  padding: 0;
+  margin: 0 2px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../src/img/full-star.png) 0 0 no-repeat;
+  width: 12px;
+  height: 20px;
+  background-size: contain;
+  margin-top: -19px;
+}
+/* line 207, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003207}}
+.list-dialog-wrapper .no-star {
+  padding: 0;
+  margin: 0 2px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../src/img/no-star.png) 0 0 no-repeat;
+  width: 12px;
+  height: 20px;
+  background-size: contain;
+  margin-top: -19px;
+}
+/* line 220, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003220}}
+.list-dialog-wrapper .stars-area {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  display: block;
+  font-size: 0;
+  margin-bottom: -14px;
+  padding-top: 12px;
+  margin-left: 0px;
+}
+/* line 232, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003232}}
+.list-dialog-wrapper .contacts .chat-in-im_dialog_no_avatars.nbv {
+  background: #0d63ca;
+}
+/* line 237, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003237}}
+.list-dialog-wrapper .block-bgl {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(16, 70, 136, 0.69);
+}
+/* line 246, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003246}}
+.list-dialog-wrapper .top-pan {
+  position: absolute;
+}
+/* line 250, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003250}}
+.list-dialog-wrapper .bottom-panel.top-pan {
+  bottom: 85px;
+  box-shadow: none !important;
+}
+/* line 255, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003255}}
+.list-dialog-wrapper .ps25 {
+  width: 75% !important;
+  color: #fff;
+  text-align: right;
+  font-weight: 600;
+}
+/* line 262, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003262}}
+.list-dialog-wrapper .bottom-panel.top-pan {
+  bottom: 89px;
+  box-shadow: none !important;
+  overflow: hidden;
+  height: 141px;
+}
+/* line 269, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003269}}
+.list-dialog-wrapper .colv-3 {
+  background: #0753ab;
+}
+/* line 274, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003274}}
+.list-dialog-wrapper .contact-panel {
+  padding: 20px;
+  background: #186bd1;
+  overflow: hidden;
+}
+/* line 282, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003282}}
+.list-dialog-wrapper .header {
+  padding: 0;
+}
+/* line 286, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003286}}
+.list-dialog-wrapper .content-nh {
+  margin-top: 0 !important;
+}
+@media (min-width: 1200px) {
+  /* line 291, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003291}}
+  .list-dialog-wrapper .colv-3 {
+    width: 100% !important;
+    float: left;
+  }
+  /* line 295, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003295}}
+  .list-dialog-wrapper .colv-3 .slider {
+    width: 33.333%;
+    float: left;
+    border-right: 1px solid #186BD1;
+  }
+  /* line 302, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003302}}
+  .list-dialog-wrapper .mobile-mn .stars-area {
+    margin-top: -2px;
+  }
+  /* line 306, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003306}}
+  .list-dialog-wrapper .no-shows {
+    display: none;
+  }
+  /* line 310, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003310}}
+  .list-dialog-wrapper .header strong {
+    display: none;
+  }
+  /* line 314, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003314}}
+  .list-dialog-wrapper .nobl-c {
+    display: none !important;
+  }
+  /* line 319, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003319}}
+  .list-dialog-wrapper .colv-3 {
+    width: 33.17%;
+    float: left;
+    border-right: 1px solid #186bd1;
+  }
+  /* line 325, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003325}}
+  .list-dialog-wrapper .colv-3:first-child {
+    border-left: 1px solid #186bd1;
+  }
+  /* line 329, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003329}}
+  .list-dialog-wrapper .responsive:first-child {
+    border-top: 1px solid #2b74d2;
+    margin-top: 0px;
+  }
+}
+/* line 336, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003336}}
+.list-dialog-wrapper .responsive:first-child {
+  margin-top: 0;
+}
+/* line 340, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003340}}
+.list-dialog-wrapper .header {
+  padding: 0;
+  height: auto !important;
+}
+/* line 346, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003346}}
+.list-dialog-wrapper .contact-panel h3 {
+  font-size: 17px;
+  text-align: left;
+}
+/* line 350, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003350}}
+ul.ulck-menu a {
+  display: block !important;
+  top: auto !important;
+  position: relative;
+  border: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+}
+/* line 363, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003363}}
+ul.ulck-menu a:before,
+ul.ulck-menu a:after {
+  display: none !important;
+}
+/* line 368, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003368}}
+ul.ulck-menu li {
+  list-style: none !important;
+}
+/* line 373, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003373}}
+ul.ulck-menu li {
+  float: left;
+}
+/* line 377, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003377}}
+ul.ulck-menu {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+/* line 383, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003383}}
+.list-dialog-wrapper .contact-panel h3 {
+  font-size: 17px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+/* line 391, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003391}}
+ul.ulck-menu .active a {
+  background: #fff;
+  color: #186bd1;
+  border-radius: 50px;
+  padding-left: 27px;
+}
+/* line 401, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003401}}
+ul.ulck-menu a {
+  display: block !important;
+  top: auto !important;
+  position: relative;
+  border: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  padding: 0;
+  padding-right: 27px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 34px !important;
+  line-height: 34px;
+}
+/* line 421, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003421}}
+ul.ulck-menu {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+}
+/* line 427, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003427}}
+ul.ulck-menu .active a {
+  margin-right: 23px;
+}
+/* line 433, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003433}}
+.list-dialog-wrapper .cls1 {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  cursor: pointer;
+}
+/* line 443, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003443}}
+.list-dialog-wrapper .cls2 {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  position: absolute;
+  top: 24px;
+  right: 115px;
+  cursor: pointer;
+}
+/* line 453, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003453}}
+.list-dialog-wrapper .cls3 {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  position: absolute;
+  top: 24px;
+  right: 190px;
+  cursor: pointer;
+}
+/* line 464, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003464}}
+.list-dialog-wrapper .chats-area-bl {
+  color: #fff;
+  padding-left: 74px;
+  max-width: 195px;
+}
+/* line 470, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003470}}
+.list-dialog-wrapper .close-blocks {
+  position: relative;
+  margin-top: -17px;
+  margin-right: 40px;
+}
+/* line 476, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003476}}
+.list-dialog-wrapper .icon-area.chat {
+  right: 5px;
+  margin-top: 16px;
+}
+/* line 481, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003481}}
+.list-dialog-wrapper .contents {
+  padding: 0 !important;
+}
+/* line 487, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003487}}
+.list-dialog-wrapper .ltos {
+  width: 100%;
+  height: 50px;
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#1e5799', GradientType=0);
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}
+@media (min-width: 1200px) {
+  /* line 499, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003499}}
+  body .scroller-b.nano.__nano.scroller-b-Dialogs {
+    height: calc(100% - 87px);
+    position: absolute;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 505, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003505}}
+  .list-dialog-wrapper .scroller-b {
+    height: calc(100% - 40px);
+    position: absolute;
+  }
+  /* line 512, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003512}}
+  .list-dialog-wrapper .close-blocks {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 267px;
+  }
+  /* line 520, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003520}}
+  .list-dialog-wrapper .contact-panel {
+    padding: 20px;
+    background: #186bd1;
+    overflow: hidden;
+    margin-top: 3px;
+    height: 16px;
+  }
+  /* line 528, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003528}}
+  .list-dialog-wrapper .ulck-menu {
+    display: none !important;
+  }
+  /* line 532, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003532}}
+  .list-dialog-wrapper .icon-area.chat {
+    right: 5px;
+    margin-top: -9px;
+  }
+  /* line 537, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003537}}
+  .list-dialog-wrapper .header a {
+    top: 1px;
+  }
+  /* line 541, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003541}}
+  .list-dialog-wrapper .contact-panel {
+    padding: 20px;
+    background: #186bd1;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  /* line 548, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003548}}
+  .list-dialog-wrapper .contact-panel h3 {
+    display: none;
+  }
+}
+/* line 555, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003555}}
+.list-dialog-wrapper .colv-3 .id-area {
+  color: #3b90f5;
+  margin-top: -8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: -3px;
+}
+/* line 566, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003566}}
+.list-dialog-wrapper .chats-blk-swipe {
+  width: 77%;
+  float: left;
+  position: relative;
+  margin-left: -89px;
+}
+/* line 576, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003576}}
+.list-dialog-wrapper .active-slide-left .avatar-area {
+  float: left !important;
+  margin-right: -33px !important;
+}
+/* line 582, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003582}}
+.list-dialog-wrapper .active-slide-left .chat-in-im_dialog_message_wraps {
+  margin-left: 104px;
+  width: 50%;
+}
+/* line 589, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003589}}
+.list-dialog-wrapper .chat-in-im_dialog_messages {
+  height: 32px;
+  font-size: 11px;
+}
+/* line 594, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003594}}
+.list-dialog-wrapper .notif-numbers {
+  position: absolute;
+  width: auto;
+  display: table;
+  min-width: 28px;
+  height: 29px;
+  background: #e23249;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  padding-top: 2px;
+  top: 3px;
+  left: -3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  right: 7px;
+  font-weight: normal;
+  border: 4px solid #0753ab;
+}
+/* line 616, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003616}}
+.list-dialog-wrapper .account-img-area-n {
+  cursor: pointer;
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: cover;
+  margin-top: 7.5px;
+}
+/* line 624, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003624}}
+.list-dialog-wrapper .chat-in_dialog_persons {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 635, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003635}}
+.list-dialog-wrapper .pos-abs-time {
+  color: #fff;
+  position: absolute;
+  right: 18px;
+  font-size: 11px;
+  margin-top: 11px;
+}
+/* line 643, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003643}}
+.list-dialog-wrapper .chat-in-im_dialog_message_wraps {
+  word-wrap: break-word;
+  height: 65px;
+  text-align: left;
+  border-bottom: 1px solid #cacaca;
+  margin-left: 72px;
+  padding-right: 10px;
+  padding-top: 2px;
+  border: 0 !important;
+}
+@media (max-width: 1199px) {
+  /* line 654, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003654}}
+  .list-dialog-wrapper .contact-panel {
+    display: none;
+  }
+  /* line 658, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003658}}
+  .list-dialog-wrapper .nav-nt li {
+    padding: 3px 11px;
+    margin: 3px 2px 5px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 666, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003666}}
+  .list-dialog-wrapper .del {
+    width: 80px;
+    background: #d63650;
+    float: right;
+    height: 89px;
+    margin-top: 0px;
+  }
+  /* line 673, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003673}}
+  .list-dialog-wrapper .download {
+    width: 80px;
+    background: #37a8d2;
+    float: right;
+    height: 89px;
+    margin-top: 0px;
+  }
+  /* line 681, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003681}}
+  .list-dialog-wrapper .hover-blk {
+    top: 0px !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 689, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003689}}
+  body .colv-3:first-child {
+    border-right: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 695, Dialogs.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003695}}
+  .colv-3 {
+    height: 100% !important;
+  }
+}
+/* line 699, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003699}}
+.scroller-b-Dialogs .chats-blk {
+  background: #0F4D96;
+}
+/* line 702, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003702}}
+.list-dialog-wrapper .dialogs-none-telegraf {
+  width: 100%;
+}
+/* line 706, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003706}}
+body .list-dialog-wrapper .cls3 {
+  right: 190px !important;
+}
+/* line 710, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003710}}
+body .list-dialog-wrapper .cls1 {
+  right: 40px !important;
+}
+/* line 715, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003715}}
+body .list-dialog-wrapper .cls2 {
+  right: 115px !important;
+}
+/* line 718, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003718}}
+body .сhat-wrapper .cls1 {
+  right: 40px !important;
+}
+/* line 722, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003722}}
+body .сhat-wrapper .cls3 {
+  right: 100px !important;
+}
+/* line 726, Dialogs.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Dialogs\/Dialogs\.less}line{font-family:\00003726}}
+.сhat-wrapper .chat-in-messenge-me {
+  margin-left: 28px;
+}
+/*# sourceMappingURL=Dialogs.css.map */

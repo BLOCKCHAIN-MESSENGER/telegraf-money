@@ -1,0 +1,172 @@
+<div class="wrapper cards-wrapper сhat-wrapper card-wrapps chat-info-wrapper" style="background: #0d63ca">
+    <div class="contents">
+        <div id="page">
+            <div class="header chat-hr">
+                <a href="#" onclick="$('#contentApplication_more').animateCss('slideOutUp',function() {
+                  Messenger.setPage('dialog');
+                });">
+                    <span></span>
+                </a> <strong>Детали по чату</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Детали по чату')}}</h3>
+
+                </div>
+
+            </div>
+            <scroll class_scroll="scroll_chat_info" class_content="" id_content="scroll_chat_info">
+
+
+                <div class="acc-nts short-info">
+                    {{#if thread.type_threads == 'group'}}
+                    <avatar src="{{thread.group_photo}}" label="{{thread.name_short}}"
+                            class_img="account-img-area mCS_img_loaded" class_label="chat-in-im_dialog_no_avatars"/>
+
+
+                    {{else}}
+                    <avatar src="{{thread.avatar_path}}" label="{{thread.name_short}}"
+                            class_img="account-img-area mCS_img_loaded" class_label="chat-in-im_dialog_no_avatars"/>
+                    {{/if}}
+                    {{#if thread.type_threads == 'group'}}
+                    <h4>{{thread.group_name}}</h4>
+                    <h5 class="user-id-a"> {{thread.user_count}} {{_e('участников')}}</h5>
+                    {{else}}
+                    <h4>{{thread.full_name}}</h4>
+                    <h5 class="user-id-a">ID: {{thread.webtransfer_id}}</h5>
+                    {{/if}}
+                </div>
+
+                <!--<div class="btsv-area">-->
+                <!--<button class="flr-btn button-n red-btn">+ Добавить учасника</button>-->
+
+                <!--</div>-->
+                <br>
+
+                <!--<div class="date-area mx-data">Actions</div>-->
+
+                <!--<div class="actions-area-telegraf">-->
+                <!--<button class="flr-btn button-n red-btn small-btn-actions lbts">Выйти из чата</button>-->
+                <!--<button class="flr-btn button-n red-btn small-btn-actions rbts">Удалить чат</button>-->
+                <!--<button class="flr-btn button-n red-btn small-btn-actions lbts">Разблокировать по id-->
+                <!--</button>-->
+                <!--<button class="flr-btn button-n red-btn small-btn-actions rbts">Заблокировать по id-->
+                <!--</button>-->
+                <!--</div>-->
+
+                <div class="date-area mx-data">Members</div>
+                {{#users}}
+                <!--(limit*(page-1))-->
+                {{#if @index >= (limit*(page-1))  && @index < (limit*page)}}
+                <div class="chats-blk w50ls">
+                    <div class="pos-abs-time">
+                        <!--<div class="stars-area">-->
+                            <!--<div class="full-star"></div>-->
+                            <!--<div class="full-star"></div>-->
+                            <!--<div class="full-star"></div>-->
+                            <!--<div class="no-star"></div>-->
+                            <!--<div class="no-star"></div>-->
+
+                        <!--</div>-->
+                        <div class="rews-numbers">{{_e('Участник')}}</div>
+                    </div>
+
+                    <div class="im_dialog_photo2 pull-left">
+                        <avatar src="{{info.avatar_path}}" label="{{info.name_short}}"
+                                class_img="account-img-area chat-in-im_dialog_no_avatars mCS_img_loaded"
+                                class_label="chat-in-im_dialog_no_avatars"/>
+
+
+                    </div>
+                    <div class="chat-in-im_dialog_message_wraps">
+                        <div class="chat-in_dialog_persons">{{info.name_first}} {{info.name_last}}</div>
+                        <div class="id-area-n">ID: {{info.webtransfer_id}}</div>
+                        <!--<div class="chat-in-im_dialog_messages">Онлайн</div>-->
+
+                        <div class="number-n-status"><i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+                {{/if}}
+                {{/}}
+                {{#if page <100}}
+                <button class="flr-btn button-n red-btn small-btn-actions lbts" on-click="page_get:next" style="float: right;padding: 5px;">{{_e('Следущая страница')}}</button>
+                {{/if}}
+                {{#if page >1}}
+                <button class="flr-btn button-n red-btn small-btn-actions lbts" on-click="page_get:prev" style="float: right;padding: 5px;">{{_e('Предыдущая страница')}}</button>
+                {{/if}}
+
+
+
+                <!--<div class="date-area mx-data">Отзывы</div>-->
+
+                <!--<div class="chats-blk w50ls">-->
+                <!--<div class="pos-abs-time">-->
+
+                <!--<div class="stars-area">-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="no-star"></div>-->
+                <!--<div class="no-star"></div>-->
+
+                <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="im_dialog_photo2 pull-left">-->
+                <!--<div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12">ia</div>-->
+
+                <!--</div>-->
+                <!--<div class="chat-in-im_dialog_message_wraps">-->
+                <!--<div class="chat-in_dialog_persons">Мария Новикова</div>-->
+                <!--<div class="chat-in-im_dialog_messages">Test for task test for task test</div>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+                <!--<div class="chats-blk w50ls">-->
+                <!--<div class="pos-abs-time">-->
+
+                <!--<div class="stars-area">-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="full-star"></div>-->
+                <!--<div class="no-star"></div>-->
+                <!--<div class="no-star"></div>-->
+
+                <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="im_dialog_photo2 pull-left">-->
+                <!--<img class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 account-img-area-n mCS_img_loaded"-->
+                <!--src="img/krg.png"></div>-->
+                <!--<div class="chat-in-im_dialog_message_wraps">-->
+                <!--<div class="chat-in_dialog_persons">Мария Новикова</div>-->
+                <!--<div class="chat-in-im_dialog_messages">Test for task test for task test</div>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+
+                <!--<div class="clearfix"></div>-->
+
+                <!--<div class="close-block"></div>-->
+
+
+            </scroll>
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+        <h1>{{_e('Чаты')}} <i class="fa fa-commenting-o" aria-hidden="true"></i></h1>
+        <div class="spl-icn"></div>
+        <scroll class_scroll="" class_content="" id_content="">
+            <Chats/>
+        </scroll>
+
+    </div>
+
+</div>

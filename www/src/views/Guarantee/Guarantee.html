@@ -1,0 +1,365 @@
+<div class="wrapper cards-wrapper guarantee-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Гарантии')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Гарантии')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="icon-area chat"></div>
+            <scroll class_scroll="scroller-b-Guarantee" class_content="" id_content="">
+                <div class="credit-area">
+                    <div class="tabs-credit">
+                        <div class="crd1 {{#if tabPage == 'create'}}active{{/if}} gvc3"
+                             on-click="setPage:guarantee:create">
+                            {{_e('Выпустить')}}
+                        </div>
+                        <div class="crd1 {{#if tabPage == 'give'}}active{{/if}} gvc1" on-click="setPage:guarantee:give">
+                            {{_e('Выданные')}}
+                        </div>
+                        <div class="crd1 {{#if tabPage == 'take'}}active{{/if}} gvc2" on-click="setPage:guarantee:take">
+                            {{_e('Полученные')}}
+                            <!--<span class="notifications-l">1</span>-->
+                        </div>
+                        <!---->
+                        <!--<div class="crd1 garant active" onclick=""><i class="hidden-xs fa fa-exchange" aria-hidden="true"></i>-->
+                        <!--Выпустить гарантию-->
+                        <!--</div>-->
+                        <!--<div class="crd1 gvc2" onclick="">-->
+                        <!--Выданные-->
+                        <!--</div>-->
+                        <!--<div class="crd1 gvc1" onclick="">Полученные<span class="notifications-l">1</span></div>-->
+                    </div>
+
+                    <div class="credit-main-area padding-fx">
+                        {{#if tabPage == 'create'}}
+                        <div class="form-area">
+                            <form action="#" onsubmit="return false;" id="guarantee_form">
+                                <div class="select-form">
+                                    <label>{{_e('Кредит')}}</label>
+                                    <select class="sels" id="cards_my" name="source">
+                                        {{#if finance_cards_load}}
+                                        <option class="" selected disabled>{{_e('Выберите Кредит')}}</option>
+
+                                        {{#microinvest}}
+                                        <option value="{{id}}" {{#if summa<5}}disabled="disabled"{{/if}}>Credit on Demand #{{id}} - {{summa}}{{currency}}</option>
+                                        {{else}}
+                                        <option class="">{{_e('У вас нет активных кредитов')}}</option>
+
+                                        {{/if}}
+                                        {{else}}
+                                        <option class="">{{_e('Загрузка...')}}</option>
+                                        {{/if}}
+
+                                    </select>
+                                </div>
+
+
+                                <UserByID result="" name="wtc-GuaranteeApp" value="{{form.user_id}}"/>
+
+                                <div class="select-form">
+                                    <label>{{_e('Сумма ($)')}}</label>
+                                    <input class="form-control" placeholder="" value="10" name="summ"></div>
+
+                                <div class="colk">
+                                    <div class="col-xss-6">
+                                        <div class="select-form">
+                                            <label>{{_e('Срок (дни)')}}</label>
+                                            <input class="form-control" placeholder="" value="15" name="time"></div>
+                                    </div>
+                                    <div class="col-xss-6">
+                                        <div class="select-form">
+                                            <label>{{_e('Процент (%)')}}</label>
+                                            <input class="form-control" placeholder="" value="0.2" name="percent"></div>
+
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <button class="button-n" type="button" on-click="create_guarant">{{_e('Выдать гарантию')}}</button>
+                                <br>
+
+                            </form>
+                        </div>
+                        {{/if}}
+
+                        {{#if tabPage == 'give'}}
+                        {{#orders}}
+                        {{#if type =='2'}}
+                        <div class="toggle">
+                            <div class="title" on-click="openGuarantee:{{id}}">
+
+                                <h6>
+                                    {{_e('Информация о Гарантии')}} </h6>
+
+                                <div class="garant_state">
+                                </div>
+
+                                <div class="date">#{{id}} {{date}} <i class="fa fa-file-o" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="buttons">
+                                    {{_e('Выставлена')}}
+                                </div>
+                            </div>
+                            <div class="content-detali-guatantee body-{{id}}" style="display: none;">
+                                <fieldset style="width:100%" class="blank_info">
+                                    <div class="formRow">
+                                        <label>{{_e('Сумма')}} </label>
+                                        <div class="formRight">
+          <span class="twoFour" style="float: left;height: 15px;">
+            <div> <span class="dst">{{offer.summa}} {{offer.currency}}</span></div>
+
+          </span>
+                                            <span class="twoFour"
+                                                  style="font-size:15px;text-align:center; display: inline-block">
+                                          {{_e('Гарантия')}}<br>
+                            <span style="font-size:11px">(VISA)</span>
+
+          </span>
+
+                                            <span class="oneFour" style="width:auto;"></span>
+                                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                        </div>
+                                    </div>
+
+                                    <div class="formRow last">
+                                        <div class="ws25">
+                                            <label>{{_e('Детали')}}</label>
+                                        </div>
+
+                                        <div class="ws25"><span class="oneFour" style=""><span
+                                                class="dst">{{time}}</span><br>{{_e('Кол-во Дней')}}</span></div>
+                                        <div class="ws25">
+                                            <span class="oneFour" style=""><span class="dst">{{percent}}%</span><br>{{_e('Ставка всего')}}</span>
+                                        </div>
+                                        <div class="ws25"><span class="oneFour" style="">              <span
+                                                class="oneFour out-summa"
+                                                style="margin-right:0px;">
+                                  <span class="dst">{{out_summ}} {{currency}}</span><br> {{_e('Сумма возврата')}}</span></span>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="drop_down">
+                                        <div class="content_drop">
+                                        </div>
+
+                                        <div class="list_applications">
+                                        </div>
+
+
+                                        <div class="view_all">{{_e('Контрагент:')}}</div>
+                                        {{#contragents}}
+                                        <span class="load_user"
+                                              rel="{{offer.id_user}}">{{user.name}} {{user.sername}} <span class="dst"
+                                                                                                           onclick="Messenger.openChat(false,'{{offer.id_user}}')"> <i
+                                                class="fa fa-envelope-o" style="font-size: 20px;"
+                                                aria-hidden="true"></i></span></span>
+                                        {{else}}
+                                        <span class="load_user" rel="error">{{_e('Ошибка контрагент не найден!')}}</span>
+                                        {{/}}
+
+                                        {{#if type =='1' && state == '1'}}
+
+                                        <ul class="nav-nt">
+                                            <li class="active">
+                                                <a class="pointer" on-click="accept:{{id}}">{{_e('Принять')}}</a>
+                                            </li>
+                                            <li class="blue-otc">
+                                                <a class="pointer" on-click="cancel:{{id}}">{{_e('Отклонить')}}</a>
+                                            </li>
+
+                                        </ul>
+                                        {{/if}}
+                                        {{#if type =='2' && state == '1'}}
+
+                                        <ul class="nav-nt">
+                                            <!--<li class="active">-->
+                                            <!--<a class="pointer" on-click="accept:{{id}}">Принять</a>-->
+                                            <!--</li>-->
+                                            <li class="blue-otc">
+                                                <a class="pointer" on-click="cancel:{{id}}">{{_e('Удалить')}}</a>
+                                            </li>
+
+                                        </ul>
+                                        {{/if}}
+
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <center><h2>{{_e('У вас нет выданных гарантий')}}</h2></center>
+                        {{/}}
+
+                        {{/if}}
+                        {{#if tabPage == 'take'}}
+                        {{#orders}}
+                        {{#if type =='1'}}
+                        <div class="toggle">
+                            <div class="title" on-click="openGuarantee:{{id}}">
+
+                                <h6>
+                                    {{_e('Информация о Гарантии')}}</h6>
+
+                                <div class="garant_state">
+                                </div>
+
+                                <div class="date">#{{id}} {{date}} <i class="fa fa-file-o" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="buttons">
+                                    {{_e('Выставлена')}}
+                                </div>
+                            </div>
+                            <div class="content-detali-guatantee body-{{id}}" style="display: none;">
+                                <fieldset style="width:100%" class="blank_info">
+                                    <div class="formRow">
+                                        <label>{{_e('Сумма')}}</label>
+                                        <div class="formRight">
+          <span class="twoFour" style="float: left;height: 15px;">
+            <div> <span class="dst">{{offer.summa}} {{offer.currency}}</span></div>
+
+          </span>
+                                            <span class="twoFour"
+                                                  style="font-size:15px;text-align:center; display: inline-block">
+                                          {{_e('Гарантия')}}<br>
+                            <span style="font-size:11px">(VISA)</span>
+
+          </span>
+
+                                            <span class="oneFour" style="width:auto;"></span>
+                                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                        </div>
+                                    </div>
+
+                                    <div class="formRow last">
+                                        <div class="ws25">
+                                            <label>{{_e('Детали')}}</label>
+                                        </div>
+
+                                        <div class="ws25"><span class="oneFour" style=""><span
+                                                class="dst">{{time}}</span><br>{{_e('Кол-во Дней')}}</span></div>
+                                        <div class="ws25">
+                      <span class="oneFour" style=""><span class="dst">{{percent}}%</span><br>
+                              {{_e('Ставка всего')}} </span></div>
+                                        <div class="ws25"><span class="oneFour" style="">              <span
+                                                class="oneFour out-summa"
+                                                style="margin-right:0px;">
+                                  <span class="dst">{{out_summ}} {{currency}}</span><br> {{_e('Сумма возврата')}} </span></span>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="drop_down">
+                                        <div class="content_drop">
+                                        </div>
+
+                                        <div class="list_applications">
+                                        </div>
+
+
+                                        <div class="view_all">{{_e('Контрагент:')}}</div>
+                                        {{#contragents}}
+                                        <span class="load_user"
+                                              rel="{{offer.id_user}}">{{user.name}} {{user.sername}} <span class="dst"
+                                                                                                           onclick="Messenger.openChat(false,'{{offer.id_user}}')"> <i
+                                                class="fa fa-envelope-o" style="font-size: 20px;"
+                                                aria-hidden="true"></i></span></span>
+                                        {{else}}
+                                        <span class="load_user" rel="500150">{{_e('Ошибка контрагент не найден!')}}</span>
+                                        {{/}}
+
+
+                                        {{#if type =='1' && state == '1'}}
+
+                                        <ul class="nav-nt">
+                                            <li class="active">
+                                                <a class="pointer" on-click="accept:{{id}}">{{_e('Принять')}}</a>
+                                            </li>
+                                            <li class="blue-otc">
+                                                <a class="pointer" on-click="cancel:{{id}}">{{_e('Отклонить')}}</a>
+                                            </li>
+
+                                        </ul>
+                                        {{/if}}
+                                        {{#if type =='2' && state == '1'}}
+
+                                        <ul class="nav-nt">
+                                            <!--<li class="active">-->
+                                            <!--<a class="pointer" on-click="accept:{{id}}">Принять</a>-->
+                                            <!--</li>-->
+                                            <li class="blue-otc">
+                                                <a class="pointer" on-click="cancel:{{id}}">{{_e('Удалить')}}</a>
+                                            </li>
+
+                                        </ul>
+                                        {{/if}}
+
+
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        {{/if}}
+                        {{else}}
+                        <center><h2>{{_e('У вас нет полученных гарантий')}}</h2></center>
+                        {{/}}
+
+                        {{/if}}
+
+                    </div>
+                </div>
+            </scroll>
+
+        </div>
+
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="chat-panel-bottom">
+                <div class="ltos"></div>
+
+                <ul class="nav-nt">
+                    <li class="active">
+                        <a class="pointer">{{_e('Активные карты')}}</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                    <!--</li>-->
+
+                </ul>
+
+                <div class="spl-icn"></div>
+                <scroll class_scroll="" class_content="" id_content="">
+
+
+                <Cards/>
+                     <button class="add-btns" on-click="setPage:cards">View all cards</button>
+                </scroll>
+            </div>
+        </div>
+    </div>
+</div>

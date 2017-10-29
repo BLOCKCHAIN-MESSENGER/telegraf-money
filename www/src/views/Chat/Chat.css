@@ -1,0 +1,2234 @@
+/* line 1, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031}}
+.сhat-wrapper * {
+  box-sizing: content-box;
+}
+/* line 5, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000035}}
+.сhat-wrapper .close-blocks {
+  position: static;
+  margin: 0;
+}
+/* line 10, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000310}}
+.сhat-wrapper .sparrow {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../../../src/img/logo-new.png) 0 0 no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: 5px;
+  right: 13px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.22s;
+  -o-transition-duration: 0.22s;
+  -moz-transition-duration: 0.22s;
+  transition-duration: 0.2s;
+}
+/* line 26, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000326}}
+.сhat-wrapper .sparrow:hover {
+  transform: rotate(15deg);
+}
+/* line 30, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000330}}
+.сhat-wrapper .chat-in-messenge-me {
+  width: 100%;
+  max-width: 500px;
+  word-wrap: break-word;
+  float: left;
+  text-align: left;
+  clear: both;
+}
+/* line 42, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000342}}
+.сhat-wrapper .chat-in-messenge-my {
+  width: 100%;
+  max-width: 500px;
+  min-width: 185px;
+  float: right;
+  clear: both;
+}
+/* line 51, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000351}}
+.сhat-wrapper .chat-in-messenge-me .time {
+  float: right;
+  color: #A2B1BE;
+  font-size: 12px;
+}
+/* line 57, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000357}}
+.сhat-wrapper .chat-in-messenge-my .time {
+  float: left;
+  color: #6CC264;
+  font-size: 12px;
+}
+/* line 63, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000363}}
+.сhat-wrapper .chat-in-messenge-me .time {
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+/* line 71, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000371}}
+.сhat-wrapper .chat-in-check-time-area .check-area-2 {
+  background: url(../../../src/img/chat-check-2.png) 0 0 no-repeat;
+  width: 19px;
+  background-size: contain;
+  height: 11px;
+  float: right;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+/* line 81, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000381}}
+.сhat-wrapper .chat-in-check-time-area .check-area-1 {
+  background: url(../../../src/img/chat-check-1.png) 0 0 no-repeat;
+  width: 19px;
+  background-size: contain;
+  height: 11px;
+  float: right;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+/* line 91, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\0000391}}
+.сhat-wrapper .chat-in-date-cloud {
+  display: block;
+  width: 100%;
+  clear: both;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 18px !important;
+}
+/* line 101, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003101}}
+.сhat-wrapper .account-img-area {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  display: block;
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+/* line 112, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003112}}
+.сhat-wrapper .stars-area {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+/* line 120, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003120}}
+.сhat-wrapper .full-star {
+  padding: 0;
+  margin: 0 4px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../src/img/full-star.png) 0 0 no-repeat;
+  width: 15px;
+  height: 20px;
+  background-size: contain;
+  margin-top: -19px;
+}
+/* line 133, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003133}}
+.сhat-wrapper .no-star {
+  padding: 0;
+  margin: 0 4px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../src/img/no-star.png) 0 0 no-repeat;
+  width: 15px;
+  height: 20px;
+  background-size: contain;
+  margin-top: -19px;
+}
+/* line 146, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003146}}
+.сhat-wrapper .active-status:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #d23345;
+  border-radius: 50px;
+  margin-top: 16px;
+  margin-left: -14px;
+}
+/* line 157, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003157}}
+.сhat-wrapper .content-nh.frz-vr {
+  padding-left: 22px;
+}
+/* line 161, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003161}}
+.сhat-wrapper .bg-my {
+  font-size: 13px;
+  background: #c7e1ff;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 20px;
+  text-align: left;
+  font-weight: 400;
+  color: #000;
+  clear: both;
+}
+/* line 175, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003175}}
+.сhat-wrapper .bg-my1 {
+  font-size: 13px;
+  background: #418EE9;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 20px;
+  text-align: left;
+  font-weight: 400;
+  color: #000000;
+  clear: both;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+/* line 192, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003192}}
+.сhat-wrapper .chat-in-messenge-my .time {
+  float: right;
+  color: #fff;
+  text-align: left !important;
+  padding-right: 19px;
+  font-size: 12px;
+  font-weight: normal !important;
+  margin-bottom: 2px;
+}
+/* line 202, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003202}}
+.сhat-wrapper .chat-in-date-cloud {
+  font-weight: normal;
+}
+/* line 206, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003206}}
+.сhat-wrapper .chat-in-date-cloud {
+  display: block;
+  width: 100%;
+  clear: both;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 18px !important;
+  font-weight: bold;
+}
+/* line 217, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003217}}
+.сhat-wrapper .chat-bottom {
+  background: #fff;
+  height: 60px;
+}
+/* line 222, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003222}}
+.сhat-wrapper .chat-bottom .textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 22px;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  border-bottom: 0px solid #eee;
+  padding-top: 16px;
+  color: #0d63ca !important;
+}
+/* line 234, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003234}}
+.сhat-wrapper .chat-bottom {
+  background: #fff;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px 0 5px;
+}
+/* line 241, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003241}}
+.сhat-wrapper .mm-panels .stars-area {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  display: block;
+  font-size: 0;
+  margin-bottom: -16px;
+}
+/* line 251, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003251}}
+.сhat-wrapper .p-title {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+/* line 259, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003259}}
+.сhat-wrapper .chat-icon img {
+  width: 100%;
+  max-width: 60px;
+}
+/* line 264, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003264}}
+.сhat-wrapper .chat-icon {
+  position: relative;
+  padding-top: 11px;
+}
+/* line 269, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003269}}
+.сhat-wrapper .notifs {
+  background: #D63749;
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  font-size: 10px;
+  border-radius: 50px;
+  height: 20px;
+  line-height: 18px;
+  border: 1px solid #fff;
+  position: absolute;
+  font-weight: 600;
+  margin-top: 0;
+}
+/* line 284, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003284}}
+.сhat-wrapper .chat-panel-bottom {
+  position: fixed;
+  background: #0753ab;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  height: 100%;
+}
+/* line 296, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003296}}
+.сhat-wrapper .chat-panel-bottom {
+  display: none;
+}
+/* line 300, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003300}}
+.сhat-wrapper .arrows-no {
+  display: block;
+}
+/* line 304, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003304}}
+.сhat-wrapper .arrows-position {
+  right: 49px;
+}
+/* line 308, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003308}}
+.сhat-wrapper .stz {
+  display: none;
+}
+/* line 312, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003312}}
+.сhat-wrapper .obms {
+  position: relative;
+}
+/* line 316, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003316}}
+.сhat-wrapper .obn {
+  position: relative;
+}
+/* line 320, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003320}}
+.сhat-wrapper .stz.show-main-navs {
+  display: block;
+}
+/* line 324, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003324}}
+.сhat-wrapper .arrows-positionsw {
+  display: none !important;
+}
+/* line 328, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003328}}
+.сhat-wrapper .arrowsys {
+  display: none;
+}
+/* line 332, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003332}}
+.сhat-wrapper .clk-sr {
+  position: absolute;
+  margin-top: -120px;
+}
+/* line 337, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003337}}
+.сhat-wrapper .mvs4 {
+  position: relative;
+}
+/* line 341, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003341}}
+.сhat-wrapper .obms {
+  position: relative;
+}
+/* line 345, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003345}}
+.сhat-wrapper .obn {
+  position: relative;
+}
+/* line 349, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003349}}
+.сhat-wrapper .stz {
+  display: none;
+}
+/* line 353, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003353}}
+.сhat-wrapper .stz.show-main-navs {
+  display: block;
+}
+/* line 357, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003357}}
+.сhat-wrapper .hide-xts .textarea {
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding-top: 9px;
+  height: 100px;
+}
+/* line 366, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003366}}
+.сhat-wrapper .hide-xts input {
+  border: 0;
+}
+/* line 370, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003370}}
+.сhat-wrapper .hide-xts input {
+  margin-bottom: 15px;
+}
+/* line 374, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003374}}
+.сhat-wrapper .hide-xts button.button {
+  width: 128px;
+}
+/* line 378, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003378}}
+.сhat-wrapper input,
+.сhat-wrapper .textarea {
+  color: #000 !important;
+}
+/* line 382, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003382}}
+.сhat-wrapper .textarea:focus {
+  border-color: #ED7A00 !important;
+  border: 1px solid #ED7A00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 390, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003390}}
+.сhat-wrapper .hide-xts {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 174px;
+  margin-top: 35px;
+  background: #0b53a8;
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: none;
+  margin-right: 6px;
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 99;
+}
+/* line 405, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003405}}
+.сhat-wrapper .hide-xts.stz a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: bold;
+}
+/* line 413, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003413}}
+.сhat-wrapper .hide-xts.stz a:hover {
+  opacity: 0.8;
+}
+/* line 417, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003417}}
+.сhat-wrapper .close-block {
+  position: absolute;
+  width: 53px;
+  height: 47px;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+/* line 427, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003427}}
+.сhat-wrapper .chat-in-check-time-area .check-area-1 {
+  background: url(../../../src/img/cb1.png) 0 0 no-repeat !important;
+  width: 19px;
+  background-size: contain !important;
+  height: 9px;
+  float: right;
+  margin-left: 4px;
+  margin-top: -11px;
+  margin-right: -31px;
+}
+/* line 438, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003438}}
+.сhat-wrapper .chat-in-check-time-area .check-area-2 {
+  background: url(../../../src/img/cb2.png) 0 0 no-repeat !important;
+  width: 19px;
+  background-size: contain !important;
+  height: 9px;
+  float: right;
+  margin-left: 4px;
+  margin-top: -11px;
+  margin-right: -26px;
+}
+/* line 449, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003449}}
+.сhat-wrapper .bg-my {
+  padding-right: 20px !important;
+}
+/* line 453, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003453}}
+.сhat-wrapper .textarea[placeholder] {
+  color: rgba(13, 91, 172, 0.67);
+}
+/* line 457, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003457}}
+.сhat-wrapper .textarea::-webkit-input-placeholder {
+  color: rgba(13, 91, 172, 0.67);
+}
+/* line 461, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003461}}
+.сhat-wrapper .textarea::-moz-placeholder {
+  color: rgba(13, 91, 172, 0.67);
+}
+/* Firefox 19+ */
+/* line 466, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003466}}
+.сhat-wrapper .textarea:-moz-placeholder {
+  color: rgba(13, 91, 172, 0.67);
+}
+/* Firefox 18- */
+/* line 471, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003471}}
+.сhat-wrapper .textarea:-ms-input-placeholder {
+  color: rgba(13, 91, 172, 0.67);
+}
+/* line 475, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003475}}
+.сhat-wrapper .textarea {
+  overflow: hidden;
+  padding: 10px;
+  font-size: 14px;
+  margin: 50px auto;
+  display: block;
+  border-radius: 10px;
+  border: 6px solid #556677;
+  width: 80% !important;
+  max-width: 100%;
+  height: 23px;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  border-bottom: 0px solid #eee;
+  padding-top: 16px;
+  color: #0d63ca !important;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  resize: none !important;
+}
+/* line 498, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003498}}
+.сhat-wrapper .chat-bottom {
+  height: auto;
+}
+/* line 502, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003502}}
+.сhat-wrapper .chat-bottom .textarea {
+  max-width: 100%;
+  height: 22px;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  border-bottom: 0px solid #eee;
+  padding-top: 16px;
+  color: #0d63ca !important;
+  margin-bottom: 6px;
+  min-height: 19px;
+  max-height: 300px !important;
+}
+/* line 517, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003517}}
+.сhat-wrapper .contents {
+  padding-bottom: 43px;
+}
+/* line 521, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003521}}
+.сhat-wrapper .mm-panels .stars-area {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  display: block;
+  font-size: 0;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+/* line 532, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003532}}
+.сhat-wrapper .p-title {
+  margin-top: -7px;
+}
+/* line 536, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003536}}
+.сhat-wrapper .price-nt {
+  position: absolute;
+  top: 41px;
+  left: 104px;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 544, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003544}}
+.сhat-wrapper .id-area {
+  color: #3b90f5;
+  margin-top: -14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 552, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003552}}
+.сhat-wrapper img.flsg {
+  border-radius: 100px;
+  margin-top: 1px !important;
+}
+/* line 557, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003557}}
+.сhat-wrapper .bg-my {
+  background: #c7e1ff !important;
+  color: #000000 !important;
+  display: inline-block;
+  margin-right: 70px;
+  float: right;
+  max-width: 100%;
+  word-wrap: break-word;
+  padding-right: 30px !important;
+}
+/* line 569, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003569}}
+.сhat-wrapper .сhat-wrapper .bg-my1 {
+  background: #c7e1ff !important;
+  display: inline-block;
+  padding-right: 12px;
+}
+/* line 576, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003576}}
+.сhat-wrapper .chat-in-messenge-my {
+  position: relative;
+}
+/* line 580, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003580}}
+.сhat-wrapper .chat-in-messenge-my img {
+  position: absolute;
+  right: 20px;
+  top: -3px;
+}
+/* line 586, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003586}}
+.сhat-wrapper .chat-in-date-cloud:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: -19px;
+  height: 1px;
+  background: none;
+  z-index: -1;
+  margin-top: 10px;
+}
+/* line 597, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003597}}
+.сhat-wrapper .chat-in-date-cloud {
+  display: table;
+  margin: 0 auto;
+  width: auto;
+  clear: both;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 18px !important;
+  font-weight: bold;
+  background: #0D63CA;
+  z-index: 11;
+  padding: 0 22px;
+}
+/* line 612, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003612}}
+.сhat-wrapper .header.chat-hr {
+  box-sizing: border-box !important;
+}
+/* line 616, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003616}}
+.сhat-wrapper .header.chat-hr {
+  padding-bottom: 0 !important;
+  background: #1F6FCF;
+  border: 0;
+  padding: 24px;
+  height: 90px !important;
+}
+/* line 624, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003624}}
+.сhat-wrapper .chat-in-messenge-my img.flsg,
+.сhat-wrapper .chat-in-messenge-me img.flsg {
+  margin-left: 0;
+  top: -3px;
+}
+/* line 630, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003630}}
+.сhat-wrapper .status-bar {
+  margin-top: -9px;
+  float: left;
+}
+/* line 635, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003635}}
+.сhat-wrapper .status-bar .flsg {
+  float: left;
+  margin-left: 0 !important;
+  display: block;
+  width: 62px !important;
+  height: 62px !important;
+}
+/* line 643, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003643}}
+.сhat-wrapper .header.chat-hr .icon-area.drop {
+  width: 24px;
+  height: 32px;
+  background: url(../../../src/img/dotts.png) 0 0 no-repeat;
+  float: right;
+  margin-right: 10px;
+  top: 31px;
+  position: absolute;
+  right: 5px;
+  background-size: contain;
+  cursor: pointer;
+}
+/* line 656, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003656}}
+.сhat-wrapper .chat-panel-bottom .scroller-b {
+  height: 100% !important;
+  position: absolute;
+}
+/* line 661, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003661}}
+.сhat-wrapper .chat-in-w-100-date {
+  margin-bottom: 20px;
+}
+/* line 665, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003665}}
+.сhat-wrapper .status-bar {
+  margin-top: -11px;
+  float: left;
+  margin-left: -5px;
+}
+/* line 671, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003671}}
+.сhat-wrapper .stlk {
+  margin-left: 70px;
+  margin-top: -3px;
+}
+/* line 676, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003676}}
+.сhat-wrapper .status-area {
+  color: #fff;
+  text-align: center;
+  margin-top: -21px;
+  font-size: 11px;
+  padding-left: 11px;
+}
+/* line 684, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003684}}
+.сhat-wrapper .active-status:before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #d23345;
+  border-radius: 50px;
+  margin-top: 17px;
+  margin-left: -14px;
+}
+/* line 695, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003695}}
+.сhat-wrapper .scroller-b {
+  height: calc(100% - 144px);
+  position: absolute;
+}
+/* line 700, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003700}}
+.сhat-wrapper .bg-my1 {
+  display: inline-block;
+}
+/* line 704, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003704}}
+.сhat-wrapper .chat-in-messenge-me .bg-my1:before {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+  border-right: 9px solid #fff;
+  margin-left: -32px;
+  top: 0;
+  margin-top: 12px;
+}
+/* line 714, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003714}}
+.сhat-wrapper .chat-in-messenge-my .bg-my:after {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+  border-left: 9px solid #c7e1ff;
+  margin-left: -25px;
+  margin-top: 4px;
+  top: 0;
+  margin-top: 12px;
+  right: -15px;
+}
+@media (max-width: 1199px) {
+  /* line 727, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003727}}
+  .сhat-wrapper .header.chat-hr {
+    padding-bottom: 0 !important;
+    background: #1F6FCF;
+    border: 0;
+    padding: 16px;
+    height: 79px !important;
+  }
+  /* line 735, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003735}}
+  body .сhat-wrapper .notifs {
+    z-index: 9;
+  }
+  /* line 739, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003739}}
+  .сhat-wrapper .chat-icon {
+    height: 50px !important;
+    padding-left: 8px !important;
+  }
+  /* line 744, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003744}}
+  .сhat-wrapper .stlk {
+    max-width: 209px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: -2px;
+  }
+  /* line 752, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003752}}
+  .сhat-wrapper .status-area {
+    color: #fff;
+    text-align: left;
+    margin-top: -21px;
+    font-size: 11px;
+    padding-left: 11px;
+    margin-left: 73px;
+  }
+  /* line 761, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003761}}
+  .сhat-wrapper .close-blocks {
+    display: none !important;
+  }
+  /* line 765, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003765}}
+  .сhat-wrapper .status-bar {
+    margin-top: -11px;
+    float: left;
+    margin-left: 43px;
+  }
+  /* line 771, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003771}}
+  .header a {
+    top: 15px;
+  }
+  /* line 775, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003775}}
+  .сhat-wrapper .icon-area.drop {
+    width: 24px;
+    height: 32px;
+    background: url(../../../src/img/dotts.png) 0 0 no-repeat;
+    float: right;
+    margin-right: 10px;
+    top: 23px;
+    position: absolute;
+    right: 35px;
+    background-size: contain;
+    cursor: pointer;
+  }
+  /* line 788, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003788}}
+  .сhat-wrapper .arrow-st {
+    background: url(../../../src/img/arrow-st.png) 0 0 no-repeat;
+    position: fixed;
+    top: 11px;
+    right: -30px;
+    background-color: #1056ac;
+    width: 63px;
+    height: 54px;
+    z-index: 999;
+    background-position: 10px;
+    background-size: 21%;
+    border-radius: 150px;
+    cursor: pointer;
+    background-position: 13px;
+  }
+}
+/* line 805, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003805}}
+.сhat-wrapper .chat-in-messenge-me {
+  position: relative !important;
+}
+/* line 809, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003809}}
+.сhat-wrapper .time-ns {
+  color: #000;
+  margin-left: 0;
+  display: block;
+  margin-top: 0;
+  font-size: 11px;
+  float: right;
+  padding-left: 10px;
+  margin-right: 0;
+}
+/* line 820, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003820}}
+.сhat-wrapper .chat-in-messenge-my .time-ns {
+  right: auto;
+  left: -37px;
+}
+/* line 825, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003825}}
+body .сhat-wrapper .status-area {
+  color: #fff;
+  text-align: center;
+  margin-top: -21px;
+  font-size: 11px;
+  padding-left: 0px;
+  margin-left: 87px;
+  float: left;
+  clear: both;
+}
+/* line 836, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003836}}
+.сhat-wrapper .chat-in-w-100-date {
+  position: relative !important;
+}
+/* line 840, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003840}}
+.сhat-wrapper .chat-in-date-cloud {
+  font-weight: normal !important;
+}
+@media (max-width: 1199px) {
+  /* line 845, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003845}}
+  .сhat-wrapper .chat-panel-bottom {
+    width: 88px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 851, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003851}}
+  .сhat-wrapper .chat-icon img {
+    width: 100%;
+    max-width: 60px;
+    position: absolute;
+    margin-top: 0;
+  }
+  /* line 858, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003858}}
+  .сhat-wrapper .chat-bottom {
+    z-index: 9999 !important;
+  }
+  /* line 862, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003862}}
+  .сhat-wrapper .chat-icon:last-child {
+    margin-bottom: 114px;
+  }
+  /* line 866, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003866}}
+  .сhat-wrapper .arrow-st.arrows-position {
+    display: none !important;
+  }
+  /* line 870, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003870}}
+  .сhat-wrapper .icon-area.drop.obms {
+    display: none;
+  }
+  /* line 874, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003874}}
+  .wrapper.сhat-wrapper {
+    margin-right: 22% !important;
+  }
+  /* line 878, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003878}}
+  .сhat-wrapper .chat-panel-bottom {
+    display: block !important;
+    width: 22% !important;
+  }
+  /* line 883, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003883}}
+  .сhat-wrapper .arrows-position {
+    right: 261px;
+  }
+  /* line 887, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003887}}
+  .сhat-wrapper .arrows-position-ns {
+    margin-right: 22% !important;
+  }
+  /* line 891, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003891}}
+  .сhat-wrapper .arrows-no {
+    display: block;
+    width: 22%;
+  }
+  /* line 896, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003896}}
+  .сhat-wrapper .arrows-position {
+    right: 19.7%;
+  }
+  /* line 900, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003900}}
+  .сhat-wrapper .nav-nt {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    margin-left: 12px;
+  }
+  /* line 911, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003911}}
+  .сhat-wrapper .nav-nt li {
+    padding: 3px 11px;
+    margin: 10px 2px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+  }
+  /* line 920, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003920}}
+  .сhat-wrapper .chat-panel-bottom.arrows-no h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 16px;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+/* line 929, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003929}}
+.сhat-wrapper .ustr {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 1px;
+  color: #fff;
+  margin-left: 7px;
+  color: #5ba0f1;
+}
+/* line 939, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003939}}
+.сhat-wrapper .status-bar .stars-area {
+  height: 19px;
+  margin-top: -12px;
+  margin-left: 6px;
+  margin-bottom: 8px;
+}
+/* line 946, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003946}}
+.сhat-wrapper .chat-panel-bottom.arrows-no h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 16px;
+}
+/* line 952, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003952}}
+.сhat-wrapper .chat-panel-bottom ul.nav-nt {
+  padding-bottom: 7px;
+}
+/* line 956, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003956}}
+.сhat-wrapper .chat-panel-bottom ul.nav-nt {
+  padding-bottom: 4px;
+  margin-top: -6px;
+}
+@media (max-width: 1199px) {
+  /* line 962, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003962}}
+  .сhat-wrapper .chat-panel-bottom.arrows-no h1,
+  .сhat-wrapper .chat-panel-bottom ul.nav-nt {
+    display: none;
+  }
+  /* line 966, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003966}}
+  .сhat-wrapper .arrow-st.arrows-position {
+    right: 52px;
+  }
+}
+/* line 972, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003972}}
+.сhat-wrapper .ltos {
+  width: 100%;
+  height: 50px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+100&0+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #1e5799 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#1e5799', GradientType=0);
+  /* IE6-9 */
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}
+/* line 985, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003985}}
+.сhat-wrapper .status-bar .stars-area {
+  height: 19px;
+  margin-top: -7px;
+  margin-left: 35px;
+  margin-bottom: 8px;
+}
+/* line 992, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\00003992}}
+.сhat-wrapper .status-area {
+  color: #fff;
+  text-align: center;
+  margin-top: -21px;
+  font-size: 11px;
+  padding-left: 0px;
+  margin-left: -2px;
+}
+/* line 1001, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031001}}
+.сhat-wrapper .chat-panel-bottom h1 {
+  font-size: 21px;
+  text-align: left;
+  padding-left: 14px;
+  margin-top: 17px;
+  margin-bottom: 19px;
+}
+/* line 1009, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031009}}
+.сhat-wrapper .chat-panel-bottom h1 {
+  font-size: 21px;
+  margin-bottom: 5px;
+  margin-top: 33px !important;
+  margin-bottom: 39px !important;
+}
+@media (max-width: 1199px) {
+  /* line 1018, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031018}}
+  .сhat-wrapper .pos-ab-av {
+    position: relative !important;
+  }
+  /* line 1022, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031022}}
+  .сhat-wrapper span.ustr {
+    display: none;
+  }
+  /* line 1026, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031026}}
+  .сhat-wrapper .chat-icon:last-child {
+    margin-bottom: 30px;
+  }
+  /* line 1030, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031030}}
+  .сhat-wrapper .obms .close-blocks div p {
+    position: absolute !important;
+    width: 200px;
+    color: #fff;
+    padding-left: 38px;
+    padding-top: 8px;
+  }
+  /* line 1038, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031038}}
+  .сhat-wrapper .obms .close-blocks div p:hover {
+    opacity: 0.8;
+  }
+  /* line 1042, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031042}}
+  .сhat-wrapper .spl-icn {
+    height: 75px;
+    background: url(../../../src/img/logo-b.png) 0 0 no-repeat;
+    width: 80px;
+    background-size: 35%;
+    background-position: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #528DD9;
+  }
+  /* line 1052, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031052}}
+  .сhat-wrapper .chat-icon:first-child {
+    border: 0 !important;
+  }
+  /* line 1056, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031056}}
+  .сhat-wrapper .obms .close-blocks {
+    display: block !important;
+  }
+  /* line 1060, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031060}}
+  .сhat-wrapper .obms .close-blocks {
+    display: block !important;
+    margin-top: 0px;
+    position: relative;
+  }
+  /* line 1066, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031066}}
+  .сhat-wrapper .obms .close-blocks div {
+    position: relative !important;
+    margin: 2px auto;
+    clear: both;
+    float: left;
+    width: 100px;
+    right: auto !important;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    margin-left: -6px;
+  }
+  /* line 1078, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031078}}
+  .сhat-wrapper .obms .close-blocks div p {
+    position: absolute !important;
+  }
+}
+/* line 1084, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031084}}
+.сhat-wrapper .cls3 {
+  right: 100px;
+}
+/* line 1088, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031088}}
+body .сhat-wrapper .notifs {
+  border: 4px solid #0753AB;
+}
+/* line 1092, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031092}}
+.сhat-wrapper .pos-ab-av {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  margin-top: 1px;
+  line-height: 57px;
+  font-size: 21px;
+}
+@media (max-width: 370px) {
+  /* line 1102, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031102}}
+  .сhat-wrapper .full-star {
+    width: 11px;
+    height: 11px;
+  }
+  /* line 1107, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031107}}
+  .сhat-wrapper .no-star {
+    width: 11px;
+    height: 11px;
+  }
+  /* line 1112, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031112}}
+  .сhat-wrapper .stlk {
+    max-width: 122px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: -2px;
+    font-size: 13px;
+  }
+  /* line 1121, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031121}}
+  body .сhat-wrapper .status-area {
+    display: none;
+  }
+}
+/* line 1126, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031126}}
+.сhat-wrapper .noavatar {
+  float: left;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  font-size: 15px;
+  margin-top: -3px !important;
+}
+/* line 1136, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031136}}
+.сhat-wrapper .chat-in-messenge-my .noavatar {
+  float: right;
+  right: 20px;
+}
+@media (min-width: 700px) and (max-width: 1199px) {
+  /* line 1142, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031142}}
+  .сhat-wrapper .status-bar {
+    margin-top: -11px;
+    float: left;
+    margin-left: 0;
+  }
+}
+/* line 1149, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031149}}
+.сhat-wrapper .stlk {
+  text-align: left !important;
+  padding-left: 1px;
+}
+/* line 1154, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031154}}
+.сhat-wrapper .stlk {
+  margin-left: 76px;
+}
+/* line 1158, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031158}}
+body .сhat-wrapper .status-bar .stars-area {
+  height: 19px;
+  margin-top: -10px;
+  margin-left: 72px;
+  margin-bottom: 18px;
+  float: left;
+}
+/* line 1166, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031166}}
+body .сhat-wrapper .status-area {
+  color: #fff;
+  text-align: center;
+  margin-top: -29px;
+  font-size: 11px;
+  padding-left: 0px;
+  margin-left: 92px;
+  float: left;
+  clear: both;
+}
+/* line 1177, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031177}}
+.сhat-wrapper .pos-ab-av {
+  position: absolute;
+  width: 51px;
+  height: 50px;
+  margin-top: 1px;
+  line-height: 56px;
+  font-size: 21px;
+  margin-left: 6px;
+}
+/* line 1187, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031187}}
+.сhat-wrapper .bg-my1 {
+  margin-left: 54px;
+}
+/* line 1199, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031199}}
+body img.flsg {
+  margin-left: -136px;
+}
+/* line 1203, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031203}}
+body .status-bar img {
+  position: absolute;
+  left: 50px;
+}
+/* line 1208, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031208}}
+body .bottom-panel {
+  background: #0D63CA;
+}
+@media (max-width: 1199px) {
+  /* line 1213, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031213}}
+  .сhat-wrapper .header a {
+    top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 1219, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031219}}
+  body .сhat-wrapper .sparrow {
+    width: 33px;
+    top: 5px;
+    right: 5px;
+  }
+}
+/* line 1227, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031227}}
+body .account-img-area-n {
+  width: 57px !important;
+  height: 57px !important;
+  object-fit: cover;
+  margin-top: 9.5px;
+}
+/* line 1234, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031234}}
+body .chat-in-im_dialog_message_wraps {
+  margin-left: 66px;
+  padding-top: 8px;
+}
+@media (max-width: 699px) {
+  /* line 1241, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031241}}
+  body .сhat-wrapper .icon-area.drop {
+    margin-right: -5px;
+    top: 26px;
+  }
+  /* line 1246, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031246}}
+  body .status-bar .flsg {
+    left: 62px;
+    top: 10px;
+  }
+}
+@media (min-width: 700px) {
+  /* line 1257, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031257}}
+  body .status-bar img {
+    position: absolute;
+    left: 23px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 420px) {
+  /* line 1265, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031265}}
+  .сhat-wrapper .chat-in-messenge-my img.flsg,
+  .сhat-wrapper .chat-in-messenge-me img.flsg {
+    display: none;
+  }
+  /* line 1269, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031269}}
+  .сhat-wrapper .chat-in-messenge-my .noavatar,
+  .сhat-wrapper .chat-in-messenge-me .noavatar {
+    display: none;
+  }
+  /* line 1273, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031273}}
+  .сhat-wrapper .bg-my1 {
+    margin-left: 11px;
+  }
+  /* line 1277, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031277}}
+  .сhat-wrapper .bg-my {
+    margin-right: 23px;
+  }
+}
+@media (max-width: 699px) {
+  /* line 1283, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031283}}
+  #social_chat-window-content-body-chats.scroller-b {
+    height: calc(100% - 77px) !important;
+    position: absolute;
+  }
+}
+/* line 1289, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031289}}
+.btm-m-area hr {
+  margin-bottom: 20px;
+  border-color: rgba(255, 255, 255, 0.37);
+}
+/* line 1296, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031296}}
+.chat-btn-modal {
+  width: 100%;
+  float: left;
+  background: #418EE9;
+  border-radius: 50px;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+/* line 1309, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031309}}
+.chat-btn-modal:hover {
+  background: #0D63CA !important;
+}
+/* line 1313, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031313}}
+.chat-btn-modal i {
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  padding-right: 2px;
+  vertical-align: text-top;
+}
+/* line 1321, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031321}}
+.ct-btn-m2,
+.ct-btn-m4 {
+  float: right !important;
+}
+/* line 1332, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031332}}
+.flsg-krgs {
+  float: left;
+  position: absolute;
+  height: 44px !important;
+  width: 44px !important;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-top: -3px;
+  margin-left: -4px;
+}
+/* line 1343, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031343}}
+.bg-my-chat-modal {
+  font-size: 13px;
+  background: #418EE9;
+  border-radius: 5px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 0px;
+  text-align: left;
+  font-weight: 400;
+  color: #fff;
+  clear: both;
+  display: inline-block;
+  margin-left: 56px;
+}
+/* line 1368, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031368}}
+span.sppl-lt {
+  clear: both;
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.39);
+  padding-bottom: 2px;
+  margin-bottom: 7px;
+}
+/* line 1377, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031377}}
+.bg-my-chat-modal:before {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+  border-right: 9px solid #418EE9;
+  margin-left: -25px;
+  margin-top: 4px;
+  top: 0;
+  margin-top: 12px;
+}
+/* line 1388, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031388}}
+.close-area i {
+  color: rgba(255, 255, 255, 0.69);
+  cursor: pointer;
+  float: left;
+  clear: both;
+  display: block;
+  width: 240px;
+  text-align: right;
+  margin-bottom: 11px;
+  margin-top: -29px;
+  position: absolute;
+}
+/* line 1401, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031401}}
+.close-area i:hover {
+  color: #fff !important;
+}
+/* line 1405, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031405}}
+.ct-btn-m4 {
+  background: #D63749 !important;
+}
+/* line 1413, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031413}}
+.close-area {
+  color: #fff;
+  margin-top: -28px;
+  position: absolute;
+}
+/* line 1420, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031420}}
+span.namels {
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+/* line 1434, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031434}}
+span.namels strong {
+  font-weight: 600;
+  display: block;
+  font-size: 11px;
+  color: #91bff7;
+}
+/* line 1442, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031442}}
+.modal-chat-area .bg-my-chat-modal {
+  margin-left: 0;
+}
+/* line 1446, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031446}}
+.modal-chat-area .bg-my-chat-modal:before {
+  display: none;
+}
+/* line 1450, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031450}}
+.flsg-krgs {
+  float: left;
+  position: relative;
+  height: 120px !important;
+  width: 120px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-top: -3px;
+  margin-left: -4px;
+  display: block;
+  clear: both;
+  margin: 0 auto !important;
+  float: none;
+  border-radius: 400px;
+  margin-bottom: 16px !important;
+}
+@media only screen and (max-width: 767px) {
+  /* line 1468, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031468}}
+  span.namels {
+    float: right;
+  }
+  /* line 1472, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031472}}
+  img.flsg-krgs {
+    float: left;
+    width: 80px;
+    height: 80px !important;
+  }
+  /* line 1478, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031478}}
+  span.namels {
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+/* line 1485, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031485}}
+.flsg-krgs {
+  width: 120px !important;
+}
+@media only screen and (max-width: 767px) {
+  /* line 1490, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031490}}
+  img.flsg-krgs {
+    width: 80px !important;
+  }
+  /* line 1494, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031494}}
+  .modal-chat-area .bg-my-chat-modal {
+    margin-left: 0;
+    clear: both;
+    display: table;
+  }
+}
+/* line 1501, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031501}}
+.сhat-wrapper .chat-in-messenge-my img.flsg,
+.сhat-wrapper .chat-in-messenge-me img.flsg {
+  width: 40px !important;
+  height: 40px !important;
+}
+/* line 1506, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031506}}
+.сhat-wrapper span.sppl-lt {
+  clear: both;
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.39);
+  padding-bottom: 2px;
+  margin-bottom: 7px;
+}
+/* line 1515, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031515}}
+.сhat-wrapper .chat-in-date-cloud {
+  display: table;
+  margin: 0 auto;
+  width: auto;
+  clear: both;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 2px !important;
+  font-weight: bold;
+  background: #1153a7;
+  z-index: 11;
+  padding: 0 22px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+/* line 1533, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031533}}
+.сhat-wrapper .chat-in-w-100-date {
+  position: relative !important;
+  margin-bottom: 10px;
+}
+/* line 1538, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031538}}
+#smile {
+  fill: #0752ab;
+  width: 32px;
+  height: 32px;
+  padding: 12px 5px 10px 0;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-duration: 0.22s;
+  -o-transition-duration: 0.22s;
+  -moz-transition-duration: 0.22s;
+  transition-duration: 0.2s;
+}
+/* line 1552, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031552}}
+.smile_element:hover #smile {
+  fill: #075de2;
+  width: 32px;
+  padding: 12px 40px 10px 0;
+}
+/* line 1559, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031559}}
+.smile_content {
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  z-index: 999;
+  position: absolute;
+  background: #fff;
+  /* border-radius: 13px 20px 20px 5px; */
+  bottom: 54px;
+  box-shadow: 0px -3px 10px -2px #020565;
+  -webkit-transition-duration: .4s;
+  -o-transition-duration: .4s;
+  -moz-transition-duration: .4s;
+  transition-duration: .4s;
+}
+/* line 1578, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031578}}
+.smile_element:hover .smile_content {
+  height: 200px;
+}
+/* line 1583, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031583}}
+.chat-area-icn-header {
+  padding: 20px;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  padding-top: 4px !important;
+}
+/* line 1591, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031591}}
+body .chat-area-icn {
+  padding: 0 17px;
+  width: 100%;
+  height: 115px !important;
+  margin: 0 auto;
+  background: #fff;
+  clear: both;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 4px !important;
+}
+/* line 1604, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031604}}
+.tabs-bg-gr {
+  padding: 10px;
+  background: #eee;
+}
+/* line 1609, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031609}}
+span.namels-icn {
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* line 1623, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031623}}
+.smls-a {
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+  float: left;
+  padding: 2.7px;
+}
+/* line 1631, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031631}}
+.smls-a img {
+  width: 100%;
+}
+/* line 1635, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031635}}
+.chat-area-icn2 {
+  background: #eee;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 1641, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031641}}
+.ul-icns {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: block;
+  /* добавляем блочность, если необходимо */
+  font-size: 0;
+  /* убираем нежелательные отсутпы у дочерних элементов */
+}
+/* line 1650, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031650}}
+.smls-a {
+  opacity: 0.7;
+}
+/* line 1654, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031654}}
+.smls-a:hover {
+  opacity: 1;
+}
+/* line 1658, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031658}}
+.ul-icns .uls-aa {
+  padding: 6px;
+  margin: 0;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+}
+/* line 1667, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031667}}
+.ul-icns .uls-aa img {
+  width: 100%;
+}
+/* line 1671, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031671}}
+.chat-area-icn-header {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #2f8eff;
+  clear: both;
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 0 !important;
+}
+/* line 1683, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031683}}
+.smile-22 {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  position: relative !important;
+  top: -2px !important;
+  right: 0 !important;
+}
+/* line 1692, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031692}}
+.сhat-wrapper .chat-in-w-100-date {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -mox-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  clear: both;
+}
+/* line 1705, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031705}}
+.content-nh .header {
+  height: 40px !important;
+  clear: both;
+}
+/* line 1710, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031710}}
+.header__title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 1;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  pointer-events: none;
+}
+/* line 1730, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031730}}
+.chat-in-w-100-date.header__title.header__title_position_top {
+  position: absolute !important;
+  z-index: 10;
+  top: 1px !important;
+  opacity: 0.7;
+}
+/* line 1738, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031738}}
+.hidden2 {
+  overflow: hidden;
+}
+/* line 1742, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031742}}
+.playline {
+  width: 210px;
+  height: 70px;
+  float: right;
+}
+/* line 1748, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031748}}
+.voice {
+  width: 260px;
+  height: 70px;
+}
+@media (max-width: 1199px) {
+  /* line 1754, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031754}}
+  body .сhat-wrapper .status-bar .flsg {
+    float: left;
+    margin-left: 0 !important;
+    display: none;
+    width: 62px !important;
+    height: 62px !important;
+  }
+  /* line 1762, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031762}}
+  .сhat-wrapper .stlk {
+    margin-left: 6px;
+  }
+  /* line 1766, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031766}}
+  body .сhat-wrapper .status-bar .stars-area {
+    height: 19px;
+    margin-top: -10px;
+    margin-left: 2px;
+    margin-bottom: 18px;
+    float: left;
+  }
+  /* line 1774, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031774}}
+  body .сhat-wrapper .status-area {
+    color: #fff;
+    text-align: center;
+    margin-top: -29px;
+    font-size: 11px;
+    padding-left: 0;
+    margin-left: 20px;
+    float: left;
+    clear: both;
+  }
+  /* line 1785, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031785}}
+  body .сhat-wrapper .close-blocks {
+    display: block !important;
+    margin-left: 14px !important;
+    right: 120px !important;
+  }
+  /* line 1791, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031791}}
+  body .сhat-wrapper .cls1 {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    top: 24px;
+    right: 90px;
+    cursor: pointer;
+  }
+  /* line 1801, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031801}}
+  body .сhat-wrapper .cls2 {
+    display: none;
+  }
+  /* line 1805, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031805}}
+  body .сhat-wrapper .cls3 {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    top: 24px;
+    right: 153px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1818, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031818}}
+  body .сhat-wrapper .cls1 {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    top: 19px;
+    right: 51px;
+    cursor: pointer;
+  }
+  /* line 1828, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031828}}
+  body .сhat-wrapper .cls3 {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    top: 19px;
+    right: 96px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1840, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031840}}
+  .сhat-wrapper .header a {
+    top: 18px !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1846, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031846}}
+  body .сhat-wrapper .arrow-st {
+    top: auto;
+    bottom: 70px;
+  }
+  /* line 1851, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031851}}
+  .scroller-b.nano.__nano.scroller-b-App .chats-area-bl {
+    display: none;
+  }
+}
+@media (max-width: 699px) {
+  /* line 1857, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031857}}
+  body .сhat-wrapper .icon-area.drop {
+    margin-right: -6px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1863, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031863}}
+  body .сhat-wrapper .status-bar .stars-area {
+    height: 2px;
+    opacity: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1870, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031870}}
+  body .сhat-wrapper .header a {
+    top: 10px !important;
+  }
+  /* line 1874, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031874}}
+  body .сhat-wrapper .icon-area.drop {
+    top: 18px;
+  }
+  /* line 1878, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031878}}
+  body .сhat-wrapper .header.chat-hr {
+    height: 62px !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1885, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031885}}
+  .сhat-wrapper .icon-area.drop {
+    width: 24px;
+    height: 32px;
+    background: url(../../../src/img/dotts.png) 0 0 no-repeat;
+    float: right;
+    margin-right: 10px;
+    top: 23px;
+    position: absolute;
+    right: 17px;
+    background-size: contain;
+    cursor: pointer;
+  }
+  /* line 1898, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031898}}
+  body .сhat-wrapper .cls3,
+  body .сhat-wrapper .cls1 {
+    top: 12px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 1904, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031904}}
+  .wrapper.сhat-wrapper .chat-in-im_dialog_no_avatars.user_bgcolor_12 {
+    display: none;
+  }
+}
+/* line 1909, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031909}}
+.сhat-wrapper .chat-in-messenge-my img {
+  position: absolute;
+  right: 25px;
+}
+/* line 1914, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031914}}
+.сhat-wrapper .bg-my {
+  margin-right: 75px;
+}
+/* line 1918, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031918}}
+.сhat-wrapper .chat-in-check-time-area .check-area-1 {
+  position: absolute;
+  right: 35px;
+}
+/* line 1923, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031923}}
+.сhat-wrapper .chat-in-check-time-area .check-area-2 {
+  position: absolute;
+  right: 32px;
+}
+/* line 1928, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031928}}
+.сhat-wrapper .cls3:before,
+.сhat-wrapper .cls1:before {
+  margin-left: 9px;
+}
+/* line 1932, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031932}}
+.сhat-wrapper .bg-my1,
+.сhat-wrapper .bg-my1:before {
+  background: #fff !important;
+}
+/* line 1936, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031936}}
+.сhat-wrapper .chat-in-messenge-me .bg-my1:before {
+  border-right: 9px solid #fff;
+}
+/* line 1940, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031940}}
+.сhat-wrapper .bg-my1:before {
+  background: none !important;
+}
+/* line 1944, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031944}}
+.bg-my a {
+  color: #046be2 !important;
+}
+@media (max-width: 900px) {
+  /* line 1948, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031948}}
+  .сhat-wrapper .bg-my {
+    margin-right: 76px ;
+    margin-left: 54px;
+    max-width: 320px ;
+  }
+}
+@media (max-width: 420px) {
+  /* line 1956, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031956}}
+  .сhat-wrapper .scroller-b {
+    left: 0;
+    right: 0;
+  }
+  /* line 1960, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031960}}
+  .сhat-wrapper .bg-my {
+    margin-right: 20px;
+    margin-left: 54px;
+    max-width: 221px;
+  }
+}
+/* line 1966, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031966}}
+.сhat-wrapper .scroller-b {
+  left: 0;
+  right: 0;
+}
+/* line 1973, Chat.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031973}}
+.сhat-wrapper .title-area {
+  font-weight: 600;
+}
+@media (max-width: 420px) {
+  /* line 1982, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031982}}
+  body .сhat-wrapper .chat-in-messenge-my img.flsg,
+  .сhat-wrapper .chat-in-messenge-me img.flsg {
+    display: block !important;
+    margin-left: -18% !important;
+  }
+  /* line 1987, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031987}}
+  body .сhat-wrapper .chat-in-messenge-me {
+    width: 100%;
+    max-width: 280px;
+    word-wrap: break-word;
+    float: left;
+    text-align: left;
+    clear: both;
+    margin-left: 65px;
+  }
+  /* line 1996, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000031996}}
+  body .сhat-wrapper .chat-in-messenge-my img.flsg,
+  .сhat-wrapper .chat-in-messenge-me img.flsg {
+    display: block;
+    margin-left: -44px;
+  }
+  /* line 2002, Chat.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Chat\/Chat\.less}line{font-family:\000032002}}
+  body .сhat-wrapper .chat-in-messenge-me {
+    width: 100%;
+    max-width: 78%;
+    word-wrap: break-word;
+    float: left;
+    text-align: left;
+    clear: both;
+    margin-left: 65px;
+  }
+}
+/*# sourceMappingURL=Chat.css.map */

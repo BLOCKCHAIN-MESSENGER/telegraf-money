@@ -1,0 +1,57 @@
+<div class="wrapper cards-wrapper exchange-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>LocalBitcoins</strong>
+                <div class="contact-panel">
+                    <h3>LocalBitcoins</h3>
+                    <ul class="ulck-menu">
+                    </ul>
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <scroll class_scroll="scroller-b-Settings" class_content="" id_content="">
+            <div class="content-nh">
+                <iframe src="https://localbitcoins.com/iframe" style="    height: 100%;width: 100%;position: absolute;    border: 0;"></iframe>
+            </div>
+        </scroll>
+        <!--<script>-->
+        <!--$('iframe').load( function() {-->
+        <!--var cssLink = document.createElement("link");-->
+        <!--cssLink.href = "/src/views/Exchanges/Exchanges.css";-->
+        <!--cssLink.rel = "stylesheet";-->
+        <!--cssLink.type = "text/css";-->
+        <!--$("iframe").contents().find("body").appendChild(cssLink);-->
+        <!--});-->
+
+        <!--</script>-->
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+        <h1>{{_e('Чаты')}} <i class="fa fa-commenting-o" aria-hidden="true"></i></h1>
+        <button class="close-chat"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="30px" height="30px">
+            <g>
+                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" fill="#FFFFFF"/>
+            </g>
+        </svg></button>
+        <div class="spl-icn"></div>
+        <scroll class_scroll="" class_content="" id_content="">
+            <Chats/>
+        </scroll>
+    </div>
+
+</div>

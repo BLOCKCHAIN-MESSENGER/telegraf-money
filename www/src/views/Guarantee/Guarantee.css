@@ -1,0 +1,357 @@
+/* line 1, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\000031}}
+.guarantee-wrapper .toggle {
+  background: #f9f9f9;
+  border: 1px solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 7, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\000037}}
+.guarantee-wrapper .toggle .title h6,
+.guarantee-wrapper .widget .title h6 {
+  float: left;
+  font-size: 14px;
+  padding: 9px 0 0 12px;
+  font-weight: 500;
+  padding-left: 0 !important;
+}
+/* line 14, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000314}}
+.guarantee-wrapper .toggle .title .date,
+.guarantee-wrapper .toggle .title .enquiry-link,
+.guarantee-wrapper .toggle .title .cert-link,
+.guarantee-wrapper .toggle .title .garant_state {
+  float: left;
+  display: block;
+  margin-left: 0px;
+  padding-top: 9px;
+}
+/* line 20, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000320}}
+.guarantee-wrapper .toggle .title .buttons {
+  float: right;
+  margin-top: 9px;
+}
+/* line 24, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000324}}
+.guarantee-wrapper .toggle .content-detali-guatantee,
+.guarantee-wrapper .toggle .menu_body {
+  padding: 12px 14px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-left: 14px !important;
+}
+/* line 29, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000329}}
+.guarantee-wrapper .formRow {
+  overflow: auto;
+  padding: 14px 0px;
+}
+/* line 33, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000333}}
+.guarantee-wrapper .formRow label {
+  display: block;
+  min-width: 113px;
+  float: left;
+}
+/* line 38, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000338}}
+.guarantee-wrapper .formRow {
+  font-size: 14px;
+  line-height: 14px;
+}
+/* line 43, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000343}}
+.guarantee-wrapper .dst {
+  color: #D63749;
+}
+/* line 46, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000346}}
+.guarantee-wrapper .formRow .formRight {
+  float: left;
+  display: block;
+  margin: 0px auto;
+}
+/* line 51, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000351}}
+.guarantee-wrapper .formRow .formRight {
+  width: 55%;
+}
+/* line 54, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000354}}
+.guarantee-wrapper .blank_info .formRow.last {
+  border-bottom: 1px solid #e2e2e2 !important;
+}
+/* line 57, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000357}}
+.guarantee-wrapper .blank_info .drop_down {
+  margin: 15px 0px;
+}
+/* line 60, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000360}}
+.guarantee-wrapper .formRow .formRight.biger {
+  float: none;
+}
+/* line 63, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000363}}
+.guarantee-wrapper span.twoFour {
+  margin-right: 23px;
+}
+/* line 66, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000366}}
+.guarantee-wrapper .formRight.biger span {
+  margin-right: 21px;
+}
+/* line 69, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000369}}
+.guarantee-wrapper .formRight.biger span {
+  float: left;
+}
+/* line 72, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000372}}
+.guarantee-wrapper .toggle .title h6,
+.widget .title h6 {
+  float: left;
+  font-size: 14px;
+  padding: 9px 0 0 12px;
+  font-weight: 500;
+  margin-top: 4px !important;
+  margin-right: 10px;
+}
+/* line 80, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000380}}
+.guarantee-wrapper fieldset.blank_info {
+  border: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0px !important;
+}
+/* line 85, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000385}}
+.guarantee-wrapper .toggle {
+  background: #f9f9f9;
+  border: 0px solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 92, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000392}}
+.guarantee-wrapper .ws25 {
+  float: left;
+  width: 25% !important;
+}
+/* line 97, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\0000397}}
+.guarantee-wrapper .credit-main-area .title {
+  overflow: hidden;
+  background: #0C5CBD !important;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+/* line 106, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003106}}
+.guarantee-wrapper .toggle .content-detali-guatantee span,
+.guarantee-wrapper .formRow label,
+.guarantee-wrapper .view_all {
+  font-size: 16px;
+}
+/* line 110, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003110}}
+.guarantee-wrapper .fsl3 a:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin-left: -32px;
+  margin-top: -1px;
+}
+/* line 120, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003120}}
+.guarantee-wrapper .fsl4 a:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 27px;
+  background-size: contain;
+  margin-left: -33px;
+  margin-top: -4px;
+}
+/* line 129, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003129}}
+.guarantee-wrapper .crd1 span {
+  float: left;
+  right: auto;
+  margin-left: 5px;
+  height: 22px;
+  width: auto !important;
+  padding: 0 8px;
+}
+/* line 138, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003138}}
+.guarantee-wrapper .fsl5 span {
+  float: left;
+  right: auto;
+  margin-left: 5px;
+  height: 22px;
+  width: auto !important;
+  padding: 0 8px;
+}
+/* line 146, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003146}}
+.guarantee-wrapper .toggle .nav-nt li {
+  background: #D63749;
+  border-radius: 150px;
+  margin: 10px !important;
+  width: 130px;
+}
+/* line 152, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003152}}
+.guarantee-wrapper .toggle .nav-nt li:hover {
+  opacity: 0.8 !important;
+}
+/* line 155, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003155}}
+.guarantee-wrapper .blue-otc {
+  background: #0C5CBD !important;
+}
+/* line 159, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003159}}
+.guarantee-wrapper .cls3 {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  position: absolute;
+  top: 24px;
+  right: 190px;
+  cursor: pointer;
+}
+/* line 169, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003169}}
+.guarantee-wrapper .cls2 {
+  background-size: contain;
+}
+@media (min-width: 1200px) {
+  /* line 173, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003173}}
+  .credit-area {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 460px) {
+  /* line 176, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003176}}
+  .guarantee-wrapper .toggle .content-detali-guatantee span,
+  .guarantee-wrapper .formRow label,
+  .guarantee-wrapper .view_all {
+    font-size: 16px;
+    display: block;
+  }
+  /* line 179, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003179}}
+  body .guarantee-wrapper .ws25 {
+    float: left;
+    width: 50% !important;
+    margin-bottom: 27px;
+  }
+}
+@media (min-width: 700px) {
+  /* line 188, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003188}}
+  body .crd1 {
+    padding-left: 0px!important;
+    padding-top: 17px;
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 197, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003197}}
+  body .guarantee-wrapper .gvc3:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #1f70d0;
+    background: url(../../../src/img/cvb1.png) 0 0 no-repeat !important;
+    border-radius: 10px;
+    margin-top: -5px !important;
+    margin-left: -33px !important;
+    background-size: contain !important;
+  }
+  /* line 212, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003212}}
+  body .guarantee-wrapper .gvc2:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #1f70d0;
+    background: url(../../../src/img/gl1.png) 0 0 no-repeat !important;
+    border-radius: 10px;
+    margin-top: -5px !important;
+    margin-left: -33px !important;
+    background-size: contain !important;
+  }
+  /* line 227, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003227}}
+  body .guarantee-wrapper .gvc1:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #1f70d0;
+    background: url(../../../src/img/gl2.png) 0 0 no-repeat !important;
+    border-radius: 10px;
+    margin-top: -5px !important;
+    margin-left: -33px !important;
+    background-size: contain !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 246, Guarantee.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003246}}
+  body .crd1 {
+    padding-left: 47px!important;
+    padding-top: 21px;
+    width: 33.3%;
+    text-align: center;
+  }
+}
+/* line 254, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003254}}
+.guarantee-wrapper .toggle .content-detali-guatantee,
+.guarantee-wrapper .toggle .menu_body {
+  padding: 12px 14px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-left: 14px!important;
+  background: #0C5CBD;
+  color: #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+/* line 262, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003262}}
+.guarantee-wrapper .toggle {
+  background: #0C5CBD;
+  border: 0 solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 267, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003267}}
+.guarantee-wrapper span.oneFour {
+  color: #47A2F6;
+}
+/* line 269, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003269}}
+.guarantee-wrapper .dst {
+  color: #fff;
+}
+/* line 271, Guarantee.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Guarantee\/Guarantee\.less}line{font-family:\00003271}}
+.guarantee-wrapper .nav-nt .blue-otc {
+  background: #D63749 !important;
+}
+/*# sourceMappingURL=Guarantee.css.map */

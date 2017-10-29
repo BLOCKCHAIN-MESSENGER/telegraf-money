@@ -1,0 +1,1390 @@
+##!!!##UserByID##!:!##
+<div class="select-form">
+    <label>{{#if !title}}{{_e('Пользователь')}}{{else}}{{title}}{{/if}}
+        {{#if scanUserByID_status && scanUserByID_status == 'err'}}
+        <span style="color: red"> {{_e('не найден')}}</span>
+        {{/if}}
+        {{#if scanUserByID_status && scanUserByID_status == 'ok'}}
+        <span style="color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;">  ({{scanUserByID.user.name_first}} {{scanUserByID.user.name_last}})</span>
+        {{/if}}
+    </label>
+    <input class="form-control input-User-by-id {{#if scanUserByID_status && scanUserByID_status != 'err'}}load{{/if}}"
+           id="User-{{name}}" name="user_id" placeholder="User ID:" value="{{value}}"
+           on-keyup="scanUserByID:{{name}},'key'" on-change="scanUserByID:{{name}},'change'" autocomplete="off"
+           {{#if scanUserByID && scanUserByID.user}}value="{{scanUserByID.user.webtransfer_id}}" {{/if}}>
+    {{#if scanUserByID_status && scanUserByID_status == 'load'}}
+    <img src="./src/img/loader.gif" onerror="this.src='../../.'+this.src;this.onerror = null;" style="float: right;
+    width: 50px;
+    padding: 3px 10px;
+    position: absolute;"/>
+    {{/if}}
+    {{#if scanUserByID_status && scanUserByID_status == 'ok'}}
+    <img src="./src/img/chat-check-1.png"
+         onerror="this.src='../../.'+this.src;this.onerror = null;" style="float: right;
+    width: 50px;
+    padding: 3px 10px;
+    position: absolute;"/>
+    {{/if}}
+
+</div>
+
+##!!!##Smile##!:!##
+<div class="smile-area-l">
+    {{#if smile && smile_type}}
+    {{#smile[smile_type]}}
+    <div class="smls-a pointer" onclick="select_smile('{{.}}')">
+        <div class="icon {{.}} {{.}}-dims" data-smile="{{.}}" data-index="{{@index}}" data-type="{{smile_type}}"></div>
+    </div>
+    {{else}}
+    Нет смайлов данного типа
+    {{/}}
+    {{/if}}
+</div>
+
+##!!!##rating##!:!##
+<div class="stars-area" title="{{_e('Количество отзывов:')}} {{count}}">
+    {{#if position && position == 'top'}}
+    {{#if fullname && fullname!= ''}}
+    <span class="p-title">{{fullname}}</span>
+    {{/if}}
+    {{/if}}
+
+    {{#if rating >0.49}}
+    <div class="full-star"></div>
+    {{else}}
+    <div class="no-star"></div>
+    {{/if}}
+    {{#if rating >1.49}}
+    <div class="full-star"></div>
+    {{else}}
+    <div class="no-star"></div>
+    {{/if}}
+    {{#if rating >2.49}}
+    <div class="full-star"></div>
+    {{else}}
+    <div class="no-star"></div>
+    {{/if}}
+    {{#if rating >3.49}}
+    <div class="full-star"></div>
+    {{else}}
+    <div class="no-star"></div>
+    {{/if}}
+    {{#if rating >4.49}}
+    <div class="full-star"></div>
+    {{else}}
+    <div class="no-star"></div>
+    {{/if}}
+    {{#if !position || position != 'top'}}
+    {{#if fullname && fullname!= ''}}
+    <span class="p-title"  style="overflow: hidden;margin-right: 20px;">{{fullname}}</span>
+    {{/if}}
+    {{/if}}
+</div>
+
+##!!!##Message##!:!##
+{{#if MyProfile.webtransfer_id != message.sender.webtransfer_id}}
+<div class="">
+
+    <div class="chat-in-messenge-me element-chat-information" on-doubleclick="event_message:{{message}}">
+        {{#if !message_prev || message_prev.sender.webtransfer_id != message.sender.webtransfer_id}}
+        {{#if message.sender.avatar_path}}
+        <img src="{{message.sender.avatar_path}}" class="flsg" on-error="avatar_message_err:{{index}}">
+        {{else}}
+        <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 noavatar">{{message.sender.name_short}}</div>
+        {{/if}}
+        {{/if}}
+
+
+        <div class="bg-my1">
+            {{#if threads.type == 'group'}}
+            {{#if !message_prev || message_prev.sender.webtransfer_id != message.sender.webtransfer_id}}
+            <span class="sppl-lt">{{message.sender.name_first}} {{message.sender.name_last}}<span class="ustr"
+                                                                                                  style="color: #ffa803">{{message.sender.webtransfer_id}}</span></span>
+            {{/if}}
+            {{/if}}
+            {{#if message.attach_type}}
+            {{#if message.attach_type == 'voice'}}
+            <div class="voice">
+                <span onclick="Messenger.chat.data['{{index}}']['voice'].playPause()">
+                {{#if message.attach_data.pause}}
+                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;    padding: 13px 0 13px 0px;" xml:space="preserve" width="45px" height="45px" >
+<g>
+	<path d="M210,21c104.216,0,189,84.784,189,189s-84.784,189-189,189S21,314.216,21,210S105.784,21,210,21 M210,0   C94.031,0,0,94.024,0,210s94.031,210,210,210s210-94.024,210-210S325.969,0,210,0L210,0z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	<path d="M293.909,187.215l-111.818-73.591C162.792,100.926,147,109.445,147,132.545V287.42c0,23.1,15.813,31.647,35.147,18.998   L293.86,233.31C313.187,220.647,313.208,199.913,293.909,187.215z M279.006,217.868l-99.295,64.981   c-6.44,4.221-11.711,1.372-11.711-6.328V143.437c0-7.7,5.264-10.535,11.697-6.3l99.33,65.366   C285.46,206.731,285.453,213.647,279.006,217.868z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+                {{else}}
+                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;padding: 13px 0 13px 0px;" xml:space="preserve" width="45px" height="45px">
+<g>
+	<path d="M210,21c104.216,0,189,84.784,189,189s-84.784,189-189,189S21,314.216,21,210S105.784,21,210,21 M210,0   C94.031,0,0,94.024,0,210s94.031,210,210,210s210-94.024,210-210S325.969,0,210,0L210,0z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	<g>
+		<path d="M259,108.941c-19.25,0-35,15.75-35,35v132.125c0,19.25,15.75,35,35,35s35-15.75,35-35V143.941    C294,124.691,278.25,108.941,259,108.941z M273,276.066c0,7.7-6.3,14-14,14s-14-6.3-14-14V143.941c0-7.7,6.3-14,14-14    s14,6.3,14,14V276.066z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+		<path d="M161,108.941c-19.25,0-35,15.75-35,35v132.125c0,19.25,15.75,35,35,35s35-15.75,35-35V143.941    C196,124.691,180.25,108.941,161,108.941z M175,276.066c0,7.7-6.3,14-14,14s-14-6.3-14-14V143.941c0-7.7,6.3-14,14-14    s14,6.3,14,14V276.066z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                    {{/if}}
+                </span>
+                <div id="song_{{index}}" class="playline"></div>
+                <!--<script>-->
+
+                    <!--Messenger.chat.data['{{index}}']['voice'] = WaveSurfer.create({-->
+                        <!--// Use the id or class-name of the element you created, as a selector-->
+                        <!--container: '#song_{{index}}',-->
+                        <!--// The color can be either a simple CSS color or a Canvas gradient-->
+                        <!--waveColor: '#fff',-->
+                        <!--progressColor: 'rgba(58, 220, 76, 1)',-->
+                        <!--cursorColor: 'rgba(0, 0, 0, 0)',-->
+                        <!--height: '70',-->
+                        <!--// This parameter makes the waveform look like SoundCloud's player-->
+                        <!--barWidth: 2-->
+                    <!--});-->
+                    <!--console.log('voice message: {{message.attach_data.url}}');-->
+                    <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = true;-->
+                    <!--Messenger.chat.data['{{index}}']['voice'].on('loading', function (percents) {-->
+                        <!--console.log('wavesurfer song_{{index}}:' + percents);-->
+                        <!--// document.getElementById('progress').value = percents;-->
+                    <!--});-->
+                    <!--Messenger.chat.data['{{index}}']['voice'].on('play', function (percents) {-->
+                        <!--console.log('play');-->
+                        <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = false;-->
+                        <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+
+                        <!--// document.getElementById('progress').value = percents;-->
+                    <!--});-->
+                    <!--Messenger.chat.data['{{index}}']['voice'].on('pause', function (percents) {-->
+                        <!--console.log('pause');-->
+                        <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = true;-->
+                        <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+
+                        <!--// document.getElementById('progress').value = percents;-->
+                    <!--});-->
+
+                    <!--Messenger.chat.data['{{index}}']['voice'].on('ready', function (percents) {-->
+                        <!--console.log('wavesurfer song_{{index}}:' + 'ready');-->
+                        <!--// document.getElementById('progress').style.display = 'none';-->
+                    <!--});-->
+
+                    <!--Messenger.chat.data['{{index}}']['voice'].load('{{message.attach_data.url}}');-->
+                    <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+                <!--</script>-->
+
+            </div>
+            {{/if}}
+            {{/if}}
+            {{{message.message}}}
+            <div class="time-ns">{{message.updated_at_time}}</div>
+
+        </div>
+
+        <div class="chat-in-check-time-area"></div>
+    </div>
+</div>
+{{else}}
+<div class="">
+
+    <div class="chat-in-messenge-my element-chat-information" {{#if !message.attach_type}}on-doubleclick="event_message:{{message}}" {{/if}}>
+
+
+    <div class="bg-my">
+        {{#if message.attach_type}}
+        {{#if message.attach_type == 'voice'}}
+        <div class="voice">
+                <span onclick="Messenger.chat.data['{{index}}']['voice'].playPause()">
+                {{#if message.attach_data.pause}}
+                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;    padding: 13px 0 13px 0px;" xml:space="preserve" width="45px" height="45px" >
+<g>
+	<path d="M210,21c104.216,0,189,84.784,189,189s-84.784,189-189,189S21,314.216,21,210S105.784,21,210,21 M210,0   C94.031,0,0,94.024,0,210s94.031,210,210,210s210-94.024,210-210S325.969,0,210,0L210,0z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	<path d="M293.909,187.215l-111.818-73.591C162.792,100.926,147,109.445,147,132.545V287.42c0,23.1,15.813,31.647,35.147,18.998   L293.86,233.31C313.187,220.647,313.208,199.913,293.909,187.215z M279.006,217.868l-99.295,64.981   c-6.44,4.221-11.711,1.372-11.711-6.328V143.437c0-7.7,5.264-10.535,11.697-6.3l99.33,65.366   C285.46,206.731,285.453,213.647,279.006,217.868z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+                {{else}}
+                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;padding: 13px 0 13px 0px;" xml:space="preserve" width="45px" height="45px">
+<g>
+	<path d="M210,21c104.216,0,189,84.784,189,189s-84.784,189-189,189S21,314.216,21,210S105.784,21,210,21 M210,0   C94.031,0,0,94.024,0,210s94.031,210,210,210s210-94.024,210-210S325.969,0,210,0L210,0z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	<g>
+		<path d="M259,108.941c-19.25,0-35,15.75-35,35v132.125c0,19.25,15.75,35,35,35s35-15.75,35-35V143.941    C294,124.691,278.25,108.941,259,108.941z M273,276.066c0,7.7-6.3,14-14,14s-14-6.3-14-14V143.941c0-7.7,6.3-14,14-14    s14,6.3,14,14V276.066z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+		<path d="M161,108.941c-19.25,0-35,15.75-35,35v132.125c0,19.25,15.75,35,35,35s35-15.75,35-35V143.941    C196,124.691,180.25,108.941,161,108.941z M175,276.066c0,7.7-6.3,14-14,14s-14-6.3-14-14V143.941c0-7.7,6.3-14,14-14    s14,6.3,14,14V276.066z" style=" fill: rgba(255, 255, 255, 0.47);"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                    {{/if}}
+                </span>
+            <div id="song_{{index}}" class="playline"></div>
+            <!--<script>-->
+
+                <!--Messenger.chat.data['{{index}}']['voice'] = WaveSurfer.create({-->
+                    <!--ac: audio_context,-->
+                    <!--container: '#song_{{index}}',-->
+                    <!--waveColor: '#fff',-->
+                    <!--progressColor: 'rgba(58, 220, 76, 1)',-->
+                    <!--cursorColor: 'rgba(0, 0, 0, 0)',-->
+                    <!--height: '70',-->
+                    <!--hideScrollbar: true,-->
+                    <!--barWidth: 2-->
+                <!--});-->
+                <!--console.log('voice message: {{message.attach_data.url}}');-->
+                <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = true;-->
+                <!--Messenger.chat.data['{{index}}']['voice'].on('loading', function (percents) {-->
+                    <!--console.log('wavesurfer song_{{index}}:' + percents);-->
+                    <!--// document.getElementById('progress').value = percents;-->
+                <!--});-->
+                <!--Messenger.chat.data['{{index}}']['voice'].on('play', function (percents) {-->
+                    <!--console.log('play');-->
+                    <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = false;-->
+                    <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+
+                    <!--// document.getElementById('progress').value = percents;-->
+                <!--});-->
+                <!--Messenger.chat.data['{{index}}']['voice'].on('pause', function (percents) {-->
+                    <!--console.log('pause');-->
+                    <!--Messenger.chat.data['{{index}}']['attach_data']['pause'] = true;-->
+                    <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+
+                    <!--// document.getElementById('progress').value = percents;-->
+                <!--});-->
+
+                <!--Messenger.chat.data['{{index}}']['voice'].on('ready', function (percents) {-->
+                    <!--console.log('wavesurfer song_{{index}}:' + 'ready');-->
+                    <!--// document.getElementById('progress').style.display = 'none';-->
+                <!--});-->
+
+                <!--Messenger.chat.data['{{index}}']['voice'].load('{{message.attach_data.url}}');-->
+                <!--ractiveComponent['wtc-ChatApp'].set('messages', Messenger.chat.data);-->
+            <!--</script>-->
+
+        </div>
+        {{/if}}
+        {{/if}}
+        {{{message.message}}}
+        <div class="time-ns" on-doubleclick="event_message:{{message}}">{{message.updated_at_time}}</div>
+        <div class="chat-in-check-time-area">
+            {{#if message.read_at}}
+            <div class="check-area-2"></div>
+            {{else}}
+            {{#if message.wait}}
+            {{#if message.error}}
+            <div class="icon_message_status"><i class="fa fa-exclamation-circle"
+                                                style="color: #ffffff;float: left;position: absolute;right: 6px;top: 5px;"
+                                                aria-hidden="true"></i></div>
+            {{else}}
+            <div class="icon_message_status"><i class="fa fa-clock-o"
+                                                style="color: #ffffff;float: left;position: absolute;right: 6px;top: 5px;"
+                                                aria-hidden="true"></i></div>
+            {{/if}}
+            {{else}}
+            <div class="check-area-1"></div>
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+    {{#if !message_prev || message_prev.sender.webtransfer_id != message.sender.webtransfer_id}}
+    {{#if message.sender.avatar_path}}
+    <img src="{{message.sender.avatar_path}}" class="flsg" on-error="avatar_message_err:{{@index}}"/>
+    {{else}}
+    <div class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 noavatar">{{message.sender.name_short}}</div>
+    {{/if}}
+    {{/if}}
+</div>
+</div>
+{{/if}}
+##!!!##Menu##!:!##
+{{#if !alt}}
+<div class="ava-blk">
+    <div class="ava-bg noselect">
+        {{#if notificationCount > 0}}
+        <span class="number-n">
+            {{#if notificationCount < 999}}
+            {{notificationCount}}
+            {{else}}
+            +999
+            {{/if}}</span>
+        {{else}}
+        <span class="number-n" style="display: none">0</span>
+        {{/if}}
+        {{#if MyProfile.avatar_path}}
+
+        <img class="ava-bg" src="{{MyProfile.avatar_path}}" on-error="toggle('MyProfile.avatar_path')"/>
+        {{else}}
+        <span class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 ava-bg">{{MyProfile.name_short}}</span>
+        {{/if}}
+        {{#if balance_user}}
+        <div class="price-nt" on-click="setPage:cards">{{balance_user[2]}}{{balance_user[0]}}<br>
+            <span class="id-area"
+                  style="font-size: 12px;margin-top: -16px;line-height: 20px;">{{_e('Итого')}}</span><br>
+            <span style="font-size: 16px;">{{balance_user[2]}}{{balance_user[1]}}</span><br>
+            <span class="id-area" style="font-size: 12px;">{{_e('Доступно')}}</span><br><br>
+        </div>
+        {{/if}}
+
+    </div>
+    <span class="menu-title">
+        <rating rating="{{MyProfile.rating}}" count="{{MyProfile.count_reviews}}"
+                fullname="{{MyProfile.first_name + ' '+ MyProfile.last_name}}"/>
+    <div class="id-area" style="overflow: hidden;margin-right: 42px;">{{MyProfile.webtransfer_id}}</div>
+    </span>
+
+    <!--<div class="price-nt">$80,890</div>-->
+
+    <p class="acc-nt fst1 pointer noselect" on-click="setPage:profile">{{_e('Профиль')}}</p>
+    <p class="acc-nt fst2 pointer noselect" on-click="setPage:chats">{{_e('Чаты')}}
+        {{#if notificationCount > 999}}
+        <span class="notifications-l">+999</span>
+        {{else}}
+        {{#if notificationCount!=0}}
+        <span class="notifications-l">{{notificationCount}}</span>
+        {{/if}}
+        {{/if}}
+    </p>
+    <ul class="ntu noselect">
+        <li class="fsl1 pointer" on-click="setPage:contacts:partners">
+            <a class="pointer">{{_e('Контакты')}}</a>
+        </li>
+        <li class="fsl-b" on-click="setPage:debitcoin">
+
+            <a class="pointer">
+                <svg style="    width: 22px; height: 20px;margin: 0px 7px -5px -7px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<g>
+	<path d="M55.9,106.3"/>
+	<g>
+		<g>
+			<rect x="175.1" y="14.9" width="78" height="114.7"/>
+			<circle cx="182.4" cy="14.9" r="7.4"/>
+			<circle cx="245.7" cy="14.9" r="7.4"/>
+			<rect x="181.8" y="7.5" width="63.8" height="34"/>
+		</g>
+		<g>
+			<rect x="325.1" y="14.9" width="78" height="114.7"/>
+			<circle cx="332.4" cy="14.9" r="7.4"/>
+			<circle cx="395.7" cy="14.9" r="7.4"/>
+			<rect x="331.8" y="7.5" width="63.8" height="34"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="175.1" y="615.6" width="78" height="114.7"/>
+			<circle cx="182.4" cy="730.4" r="7.4"/>
+			<circle cx="245.7" cy="730.4" r="7.4"/>
+			<rect x="181.8" y="703.7" width="63.8" height="34"/>
+		</g>
+		<g>
+			<rect x="325.4" y="615.6" width="78" height="114.7"/>
+			<circle cx="332.8" cy="730.4" r="7.4"/>
+			<circle cx="396" cy="730.4" r="7.4"/>
+			<rect x="332.2" y="703.7" width="63.8" height="34"/>
+		</g>
+	</g>
+	<rect x="141.4" y="162.4" width="92.5" height="397.1"/>
+	<rect x="86.9" y="553" width="201.3" height="88.3"/>
+	<g>
+		<path d="M288.1,98.7L288.1,98.7l0,88.3h0c101.1,0,183,81.9,183,183s-81.9,183-183,183h0v88.3h0c149.8,0,271.3-121.5,271.3-271.3
+			S438,98.7,288.1,98.7z"/>
+	</g>
+	<g>
+		<rect x="84.6" y="553" width="129.9" height="88.3"/>
+		<circle cx="84.6" cy="633" r="8.3"/>
+		<circle cx="84.6" cy="561.4" r="8.3"/>
+		<rect x="76.3" y="561.4" width="38.5" height="72.2"/>
+	</g>
+	<rect x="86.9" y="98.7" width="201.3" height="88.3"/>
+	<g>
+		<rect x="84.6" y="98.7" width="129.9" height="88.3"/>
+		<circle cx="84.6" cy="179" r="8.3"/>
+		<circle cx="84.6" cy="107.4" r="8.3"/>
+		<rect x="76.3" y="107.4" width="38.5" height="72.2"/>
+	</g>
+</g>
+</svg>
+                {{_e('Кошельки')}}
+                <img src="./src/img/debit_coin_gold.gif" onerror="this.src='../../.'+this.src;this.onerror = null;"
+                     style="   display: inline-block;
+    width: 20px;
+    margin-top: -15px;
+    margin-left: -4px;
+    transition: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);"/>
+            </a>
+        </li>
+        <li class="fsl2" on-click="setPage:cards">
+            <a class="pointer">{{_e('Ваши карты')}}</a>
+        </li>
+        <li class="fsl-b" on-click="setPage:deposits">
+
+            <a class="pointer">
+                <svg  xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" width="34.308px" height="34.308px" viewBox="0 0 34.308 34.308" style="enable-background:new 0 0 34.308 34.308;    width: 22px;height: 20px; margin: 0px 7px -5px -7px;" xml:space="preserve">
+<g>
+	<path d="M18.033,16.63c0,1.103-0.897,2-2,2s-2.001-0.897-2.001-2c0-1.104,0.897-2.001,2.001-2.001S18.033,15.527,18.033,16.63z    M33.568,0v32.021h-3.24v2.286h-2.859v-2.286H9.362v2.286H6.504v-2.286h-3.24v-3.812H0.74V21.73h2.522V10.365H1.05v-6.48h2.213   V0.001L33.568,0L33.568,0z M23.466,16.677c0-4.099-3.336-7.433-7.435-7.433c-4.1,0-7.434,3.334-7.434,7.433   c0,4.099,3.334,7.433,7.434,7.433C20.13,24.111,23.466,20.775,23.466,16.677z M29.505,22.925l-1.139-7.228   c0.578-0.385,0.959-1.04,0.959-1.785c0-1.184-0.959-2.144-2.145-2.144c-1.187,0-2.146,0.96-2.146,2.144   c0,0.746,0.382,1.4,0.957,1.785l-1.135,7.228H29.505z M20.035,14.985l1.387-0.719c0.33,0.737,0.521,1.552,0.521,2.412   c0,0.954-0.229,1.852-0.636,2.648l-1.396-0.859l-0.448,0.73l1.405,0.867c-0.989,1.412-2.586,2.368-4.405,2.5v-1.695h-0.859v1.695   c-1.974-0.144-3.677-1.257-4.64-2.867l1.459-0.758l-0.396-0.763l-1.455,0.756c-0.289-0.696-0.448-1.458-0.448-2.257   c0-1.011,0.256-1.963,0.704-2.795l1.326,0.817l0.45-0.73l-1.312-0.808c0.998-1.34,2.547-2.243,4.311-2.371v1.503h0.857v-1.503   c1.913,0.138,3.573,1.188,4.551,2.72l-1.373,0.713L20.035,14.985z M18.796,16.63c0-1.524-1.241-2.764-2.764-2.764   c-1.525,0-2.764,1.239-2.764,2.764c0,1.524,1.238,2.765,2.764,2.765C17.556,19.395,18.796,18.154,18.796,16.63z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                {{_e('Депозиты')}}
+                <span class="notifications-l" style="
+                width: 40px;
+                float: left;
+                /* left: 13px; */
+                right: auto;
+                margin-left: 3px;
+                position: absolute;
+                top: 3px;">{{_e('Скоро')}}</span>
+            </a>
+        </li>
+        <li class="fsl3" on-click="setPage:credit">
+            <a class="pointer">{{_e('Кредиты')}}</a>
+        </li>
+        <li class="fsl4" on-click="setPage:sendmoney">
+            <a class="pointer">{{_e('Переводы')}}</a>
+        </li>
+        <li class="fsl5" on-click="setPage:guarantee">
+            <a class="pointer">{{_e('Гарантии')}}</a>
+        </li>
+        <!--<li class="fsl5" on-click="setPage:exchanges">-->
+        <!--<a class="pointer">-->
+        <!--Exchanges-->
+        <!--<span class="notifications-l" style="-->
+        <!--width: 40px;-->
+        <!--float: left;-->
+        <!--/* left: 13px; */-->
+        <!--right: auto;-->
+        <!--margin-left: 3px;-->
+        <!--position: absolute;-->
+        <!--top: 3px;">{{_e('Скоро')}}</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <li class="fsl8" on-click="setPage:affiliates:about" style="display:none;">
+            <a class="pointer">{{_e('Партнеры')}}
+                <!--<span class="notifications-l" style="-->
+                <!--width: 40px;-->
+                <!--float: left;-->
+                <!--/* left: 13px; */-->
+                <!--right: auto;-->
+                <!--margin-left: 3px;-->
+                <!--position: absolute;-->
+                <!--top: 3px;">NEW</span>-->
+            </a>
+        </li>
+        <li class="fsl-b" on-click="setPage:bonus:review" data-old_on="add_share" style="display:none;">
+            <a class="pointer"><i class="fa fa-usd" aria-hidden="true"></i>
+
+                {{_e('Бонус')}}
+            </a>
+        </li>
+        <li class="fsl-b" onclick="Messenger.openChat(false,false,'58fab03a54f348857cad8bf4')">
+            <a class="pointer">
+                <svg style="    width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 511.562 511.562;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 511.562 511.562"  xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path d="M149.268,113.199c14.133-39.918,33.818-77.833,58.465-108.826c-50.812,9.693-96.335,34.41-131.743,69.385l6.179,5.085     C103.091,93.134,125.663,104.539,149.268,113.199z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M141.261,246.954h105.693v-97.43c-29.617-0.794-58.703-5.367-86.599-13.886     C148.738,173.278,142.206,211.899,141.261,246.954z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M264.612,149.518v97.439h105.693c-0.945-35.063-7.486-73.684-19.103-111.325     C323.298,144.16,294.22,148.732,264.612,149.518z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M165.881,118.89c26.086,7.901,53.327,12.191,81.073,12.977V0c-4.37,0.15-8.713,0.415-13.021,0.777     C204.652,32.115,181.656,74.152,165.881,118.89z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M430.011,78.376l5.932-4.264c-35.46-35.169-81.126-60.01-132.096-69.738c24.62,30.985,44.306,68.873,58.43,108.773     C386.032,104.417,408.798,92.888,430.011,78.376z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M370.321,373.71c24.408,9.154,47.81,21.124,69.659,36.078l12.173,10.002c35.425-42.337,57.397-96.265,59.401-155.18     H387.95C387.067,299.187,381.117,336.784,370.321,373.71z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M143.744,129.901c-25.309-9.251-49.567-21.495-72.157-36.961l-7.706-6.329C25.851,129.698,2.096,185.612,0.004,246.955     h123.604C124.561,209.879,131.447,169.352,143.744,129.901z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M277.639,0.777c-4.317-0.362-8.66-0.627-13.03-0.768v131.858c27.719-0.786,54.934-5.076,81.055-13.012     C329.898,74.134,306.911,32.115,277.639,0.777z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M233.933,510.781c4.308,0.371,8.651,0.627,13.021,0.777V370.872c-28.698,0.803-56.876,5.394-83.844,13.868     C178.911,432.418,202.922,477.589,233.933,510.781z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M81.547,424.361l-10.964,7.883c36.131,37.897,83.703,64.75,137.145,74.946c-26.244-33.015-46.874-73.878-61.158-116.648     C123.805,399.158,101.965,410.395,81.547,424.361z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M365.005,390.489c-14.274,42.787-34.913,83.668-61.175,116.701c53.133-10.134,100.467-36.74,136.519-74.293     l-10.955-9.004C409.276,410.139,387.639,399.034,365.005,390.489z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M141.245,373.725c-10.796-36.935-16.755-74.531-17.638-109.118H0.004c2.004,58.553,23.693,112.19,58.739,154.412     l12.668-9.11C93.347,394.902,116.802,382.897,141.245,373.725z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M387.954,246.954h123.604c-2.083-61.113-25.679-116.833-63.453-159.85l-7.954,5.72     c-22.678,15.519-46.989,27.789-72.333,37.067C380.115,169.35,387.001,209.878,387.954,246.954z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M370.302,264.609H264.609v88.602c30.508,0.812,60.443,5.667,89.097,14.671     C363.822,332.802,369.428,297.165,370.302,264.609z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M157.857,367.891c28.672-9.013,58.606-13.868,89.097-14.68v-88.602H141.261     C142.135,297.174,147.741,332.811,157.857,367.891z" style="fill: rgb(255, 255, 255);"></path>
+			<path d="M264.609,370.868v140.694c4.37-0.15,8.713-0.415,13.021-0.777c31.02-33.201,55.04-78.389,70.833-126.076     C321.538,376.271,293.352,371.68,264.609,370.868z" style="fill: rgb(255, 255, 255);"></path>
+		</g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+                {{_e('Новости')}}
+            </a>
+        </li>
+        <li class="fsl-b" onclick="Messenger.openChat(false,10989451)">
+            <a class="pointer">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 67.657 67.657" style=" width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 67.657 67.657;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M33.838,0C24.802,0,16.306,3.52,9.917,9.909c-6.39,6.39-9.908,14.884-9.908,23.92s3.519,17.53,9.908,23.92    s14.884,9.908,23.92,9.908c9.035,0,17.531-3.519,23.92-9.908c13.189-13.19,13.189-34.651,0-47.842C51.369,3.518,42.873,0,33.838,0    z M48.093,7.616l-7.496,7.498c-2.079-0.748-4.286-1.16-6.561-1.16c-2.239,0-4.411,0.399-6.461,1.125L19.927,7.43    C24.164,5.191,28.909,4,33.839,4C38.902,4,43.769,5.257,48.093,7.616z M23.185,44.147c-5.982-5.982-5.982-15.717,0-21.699    c2.899-2.898,6.753-4.494,10.851-4.494s7.952,1.596,10.85,4.494c5.982,5.982,5.982,15.718,0,21.701    c-2.898,2.897-6.751,4.494-10.849,4.494C29.938,48.643,26.084,47.046,23.185,44.147z M8.287,18.418l7.768,7.768    c-1.723,4.375-1.779,9.248-0.195,13.663l-8.234,8.235c-2.359-4.324-3.617-9.192-3.617-14.256    C4.009,28.309,5.5,23.021,8.287,18.418z M18.761,59.575l8.258-8.256c2.209,0.859,4.576,1.324,7.018,1.324    c2.478,0,4.88-0.475,7.117-1.359l8.094,8.095c-4.602,2.787-9.891,4.278-15.41,4.278C28.451,63.657,23.286,62.234,18.761,59.575z     M60.229,47.732l-7.982-7.982c1.535-4.356,1.478-9.147-0.195-13.464l7.528-7.528C64.781,27.645,64.997,38.667,60.229,47.732z"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                {{_e('Поддержка')}}
+            </a>
+        </li>
+
+        <li class="fsl7" on-click="setPage:settings:general">
+            <a class="pointer">{{_e('Настройки')}}</a>
+        </li>
+        {{#if MyProfile.webtransfer_id =='10989451' || MyProfile.webtransfer_id =='99676729'}}
+
+        <li class="fsl-b" on-click="setPage:legal">
+
+            <a class="pointer">
+                <svg style="    width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 60 60;" xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60"  xml:space="preserve">
+<g>
+	<path d="M45,25H20c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S45.552,25,45,25z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M20,19h10c0.552,0,1-0.447,1-1s-0.448-1-1-1H20c-0.552,0-1,0.447-1,1S19.448,19,20,19z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M45,33H20c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S45.552,33,45,33z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M45,41H20c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S45.552,41,45,41z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M45,49H20c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S45.552,49,45,49z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M49,14.586V0H6v55h5v5h43V19.586L49,14.586z M40,8.414l9,9L50.586,19H40V8.414z M8,53V2h39v10.586L39.414,5H11v48H8z    M13,58v-3V7h25v14h14v37H13z" style="fill: rgb(255, 255, 255);"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                {{_e('Документы')}}
+            </a>
+        </li>
+        {{/if}}
+    </ul>
+
+
+    <p class="sets-up noselect">
+        <a class="setts pointer " on-click="outlogin">{{_e('ВЫХОД')}}</a>
+    </p>
+
+
+</div>
+
+{{else}}
+<div class="ava-blk mm-panel mm-hasnavbar mm-opened mm-current mobile-mn" id="mm-1">
+
+    <div class="padds-menu">
+        <div class="mm-navbar noselect">
+            <a class="mm-title">Menu</a>
+        </div>
+        <div class="ava-bg noselect">
+            {{#if notificationCount > 0}}
+            <span class="number-n">
+            {{#if notificationCount < 999}}
+            {{notificationCount}}
+            {{else}}
+            +999
+            {{/if}}
+            </span>
+            {{else}}
+            <span class="number-n" style="display: none">0</span>
+            {{/if}}
+            {{#if MyProfile.webtransfer_id}}
+            {{#if MyProfile.avatar_path}}
+            <img class="ava-bg" src="{{MyProfile.avatar_path}}" on-error="errorAvatarMy"/>
+            {{else}}
+            <span class="chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12 ava-bg">{{MyProfile.name_short}}</span>
+            {{/if}}
+            {{else}}
+            <img class="ava-bg " src="../../../src/img/loader.gif"/>
+            {{/if}}
+            {{#if balance_user}}
+            <div class="price-nt" on-click="setPage:cards">{{balance_user[2]}}{{balance_user[0]}}<br>
+                <span class="id-area"
+                      style="font-size: 12px;margin-top: -16px;line-height: 20px;">{{_e('Итого')}}</span><br>
+                <span style="font-size: 16px;">{{balance_user[2]}}{{balance_user[1]}}</span><br>
+                <span class="id-area" style="font-size: 12px;">{{_e('Доступно')}}</span><br><br>
+            </div>
+            {{/if}}
+
+
+        </div>
+        <p class="menu-title"></p>
+        {{#if MyProfile.webtransfer_id}}
+        <rating rating="{{MyProfile.rating}}" count="{{MyProfile.count_reviews}}"
+                fullname="{{MyProfile.first_name + ' '+ MyProfile.last_name}}"/>
+        <div class="id-area" style="overflow: hidden; margin-right: 42px;">{{MyProfile.webtransfer_id}}</div>
+        {{else}}
+        <rating rating="{{MyProfile.rating}}" count="{{MyProfile.count_reviews}}"
+                fullname="{{_e('Загрузка...')}}"/>
+        <div class="id-area noselect">{{_e('Авторизация...')}}</div>
+        {{/if}}
+
+
+        <p></p>
+        <scroll class_scroll="scroller-b-menu" class_content="" id_content="">
+
+
+            <!--<div class="price-nt">$80,890</div>-->
+            <p class="acc-nt fst1 pointer noselect" on-click="setPage:profile">{{_e('Профиль')}}</p>
+            <p class="acc-nt fst2 pointer noselect" on-click="setPage:chats">{{_e('Чаты')}}
+                {{#if notificationCount > 999}}
+                <span class="notifications-l">+999</span>
+                {{else}}
+                {{#if notificationCount!=0}}
+                <span class="notifications-l">{{notificationCount}}</span>
+                {{/if}}
+                {{/if}}
+
+            </p>
+            <ul class="ntu mm-listview noselect">
+                <li class="fsl1" on-click="setPage:contacts:partners">
+                    <a class="pointer">{{_e('Контакты')}}</a>
+                </li>
+                <li class="fsl-b" on-click="setPage:debitcoin">
+                    <a class="pointer">
+
+                        <svg style="    width: 22px;height: 20px;margin: 0px 7px -5px -7px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<g>
+	<path d="M55.9,106.3"/>
+	<g>
+		<g>
+			<rect x="175.1" y="14.9" width="78" height="114.7"/>
+			<circle cx="182.4" cy="14.9" r="7.4"/>
+			<circle cx="245.7" cy="14.9" r="7.4"/>
+			<rect x="181.8" y="7.5" width="63.8" height="34"/>
+		</g>
+		<g>
+			<rect x="325.1" y="14.9" width="78" height="114.7"/>
+			<circle cx="332.4" cy="14.9" r="7.4"/>
+			<circle cx="395.7" cy="14.9" r="7.4"/>
+			<rect x="331.8" y="7.5" width="63.8" height="34"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="175.1" y="615.6" width="78" height="114.7"/>
+			<circle cx="182.4" cy="730.4" r="7.4"/>
+			<circle cx="245.7" cy="730.4" r="7.4"/>
+			<rect x="181.8" y="703.7" width="63.8" height="34"/>
+		</g>
+		<g>
+			<rect x="325.4" y="615.6" width="78" height="114.7"/>
+			<circle cx="332.8" cy="730.4" r="7.4"/>
+			<circle cx="396" cy="730.4" r="7.4"/>
+			<rect x="332.2" y="703.7" width="63.8" height="34"/>
+		</g>
+	</g>
+	<rect x="141.4" y="162.4" width="92.5" height="397.1"/>
+	<rect x="86.9" y="553" width="201.3" height="88.3"/>
+	<g>
+		<path d="M288.1,98.7L288.1,98.7l0,88.3h0c101.1,0,183,81.9,183,183s-81.9,183-183,183h0v88.3h0c149.8,0,271.3-121.5,271.3-271.3
+			S438,98.7,288.1,98.7z"/>
+	</g>
+	<g>
+		<rect x="84.6" y="553" width="129.9" height="88.3"/>
+		<circle cx="84.6" cy="633" r="8.3"/>
+		<circle cx="84.6" cy="561.4" r="8.3"/>
+		<rect x="76.3" y="561.4" width="38.5" height="72.2"/>
+	</g>
+	<rect x="86.9" y="98.7" width="201.3" height="88.3"/>
+	<g>
+		<rect x="84.6" y="98.7" width="129.9" height="88.3"/>
+		<circle cx="84.6" cy="179" r="8.3"/>
+		<circle cx="84.6" cy="107.4" r="8.3"/>
+		<rect x="76.3" y="107.4" width="38.5" height="72.2"/>
+	</g>
+</g>
+</svg>
+
+                        {{_e('Кошельки')}}
+                        <img src="./src/img/debit_coin_gold.gif"
+                             onerror="this.src='../../.'+this.src;this.onerror = null;" style="    display: inline-block;
+    width: 20px;
+    margin-top: -15px;
+    margin-left: -4px;
+    transition: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);"/>
+                    </a>
+                </li>
+                <li class="fsl2" on-click="setPage:cards">
+                    <a class="pointer">{{_e('Ваши карты')}}</a>
+                </li>
+                <li class="fsl-b" on-click="setPage:deposits">
+
+                    <a class="pointer">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Capa_1" x="0px" y="0px" width="34.308px" height="34.308px" viewBox="0 0 34.308 34.308" style="enable-background:new 0 0 34.308 34.308;    width: 22px;height: 20px; margin: 0px 7px -5px -7px;" xml:space="preserve">
+<g>
+	<path d="M18.033,16.63c0,1.103-0.897,2-2,2s-2.001-0.897-2.001-2c0-1.104,0.897-2.001,2.001-2.001S18.033,15.527,18.033,16.63z    M33.568,0v32.021h-3.24v2.286h-2.859v-2.286H9.362v2.286H6.504v-2.286h-3.24v-3.812H0.74V21.73h2.522V10.365H1.05v-6.48h2.213   V0.001L33.568,0L33.568,0z M23.466,16.677c0-4.099-3.336-7.433-7.435-7.433c-4.1,0-7.434,3.334-7.434,7.433   c0,4.099,3.334,7.433,7.434,7.433C20.13,24.111,23.466,20.775,23.466,16.677z M29.505,22.925l-1.139-7.228   c0.578-0.385,0.959-1.04,0.959-1.785c0-1.184-0.959-2.144-2.145-2.144c-1.187,0-2.146,0.96-2.146,2.144   c0,0.746,0.382,1.4,0.957,1.785l-1.135,7.228H29.505z M20.035,14.985l1.387-0.719c0.33,0.737,0.521,1.552,0.521,2.412   c0,0.954-0.229,1.852-0.636,2.648l-1.396-0.859l-0.448,0.73l1.405,0.867c-0.989,1.412-2.586,2.368-4.405,2.5v-1.695h-0.859v1.695   c-1.974-0.144-3.677-1.257-4.64-2.867l1.459-0.758l-0.396-0.763l-1.455,0.756c-0.289-0.696-0.448-1.458-0.448-2.257   c0-1.011,0.256-1.963,0.704-2.795l1.326,0.817l0.45-0.73l-1.312-0.808c0.998-1.34,2.547-2.243,4.311-2.371v1.503h0.857v-1.503   c1.913,0.138,3.573,1.188,4.551,2.72l-1.373,0.713L20.035,14.985z M18.796,16.63c0-1.524-1.241-2.764-2.764-2.764   c-1.525,0-2.764,1.239-2.764,2.764c0,1.524,1.238,2.765,2.764,2.765C17.556,19.395,18.796,18.154,18.796,16.63z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        {{_e('Депозиты')}}
+
+                    </a>
+                </li>
+                <li class="fsl3" on-click="setPage:credit">
+                    <a class="pointer">{{_e('Кредиты')}}</a>
+                </li>
+                <li class="fsl4" on-click="setPage:sendmoney">
+                    <a class="pointer">{{_e('Переводы')}}</a>
+                </li>
+                <li class="fsl5" on-click="setPage:guarantee">
+                    <a class="pointer">{{_e('Гарантии')}}</a>
+                </li>
+                <!--<li class="fsl-b" on-click="setPage:localbitcoin">-->
+                    <!--<a class="pointer">-->
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="   width: 22px; height: 20px;    margin: 0px 7px -5px -7px;enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">-->
+<!--<g>-->
+	<!--<g>-->
+		<!--<g>-->
+			<!--<path d="M215.124,256.421c0,69.837,56.817,126.653,126.654,126.653S468.43,326.258,468.43,256.421     s-56.816-126.653-126.653-126.653S215.124,186.585,215.124,256.421z M452.262,256.421c0,60.922-49.563,110.484-110.484,110.484     c-60.922,0-110.485-49.563-110.485-110.484c0-60.922,49.564-110.484,110.485-110.484     C402.698,145.937,452.262,195.5,452.262,256.421z" fill="#FFFFFF"/>-->
+			<!--<path d="M503.916,153.88c4.466,0,8.084-3.618,8.084-8.084v-31.459c0-20.619-16.774-37.394-37.393-37.394H37.393     C16.775,76.942,0,93.716,0,114.337v283.326c0,20.62,16.775,37.395,37.393,37.395h437.214c20.619,0,37.393-16.775,37.393-37.395     V172.026c0-4.466-3.618-8.084-8.084-8.084c-4.466,0-8.084,3.618-8.084,8.084v225.637c0,11.705-9.522,21.227-21.225,21.227H37.393     c-11.704,0-21.225-9.522-21.225-21.227V114.337c0-11.704,9.521-21.226,21.225-21.226h437.214     c11.703,0,21.225,9.522,21.225,21.226v31.459C495.832,150.262,499.45,153.88,503.916,153.88z" fill="#FFFFFF"/>-->
+			<!--<path d="M311.329,243.018c0.539,0,1.074,0.536,1.608,0.536C312.403,243.018,311.868,243.018,311.329,243.018z" fill="#FFFFFF"/>-->
+			<!--<path d="M333.296,260.156l-7.499,31.067c5.244,1.165,16.348,4.549,26.08,4.549c8.157,0,15.347-2.379,17.303-10.439     C373.467,267.119,342.935,262.833,333.296,260.156z" fill="#FFFFFF"/>-->
+			<!--<path d="M331.03,161.035c-3.735,2.181-6.438,5.766-7.51,9.953l-1.937,7.575l-12.758-3.188c-1.316-0.33-2.635-0.487-3.934-0.487     c-7.245,0-13.836,4.904-15.672,12.25l-3.75,14.996c-2.147,8.586,3.008,17.303,11.566,19.558l2.697,0.709l-4.099,16.741     c0,0.001-0.002,0.003-0.002,0.005l-6.311,25.62c-1.234-0.29-2.476-0.43-3.701-0.43c-6.313-0.001-12.221,3.714-14.832,9.741     l-6.964,16.071c-1.873,4.322-1.769,9.245,0.289,13.484c2.055,4.238,5.857,7.37,10.41,8.575l12.966,3.432l-2.019,8.083     c-2.139,8.553,2.969,17.241,11.482,19.534l13.926,3.749c1.381,0.373,2.796,0.556,4.202,0.556c0.711,0,1.423-0.047,2.127-0.14     c1.312,0.895,2.777,1.61,4.369,2.101l13.926,4.286c1.555,0.478,3.158,0.715,4.756,0.715c2.756,0,5.497-0.705,7.943-2.086     c3.867-2.181,6.666-5.855,7.744-10.161l2.408-9.635c2.122,0.144,4.148,0.216,6.088,0.216c29.527,0,41.733-17.349,46.771-31.97     c5.195-14.394,4.364-27.363-2.05-37.755c4.285-5.557,7.086-12.484,8.164-20.503c2.004-13.227-1.966-25.058-11.493-34.226     c-3.929-3.781-8.817-7.099-14.775-10.011l2.355-9.215c2.194-8.575-2.916-17.319-11.461-19.619l-13.929-3.749     c-1.381-0.373-2.794-0.556-4.202-0.556c-0.556,0-1.109,0.028-1.661,0.085c-1.444-0.973-3.072-1.729-4.846-2.208l-13.926-3.749     c-1.381-0.372-2.794-0.555-4.201-0.555C336.343,158.827,333.526,159.576,331.03,161.035z M353.112,178.744l-5.893,22.496     c3.75,1.071,7.499,1.604,11.249,2.679l5.354-22.497l13.929,3.749l-5.893,23.032c18.746,5.891,32.136,14.996,29.461,32.136     c-1.606,12.318-8.57,18.749-18.213,20.89c12.857,6.429,19.282,16.604,12.857,34.281c-5.456,15.976-16.581,21.181-31.522,21.181     c-5.595,0-11.724-0.731-18.293-1.898l-5.891,23.565l-13.926-4.285l5.891-23.03c-3.749-1.074-7.499-2.142-11.249-2.676     l-5.893,23.031l-13.926-3.749l5.893-23.569c-3.214-1.07-6.427-1.603-10.179-2.677l-18.209-4.819l6.964-16.07l10.176,2.679     c0.596,0.17,1.151,0.246,1.667,0.246c2.722,0,4.307-2.107,4.758-3.461l9.105-36.958l6.43-26.247c0-3.212-1.071-6.963-6.43-8.032     l-10.176-2.68l3.75-14.996l19.282,4.82c2.682,0.536,5.895,1.607,9.109,2.145l5.891-23.034L353.112,178.744z" fill="#FFFFFF"/>-->
+			<!--<path d="M358.141,250.136c7.132,0,13.553-2.216,15.324-9.798c3.748-16.605-21.425-20.354-29.461-22.497l-6.964,28.387     C341.285,247.362,350.158,250.136,358.141,250.136z" fill="#FFFFFF"/>-->
+			<!--<path d="M173.625,140.548H60.389c-4.465,0-8.084,3.618-8.084,8.084c0,4.466,3.62,8.084,8.084,8.084h113.236     c4.465,0,8.084-3.62,8.084-8.084C181.709,144.166,178.09,140.548,173.625,140.548z" fill="#FFFFFF"/>-->
+			<!--<path d="M173.625,176.118H60.389c-4.465,0-8.084,3.619-8.084,8.084c0,4.466,3.62,8.084,8.084,8.084h113.236     c4.465,0,8.084-3.62,8.084-8.084C181.709,179.737,178.09,176.118,173.625,176.118z" fill="#FFFFFF"/>-->
+		<!--</g>-->
+	<!--</g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--</svg>-->
+                        <!--Localbitcoin-->
+                        <!--<span class="notifications-l" style="-->
+                <!--width: 40px;-->
+                <!--float: left;-->
+                <!--/* left: 13px; */-->
+                <!--right: auto;-->
+                <!--margin-left: 3px;-->
+                <!--position: absolute;-->
+                <!--top: 3px;">{{_e('Скоро')}}</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li class="fsl-b" on-click="setPage:exchanges">
+                    <a class="pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="    width: 22px; height: 20px;    margin: 0px 7px -5px -7px;enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+<g>
+	<g>
+		<path d="M474.222,58.038c-2.24-2.238-5.3-3.453-8.47-3.342l-52.703,1.777c-6.312,0.213-11.256,5.502-11.042,11.812    c0.213,6.312,5.484,11.26,11.812,11.042l10.682-0.36l1.94,1.94l-18.862,15.052l-80.342,64.115l-41.577-30.22l-71.403-51.899    c-5.693-4.137-13.339-4.376-19.279-0.604L25.077,185.266c-7.996,5.079-10.361,15.677-5.282,23.673    c3.268,5.145,8.819,7.958,14.494,7.958c3.144,0,6.328-0.866,9.178-2.676l47.697-30.295l112.362-71.366l39.935,29.026l74.18,53.917    c6.245,4.536,14.748,4.345,20.782-0.468l112.428-89.72l2.443,2.443l-0.36,10.682c-0.214,6.312,4.731,11.601,11.042,11.812    c0.131,0.005,0.262,0.007,0.392,0.007c6.137,0,11.213-4.869,11.42-11.049l1.777-52.703    C477.672,63.343,476.461,60.277,474.222,58.038z" fill="#FFFFFF"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M500.566,434.444h-11.404V217.755c0-13.614-11.077-24.692-24.692-24.692h-36.446c-13.614,0-24.692,11.077-24.692,24.692    v216.688h-32.697V296.69c0-13.614-11.077-24.692-24.692-24.692h-36.446c-13.614,0-24.692,11.077-24.692,24.692v137.755h-32.697    V223.627c0-13.614-11.077-24.692-24.692-24.692h-36.447c-13.614,0-24.69,11.077-24.69,24.692v210.817h-32.698v-70.166    c0-13.614-11.077-24.69-24.692-24.69H72.45c-13.614,0-24.692,11.076-24.692,24.69v70.166H11.434C5.12,434.444,0,439.564,0,445.878    c0,6.314,5.12,11.434,11.434,11.434h489.132c6.314,0,11.434-5.12,11.434-11.434C512,439.564,506.881,434.444,500.566,434.444z" fill="#FFFFFF"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        {{_e('Биржа')}}
+                        <span class="notifications-l" style="
+                width: 40px;
+                float: left;
+                /* left: 13px; */
+                right: auto;
+                margin-left: 3px;
+                position: absolute;
+                top: 3px;">{{_e('Скоро')}}</span>
+                    </a>
+                </li>
+                <li class="fsl8" on-click="setPage:affiliates:about" style="display:none;">
+                    <a class="pointer">{{_e('Партнеры')}}
+
+                    </a>
+                </li>
+                <li class="fsl-b" on-click="setPage:bonus:review" data-old_on="add_share" style="display:none;">
+                    <a class="pointer">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                        {{_e('Бонус')}}
+
+
+                    </a>
+                </li>
+                <!--<li class="fsl-b" onclick="Messenger.openChat(false,false,'58fab03a54f348857cad8bf4')">-->
+                <!--<a class="pointer">-->
+                <!--<svg style="    width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 511.562 511.562;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 511.562 511.562"  xml:space="preserve">-->
+                <!--<g>-->
+                <!--<g>-->
+                <!--<g>-->
+                <!--<path d="M149.268,113.199c14.133-39.918,33.818-77.833,58.465-108.826c-50.812,9.693-96.335,34.41-131.743,69.385l6.179,5.085     C103.091,93.134,125.663,104.539,149.268,113.199z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M141.261,246.954h105.693v-97.43c-29.617-0.794-58.703-5.367-86.599-13.886     C148.738,173.278,142.206,211.899,141.261,246.954z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M264.612,149.518v97.439h105.693c-0.945-35.063-7.486-73.684-19.103-111.325     C323.298,144.16,294.22,148.732,264.612,149.518z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M165.881,118.89c26.086,7.901,53.327,12.191,81.073,12.977V0c-4.37,0.15-8.713,0.415-13.021,0.777     C204.652,32.115,181.656,74.152,165.881,118.89z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M430.011,78.376l5.932-4.264c-35.46-35.169-81.126-60.01-132.096-69.738c24.62,30.985,44.306,68.873,58.43,108.773     C386.032,104.417,408.798,92.888,430.011,78.376z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M370.321,373.71c24.408,9.154,47.81,21.124,69.659,36.078l12.173,10.002c35.425-42.337,57.397-96.265,59.401-155.18     H387.95C387.067,299.187,381.117,336.784,370.321,373.71z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M143.744,129.901c-25.309-9.251-49.567-21.495-72.157-36.961l-7.706-6.329C25.851,129.698,2.096,185.612,0.004,246.955     h123.604C124.561,209.879,131.447,169.352,143.744,129.901z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M277.639,0.777c-4.317-0.362-8.66-0.627-13.03-0.768v131.858c27.719-0.786,54.934-5.076,81.055-13.012     C329.898,74.134,306.911,32.115,277.639,0.777z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M233.933,510.781c4.308,0.371,8.651,0.627,13.021,0.777V370.872c-28.698,0.803-56.876,5.394-83.844,13.868     C178.911,432.418,202.922,477.589,233.933,510.781z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M81.547,424.361l-10.964,7.883c36.131,37.897,83.703,64.75,137.145,74.946c-26.244-33.015-46.874-73.878-61.158-116.648     C123.805,399.158,101.965,410.395,81.547,424.361z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M365.005,390.489c-14.274,42.787-34.913,83.668-61.175,116.701c53.133-10.134,100.467-36.74,136.519-74.293     l-10.955-9.004C409.276,410.139,387.639,399.034,365.005,390.489z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M141.245,373.725c-10.796-36.935-16.755-74.531-17.638-109.118H0.004c2.004,58.553,23.693,112.19,58.739,154.412     l12.668-9.11C93.347,394.902,116.802,382.897,141.245,373.725z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M387.954,246.954h123.604c-2.083-61.113-25.679-116.833-63.453-159.85l-7.954,5.72     c-22.678,15.519-46.989,27.789-72.333,37.067C380.115,169.35,387.001,209.878,387.954,246.954z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M370.302,264.609H264.609v88.602c30.508,0.812,60.443,5.667,89.097,14.671     C363.822,332.802,369.428,297.165,370.302,264.609z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M157.857,367.891c28.672-9.013,58.606-13.868,89.097-14.68v-88.602H141.261     C142.135,297.174,147.741,332.811,157.857,367.891z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--<path d="M264.609,370.868v140.694c4.37-0.15,8.713-0.415,13.021-0.777c31.02-33.201,55.04-78.389,70.833-126.076     C321.538,376.271,293.352,371.68,264.609,370.868z" style="fill: rgb(255, 255, 255);"></path>-->
+                <!--</g>-->
+                <!--</g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--<g>-->
+                <!--</g>-->
+                <!--</svg>-->
+                <!--{{_e('Новости')}}-->
+                <!--</a>-->
+                <!--</li>-->
+                <li class="fsl-b" onclick="Messenger.openChat(false,10989451)">
+                    <a class="pointer">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 67.657 67.657" style=" width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 67.657 67.657;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M33.838,0C24.802,0,16.306,3.52,9.917,9.909c-6.39,6.39-9.908,14.884-9.908,23.92s3.519,17.53,9.908,23.92    s14.884,9.908,23.92,9.908c9.035,0,17.531-3.519,23.92-9.908c13.189-13.19,13.189-34.651,0-47.842C51.369,3.518,42.873,0,33.838,0    z M48.093,7.616l-7.496,7.498c-2.079-0.748-4.286-1.16-6.561-1.16c-2.239,0-4.411,0.399-6.461,1.125L19.927,7.43    C24.164,5.191,28.909,4,33.839,4C38.902,4,43.769,5.257,48.093,7.616z M23.185,44.147c-5.982-5.982-5.982-15.717,0-21.699    c2.899-2.898,6.753-4.494,10.851-4.494s7.952,1.596,10.85,4.494c5.982,5.982,5.982,15.718,0,21.701    c-2.898,2.897-6.751,4.494-10.849,4.494C29.938,48.643,26.084,47.046,23.185,44.147z M8.287,18.418l7.768,7.768    c-1.723,4.375-1.779,9.248-0.195,13.663l-8.234,8.235c-2.359-4.324-3.617-9.192-3.617-14.256    C4.009,28.309,5.5,23.021,8.287,18.418z M18.761,59.575l8.258-8.256c2.209,0.859,4.576,1.324,7.018,1.324    c2.478,0,4.88-0.475,7.117-1.359l8.094,8.095c-4.602,2.787-9.891,4.278-15.41,4.278C28.451,63.657,23.286,62.234,18.761,59.575z     M60.229,47.732l-7.982-7.982c1.535-4.356,1.478-9.147-0.195-13.464l7.528-7.528C64.781,27.645,64.997,38.667,60.229,47.732z"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        {{_e('Поддержка')}}
+                    </a>
+                </li>
+                <li class="fsl7" on-click="setPage:settings:general">
+                    <a class="pointer">{{_e('Настройки')}}</a>
+                </li>
+                {{#if MyProfile.webtransfer_id =='10989451' || MyProfile.webtransfer_id =='99676729'}}
+                <li class="fsl-b" on-click="setPage:legal">
+
+                    <a class="pointer">
+                        <svg style="    width: 22px; height: 20px;margin: 0px 7px -5px -7px;enable-background:new 0 0 60 60;"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60"  xml:space="preserve">
+<g>
+	<polygon points="49,12 49,0 6,0 6,55 9,55 9,3 40,3  " style="fill: rgb(255, 255, 255);"></polygon>
+	<path d="M39.414,5H11v55h43V19.586L39.414,5z M20,17h10c0.552,0,1,0.447,1,1s-0.448,1-1,1H20c-0.552,0-1-0.447-1-1S19.448,17,20,17   z M45,51H20c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1S45.552,51,45,51z M45,43H20c-0.552,0-1-0.447-1-1   s0.448-1,1-1h25c0.552,0,1,0.447,1,1S45.552,43,45,43z M45,35H20c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1   S45.552,35,45,35z M45,27H20c-0.552,0-1-0.447-1-1s0.448-1,1-1h25c0.552,0,1,0.447,1,1S45.552,27,45,27z M38,21V7l14,14H38z" style="fill: rgb(255, 255, 255);"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        {{_e('Документы')}}
+                    </a>
+                </li>
+                {{/if}}
+            </ul>
+
+            <p class="sets-up noselect">
+                <a class="setts pointer" on-click="outlogin">{{_e('ВЫХОД')}}</a>
+
+            </p>
+        </scroll>
+    </div>
+
+</div>
+{{/if}}
+
+##!!!##Chats##!:!##
+{{#if threads.length >= 1}}
+{{#threads:i}}
+{{#if spam == false}}
+<div class="chat-icon pointer" data-message_thread_id="{{message_thread_id}}" data-webtransfer_id="{{webtransfer_id}}"
+     on-click="openChats:{{i}}">
+    <!--class = notifs-->
+    {{#if last_message_sender_id !=my_id}}
+    {{#if unread_count_this_thread > 999}}
+    <div class="notifs">+999</div>
+    {{else}}
+    <div class="notifs" {{#if unread_count_this_thread==0}}style="display: none;
+    "{{/if}}>{{unread_count_this_thread}}
+</div>
+{{/if}}
+{{else}}
+<div class="notifs" style="display: none;">0</div>
+{{/if}}
+
+
+{{#if group_photo && group_photo !='false'}}
+<img src="{{group_photo}}" on-error="errorAvatarGroup:{{i}}"/>
+{{elseif avatar_path && avatar_path !='false'}}
+<img src="{{avatar_path}}" on-error="errorAvatar:{{i}}"/>
+{{else}}
+<div class="pos-ab-av chat-in-im_dialog_no_avatars chat-in-user_bgcolor_12">
+    {{name_short}}
+</div>
+{{/if}}
+<div class="chats-area-bl">
+    <span class="snd">12:45</span>
+
+    {{#if type_threads == 'group'}}
+    <h4>{{group_name}}</h4>
+    <div class="id-area" style="margin-top: -8px;font-size: 9px;">ID: {{id}}</div>
+    {{else}}
+    <h4>{{full_name}}</h4>
+    <div class="id-area" style="margin-top: -8px;font-size: 9px;">ID: {{webtransfer_id}}</div>
+    {{/if}}
+    <p style="    margin-top: -6px;">
+        {{#if last_message_sender_id ==my_id}}
+        <span class="telegraf_pref_last_message">{{_e('Вы')}}:</span>
+        {{/if}}
+        {{last_message}}
+    </p>
+</div>
+</div>
+{{/if}}
+{{/}}
+{{else}}
+{{#if threads_finish != true}}
+<div class="fixed-loader"></div>
+{{else}}
+<div class="mv-area dialogs-none-telegraf">
+    <img class="img-main-section" src="./src/img/chats.png" onerror="this.src='../../.'+this.src;this.onerror = null;">
+    <h2>
+        {{_e('У вас нет чатов')}}
+    </h2>
+    <button class="button-n" on-click="setPage:contacts">{{_e('Начать чат')}}</button>
+    <br>
+</div>
+{{/if}}
+{{/if}}
+
+##!!!##Cards##!:!##
+{{#if finance_cards_load}}
+<!--foreach-->
+{{#finance_cards}}
+<div class="cards-ns pointer" on-click="openCard:{{id}}">
+    <div class="ntra">VISA <span>{{card_name_short.replace(card_currency, '')}}</span></div>
+    <div class="cl-visa"></div>
+    <div class="cl-ic2">
+        {{#if card_type ==0}}
+        Black
+        {{else}}
+        Virtual
+        {{/if}}
+    </div>
+    <div class="cvlk" {{#if +last_balance
+    <0}}style="color: #e62e00 !important;"{{/if}}>{{total_balance}}
+    <strong>{{card_currency}}</strong>
+    <span>{{#if last_balance > 0 || demand_ammount >0}}{{last_balance}}{{#if demand_ammount >0}} + {{demand_ammount}}{{/if}} {{/if}}</span>
+</div>
+</div>
+{{/}}
+<!--foreach-->
+
+<!--<button class="add-btns" on-click="openCard:add">{{_e('добавить карту')}}</button>-->
+<br>
+{{else}}
+<div class="cards-area" style="height: 89vh;">
+    <div class="fixed-loader"></div>
+</div>
+{{/if}}
+
+##!!!##avatar##!:!##
+{{#if src && src != 'http://vk.com/images/camera_50.png'&& src != 'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'&& src != 'https://webtransfer.com/assets/missing_avatar_thumb.jpeg'}}
+<img src="{{src}}" class="{{class_img}} noselect" on-error="toggle('src')"/>
+{{else}}
+<div class="{{class_label}} chat-in-user_bgcolor_12 noselect">
+    {{#if !label || label.length == 0}}
+    ##
+    {{elseif label.length >= 2 && label.length <= 1}}
+    {{label}}
+    {{else}}
+    {{label[0]+label[1]}}
+    {{/if}}
+</div>
+{{/if}}
+<div class="no_ava"></div>
+##!!!##scroll##!:!##
+<div class="scroller-b nano __nano {{class_scroll}}">
+    <div class="nano-content {{class_content}}" id="{{id_content}}">
+
+        {{yield}}
+
+    </div>
+</div>
+

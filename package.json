@@ -1,0 +1,48 @@
+{
+    "name": "telegraf.money",
+    "version": "1.0.0",
+    "description": "telegraf node",
+    "main": "node.js",
+    "dependencies": {
+        "geoip-lite-country": "^1.1.5",
+        "git-validate": "^2.2.2",
+        "nw-builder": "*",
+        "shelljs": "^0.7.5",
+        "telegram-mtproto": "^2.2.2"
+    },
+    "devDependencies": {
+        "grunt": "0.4.2",
+        "grunt-contrib-concat": "0.3.0",
+        "grunt-contrib-copy": "0.5.0",
+        "grunt-contrib-cssmin": "0.9.0",
+        "grunt-contrib-jshint": "1.1.0",
+        "grunt-contrib-uglify": "0.4.0",
+        "grunt-usemin": "2.0.2",
+        "load-grunt-tasks": "0.4.0",
+        "xml2js": "0.4.17"
+    },
+    "scripts": {
+        "noder_script_pre_commit": "node pre_commit.js",
+        "noder_script_pre_push": "node pre_push.js"
+    },
+    "pre-commit": [
+        "noder_script_pre_commit"
+    ],
+    "pre-push": [
+        "noder_script_pre_push"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://onsamp@bitbucket.org/onsamp/telegraf.money.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/onsamp/telegraf.money#readme",
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "org.xwalk:xwalk_core_library_beta:14+"
+            }
+        }
+    }
+}

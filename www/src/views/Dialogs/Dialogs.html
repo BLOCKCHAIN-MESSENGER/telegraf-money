@@ -1,0 +1,151 @@
+<div class="wrapper list-dialog-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header">
+                <a href="#menu">
+                    <span></span>
+                </a>
+                <strong>{{_e('Чаты')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Чаты')}}</h3>
+                    <!--<ul class="ulck-menu">-->
+                    <!--<li class="active">-->
+                    <!--<a href="#">{{_e('Партнеры')}}</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#">{{_e('Заемщики')}}</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#">{{_e('Кредиторы')}}</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#">{{_e('Друзья')}}</a>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="icon-area chat"></div>
+            <!--
+            <div class="icon-area drop obms">
+
+            <div class="hide-xts stz">
+                <a href="#">Пригласить в чат</a>
+                <a href="#">Удалить чат</a>
+                <a href="#">Изменить контакт</a>
+                <a href="#">Удалить контакт</a>
+                <a href="#">Блокировать</a>
+            </div>
+
+        </div>
+        -->
+
+            <div class="content-nh">
+
+
+                <scroll class_scroll="scroller-b-Dialogs" class_content="" id_content="">
+                    <div class="colv-3">
+
+                        {{#if threads.length >= 1}}
+                        {{#threads:i}}
+                        {{#if spam == false}}
+                        <div class="slider pointer" data-message_thread_id="{{message_thread_id}}"
+                             data-webtransfer_id="{{webtransfer_id}}"
+                             on-click="openChats:{{i}}">
+                            <div>
+                                <div class="chats-blk">
+                                    <div class="pos-abs-time" data-unix="{{updated_at}}">{{updated_at_text}}</div>
+                                    {{#if last_message_sender_id ==my_id}}
+                                    {{#if !last_message_read}}
+                                    <div class="check-nt"></div>
+                                    {{else}}
+                                    <div class="check-nt2"></div>
+                                    {{/if}}
+                                    {{/if}}
+                                    <div class="im_dialog_photo2 pull-left">
+                                        {{#if type_threads == 'group'}}
+
+                                        <avatar src="{{group_photo}}" label="{{group_name}}" class_img="account-img-area-n" class_label="chat-in-im_dialog_no_avatars"/>
+
+                                        <div class="group_icon" style=""><img src="./src/img/logo-a.svg"
+                                                                              style=" width:16px;height:16px;"/>
+                                        </div>
+                                        {{else}}
+                                        <avatar src="{{avatar_path}}" label="{{name_short}}" class_img="account-img-area-n" class_label="chat-in-im_dialog_no_avatars"/>
+
+                                        {{/if}}
+                                        {{#if last_message_sender_id !=my_id}}
+                                        {{#if unread_count_this_thread > 999}}
+                                        <div class="notif-numbers">+999</div>
+                                        {{else}}
+                                        <div class="notif-numbers" {{#if unread_count_this_thread==0}}style="display: none;"{{/if}}>{{unread_count_this_thread}}
+                                    </div>
+                                    {{/if}}
+                                    {{else}}
+                                    <div class="notif-numbers" style="display: none;">0</div>
+                                    {{/if}}
+
+                                </div>
+                                <div class="chat-in-im_dialog_message_wraps">
+                                    {{#if type_threads == 'group'}}
+                                    <div class="chat-in_dialog_persons">{{group_name}}</div>
+                                    <div class="id-area">ID: {{id}}</div>
+                                    {{else}}
+                                    <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                    <div class="id-area">ID: {{webtransfer_id}}</div>
+                                    {{/if}}
+                                    <div class="chat-in-im_dialog_messages">
+                                        {{#if last_message_sender_id ==my_id}}
+                                        <span class="telegraf_pref_last_message">{{_e('Вы')}}:</span>
+                                        {{/if}}
+                                        {{last_message}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        {{/if}}
+                        {{/}}
+                        {{else}}
+                        {{#if threads_finish != true}}
+                        <div class="fixed-loader"></div>
+                        {{else}}
+                        <div class="mv-area dialogs-none-telegraf">
+
+                            <img class="img-main-section" src="./src/img/chats.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                            <h2>
+                                {{_e('У вас нет чатов')}}
+                            </h2>
+
+                            <button class="button-n" on-click="setPage:contacts">{{_e('Начать чат')}}</button>
+
+                            <br>
+
+                        </div>
+                        {{/if}}
+                        {{/if}}
+                    </div>
+
+
+                </scroll>
+
+            </div>
+
+            <div class="ltos"></div>
+
+        </div>
+    </div>
+</div>

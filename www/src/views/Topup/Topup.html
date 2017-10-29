@@ -1,0 +1,329 @@
+<div class="wrapper cards-wrapper topup-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Пополнить')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Пополнить')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <scroll class_scroll="scroller-b-Topup" class_content="" id_content="">
+                <a href="{{form.link}}" id="pay_start" style="display: none" target="_blank"></a>
+                <div class="clzs">
+                    {{#if exchanges_page}}
+
+                    {{#if topup_select}}
+                    <div class="modal-body">
+                        <h1>{{_e('Пополнение карты через:')}} {{pay_select.title}}</h1>
+                        <form action="#pay">
+                            {{#if finance_cards_load}}
+
+                            {{#finance_cards}}
+                            {{#if cloud_card_id == select_card}}
+                            <div class="cards-area info-card virtual-card-t new-cards-area top_up-cards-area {{#if card_type ==0}}
+                                card-real
+                                {{/if}}">
+                                <div class="card-full visa info-card">
+                                    <div class="img-l">
+                                        <div class="prise-art">{{last_balance}}
+                                            <strong>
+                                                <i>{{card_currency}}</i></strong></div>
+                                    </div>
+                                    <div class="img-ls">
+                                        {{#if card_system !='master_card'}}
+                                        <!--visa-->
+                                        <img src="./src/img/v1.svg" class="mCS_img_loaded"
+                                             onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                        {{else}}
+                                        <!--master card-->
+                                        <img src="./src/img/v2.svg" class="mCS_img_loaded"
+                                             onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                        {{/if}}
+                                    </div>
+                                    <div class="numb-card">{{card_name_short.replace(card_currency, '')}}</div>
+                                    <span class="dbts">{{card_currency}}</span>
+                                    <div class="card-h">
+                                        <div class="fll">{{name_on_card}}</div>
+                                        <div class="flr">
+                                            {{#if card_type ==0}}
+                                            Black
+                                            {{else}}
+                                            Virtual
+                                            {{/if}}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{/if}}
+                            {{/}}
+                            {{/if}}
+
+                            <div class="imp-area-modal-card">
+
+
+                                <div class="select-form">
+                                    <label>{{_e('К получению:')}} <span style="font-weight: 400;"> ({{_e('макс:')}} ${{exchange_select.reserve}})</span></label>
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="100"
+                                               aria-describedby="basic-addon2" id="topup_val_2" onkeyup="calculate(null,true)" onchange="calculate(null,true)">
+                                        <span class="input-group-addon" id="basic-addon2">{{_e('Бонус:')}} ${{bonus}}, {{_e('Итого')}} ${{total}}</span>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="select-form">
+                                    <label>{{_e('Сумма:')}}</label>
+                                    <input class="form-control" placeholder="" value="" id="topup_val_1" onkeyup="calculate(true,null)" onchange="calculate(true,null)">
+                                </div>
+                                {{#if pay_select.operation_tag.split('_') == 'QIW'}}
+                                <div class="alert alert-warning">
+                                    <div style="width: 10%; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                    </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+                                    <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('Лимит на пополнение карты 550 USD в сутки')}}
+                                </div>
+                                </div>
+                                {{/if}}
+                                <div class="btn-area-cards">
+                                    <button class="button-n left-btn" on-click="order_pay" type="button">{{_e('Пополнить')}}</button>
+                                    <button class="button-n right-btn" on-click="back_topup" type="button">{{_e('Отменить')}}</button>
+                                </div>
+
+                                <div class="txt-modal-area">{{_e('Пополнение производится сервисом')}}
+                                    <b>{{exchange_select.name}}</b> <span style="    font-size: 11px;
+    color: #eaeaea;
+    font-style: italic; display: none">[{{exchange_select.exchanger_id}}]</span>
+                                    <br>
+                                    {{_e('Курс:')}} <b>{{+exchange_select.rate.toFixed(4)}}USD = 1.00USD.</b>
+                                    <br><br>{{_e('Резерв:')}} <b>{{exchange_select.reserve}} USD</b></div>
+
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    {{else}}
+                    <div class="content no-padding-content" style="    padding: 5px;">
+
+                        <div class="girl-card-bottom no-padd" style="    padding: 5px;">
+                            <div class="blocks-area">
+                                <a class="open_modal pointer" data-operation_tag="{{pay_select.operation_tag}}"
+                                   data-title="{{pay_select.title}}">
+                                    <div class="block-white{{pay_select.size}}">
+                                        <img src="./src/img/pay_sys/{{pay_select.img}}"
+                                             onerror="this.src='../../.'+this.src;this.onerror = null;"
+                                             style="{{pay_select.style_img}}"></div>
+                                </a>
+                                <button class="add-btns" on-click="back">{{_e('Выбрать другой способ пополнения')}}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-block-ex">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td class="title-in-table">{{_e('Обменник')}}</td>
+                                <td colspan="2" class="title-in-table txt-cn">{{_e('Курс')}}</td>
+                                <td class="title-in-table">{{_e('Резерв')}}</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{#exchanges}}
+                            {{#if reserve > 100}}
+                            <tr on-click="selectExchange:{{.}}">
+                                <td>{{name}}</td>
+                                <td>1 <span>usd</span></td>
+                                <td>{{+rate.toFixed(4)}}<span>usd</span></td>
+                                <td>{{reserve}}<span>usd</span></td>
+                            </tr>
+                            {{/if}}
+                            {{/}}
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                    {{else}}
+                    <div id="containern" class="content no-padding-content">
+
+                        <div class="girl-card-bottom no-padd">
+                            <div class="trans-sw2-h3">
+                                {{_e('Выберите способ пополнения')}}
+                            </div>
+
+                            <div class="blocks-area">
+
+                                {{#pay_system}}
+                                <a class="open_modal pointer" data-operation_tag="{{operation_tag}}"
+                                   data-title="{{title}}" on-click="selectPay:{{.}}">
+                                    <div class="block-white{{size}}">
+                                        <img src="./src/img/pay_sys/{{img}}"
+                                             onerror="this.src='../../.'+this.src;this.onerror = null;"
+                                             style="{{style_img}}"></div>
+                                </a>
+                                {{/}}
+
+                                <!--<a href="#topup-modal-bank-3" class="open_modal" data-ps="">-->
+                                <!--<div class="block-white50">-->
+                                <!--<img class="gtrls1" src="https://cloudbank.social/img/wtt6/imt1.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal-bank-3" class="open_modal" data-ps="">-->
+                                <!--<div class="block-white50">-->
+                                <!--<img class="gtrls2" src="https://cloudbank.social/img/wtt6/imt2.png"></div>-->
+
+                                <!--</a>-->
+                                <!--<a href="#topup-modal-bank-3" class="open_modal" data-ps="">-->
+                                <!--<div class="block-white50">-->
+                                <!--<img src="https://cloudbank.social/img/bl-19.png"></div>-->
+                                <!--</a>-->
+
+
+                                <!--<a href="#topup-modal-bank-1" class="open_modal">-->
+                                <!--<div class="block-white50">-->
+                                <!--<img src="https://webtransfer.com/img/bl-9-europe-2.png"></div>-->
+                                <!--</a>-->
+
+
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="SSX">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/sberbank_block.png"></div>-->
+                                <!--</a>-->
+
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="alphabank">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/Alfabank_block.png"></div>-->
+                                <!--</a>-->
+
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="tinkoff">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/Tinkoff_block.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="vtb24">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/vtb_block.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="promsviazBank">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/PromsviazBank_block.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="unicredit">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/unicredit_block.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="avangard">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/avangard_block.png"></div>-->
+                                <!--</a>-->
+                                <!--<a href="#topup-modal" class="open_modal icon-1" data-ps="gazprombank">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://cloudbank.social/images/ps/gazprombank_block.png"></div>-->
+                                <!--</a>-->
+
+
+                                <!--<a href="#topup-modal" class="open_modal" data-ps="P24">-->
+                                <!--<div class="block-white">-->
+                                <!--<img src="https://webtransfer.com/img/bl2-8.png"></div>-->
+                                <!--</a>-->
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+            </scroll>
+
+
+        </div>
+
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="ltos"></div>
+
+            <ul class="nav-nt">
+                <li class="active">
+                    <a href="#">{{_e('Активные карты')}}</a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                <!--</li>-->
+
+            </ul>
+
+            <div class="spl-icn"></div>
+            <scroll class_scroll="" class_content="" id_content="">
+
+                <Cards/>
+                <button class="add-btns" on-click="setPage:cards">View all cards</button>
+
+
+            </scroll>
+        </div>
+    </div>
+
+    {{#if load}}
+    <div class="_load_action">
+        <div class="fixed-loader"></div>
+    </div>
+    {{/if}}
+</div>

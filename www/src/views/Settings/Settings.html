@@ -1,0 +1,522 @@
+<div class="wrapper cards-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Настройки')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Настройки')}}</h3>
+                    <ul class="ulck-menu">
+                    </ul>
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="icon-area chat"></div>
+            <ul class="nav-nt no-shows">
+                <li class="{{#if tabPage == 'general'}}active{{/if}}">
+                    <a class="pointer" on-click="setPage:settings:general">{{_e('Основные')}}</a>
+                </li>
+                <li class="{{#if tabPage == 'secure'}}active{{/if}}">
+                    <a class="pointer" on-click="setPage:settings:secure">{{_e('Безопасность')}}</a>
+                </li>
+                <li class="{{#if tabPage == 'secure'}}active{{/if}}" style="display: none">
+                    <a class="pointer" on-click="setPage:settings:synchronization">{{_e('Синхронизация')}}</a>
+                </li>
+                <li class="{{#if tabPage == 'notification'}}active{{/if}}">
+                    <a class="pointer" on-click="setPage:settings:notification">{{_e('Уведомления')}}</a>
+                </li>
+                <li class="{{#if tabPage == 'theme'}}active{{/if}}">
+                    <a class="pointer" on-click="setPage:settings:theme">{{_e('Дизайн')}}</a>
+                </li>
+                <li class="{{#if tabPage == 'about'}}active{{/if}}">
+                    <a class="pointer" on-click="setPage:settings:about">{{_e('О программе')}}</a>
+                </li>
+
+            </ul>
+
+            <scroll class_scroll="scroller-b-Settings" class_content="" id_content="">
+                {{#if tabPage == 'general'}}
+                <div class="content-nh">
+                    <div>
+                        <div class="mv-area code-area-sec_Sett">
+                            <i class="fa fa-language lange-icon" aria-hidden="true"></i>
+                            <form>
+                                <div class="select-form">
+                                    <label>{{_e('Языковые настройки')}}</label>
+                                    <select name="" id="lang_selector" class="sels">
+                                        <option value="" disabled selected>Select Language</option>
+                                        <option value="en">English</option>
+                                        <option value="cn">中国</option>
+                                        <option value="bg">Български</option>
+                                        <option value="de">Deutsch</option>
+                                        <option value="ge">ქართული</option>
+                                        <option value="it">Italiano</option>
+                                        <option value="kz">Қазақ тілі</option>
+                                        <option value="lv">Latviešu</option>
+                                        <option value="nl">Nederlands</option>
+                                        <option value="am">հայերեն</option>
+                                        <option value="az">Azerbaijan</option>
+                                        <option value="es">Español</option>
+                                        <option value="lt">Lietuviškas</option>
+                                        <option value="ru">Русский</option>
+                                        <option value="ua">Українська</option>
+                                        <option value="pl">Polski</option>
+                                        <option value="ro">Română</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <button class="button-n fll" onclick="select_lang($('#lang_selector').val())">
+                                {{_e('Применить')}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{#if tabPage == 'theme'}}
+                <div class="content-nh">
+
+
+                    <div>
+
+
+                        <div class="mv-area code-area-sec_Sett">
+
+                            <img class="img-main-section mx-wth-area" src="./src/img/roller.png"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                            <form>
+
+                                <div class="select-form">
+                                    <label>{{_e('Тема')}}</label>
+                                    <select class="sels" id="theme_selected">
+                                        <!--<option class="">Dark</option>-->
+                                        <option class="" value="blue_dark">Blue Dark</option>
+                                        <option class="" value="dark-black">Black Dark</option>
+                                        <option class="" value="dark-green">Green Dark</option>
+                                        <option class="" value="dark-purple">Purple Dark</option>
+                                        <option class="" value="orange">Orange</option>
+                                        <option class="" value="flowers">Flowers</option>
+                                        <option class="" value="telegram">Telegram</option>
+                                        <option class="" value="purple">Purple</option>
+                                        <option class="" value="green">Green</option>
+                                        <!--<option class="">Red</option>-->
+                                    </select>
+                                </div>
+
+                                <div class="select-form">
+                                    <label>{{_e('Шрифт')}}</label>
+                                    <select class="sels"  id="font_selected">
+                                        <option class="" value="mini-mini">Small</option>
+                                        <option class="" value="mini">Medium-Small</option>
+                                        <option class="" value="middle">Medium</option>
+                                        <option class="" value="big">Medium-Large</option>
+                                        <option class="" value="bigger">Large</option>
+                                    </select>
+                                </div>
+
+                            </form>
+
+                            <button class="button-n" on-click="theme_set">{{_e('Применить')}}</button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                {{/if}}
+                {{#if tabPage == 'secure'}}
+
+                <div class="content-nh">
+                    <div>
+                        <div class="mv-area code-area-sec_Sett">
+                            <form>
+                                <i class="fa fa-qrcode fa-4x" style="color: #ffffff; margin: 0 20px;"
+                                   aria-hidden="true"></i>
+
+                                <div class="select-form">
+                                    <label>{{_e('Google Authenticator')}}</label>
+                                    {{#if otp_status}}
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauthoff">
+                                        {{_e('Отключить')}}
+                                    </button>
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauth">
+                                        {{_e('Настроить')}}
+                                    </button>
+                                    {{else}}
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauth">
+                                        {{_e('Активировать')}}
+                                    </button>
+                                    {{/if}}
+
+                                </div>
+                                {{#if fingerprint}}
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"-->
+                                     <!--style="fill: #fff;margin: 0 14px;">-->
+                                    <!--<path d="M20 18v-2c0-1.657-1.344-3-3-3s-3 1.343-3 3v2h-1v6h8v-6h-1zm-5 0v-2c0-1.103.897-2 2-2s2 .897 2 2v2h-4zm-4 5.314c0 .222-.127.424-.326.521l-.234.111c-.08.036-.169.054-.26.054-.325 0-.677-.223-.693-.61-.012-.249.129-.48.357-.586l.225-.104c.202-.096.439-.08.628.04.189.119.303.327.303.551v.023zm-.333-5.277c-.953.512-2.394 1.182-4.758 1.876-.295.087-.593-.056-.717-.285-.215-.365-.028-.835.382-.956 2.24-.66 3.543-1.267 4.47-1.764.201-.107.444-.103.641.015.195.118.315.329.315.557 0 .233-.128.447-.333.557zm-.563-2.956c-1.553 1.014-3.388 1.795-5.372 2.294-.32.081-.648-.095-.756-.405-.059-.173-.043-.363.045-.523s.238-.278.417-.323c4.046-1.021 7.628-3.346 9.157-6.958.725-1.71-.658-2.935-2.086-2.935-.86 0-1.738.444-2.182 1.494-.801 1.89-2.814 3.388-5.516 4.153-.401.115-.804-.181-.811-.596-.005-.297.192-.561.48-.643 2.309-.655 4.007-1.883 4.654-3.411.309-.731.805-1.328 1.432-1.726.573-.363 1.245-.555 1.943-.555 1.236 0 2.405.599 3.051 1.563.617.922.699 2.042.229 3.153-.469 1.105-1.123 2.139-1.944 3.071-.771.874-1.693 1.663-2.741 2.347zm.896 5.311c0 .228-.13.438-.334.54-.666.332-1.604.765-3.015 1.249-.446.153-.897-.287-.79-.762.051-.22.211-.398.426-.472 1.419-.49 2.149-.841 2.773-1.156.201-.102.439-.092.631.026.193.117.309.326.309.551v.024zm-7.021-16.237c.256-.586.518-.931.945-1.409 1.693-1.864 4.087-2.746 6.553-2.746 3.708 0 7.324 1.979 8.455 5.102.808 2.234.488 4.04.255 5.357l-.095.567c-.031.205-.157.382-.34.479s-.4.099-.586.008c-.254-.124-.397-.399-.355-.678l.101-.598c.22-1.242.493-2.788-.198-4.701-.781-2.159-3.151-3.796-6.037-4.173-3.038-.396-5.775.692-7.323 2.908l-.388.572c-.183.275-.534.347-.809.16-.28-.19-.345-.466-.178-.848zm.057 10.471c-.362.087-.72-.15-.78-.511-.056-.337.16-.661.495-.741 3.522-.849 6.195-2.776 7.253-5.273.139-.327.518-.48.848-.343s.484.514.346.841c-1.378 3.253-4.692 5.193-8.162 6.027zm-.442-6.733c1.404-.459 1.82-1.165 2.312-2.005.314-.534.669-1.139 1.287-1.709 1.406-1.294 3.31-1.919 5.224-1.715 1.827.195 3.444 1.119 4.438 2.536 1.385 1.974 1.037 3.929.759 5.5-.051.292-.306.503-.601.5h-.057999999999999996c-.184.002-.359-.077-.479-.216s-.17-.325-.138-.507c.262-1.477.532-3.005-.547-4.544-.779-1.111-2.061-1.837-3.514-1.993-1.541-.164-3.072.339-4.202 1.38-.478.44-.756.913-1.05 1.414-.569.97-1.154 1.967-3.035 2.58-.445.145-.89-.221-.831-.681.037-.279.213-.467.435-.54z"/>-->
+                                <!--</svg>-->
+                                <!--<div class="select-form">-->
+                                    <!--<label>{{_e('Подтверждение по отпечатку')}}</label>-->
+                                    <!--<button type="button" class="button-n fll btn-secure" on-click="touch_set:true">-->
+                                        <!--{{_e('Включить')}}-->
+                                    <!--</button>-->
+                                <!--</div>-->
+                                {{/if}}
+                                <!--<i class="fa fa-server fa-4x" style="color: #ffffff; margin: 0 20px;"-->
+                                   <!--aria-hidden="true"></i>-->
+
+                                <!--<div class="select-form">-->
+                                    <!--<label>{{_e('API доступ')}}</label>-->
+
+                                    <!--<button type="button" class="button-n fll btn-secure" on-click="api_sett">-->
+                                        <!--{{_e('Настроить')}}-->
+                                    <!--</button>-->
+                                    <!--<a href="https://telegraf.money/api/docs/" style="    color: white;"-->
+                                       <!--target="_blank">-->
+                                        <!--{{_e('Документация')}}-->
+                                    <!--</a>-->
+
+
+                                <!--</div>-->
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{#if tabPage == 'synchronization'}}
+
+                <div class="content-nh">
+                    <div>
+                        <div class="mv-area code-area-sec_Sett">
+                            <form>
+                                <i class="fa fa-qrcode fa-4x" style="color: #ffffff; margin: 0 20px;"
+                                   aria-hidden="true"></i>
+
+                                <div class="select-form">
+                                    <label>{{_e('Google Authenticator')}}</label>
+                                    {{#if otp_status}}
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauthoff">
+                                        {{_e('Отключить')}}
+                                    </button>
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauth">
+                                        {{_e('Настроить')}}
+                                    </button>
+                                    {{else}}
+                                    <button type="button" class="button-n fll btn-secure" on-click="gauth">
+                                        {{_e('Активировать')}}
+                                    </button>
+                                    {{/if}}
+
+                                </div>
+                                {{#if fingerprint}}
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"-->
+                                     <!--style="fill: #fff;margin: 0 14px;">-->
+                                    <!--<path d="M20 18v-2c0-1.657-1.344-3-3-3s-3 1.343-3 3v2h-1v6h8v-6h-1zm-5 0v-2c0-1.103.897-2 2-2s2 .897 2 2v2h-4zm-4 5.314c0 .222-.127.424-.326.521l-.234.111c-.08.036-.169.054-.26.054-.325 0-.677-.223-.693-.61-.012-.249.129-.48.357-.586l.225-.104c.202-.096.439-.08.628.04.189.119.303.327.303.551v.023zm-.333-5.277c-.953.512-2.394 1.182-4.758 1.876-.295.087-.593-.056-.717-.285-.215-.365-.028-.835.382-.956 2.24-.66 3.543-1.267 4.47-1.764.201-.107.444-.103.641.015.195.118.315.329.315.557 0 .233-.128.447-.333.557zm-.563-2.956c-1.553 1.014-3.388 1.795-5.372 2.294-.32.081-.648-.095-.756-.405-.059-.173-.043-.363.045-.523s.238-.278.417-.323c4.046-1.021 7.628-3.346 9.157-6.958.725-1.71-.658-2.935-2.086-2.935-.86 0-1.738.444-2.182 1.494-.801 1.89-2.814 3.388-5.516 4.153-.401.115-.804-.181-.811-.596-.005-.297.192-.561.48-.643 2.309-.655 4.007-1.883 4.654-3.411.309-.731.805-1.328 1.432-1.726.573-.363 1.245-.555 1.943-.555 1.236 0 2.405.599 3.051 1.563.617.922.699 2.042.229 3.153-.469 1.105-1.123 2.139-1.944 3.071-.771.874-1.693 1.663-2.741 2.347zm.896 5.311c0 .228-.13.438-.334.54-.666.332-1.604.765-3.015 1.249-.446.153-.897-.287-.79-.762.051-.22.211-.398.426-.472 1.419-.49 2.149-.841 2.773-1.156.201-.102.439-.092.631.026.193.117.309.326.309.551v.024zm-7.021-16.237c.256-.586.518-.931.945-1.409 1.693-1.864 4.087-2.746 6.553-2.746 3.708 0 7.324 1.979 8.455 5.102.808 2.234.488 4.04.255 5.357l-.095.567c-.031.205-.157.382-.34.479s-.4.099-.586.008c-.254-.124-.397-.399-.355-.678l.101-.598c.22-1.242.493-2.788-.198-4.701-.781-2.159-3.151-3.796-6.037-4.173-3.038-.396-5.775.692-7.323 2.908l-.388.572c-.183.275-.534.347-.809.16-.28-.19-.345-.466-.178-.848zm.057 10.471c-.362.087-.72-.15-.78-.511-.056-.337.16-.661.495-.741 3.522-.849 6.195-2.776 7.253-5.273.139-.327.518-.48.848-.343s.484.514.346.841c-1.378 3.253-4.692 5.193-8.162 6.027zm-.442-6.733c1.404-.459 1.82-1.165 2.312-2.005.314-.534.669-1.139 1.287-1.709 1.406-1.294 3.31-1.919 5.224-1.715 1.827.195 3.444 1.119 4.438 2.536 1.385 1.974 1.037 3.929.759 5.5-.051.292-.306.503-.601.5h-.057999999999999996c-.184.002-.359-.077-.479-.216s-.17-.325-.138-.507c.262-1.477.532-3.005-.547-4.544-.779-1.111-2.061-1.837-3.514-1.993-1.541-.164-3.072.339-4.202 1.38-.478.44-.756.913-1.05 1.414-.569.97-1.154 1.967-3.035 2.58-.445.145-.89-.221-.831-.681.037-.279.213-.467.435-.54z"/>-->
+                                <!--</svg>-->
+                                <!--<div class="select-form">-->
+                                    <!--<label>{{_e('Подтверждение по отпечатку')}}</label>-->
+                                    <!--<button type="button" class="button-n fll btn-secure" on-click="touch_set:true">-->
+                                        <!--{{_e('Включить')}}-->
+                                    <!--</button>-->
+                                <!--</div>-->
+                                {{/if}}
+                                <!--<i class="fa fa-server fa-4x" style="color: #ffffff; margin: 0 20px;"-->
+                                   <!--aria-hidden="true"></i>-->
+
+                                <!--<div class="select-form">-->
+                                    <!--<label>{{_e('API доступ')}}</label>-->
+
+                                    <!--<button type="button" class="button-n fll btn-secure" on-click="api_sett">-->
+                                        <!--{{_e('Настроить')}}-->
+                                    <!--</button>-->
+                                    <!--<a href="https://telegraf.money/api/docs/" style="    color: white;"-->
+                                       <!--target="_blank">-->
+                                        <!--{{_e('Документация')}}-->
+                                    <!--</a>-->
+
+
+                                <!--</div>-->
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{#if tabPage == 'notification'}}
+                <div class="credit-area form-profile settings">
+
+                    <div class="credit-main-area">
+
+                        <form action="#" onsubmit="return false;" id="push_sett">
+
+
+                            <div class="checbox-area-ns">
+
+                                <h4 class="menu-hh">{{_e('Информационные уведомления')}}</h4>
+
+                                <div class="w50-ar">
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Личные  сообщения')}}</span>
+                                        <div class="onoffswitch">
+
+                                            <input type="checkbox" class="checkbox" id="checkbox" name="message" {{#if notif.setting.message}}checked="checked"{{/if}}>
+                                            <label for="checkbox" style="font-size: 0;">checkbox</label>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Сообщение от службы поддержки')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox3" name="message_support" {{#if notif.setting.message_support}}checked="checked"{{/if}}>
+                                            <label for="checkbox3" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="w50-ar">
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Cообщение в группе')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox2" name="message_group" {{#if notif.setting.message_group}}checked="checked"{{/if}}>
+                                            <label for="checkbox2" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Новости от Telegraf.Money')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox21" name="news" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox21" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="checbox-area-ns">
+
+                                <h4 class="menu-hh">{{_e('Финансовые уведомления')}}</h4>
+
+                                <div class="w50-ar">
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Уведоления о росходах (Банкоматах,Магазины,Переводы)')}}</span>
+                                        <div class="onoffswitch">
+
+                                            <input type="checkbox" class="checkbox" id="checkbox4" name="card_withdrawal" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox4" style="font-size: 0;">checkbox</label>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Уведомления о депозитах (Переводы P2P,Пополнение,итп)')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox6" name="card_deposit" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox6" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Прочие финансовые уведомленния')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox7" name="other" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox7" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="w50-ar">
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Ваши новые кредиты')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox18" name="credit" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox18" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Полученные гарантии')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox19" name="guarantee" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox19" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="cbxl">
+                                        <span class="cnvl">{{_e('Полученные переводы')}}</span>
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" class="checkbox" id="checkbox22" name="send_money" {{#if notif.setting.news}}checked="checked"{{/if}}>
+                                            <label for="checkbox22" style="font-size: 0;">checkbox</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <br>
+                            <div class="psh-id">Push ID: fgdsuyayubdsaygbg7dgsg7dag9gs7agdygJfdsgds6dfytFFTYFfytds</div>
+
+                        </form>
+                        <button class="button-n fll" on-click="save_push" type="button">{{_e('Сохранить')}}</button>
+
+                        <div class="clearfix"></div>
+
+                        <div class="close-block"></div>
+
+
+                    </div>
+
+                </div>
+                {{/if}}
+                {{#if tabPage == 'about'}}
+                <div class="modal-chat-area-info">
+                    <span class="area-info-namels">Telegraf Money<strong>{{paramSocket.device_platform}}<br>version {{paramSocket.version_app}}</strong></span>
+                    <div class="text-art-w">
+                        {{_e('О приложение')}} Telegraf Money Messenger
+                        {{_e('позволяет пользователям общаться друг с другом, мгновенно отправлять деньги на встроенные в мессенджер карты VISA/MasterCard/Discover, а также выдавать и получать займы онлайн.')}}
+
+                    </div>
+                    <div class="text-art-w">
+                        ∙ {{_e('Надежно и безопасно управлять средствами в режиме онлай')}}<br>
+                        ∙ {{_e('Мгновенно получать кредит с мобильного телефона')}}<br>
+                        ∙ {{_e('Быстро и удобно совершать безопасные платежи и переводы контактам из вашей адресной книги')}}<br>
+                        {{_e('Больше никаких очередей в кассах и терминалах - получайте кредиты, делайте платежи и переводы онлайн где и когда')}}
+                        {{_e('вам удобно!')}}<br>
+                        {{_e('Функции приложения:')}}<br>
+                        {{_e('- Общение')}}<br>
+                        {{_e('- Получение микрокредитов')}}<br>
+                        {{_e('- Перевод денег')}}<br>
+                        {{_e('- Выдача гарантий')}}<br>
+                        {{_e('- Маркетинг')}}<br>
+                        {{_e('- Заработок')}}<br>
+                    </div>
+                </div>
+                {{/if}}
+                <div class='secure_gauth' style="display: none">
+                    <h3>{{_e('Настройка приложения для генерации кодов')}}</h3>
+                    <span style="font-size: 14px;float: left;text-align: left;">
+    {{_e('Приложения для генерации кодов подтверждения двухэтапной аутентификации позволяют получать коды даже без подключения к сети и сотовой связи.')}}
+    <br>
+    {{_e('Воспользуйтесь любым приложением для генерации кодов двухэтапной аутентификации. Например, Google Authenticator для')}} <a
+                            href="https://itunes.apple.com/us/app/google-authenticator/id388497605" target="_blank">iPhone</a>, <a
+                            href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2"
+                            target="_blank">Android</a>, Authenticator {{_e('для')}} <a
+                            href="https://www.windowsphone.com/ru-ru/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b"
+                            target="_blank">Windows Phone</a>.
+    <br><br>
+    {{_e('Просканируйте в приложении QR-код или введите секретный ключ, указанный ниже. Затем, чтобы подтвердить правильную настройку приложения, введите код подтверждения из приложения.')}}
+        <br><br>
+    </span>
+                    <span>
+        <b>{{_e('QR-код')}}</b>
+        <div class="qr-code" id="qr-code_maskInput"
+             style="height: 200px;padding: 23px;background: #fff;width: 200px; box-sizing: content-box !important; border-radius: 20px; box-shadow: inset 0 0 8px #0753ab;"></div>
+        <br>
+        <div class="select-form">
+            <label>{{_e('Секретный ключ:')}}</label>
+            <strong>{{qrcode_secret}}</strong>
+        </div>
+        {{#if !otp_status}}
+        <div class="select-form" style="    max-width: 235px;">
+            <label>{{_e('Ведите код из приложения Authenticator:')}}</label>
+            <input class="form-control" placeholder="{{_e('Ваш код')}}" id="token_secure_2fa_maskInput"
+                   autocomplete="off">
+        </div>
+        {{else}}
+         <button type="button" class="button-n fll " on-click="gauthoff">
+                        {{_e('Отключить Google Authenticator')}}
+                    </button>
+        {{/if}}
+    </span>
+                </div>
+            </scroll>
+
+            <div class="arrow-st"></div>
+
+            <div class="chat-panel-bottom">
+                <div class="ltos"></div>
+
+                <div class="spl-icn"></div>
+                <scroll class_scroll="" class_content="" id_content="">
+
+                    <div class="cards-ns profile-menu ss6 {{#if tabPage == 'general'}}active{{/if}}"
+                         on-click="setPage:settings:general">
+                        <div class="ntra">{{_e('Основные')}}</div>
+
+                    </div>
+                    <!--<div class="cards-ns profile-menu ss1 {{#if tabPage == 'notification'}}active{{/if}}" on-click="setPage:settings:notification">-->
+                    <!--<div class="ntra">{{_e('Уведомления')}}</div>-->
+
+                    <!--</div>-->
+
+
+                    <div class="cards-ns profile-menu ss3 {{#if tabPage == 'secure'}}active{{/if}}"
+                         on-click="setPage:settings:secure">
+                        <div class="ntra">{{_e('Безопасность')}}</div>
+
+                    </div>
+                    <div class="cards-ns profile-menu ss3 {{#if tabPage == 'secure'}}active{{/if}}"
+                         on-click="setPage:settings:synchronization" style="display: none">
+                        <div class="ntra">{{_e('Синхронизация')}} <span class="notifications-l" style="    width: 40px;
+    position: absolute;
+    top: 17px;
+    margin-right: 24px;">NEW</span></div>
+
+                    </div>
+                    <div class="cards-ns profile-menu ss3 {{#if tabPage == 'notification'}}active{{/if}}"
+                         on-click="setPage:settings:notification">
+                        <div class="ntra">{{_e('Уведомления')}}</div>
+
+                    </div>
+
+                    <div class="cards-ns profile-menu ss4 {{#if tabPage == 'theme'}}active{{/if}}"
+                         on-click="setPage:settings:theme">
+                        <div class="ntra">{{_e('Дизайн')}}</div>
+
+                    </div>
+
+
+                    <div class="cards-ns profile-menu ss7 {{#if tabPage == 'support'}}active{{/if}}"
+                         onclick="Messenger.openChat(false, 10989451);">
+                        <div class="ntra">{{_e('Поддержка')}}</div>
+
+                    </div>
+
+                    <div class="cards-ns profile-menu ss8 {{#if tabPage == 'about'}}active{{/if}}"
+                         on-click="setPage:settings:about">
+                        <div class="ntra">{{_e('Справка о программе')}}</div>
+
+                    </div>
+
+                </scroll>
+            </div>
+
+        </div>
+    </div>
+
+</div>

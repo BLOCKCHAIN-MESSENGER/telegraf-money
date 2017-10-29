@@ -1,0 +1,155 @@
+<div class="wrapper cards-wrapper guarantee-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Бонус')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Бонус')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="icon-area chat"></div>
+            <scroll class_scroll="scroller-b-Guarantee" class_content="" id_content="">
+                <div class="credit-area">
+
+                    <div class="credit-main-area padding-fx">
+
+                    <!--<div class="toggle">-->
+                        <!--<div class="title" on-click="openToggle:add_share">-->
+
+                            <!--<h6>-->
+                                <!--{{_e('Пригласить партнера')}}</h6>-->
+
+                            <!--<div class="garant_state">-->
+                            <!--</div>-->
+
+                            <!--<div class="date">-->
+                            <!--</div>-->
+
+                            <!--<div class="buttons">-->
+                                <!--25 USD-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="content-detali-guatantee body-add_share" style="display: none;">-->
+                            <!--<fieldset style="width:100%" class="blank_info">-->
+                                <!--{{_e('Ваша реферальная ссылка: ')}}-->
+                                <!--<br>-->
+                                <!--<div class="select-form">-->
+                                    <!--<input class="form-control" value="https://telegraf.money/?ref={{MyProfile.webtransfer_id}}" />-->
+                                <!--</div>-->
+                                <!--<br>-->
+                                <!--{{_e('Приглашайте ваших друзей в Telegraf.Money и получайте по $50 кредитным бонусом на вашу карту за каждого из них. Ваши друзья также получат по $50, зарегистрировавшись по вашей ссылке.')}}-->
+                            <!--</fieldset>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="toggle">
+                        <div class="title" on-click="openToggle:review">
+
+                            <h6>
+                                {{_e('Оставить отзыв')}}</h6>
+
+                            <div class="garant_state">
+                            </div>
+
+                            <div class="date">
+                            </div>
+
+                            <div class="buttons">
+                                10 USD
+                            </div>
+                        </div>
+                        <div class="content-detali-guatantee body-review" {{#if tab == 'review' || tab == ''|| !tab}}style="display: block;"{{else}}style="display: none;"{{/if}}>
+                            <fieldset style="width:100%" class="blank_info">
+                                <h2>{{_e('Хотите получить бонус $10?')}}</h2>
+                                {{_e('1. Скачайте приложение на телефон')}} <a href="https://play.google.com/store/apps/details?id=com.telegraf.money" target="_blank">Google Play</a> {{_e('или')}} <a href="https://itunes.apple.com/us/app/telegraf-money/id1194955967?l=en&ls=1&mt=8" target="_blank">App Store</a><br>
+                                {{_e('2. Войдите в приложение Telegraf Money на телефоне.')}}<br>
+                                {{_e('3. Оставьте с телефона положительный отзыв в')}} <a href="https://play.google.com/store/apps/details?id=com.telegraf.money" target="_blank">Google Play</a> {{_e('или')}} <a href="https://itunes.apple.com/us/app/telegraf-money/id1194955967?l=en&ls=1&mt=8" target="_blank">App Store</a>.*<br>
+                                {{_e('4. Нажмите на кнопку \"Получить $10 бонус за отзыв\" расположеннyю ниже')}}<br>
+                                {{_e('5. В течении 48 часов Бонус будет доступен на вашей карте!')}}
+                                <br>
+
+                                <button class="button-n" on-click="moderate" style="    font-size: 13px;">{{_e('Получить $10 бонус за отзыв')}}</button>
+                                <br><br>
+                                {{_e('*Вы не должны удалять приложение в течении срока действия бонуса.')}}
+                                <br>
+
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <!--<div class="toggle">-->
+                        <!--<div class="title" on-click="openToggle:parent2">-->
+
+                            <!--<h6>-->
+                                <!--{{_e('Партнерский бонус')}} - Camelot24</h6>-->
+
+                            <!--<div class="garant_state">-->
+                            <!--</div>-->
+
+                            <!--<div class="date">-->
+                            <!--</div>-->
+
+                            <!--<div class="buttons">-->
+                                <!--{{_e('до 50%')}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="content-detali-guatantee body-parent2" style="display: none;">-->
+                            <!--<fieldset style="width:100%" class="blank_info">-->
+                                <!--{{_e('При пополнении карт VISA/MasterCard привязанных к Telegraf Money, вы получаете от нас Бонус прямо на карту:')}}-->
+                                <!--<br>-->
+                                <!--<br>-->
+                                <!--{{_e('✨30% при пополнении до $300')}}-->
+                                <!--<br>-->
+                                <!--{{_e('✨40% при пополнении от $300 до $500')}}-->
+                                <!--<br>-->
+                                <!--{{_e('✨50% при пополнении от $500 и выше')}}-->
+
+                            <!--</fieldset>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </div>
+            </scroll>
+
+        </div>
+
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="chat-panel-bottom">
+                <div class="ltos"></div>
+
+                <ul class="nav-nt">
+                    <li class="active">
+                        <a class="pointer">{{_e('Активные карты')}}</a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                    <!--</li>-->
+
+                </ul>
+
+                <div class="spl-icn"></div>
+                <scroll class_scroll="" class_content="" id_content="">
+
+
+                    <Cards/>
+                    <button class="add-btns" on-click="setPage:cards">View all cards</button>
+                </scroll>
+            </div>
+        </div>
+    </div>
+</div>

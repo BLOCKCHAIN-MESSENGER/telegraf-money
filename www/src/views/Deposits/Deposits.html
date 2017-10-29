@@ -1,0 +1,395 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/modules/no-data-to-display.js"></script>
+<div class="wrapper cards-wrapper deposits-wrapper">
+
+
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>Deposits</strong>
+                <div class="contact-panel">
+                    <h3>Deposits</h3>
+
+                    <div class="close-blocks">
+                        <div class="cls3"></div>
+                        <div class="cls1"></div>
+                        <div class="cls2"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="icon-area chat"></div>
+            <scroll class_scroll="scroller-b-Deposits" class_content="" id_content="">
+                <div class="credit-area">
+                    <div class="tabs-credit">
+                        <div class="crd1 {{#if tab == 'create'}}active{{/if}} gvc1" on-click="setPage:deposits:create">
+                            {{_e('Создать депозит')}}
+                        </div>
+                        <div class="crd1 {{#if tab == 'active'}}active{{/if}} gvc2" on-click="setPage:deposits:active">
+                            {{_e('Мои Депозиты')}}
+                        </div>
+                        <div class="crd1 {{#if tab == 'info'}}active{{/if}} gvc3" on-click="setPage:deposits:info">
+                            {{_e('О депозите')}}
+                        </div>
+                    </div>
+                    <div class="credit-area">
+                        <a href="{{form.link}}" id="pay_start" style="display: none" target="_blank"></a>
+                        {{#if tab == 'create'}}
+                        <div class="credit-main-area">
+                            <div class="card-area-inner">
+                                <div class="select-form">
+                                    <label>{{_e('Счет')}}</label>
+                                    <select class="sels" id="payment_system">
+                                        <option class="" value="WDG">DEBIT Coin - {{finance_debit_coin_gold}} DBC</option>
+                                        <option class="" value="BTX">Bitcoin - {{btc_finance_btc}} BTC</option>
+                                        <option class="" value="ETX">Ethereum - {{eth_finance_eth}} ETH</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="row col-area-fx">
+                                    <div class="col-xs-6">
+                                        <div class="select-form" id="select_deposits_amount">
+                                            <label>{{_e('Сумма')}}</label>
+                                            <input class="" value="100.00" id="amount_deposits" type="tel"
+                                                   onkeyup="change_input_deposit()"></div>
+
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="select-form">
+                                            <label>{{_e('Тип процента')}}</label>
+                                            <select class="sels" id="prc_type" onchange="change_input_deposit()">
+                                                <option class="" value="STANDARD">{{_e('Стандартный')}}</option>
+                                                <option class="" value="COMPOUND">{{_e('Сложный')}}</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row col-area-fx">
+                                    <div class="col-xs-6">
+                                        <div class="select-form" id="select_deposits_prc">
+                                            <label>{{_e('Процент (в сутки)')}}</label>
+                                            <input class="" value="1.0" id="input_deposits_prc" type="tel"
+                                                   onkeyup="change_input_deposit()"></div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button class="button-n __no"
+                                                style="margin-top: 55px;height: 41px;padding-top: 10px;"
+                                                on-click="popularebtn:1">{{_e('Популярные')}}
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row col-area-fx b8" id="b8"
+                                     style="margin: 0;padding-top: 15px; display: none;">
+                                    {{#if !loaddepositsList}}
+
+                                    <h2>Loading...</h2>
+                                    {{/if}}
+                                </div>
+                                <div class="select-form">
+                                    <label>{{_e('Период депозита')}}</label>
+                                    <input id="ex21" type="text"
+                                           data-provide="slider"
+                                           data-slider-ticks="[1, 2, 3,4,5,6,7,8]"
+                                           data-slider-ticks-labels='["3 days", "7 days", "14 days", "21 days", "1 months", "3 months", "6 months", "12 months"]'
+                                           data-slider-min="1"
+                                           data-slider-max="8"
+                                           data-slider-step="1"
+                                           data-slider-value="5"
+                                           data-slider-tooltip="hide" onchange="change_input_deposit()"/>
+                                </div>
+
+                                <br>
+                                <!--<div class="select-form">-->
+                                <!--<p class="ppls">{{_e('Тип процента')}}</p>-->
+                                <!--</div>-->
+                                <!--<div class="select-form  prst">-->
+
+                                <!--<div class="w5s-ar">-->
+                                <!--<div class="cbxl">-->
+                                <!--<span class="cnvl">{{_e('Стандартный')}}</span>-->
+                                <!--<div class="onoffswitch">-->
+                                <!--<input type="checkbox" class="checkbox" id="checkbox" name="message"-->
+                                <!--value="on" checked="checked">-->
+                                <!--<label for="checkbox" style="font-size: 0;"></label>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="cbxl">-->
+                                <!--<span class="cnvl">{{_e('Сложный')}}</span>-->
+
+                                <!--</div>-->
+                                <!--</div>-->
+
+                                <!--</div>-->
+
+                                <div class="open">
+                                    <div class="finput">
+                                        <div class="profit">
+                                            <div class="profit__wrapper">
+                                                <div class="profit__inner">
+                                                    <div class="profit__value">
+                                            <span class="vlm">
+                                                <span id="duble_sum">{{deposit_amount}}</span>
+                                            </span> <i class="sprite sprite-icon_CRN"></i>
+                                                    </div>
+                                                    <div class="profit__chart">{{_e('Депозит')}}</div>
+                                                    <div class="profit__descr">{{_e('Сумма депозита')}}</div>
+                                                </div>
+                                                <!--
+                                                            -->
+                                                <div class="profit__inner">
+                                                    <div class="profit__sum">
+                                                        <span class="vlm" id="profit_total_sum">{{deposit_total}}</span>
+                                                        <i
+                                                                class="sprite sprite-icon_CRN"></i>
+                                                    </div>
+                                                    <div class="profit__diff">
+                                            <span class="profit__diff-val">
+                                                <span class="vlm percent_profit">{{deposit_profit}}</span>
+                                                <i class="sprite sprite-icon_CRN"></i>
+                                            </span>
+                                                    </div>
+                                                    <div class="profit__chart">{{_e('Депозит')}}</div>
+                                                    <div class="profit__descr">{{_e('Итого')}}</div>
+                                                </div>
+                                            </div>
+                                            <div class="profit__total">
+                                                <div class="profit__total-title">{{_e('Прибыль')}}</div>
+                                                <div class="profit__total-sum">
+                                                    <span class="vlm percent_profit">{{deposit_profit}}</span>
+                                                    <i class="sprite sprite-icon_CRN"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <!-- button block -->
+                                <div class="btn-area-cards">
+                                    <button class="button-n " on-click="start">{{_e('Выдать')}}</button>
+
+                                </div>
+
+                                <!-- button block -->
+                                <br>
+                                <br>
+                                <div class="clearfix"></div>
+
+                            </div>
+
+                        </div>
+                        {{/if}}
+
+                        {{#if tab == 'active'}}
+                        <div class="credit-main-area">
+
+                            <div class="card-area-inner" style="    max-width: 600px; color: #fff;">
+                                <div class="tabs-panel" style="    border-radius: 33px; text-align: center;border: 1px dashed;padding: 10px;margin: 0 auto;max-width: 360px;padding-left: 30px;">
+                                    <a href="javascript:void 0;" {{#if payment_system_deposits == 'WDG'}}class="active"{{/if}} on-click="get_deposits:WDG">DEBIT Coin</a>
+                                    <a href="javascript:void 0;" {{#if payment_system_deposits == 'BTX'}}class="active"{{/if}} on-click="get_deposits:BTX">Bitcoin</a>
+                                    <a href="javascript:void 0;" {{#if payment_system_deposits == 'ETX'}}class="active"{{/if}} on-click="get_deposits:ETX">Ethereum</a></div>
+                                {{#depositsList[payment_system_deposits]}}
+                                <div class="toggle">
+                                    <div class="title" on-click="openToggle:{{id}}">
+
+                                        <h6>
+                                            {{#if payment_system == 'ETX'}}
+                                            Ethereum
+                                            {{/if}}
+                                            {{#if payment_system == 'BTX'}}
+                                            Bitcoin
+                                            {{/if}}
+                                            {{#if payment_system == 'WDG'}}
+                                            DEBIT Coin
+                                            {{/if}}
+                                            #{{id}}</h6>
+
+                                        <div class="garant_state">
+                                        </div>
+
+                                        <div class="date">
+                                            Profit:{{+profit.sum.toFixed(2)}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}
+                                        </div>
+
+                                        <div class="buttons">
+                                            {{+(+percent).toFixed(2)}}% / {{sum}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}
+                                        </div>
+                                    </div>
+                                    <div class="content-detali-guatantee body-{{id}}" style="display: none;">
+                                        <fieldset style="width:100%" class="blank_info">
+
+                                            <div class="formRow">
+                                                <div class="formRight">
+          <span class="twoFour" style="float: left;height: 15px;">
+            <div> <span class="dst"> {{_e('Дата запуска:')}} {{startDebug}}</span></div>
+
+          </span>
+
+
+                                                    <span class="oneFour" style="width:auto;"></span>
+                                                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="formRow last">
+
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{id}}</span><br>ID Deposit</span>
+                                                </div>
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{sum}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}</span><br>{{_e('Сумма')}}</span>
+                                                </div>
+
+
+                                                <div class="ws25">
+                      <span class="oneFour" style=""><span class="dst">{{+(+percent).toFixed(2)}}% </span><br>
+                              {{_e('Процент (в день)')}} </span></div>
+                                                <div class="ws25"><span class="oneFour" style="">              <span
+                                                        class="oneFour out-summa"
+                                                        style="margin-right:0px;">
+                                  <span class="dst">{{+(+profit.sum).toFixed(2)}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}</span><br> {{_e('Прибыль')}} </span></span>
+                                                </div>
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{percent_type}}</span><br>{{_e('Тип процента')}}</span>
+                                                </div>
+
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{+(+withdraw.total).toFixed(8)}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}</span><br>{{_e('Получено')}}</span>
+                                                </div>
+
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{+(+fund.sum).toFixed(8)}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}</span><br>{{_e('Сумма Фонда')}}</span>
+                                                </div>
+                                                <div class="ws25"><span class="oneFour" style=""><span
+                                                        class="dst">{{+(+profit.earned).toFixed(8)}} {{#if payment_system == 'ETX'}}ETH{{/if}}{{#if payment_system == 'BTX'}}BTC{{/if}}{{#if payment_system == 'WDG'}}DBC{{/if}}</span><br>{{_e('Итого профит')}}</span>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <div class="drop_down">
+                                                <div class="content_drop">
+                                                </div>
+
+                                                <div class="list_applications">
+                                                </div>
+
+
+                                                <ul class="nav-nt">
+
+                                                    <li class="blue-otc pointer" on-click="stopDeposit:{{.}}">
+                                                        <a class="pointer">{{_e('Вывести депозит')}}</a>
+                                                    </li>
+                                                    <li class="active pointer" on-click="stopProfit:{{.}}">
+                                                        <a class="pointer">
+                                                            {{_e('Вывести прибыль')}}</a>
+                                                    </li>
+
+                                                </ul>
+
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                {{else}}
+                                <img src="./src/img/loader.gif" onerror="this.src='../../.'+this.src;this.onerror = null;" style="float: right;
+    width: 50px;
+    padding: 3px 10px;
+    position: absolute;"/>
+
+                                {{/}}
+                            </div>
+                        </div>
+                        {{/if}}
+
+                        {{#if tab == 'info'}}
+                        <div class="credit-main-area" style="    padding-bottom: 10px !important;">
+                            <div class="card-area-inner" style="    max-width: 600px; color: #fff;margin-bottom:10px; ">
+                                <h2>{{_e('ЧТО ТАКОЕ BLOCKCHAIN-ДЕПОЗИТ')}}</h2>
+                                <br>
+                                <br>
+                                <span>{{_e('BLOCKCHAIN-ДЕПОЗИТ - это Blockchain P2P-рынок небанковских депозитов,где проценты и сроки по депозитам устанавливают сами участники. Модель Blockchain-депозитов базируется на смарт-контрактах платформы Ethereum - депозиты частных лиц объединяются в коллективные депозитные фонды (ДАО) по различным параметрам на отдельных кошельках блокчейна, откуда участники получают прибыль и возврат депозитов. Валютой депозита является DEBIT Coin.')}}</span>
+                                <br>
+                                <br>
+                                <span>{{_e('При этом, каждый депозит по условиям контракта является одновременно частью общего страхового фонда всех участников на получение прибыли и тела депозита из суммы коллективного депозитного фонда, т.е. создавая депозит, его владелец получает страховку на получение профита и тела депозита, в том числе из сумм других участников. Чем больше участников, тем выше сумма общего страхового фонда!')}}</span>
+                                <br>
+                                <br>
+                                <span>{{_e('Работая на P2P технологии, Blockchain-депозиты не контролируются какими либо государственными органами или центральными банками; создание депозитов, выплаты и обработка транзакций осуществляются коллективно самими участниками сети. Все операции по Blockchain-депозитам прозрачны, участники имеют полный контроль за движением своих средств и видят все переводы по кошелькам смарт-контрактов; архитектура блокчейна известна всему миру, никто не владеет и не контролирует блокчейн, но все могут стать его участниками. Благодаря своим уникальным свойствам, блокчейн открывает новые горизонты возможностей, которые не предоставляла до этого ни одна платежная система.')}}</span>
+                                <br>
+                                <br>
+                                <span>{{_e('Средства депозитных фондов с различными параметрами не перемешиваются между собой. Вывод профита и тела депозита возможны только в случае, если депозит был реально создан и переведен на кошелек смарт-контракта с соответствующими депозиту параметрами.')}}</span>
+                                <br>
+                                <br>
+                                <span>{{_e('Blockchain-депозиты работают 24/7 в режиме реального времени, выплаты профитов и депозитов полностью автоматизированы – будьте готовы к услугам, которые индустрия банковских депозитов никогда не представляла.')}}</span>
+                                <br>
+                                <br>
+                                <span>{{_e('От всех депозитов приглашенных вами партнеров вы получаете 10% при условии, что их длительность составляет 30 дней и больше')}}</span>
+                                <br>
+                                <br>
+
+                                <span><h3>{{_e('BLOCKCHAIN-ДЕПОЗИТ это не просто Идея – это готовый Продукт!')}}</h3></span>
+                                <br>
+                                <br>
+                                <span style="font-size: 11px;">
+                                    {{_e('*На стадии beta-тестирования 0% комиссии с получателя.')}}
+
+                                </span>
+                                <br>
+                                {{_e('Сервис предоставлен партнером')}} <a href="https://socialcloudbank.com/{{_e('lang')}}/how_it_works" target="_blank">Social Cloud Bank</a>
+
+                            </div>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+
+
+                <div class="clearfix"></div>
+
+
+                <div class="close-block"></div>
+
+
+            </scroll>
+        </div>
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="ltos"></div>
+
+            <ul class="nav-nt">
+                <li class="active">
+                    <a href="#">{{_e('Активные карты')}}</a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                <!--</li>-->
+
+            </ul>
+
+            <div class="spl-icn"></div>
+            <scroll class_scroll="" class_content="" id_content="">
+
+                <Cards/>
+                <button class="add-btns" on-click="setPage:cards">View all cards</button>
+
+
+            </scroll>
+        </div>
+
+    </div>
+</div>

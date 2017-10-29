@@ -1,0 +1,25 @@
+{
+  "name": "Telegraf Money",
+  "version": "2.2.20",
+  "main": "index.html",
+  "node-main": "app/nwjs_node_server.js",
+  "description": "Telegraf Money Messenger allows members to communicate with each other, instantly send funds and issue/receive loans online.",
+  "keywords": [
+    "Telegraf Money",
+    "Money Messenger",
+    "Credits Messenger",
+    "SocialCreditNetwork",
+    "Messenger"
+  ],
+  "window": {
+    "title": "Telegraf Money",
+    "icon": "./src/img/logo.icns",
+    "toolbar": true,
+    "frame": true,
+    "width": 1200,
+    "height": 650,
+    "position": "center",
+    "min_width": 350,
+    "min_height": 550
+  }
+}

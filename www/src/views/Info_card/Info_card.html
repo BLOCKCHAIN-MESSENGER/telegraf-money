@@ -1,0 +1,237 @@
+<div class="wrapper cards-wrapper info-card-wrapper">
+
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Карты')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Информация по карте')}}</h3>
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<div class="icon-area chat"></div>-->
+
+
+            <scroll class_scroll="scroller-b-Info_card" class_content="" id_content="">
+
+                <div class="clzs">
+
+                    <div style="float: left;" class="cards-area info-card {{#if card.card_type ==0}}
+                plastic-card-t
+                {{else}}
+                virtual-card-t
+                {{/if}}">
+                        <div class="card-full visa info-card">
+                            <div class="img-l">
+                                <div class="prise-art" {{#if +card.last_balance <0}}style="color: #ec3e3e !important;"{{/if}}>
+
+                                {{card.last_balance}}
+                                <span>{{card.card_currency}}</span>
+                            </div>
+                        </div>
+
+                        <div class="img-ls">
+                            <img src="./src/img/v1.png" class="mCS_img_loaded"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;"></div>
+
+                        <div class="numb-card">{{#if card}}{{card.card_name_short.replace(card.card_currency,'')}}{{else}}
+                            {{_e('Загрузка данных')}}{{/if}}
+                        </div>
+
+                        <div class="card-h">
+                            <div class="fll">{{card.name_on_card}}</div>
+                            <div class="flr">
+                                {{#if card.card_type ==0}}
+                                Black
+                                {{else}}
+                                Virtual
+                                {{/if}}
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clact">
+                        <h3>{{_e('Общий баланс')}}</h3>
+                        <div class="icons-lt">
+                            <div class="ics-nb bl1">
+                                <h4>{{card.last_balance}}</h4>
+                                <p>{{_e('доступно')}}</p>
+                            </div>
+                            <div class="ics-nb bl2">
+                                <h4>{{card.demand_ammount}}</h4>
+                                <p>{{_e('вложения')}}</p>
+                            </div>
+                            <div class="ics-nb bl3">
+                                <h4>{{card.total_balance}}</h4>
+                                <p>{{_e('итого')}}</p>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="block-bts" style="    margin-top: 60px;">
+                            <a class="blks-btn"
+                               style="text-align: center;text-decoration: none;"
+                               on-click="setPage:topup:{{card.cloud_card_id}}">{{_e('Пополнить')}}
+                                <!--<span>{{_e('+ 50% Бонус')}}</span>-->
+                            </a>
+
+                            <div class="btn-n-area">
+                                <!--<button class="blks-btn" style="line-height: 12px;padding: 6px 16px;"-->
+                                        <!--on-click="no_comis:cash">-->
+                                    <!--{{_e('Наличные без комиссии')}}-->
+                                <!--</button>-->
+                                <!--<button class="blks-btn" style="line-height: 12px;padding: 6px 16px;"-->
+                                        <!--on-click="no_comis:buy">-->
+                                    <!--{{_e('Покупка без комиссии')}}-->
+                                <!--</button>-->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="oparation-blk">
+                    <h3>{{_e('История операций')}}</h3>
+                </div>
+
+                <div class="clerafix"></div>
+
+                <div class="pans-area">
+                    <div class="all-nts active">{{_e('Все')}}</div>
+                    <!--<div class="all-nts">Переводы</div>-->
+                    <!--<div class="all-nts">Кредиты</div>-->
+                    <!--<div class="all-nts">Гарантии</div>-->
+                </div>
+
+
+                <div class="clearfix"></div>
+                <div class="pod-cards">
+
+                    {{#card_transactions}}
+                    {{#if !card_transactions[@index-1] || card_transactions[@index-1].date != date}}
+                    <div class="date-area">{{date}}</div>
+                    {{/if}}
+                    <div class="prv-ns stl-creds {{#if crdrIndicator =='DEBIT'}}min-ar{{/if}}">
+                        <div class="fll-p arw1">
+                            <p class="cldsd"><span>{{time}}</span></p>
+                            <h3>{{#if description&& description =='Value Load'}}
+                                {{_e('Пополнение средств:')}}
+                                {{else}}
+                                {{#if description}}
+                                {{description}},
+                                {{/if}}
+                                {{/if}}
+                                {{#if merchantName && merchantName !='Webtransfer Europe LTD'}}
+                                {{merchantName}},
+                                {{/if}}
+
+
+                                {{#if comment != '' && comment !='Unload'}}
+                                {{comment}}.
+                                {{/if}}
+                                <p class="tx-id-card"> <span>
+                {{#if sourceTxnId}}
+            Tx:{{sourceTxnId}}
+            {{/if}}</span></p>
+                            </h3>
+
+                        </div>
+                        <div class="flr-p">
+                            <h3 class="{{#if crdrIndicator =='DEBIT'}}minus-s{{else}}pluso-s{{/if}}">
+                                {{#if crdrIndicator =='DEBIT'}}-{{else}}+{{/if}}
+                                {{billAmount/100}}
+                                {{billCurrency}}
+                                {{#if billCurrency != transactionCurrency}}
+                                <strong>{{#if crdrIndicator =='DEBIT'}}-{{else}}+{{/if}}{{transactionAmount/100}}
+                                    {{transactionCurrency}}</strong>
+                                {{/if}}
+                            </h3>
+
+                        </div>
+                    </div>
+                    {{/}}
+                </div>
+
+                <div class="btns-area">
+                    <!--<button class="blks-btn">{{_e('Загрузить еще...')}}</button>-->
+                </div>
+
+                <div class="clearfix"></div>
+                <br>
+
+                <!--<div class="car-ur">Уровень карты Level-1</div>-->
+
+                <!--<div class="clft">-->
+                <!--<div class="clk-1">-->
+                <!--<h4><span>$</span>20 000</h4>-->
+                <!--<p>Лимит в месяц</p>-->
+                <!--</div>-->
+                <!--<div class="clk-1"><h4><span>$</span>15 000</h4>-->
+                <!--<p>Лимит на снятие </p></div>-->
+                <!--<div class="clk-1"><h4><span>$</span>5 000</h4>-->
+                <!--<p>Лимит на покупки</p></div>-->
+                <!--<div class="clk-1"><h4><span>$</span>20 000</h4>-->
+                <!--<p>Лимит транзакций</p></div>-->
+                <!--</div>-->
+
+                <!--<div class="close-block"></div>-->
+
+                <!--<div class="icon-area drop obms">-->
+
+                <!--<div class="hide-xts stz">-->
+                <!--<a href="#">Посмотреть профиль</a>-->
+
+                <!--<a href="#">Удалить чат</a>-->
+
+                <!--<a href="#">Блокировать</a>-->
+                <!--<a href="#">Кредиты</a>-->
+                <!--<a href="#">Перевести</a>-->
+                <!--<a href="#">Выпустить гарантию</a>-->
+
+                <!--</div>-->
+
+                <!--</div>-->
+
+                <div class="arrow-st"></div>
+
+            </scroll>
+
+            <div class="chat-panel-bottom">
+                <div class="ltos"></div>
+
+                <ul class="nav-nt">
+                    <li class="active">
+                        <a href="#">{{_e('Активные карты')}}</a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                    <!--</li>-->
+
+                </ul>
+
+                <div class="spl-icn"></div>
+                <scroll class_scroll="" class_content="" id_content="">
+
+                    <Cards/>
+                </scroll>
+            </div>
+
+        </div>
+    </div>
+</div>

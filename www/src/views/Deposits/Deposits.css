@@ -1,0 +1,1342 @@
+/* line 2, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000032}}
+.deposits-wrapper .wsw-50 {
+  width: 100% !important;
+}
+/* line 6, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000036}}
+.deposits-wrapper .in-divs span {
+  font-size: 11px;
+}
+/* line 10, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000310}}
+.deposits-wrapper .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* line 17, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000317}}
+.deposits-wrapper .checkbox + label {
+  cursor: pointer;
+}
+/* line 21, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000321}}
+.deposits-wrapper .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+/* line 26, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000326}}
+.deposits-wrapper .checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+/* line 31, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000331}}
+.deposits-wrapper .checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #cdd1da;
+}
+/* line 42, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000342}}
+.deposits-wrapper .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.2s;
+}
+/* line 54, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000354}}
+.deposits-wrapper .checkbox:checked + label:before {
+  background: #9fd468;
+}
+/* line 58, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000358}}
+.deposits-wrapper .checkbox:checked + label:after {
+  left: 26px;
+}
+/* line 62, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000362}}
+.deposits-wrapper .onoffswitch {
+  margin-top: 4px;
+}
+/* line 66, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000366}}
+.deposits-wrapper .checkbox:checked + label:before {
+  background: #74a3de;
+}
+/* line 70, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000370}}
+.deposits-wrapper p.ppls {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+/* line 76, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000376}}
+.deposits-wrapper .open .finput {
+  float: left;
+  color: #fff;
+  box-sizing: border-box;
+}
+/* line 82, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000382}}
+.deposits-wrapper span#profit_total_sum,
+.vlm {
+  font-size: 12px;
+  color: #fff;
+}
+/* line 87, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000387}}
+.deposits-wrapper .cnt-area.select-form label {
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+  margin-top: 21px;
+}
+/* line 94, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000394}}
+.deposits-wrapper .profit__descr,
+.profit__total-title {
+  color: #fff;
+}
+/* line 98, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\0000398}}
+.deposits-wrapper button.button-n.__no {
+  width: 100% !important;
+  clear: none;
+  background: none;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  font-size: 15px;
+  height: 46px;
+  padding-top: 13px;
+}
+/* line 109, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003109}}
+.deposits-wrapper .btn-area-cards button.button-n:hover {
+  opacity: 0.8;
+}
+/* line 113, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003113}}
+.deposits-wrapper .btn-area-cards {
+  clear: both;
+}
+/* line 118, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003118}}
+.deposits-wrapper i.fa.fa-qrcode.qr-ns {
+  color: rgba(0, 0, 0, 0.47);
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  font-size: 97px !important;
+  margin-bottom: -25px;
+  border-radius: 140px;
+  background: #fff;
+  height: 140px;
+  text-align: center;
+  line-height: 142px;
+  margin-bottom: -12px;
+}
+/* line 133, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003133}}
+.deposits-wrapper .sprite {
+  background-image: url(https://cloudbank.social/img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+/* line 139, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003139}}
+.deposits-wrapper .open .finput {
+  float: left;
+  color: #515254;
+  box-sizing: border-box;
+}
+/* line 145, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003145}}
+.deposits-wrapper .open .finput {
+  position: relative;
+  width: 72%;
+}
+/* line 150, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003150}}
+.deposits-wrapper .profit {
+  position: relative;
+  margin-left: -40px;
+  padding-top: 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 159, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003159}}
+.deposits-wrapper .profit__inner {
+  display: inline-block;
+}
+/* line 163, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003163}}
+.deposits-wrapper .profit__chart,
+.profit__diff,
+.profit__inner {
+  position: relative;
+  width: 150px;
+}
+/* line 168, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003168}}
+.deposits-wrapper .profit__inner {
+  vertical-align: bottom;
+}
+/* line 172, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003172}}
+.deposits-wrapper .profit__sum,
+.profit__value {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #515254;
+  text-align: center;
+}
+/* line 180, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003180}}
+.deposits-wrapper .profit__inner:first-child .profit__chart {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 189, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003189}}
+.deposits-wrapper .profit__chart {
+  height: 52px;
+  margin-bottom: 9px;
+  padding-top: 17px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+  background: #c1c1c1;
+  background: -moz-linear-gradient(top, #c1c1c1 61%, #f9f9f9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(61%, #c1c1c1), color-stop(100%, #f9f9f9));
+  background: -webkit-linear-gradient(top, #c1c1c1 61%, #f9f9f9 100%);
+  background: -o-linear-gradient(top, #c1c1c1 61%, #f9f9f9 100%);
+  background: -ms-linear-gradient(top, #c1c1c1 61%, #f9f9f9 100%);
+  background: linear-gradient(to bottom, #c1c1c1 61%, #f9f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1c1c1', endColorstr='#f9f9f9', GradientType=0);
+}
+/* line 206, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003206}}
+.deposits-wrapper .profit__chart,
+.profit__diff,
+.profit__inner {
+  position: relative;
+  width: 150px;
+}
+/* line 211, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003211}}
+.deposits-wrapper .profit__chart,
+.profit__descr {
+  font-size: 13px;
+  line-height: 13px;
+}
+/* line 216, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003216}}
+.deposits-wrapper .profit__descr {
+  color: #929394;
+  text-align: center;
+}
+/* line 221, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003221}}
+.deposits-wrapper .profit__chart,
+.profit__descr {
+  font-size: 13px;
+  line-height: 13px;
+}
+/* line 226, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003226}}
+.deposits-wrapper .profit__total {
+  position: absolute;
+  width: 212px;
+  top: 59px;
+  right: -96px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  text-align: center;
+  border: 1px solid #c1c1c1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 240, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003240}}
+.deposits-wrapper .profit__diff {
+  height: 85px;
+  margin-bottom: 3px;
+  background-color: #019BE1;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+/* line 257, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003257}}
+.deposits-wrapper .profit__descr {
+  color: #929394;
+  text-align: center;
+}
+/* line 262, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003262}}
+.profit__total {
+  position: absolute;
+  width: 212px;
+  top: 59px;
+  right: -96px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  text-align: center;
+  border: 1px solid #c1c1c1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 276, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003276}}
+.deposits-wrapper .profit__total-sum {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+}
+/* line 282, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003282}}
+.profit__diff-val,
+.profit__diff-val:after {
+  width: 100%;
+  height: 13px;
+  left: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FFF;
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+/* line 295, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003295}}
+.deposits-wrapper .profit__diff-val {
+  top: 50%;
+  margin-top: 3px;
+}
+/* line 300, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003300}}
+.deposits-wrapper .profit__diff-val:after {
+  content: 'Доход';
+  bottom: 100%;
+  margin-bottom: 4px;
+}
+/* line 306, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003306}}
+.deposits-wrapper .profit__inner {
+  margin-right: 14px;
+}
+/* line 310, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003310}}
+.deposits-wrapper .profit__wrapper {
+  position: relative;
+  width: 320px;
+  padding-bottom: 6px;
+  white-space: nowrap;
+  margin-left: 218px;
+  margin-bottom: 13px;
+}
+@media (max-width: 991px) {
+  /* line 320, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003320}}
+  .deposits-wrapper .profit__wrapper {
+    position: relative;
+    width: 320px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    margin-left: 226px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 332, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003332}}
+  .deposits-wrapper .open .finput {
+    margin-bottom: 30px !important;
+  }
+  /* line 336, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003336}}
+  .deposits-wrapper .open .finput {
+    position: relative;
+    width: 100% !important;
+  }
+  /* line 341, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003341}}
+  .deposits-wrapper .profit {
+    position: relative;
+    margin-left: auto;
+    padding-top: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  /* line 350, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003350}}
+  .deposits-wrapper .profit__wrapper {
+    position: relative;
+    width: 320px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    margin-left: auto !important;
+    margin-bottom: 13px;
+    margin: 0 auto !important;
+  }
+  /* line 360, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003360}}
+  .deposits-wrapper .profit__total {
+    position: relative;
+    width: 212px;
+    top: 16px;
+    right: auto;
+    margin: 0 auto;
+    left: auto;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  /* line 376, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003376}}
+  .deposits-wrapper .open {
+    margin-top: 20px;
+  }
+}
+/* line 381, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003381}}
+.deposits-wrapper .profit i {
+  display: inline-block;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  vertical-align: middle;
+}
+/* line 389, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003389}}
+.deposits-wrapper .vlm {
+  vertical-align: middle;
+}
+/* line 393, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003393}}
+.deposits-wrapper .profit__total-sum i {
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+}
+/* line 399, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003399}}
+.deposits-wrapper .profit__total-sum i {
+  transform: scale(0.76) !important;
+  -webkit-transform: scale(0.76) !important;
+  -moz-transform: scale(0.76) !important;
+}
+/* line 405, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003405}}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* line 410, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003410}}
+.deposits-wrapper .sprite {
+  background-image: url(https://cloudbank.social/img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+@media (max-width: 767px) {
+  /* line 417, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003417}}
+  .deposits-wrapper .sprite {
+    background-image: url(https://cloudbank.social/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+/* line 424, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003424}}
+.deposits-wrapper .vlm {
+  font-family: 'Montserrat-Bold';
+}
+/* line 428, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003428}}
+.deposits-wrapper .vlm {
+  font-family: 'Montserrat-Bold';
+}
+/* line 432, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003432}}
+.deposits-wrapper .profit__diff-val:after {
+  content: 'Profit';
+  bottom: 100%;
+  margin-bottom: 4px;
+}
+@media (min-width: 1200px) {
+  /* line 439, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003439}}
+  .deposits-wrapper .profit__total {
+    right: -114px;
+  }
+}
+/* line 444, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003444}}
+.deposits-wrapper .profit__total span.vlm.percent_profit {
+  font-size: 14px;
+}
+/* line 448, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003448}}
+.deposits-wrapper span.vlm.percent_profit {
+  font-size: 12px;
+}
+/* line 452, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003452}}
+.deposits-wrapper span#profit_total_sum {
+  font-size: 12px;
+}
+/* line 456, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003456}}
+.deposits-wrapper .slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 462, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003462}}
+.deposits-wrapper .slider.slider-horizontal {
+  width: 210px;
+  height: 20px;
+}
+/* line 467, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003467}}
+.deposits-wrapper .slider.slider-horizontal .slider-track {
+  height: 10px;
+  width: 100%;
+  margin-top: -5px;
+  top: 50%;
+  left: 0;
+}
+/* line 475, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003475}}
+.deposits-wrapper .slider.slider-horizontal .slider-selection,
+.deposits-wrapper .slider.slider-horizontal .slider-track-low,
+.deposits-wrapper .slider.slider-horizontal .slider-track-high {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+/* line 483, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003483}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick,
+.deposits-wrapper .slider.slider-horizontal .slider-handle {
+  margin-left: -10px;
+  margin-top: -5px;
+}
+/* line 489, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003489}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick.triangle,
+.deposits-wrapper .slider.slider-horizontal .slider-handle.triangle {
+  border-width: 0 10px 10px 10px;
+  width: 0;
+  height: 0;
+  border-bottom-color: #0480be;
+  margin-top: 0;
+}
+/* line 498, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003498}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick-label-container {
+  white-space: nowrap;
+  margin-top: 20px;
+}
+/* line 503, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003503}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 509, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003509}}
+.deposits-wrapper .slider.slider-vertical {
+  height: 210px;
+  width: 20px;
+}
+/* line 514, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003514}}
+.deposits-wrapper .slider.slider-vertical .slider-track {
+  width: 10px;
+  height: 100%;
+  margin-left: -5px;
+  left: 50%;
+  top: 0;
+}
+/* line 522, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003522}}
+.deposits-wrapper .slider.slider-vertical .slider-selection {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+/* line 529, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003529}}
+.deposits-wrapper .slider.slider-vertical .slider-track-low,
+.deposits-wrapper .slider.slider-vertical .slider-track-high {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+/* line 536, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003536}}
+.deposits-wrapper .slider.slider-vertical .slider-tick,
+.deposits-wrapper .slider.slider-vertical .slider-handle {
+  margin-left: -5px;
+  margin-top: -10px;
+}
+/* line 542, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003542}}
+.deposits-wrapper .slider.slider-vertical .slider-tick.triangle,
+.deposits-wrapper .slider.slider-vertical .slider-handle.triangle {
+  border-width: 10px 0 10px 10px;
+  width: 1px;
+  height: 1px;
+  border-left-color: #0480be;
+  margin-left: 0;
+}
+/* line 551, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003551}}
+.deposits-wrapper .slider.slider-disabled .slider-handle {
+  background-image: -webkit-linear-gradient(top, #dfdfdf 0%, #bebebe 100%);
+  background-image: -o-linear-gradient(top, #dfdfdf 0%, #bebebe 100%);
+  background-image: linear-gradient(to bottom, #dfdfdf 0%, #bebebe 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdfdfdf', endColorstr='#ffbebebe', GradientType=0);
+}
+/* line 559, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003559}}
+.deposits-wrapper .slider.slider-disabled .slider-track {
+  background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #e9e9e9 100%);
+  background-image: -o-linear-gradient(top, #e5e5e5 0%, #e9e9e9 100%);
+  background-image: linear-gradient(to bottom, #e5e5e5 0%, #e9e9e9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e5e5', endColorstr='#ffe9e9e9', GradientType=0);
+  cursor: not-allowed;
+}
+/* line 568, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003568}}
+.deposits-wrapper .slider input {
+  display: none;
+}
+/* line 572, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003572}}
+.deposits-wrapper .slider .tooltip.top {
+  margin-top: -36px;
+}
+/* line 576, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003576}}
+.deposits-wrapper .slider .tooltip-inner {
+  white-space: nowrap;
+}
+/* line 580, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003580}}
+.deposits-wrapper .slider .hide {
+  display: none;
+}
+/* line 584, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003584}}
+.deposits-wrapper .slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background-image: -o-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background-image: linear-gradient(to bottom, #f5f5f5 0%, #f9f9f9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+/* line 597, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003597}}
+.deposits-wrapper .slider-selection {
+  position: absolute;
+  background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background-image: -o-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/* line 612, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003612}}
+.deposits-wrapper .slider-selection.tick-slider-selection {
+  background-image: -webkit-linear-gradient(top, #89cdef 0%, #81bfde 100%);
+  background-image: -o-linear-gradient(top, #89cdef 0%, #81bfde 100%);
+  background-image: linear-gradient(to bottom, #89cdef 0%, #81bfde 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff89cdef', endColorstr='#ff81bfde', GradientType=0);
+}
+/* line 620, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003620}}
+.deposits-wrapper .slider-track-low,
+.deposits-wrapper .slider-track-high {
+  position: absolute;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/* line 630, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003630}}
+.deposits-wrapper .slider-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #337ab7;
+  background-image: -webkit-linear-gradient(top, #149bdf 0%, #0480be 100%);
+  background-image: -o-linear-gradient(top, #149bdf 0%, #0480be 100%);
+  background-image: linear-gradient(to bottom, #149bdf 0%, #0480be 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+  filter: none;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 0px solid transparent;
+}
+/* line 646, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003646}}
+.deposits-wrapper .slider-handle.round {
+  border-radius: 50%;
+}
+/* line 650, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003650}}
+.deposits-wrapper .slider-handle.triangle {
+  background: transparent none;
+}
+/* line 654, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003654}}
+.deposits-wrapper .slider-handle.custom {
+  background: transparent none;
+}
+/* line 658, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003658}}
+.deposits-wrapper .slider-handle.custom::before {
+  line-height: 20px;
+  font-size: 20px;
+  content: '\2605';
+  color: #726204;
+}
+/* line 665, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003665}}
+.deposits-wrapper .slider-tick {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background-image: -o-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  filter: none;
+  opacity: 0.8;
+  border: 0px solid transparent;
+}
+/* line 684, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003684}}
+.deposits-wrapper .slider-tick.round {
+  border-radius: 50%;
+}
+/* line 688, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003688}}
+.deposits-wrapper .slider-tick.triangle {
+  background: transparent none;
+}
+/* line 692, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003692}}
+.slider-tick.custom {
+  background: transparent none;
+}
+/* line 696, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003696}}
+.deposits-wrapper .slider-tick.custom::before {
+  line-height: 20px;
+  font-size: 20px;
+  content: '\2605';
+  color: #726204;
+}
+/* line 703, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003703}}
+.deposits-wrapper .slider-tick.in-selection {
+  background-image: -webkit-linear-gradient(top, #89cdef 0%, #81bfde 100%);
+  background-image: -o-linear-gradient(top, #89cdef 0%, #81bfde 100%);
+  background-image: linear-gradient(to bottom, #89cdef 0%, #81bfde 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff89cdef', endColorstr='#ff81bfde', GradientType=0);
+  opacity: 1;
+}
+/* line 712, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003712}}
+.deposits-wrapper .slider.slider-horizontal {
+  width: 100%;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  /* line 718, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003718}}
+  .deposits-wrapper .profit__wrapper {
+    position: relative;
+    width: 320px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    margin-left: -33px;
+    margin-bottom: 13px;
+  }
+  /* line 727, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003727}}
+  .deposits-wrapper .profit__total {
+    right: -186px;
+  }
+}
+/* line 732, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003732}}
+.deposits-wrapper .profit__descr {
+  color: #fff;
+  text-align: center;
+}
+/* line 737, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003737}}
+.deposits-wrapper .w5s-ar .cbxl:last-child .onoffswitch {
+  display: none;
+}
+/* line 741, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003741}}
+.deposits-wrapper .w5s-ar .cbxl {
+  padding: 0;
+  width: 50%;
+  float: left;
+  clear: none;
+}
+/* line 748, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003748}}
+.deposits-wrapper span.cnvl {
+  margin-top: 6px;
+}
+@media (max-width: 340px) {
+  /* line 753, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003753}}
+  .deposits-wrapper .profit__chart,
+  .profit__diff,
+  .profit__inner {
+    position: relative;
+    width: 134px;
+  }
+  /* line 758, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003758}}
+  .deposits-wrapper .onoffswitch {
+    float: left;
+    width: auto;
+    margin-left: 23px;
+  }
+}
+/* line 766, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003766}}
+.deposits-wrapper .w5s-ar .cbxl {
+  padding: 0;
+  width: 174px;
+  float: left;
+  clear: none;
+}
+/* line 773, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003773}}
+.deposits-wrapper .w5s-ar {
+  width: 250px;
+  margin: 0 auto;
+}
+/* line 778, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003778}}
+.deposits-wrapper .w5s-ar .cbxl:last-child {
+  width: auto !important;
+}
+/* line 782, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003782}}
+.w5s-ar label {
+  position: absolute !important;
+  margin-top: -28px;
+  margin-left: 84px;
+}
+/* line 788, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003788}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+}
+/* line 796, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003796}}
+.deposits-wrapper .slider.slider-horizontal .slider-tick,
+.deposits-wrapper .slider.slider-horizontal .slider-handle {
+  margin-left: -10px;
+  margin-top: -1px;
+}
+@media (max-width: 767px) {
+  /* line 802, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003802}}
+  .deposits-wrapper .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+    padding-top: 4px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 8px;
+  }
+  /* line 810, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003810}}
+  .deposits-wrapper .select-form label {
+    font-size: 12px !important;
+  }
+}
+/* line 815, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003815}}
+.slider-selection.tick-slider-selection {
+  background: #0F4D96 !important;
+}
+/* line 819, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003819}}
+.deposits-wrapper .slider-handle {
+  background: #D63749 !important;
+}
+/* line 823, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003823}}
+.deposits-wrapper .slider-tick.in-selection {
+  background: #c1c1c1 !important;
+}
+@media (min-width: 768px) {
+  /* line 828, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003828}}
+  .deposits-wrapper .profit__wrapper {
+    position: relative;
+    width: 320px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    margin-left: 41px;
+    margin-bottom: 13px;
+  }
+  /* line 837, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003837}}
+  .deposits-wrapper .profit__chart,
+  .profit__diff,
+  .profit__inner {
+    position: relative;
+    width: 125px;
+  }
+  /* line 842, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003842}}
+  .deposits-wrapper .profit__total {
+    right: -113px;
+    width: 117px;
+  }
+}
+/* line 848, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003848}}
+.deposits-wrapper .w5s-ar {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 33px;
+}
+/* line 854, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003854}}
+.deposits-wrapper .slider-tick {
+  opacity: 1 !important;
+}
+@media (min-width: 1200px) {
+  /* line 860, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003860}}
+  .deposits-wrapper .gvc3:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../../../src/img/info.svg) 100% 100% !important;
+    background-size: contain !important;
+    border-radius: 0px;
+    margin-top: -5px !important;
+    margin-left: -33px !important;
+    background-size: cover;
+  }
+  /* line 874, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003874}}
+  .deposits-wrapper .gvc2:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    background: url(../../../src/img/money.svg) 100% 100%;
+    border-radius: 0;
+    margin-top: -5px !important;
+    margin-left: -35px !important;
+    background-size: cover;
+  }
+  /* line 886, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003886}}
+  .deposits-wrapper .gvc1:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../../../src/img/plus-button.svg) 100% 100%;
+    border-radius: 0;
+    margin-top: -5px !important;
+    margin-left: -35px !important;
+    background-size: cover;
+  }
+}
+@media (min-width: 700px) {
+  /* line 901, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003901}}
+  body .crd1 {
+    padding-left: 47px !important;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 908, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003908}}
+  body .crd1 {
+    padding-left: 47px !important;
+    padding-top: 21px;
+    width: 33.3%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  /* line 917, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003917}}
+  body .deposits-wrapper .slider.slider-horizontal {
+    width: 95%;
+    height: 20px;
+    margin: 0 auto !important;
+    float: none !important;
+    display: block;
+  }
+  /* line 925, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003925}}
+  body .deposits-wrapper .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+    padding-top: 21px;
+  }
+}
+/* line 930, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003930}}
+body .deposits-wrapper .w5s-ar {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 33px;
+}
+/* line 936, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003936}}
+body .deposits-wrapper .w5s-ar .cbxl {
+  padding: 0;
+  width: auto;
+  float: left;
+  clear: none;
+}
+/* line 943, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003943}}
+body .deposits-wrapper span.cnvl {
+  margin-top: 6px;
+  width: 200px;
+  position: absolute;
+  text-align: right;
+  margin-left: -85px;
+}
+/* line 951, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003951}}
+body .deposits-wrapper .onoffswitch {
+  margin-top: 4px;
+  float: left;
+  margin-left: 1px !important;
+  margin-right: 124px !important;
+}
+/* line 958, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003958}}
+body .deposits-wrapper .w5s-ar .cbxl:last-child span.cnvl {
+  text-align: left;
+  margin-left: 7px;
+}
+/* line 963, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003963}}
+.deposits-wrapper .toggle {
+  background: #f9f9f9;
+  border: 1px solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 970, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003970}}
+.deposits-wrapper .toggle .title h6,
+.deposits-wrapper .widget .title h6 {
+  float: left;
+  font-size: 14px;
+  padding: 9px 0 0 12px;
+  font-weight: 500;
+  padding-left: 0 !important;
+}
+/* line 978, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003978}}
+.deposits-wrapper .toggle .title .date,
+.deposits-wrapper .toggle .title .enquiry-link,
+.deposits-wrapper .toggle .title .cert-link,
+.deposits-wrapper .toggle .title .garant_state {
+  float: left;
+  display: block;
+  margin-left: 0px;
+  padding-top: 9px;
+}
+/* line 985, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003985}}
+.deposits-wrapper .toggle .title .buttons {
+  float: right;
+  margin-top: 9px;
+}
+/* line 990, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003990}}
+.deposits-wrapper .toggle .content-detali-guatantee,
+.deposits-wrapper .toggle .menu_body {
+  padding: 12px 14px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-left: 14px !important;
+}
+/* line 996, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\00003996}}
+.deposits-wrapper .blank_info .drop_down {
+  margin: 15px 0px;
+}
+/* line 1000, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031000}}
+.deposits-wrapper .toggle .title h6,
+.widget .title h6 {
+  float: left;
+  font-size: 14px;
+  padding: 9px 0 0 12px;
+  font-weight: 500;
+  margin-top: 4px !important;
+  margin-right: 10px;
+}
+/* line 1009, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031009}}
+.deposits-wrapper fieldset.blank_info {
+  border: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0px !important;
+}
+/* line 1015, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031015}}
+.deposits-wrapper .toggle {
+  background: #f9f9f9;
+  border: 0px solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 1022, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031022}}
+.deposits-wrapper .ws25 {
+  float: left;
+  width: 25% !important;
+  padding: 10px;
+}
+/* line 1028, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031028}}
+.deposits-wrapper .credit-main-area .title {
+  overflow: hidden;
+  background: #0C5CBD !important;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+/* line 1037, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031037}}
+.deposits-wrapper .toggle .content-detali-guatantee span,
+.deposits-wrapper .formRow label,
+.deposits-wrapper .view_all {
+  font-size: 16px;
+}
+/* line 1041, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031041}}
+.deposits-wrapper .toggle .nav-nt li {
+  background: #D63749;
+  border-radius: 150px;
+  margin: 10px !important;
+  width: 40%;
+}
+/* line 1048, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031048}}
+.deposits-wrapper .toggle .nav-nt li:hover {
+  opacity: 0.8 !important;
+}
+/* line 1052, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031052}}
+.deposits-wrapper .blue-otc {
+  background: #0C5CBD !important;
+}
+@media (min-width: 1200px) {
+  /* line 1057, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031057}}
+  .credit-area {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 460px) {
+  /* line 1063, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031063}}
+  .deposits-wrapper .toggle .content-detali-guatantee span,
+  .deposits-wrapper .formRow label,
+  .deposits-wrapper .view_all {
+    font-size: 16px;
+    display: block;
+  }
+  /* line 1068, Deposits.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031068}}
+  body .deposits-wrapper .ws25 {
+    float: left;
+    width: 50% !important;
+    margin-bottom: 27px;
+  }
+}
+/* line 1075, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031075}}
+.deposits-wrapper .toggle .content-detali-guatantee,
+.deposits-wrapper .toggle .menu_body {
+  padding: 12px 14px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-left: 14px !important;
+  background: #0C5CBD;
+  color: #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+/* line 1085, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031085}}
+.deposits-wrapper .toggle {
+  background: #0C5CBD;
+  border: 0 solid #cdcdcd;
+  margin-top: 32px;
+  border-bottom: none;
+}
+/* line 1092, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031092}}
+.deposits-wrapper span.oneFour {
+  color: #47A2F6;
+}
+/* line 1096, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031096}}
+.deposits-wrapper .dst {
+  color: #fff;
+}
+/* line 1100, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031100}}
+.deposits-wrapper .nav-nt .blue-otc {
+  background: #D63749 !important;
+}
+/* line 1103, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031103}}
+.deposits-wrapper .card-area-inner {
+  text-align: justify;
+}
+/* line 1106, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031106}}
+.deposits-wrapper .vlm {
+  font-family: 'Arial';
+}
+/* line 1109, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031109}}
+rect.highcharts-background {
+  fill: #1153a7;
+}
+/* line 1112, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031112}}
+div.highcharts-container {
+  border-radius: 10px;
+}
+/* line 1115, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031115}}
+.highcharts-container text {
+  fill: #fff !important;
+  color: #fbfcfe !important;
+}
+/* line 1119, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031119}}
+path.highcharts-label-box.highcharts-tooltip-box {
+  fill: #135fb8;
+  opacity: 1;
+}
+/* line 1125, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031125}}
+body .deposits-wrapper .tabs-panel {
+  margin-top: 9px !important;
+}
+/* line 1128, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031128}}
+.deposits-wrapper .tabs-panel {
+  background: rgba(0, 0, 0, 0.27);
+  color: #fff;
+  padding-left: 30px;
+  padding: 16px;
+}
+/* line 1134, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031134}}
+.deposits-wrapper .tabs-panel a {
+  margin-right: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 1140, Deposits.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Deposits\/Deposits\.less}line{font-family:\000031140}}
+.deposits-wrapper .tabs-panel .active {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=Deposits.css.map */

@@ -1,0 +1,3110 @@
+/* line 2, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032}}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+/* line 8, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000038}}
+.content > .title {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+/* line 13, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000313}}
+a.rtls {
+  background: #FD7002;
+  padding: 5px;
+  color: #fff;
+  margin-top: -1px;
+  display: block;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+}
+/* line 23, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000323}}
+.block-white50.srtw {
+  height: 133px;
+  position: relative;
+}
+/* line 28, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000328}}
+a.rtls {
+  background: #ff5100;
+  padding: 5px;
+  color: #fff;
+  margin-top: -1px;
+  display: block;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 14px;
+  width: 124px;
+  text-transform: none !important;
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+}
+/* line 50, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000350}}
+a.rtls:hover {
+  background: #FE7002;
+}
+/* new-page-card */
+/* line 56, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000356}}
+.wt-min-height-area {
+  min-height: 1010px;
+}
+/* line 60, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000360}}
+.new-wt-card img {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+/* line 67, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000367}}
+.obmen-top-area img {
+  float: left;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+/* line 73, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000373}}
+.obmen-bottom-area img {
+  float: left;
+  margin-left: 6px;
+}
+/* line 78, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000378}}
+.obmen-left-area img {
+  position: absolute;
+  left: 17px;
+  margin-top: 221px;
+  width: 203px;
+}
+/* line 85, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000385}}
+.obm-new {
+  width: 200px !important;
+  margin-left: 20px !important;
+  margin-top: 15px !important;
+}
+/* line 91, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000391}}
+.obmen-right-area img {
+  position: absolute;
+  right: 1px;
+  margin-top: 212px;
+}
+/* line 97, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\0000397}}
+.wt-card-container {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 104, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003104}}
+.wt-min-height-area h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 109, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003109}}
+.wt-min-height-area .many {
+  width: 599px;
+  margin: 0 auto;
+  background: #fafbfd;
+  padding: 37px 30px;
+  color: #75a1c6;
+  line-height: 44px;
+  font-size: 27px;
+}
+/* line 119, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003119}}
+.wt-min-height-area .many2 {
+  width: 599px;
+  margin: 0 auto;
+  background: #FF6800;
+  padding: 26px 28px;
+  color: #fff;
+  line-height: 38px;
+  font-size: 27px;
+}
+/* line 129, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003129}}
+h2.big-h2 {
+  text-align: center;
+  font-size: 19px;
+  margin-top: -17px;
+  color: #000;
+}
+/* line 136, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003136}}
+.opas08:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 145, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003145}}
+.opas06:hover {
+  opacity: 0.6 !important;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 154, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003154}}
+.wt-icons img {
+  width: 57% !important;
+  margin-top: 30px;
+  margin-bottom: 9px;
+}
+/* line 160, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003160}}
+.my-wt-card {
+  margin-top: 60px;
+}
+/* line 164, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003164}}
+.new-wt-icons img {
+  width: 100% !important;
+  margin-top: 46px !important;
+  margin-bottom: -12px !important;
+}
+/* line 170, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003170}}
+.new-wt-card {
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+  *position: relative;
+}
+/* line 177, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003177}}
+.new-bottom-wt {
+  margin-top: -35px;
+}
+/* line 181, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003181}}
+.new-card-style button {
+  display: inline-block;
+  margin-left: 226px;
+}
+/* line 186, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003186}}
+.new-card-style img {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  width: 267px;
+  position: relative;
+  margin-bottom: -50px;
+}
+/* 01.02.16 */
+/* line 197, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003197}}
+.girl-card-area {
+  width: 100%;
+  height: 443px;
+  background: url(https://webtransfer.com/img/girl-card.png) no-repeat !important;
+  background-size: cover;
+  background-position: center !important;
+  background-position: 1px !important;
+}
+/* line 206, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003206}}
+.no-padding-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 5px !important;
+}
+/* line 212, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003212}}
+.girl-card-bottom {
+  width: 100%;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  margin-top: -1px;
+}
+/* line 222, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003222}}
+.girl-card-bottom .button {
+  width: 266px;
+  height: 54px;
+  background: #fe5200;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 48px;
+  margin-bottom: 50px !important;
+  margin-top: -23px;
+}
+/* line 234, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003234}}
+.girl-card-bottom .block-white {
+  width: 155px;
+  height: 78px;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  margin-left: 24.4px;
+  margin-bottom: 24px;
+}
+/* line 244, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003244}}
+.girl-card-bottom .block-white50 {
+  width: 214.7px;
+  height: 78px;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  margin-left: 24.4px;
+  margin-bottom: 24px;
+}
+/* line 254, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003254}}
+.girl-card-bottom .block-white50:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+}
+/* line 260, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003260}}
+.block-white50 img {
+  display: block;
+  margin: 3px auto;
+}
+/* line 265, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003265}}
+.girl-card-bottom .block-blue {
+  width: 155px;
+  height: 78px;
+  background: #3486D9;
+  border-radius: 5px;
+  float: left;
+  margin-left: 24.4px;
+  margin-bottom: 24px;
+}
+/* line 275, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003275}}
+.girl-card-bottom .block-blue:hover,
+.girl-card-bottom .block-white:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+}
+/* line 281, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003281}}
+.girl-card-bottom .block-white img {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+/* line 286, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003286}}
+.block-blue .marg-blue {
+  margin-left: 15px !important;
+  margin-top: 2px !important;
+}
+/* line 291, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003291}}
+h1.title.neo {
+  margin-bottom: 18px;
+  margin-top: -29px;
+  text-align: center;
+  border: 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+/* line 300, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003300}}
+.trans-sw2-h3 {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 33px;
+  margin-top: -20px !important;
+}
+/* line 309, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003309}}
+.trans-sw2-h3.pk {
+  margin-top: 33px !important;
+}
+/* line 313, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003313}}
+.girl-card-bottom .block-white50 img {
+  opacity: 0.9;
+}
+/* line 317, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003317}}
+.girl-card-bottom .block-white50 img:hover {
+  opacity: 1;
+}
+/* line 321, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003321}}
+.girl-card-bottom .block-white img {
+  opacity: 0.9;
+}
+/* line 325, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003325}}
+.girl-card-bottom .block-white img:hover {
+  opacity: 1;
+}
+/* line 329, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003329}}
+.button.trans {
+  clear: both;
+  width: 353px;
+  margin-top: 28px;
+}
+/* line 335, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003335}}
+.button.trans2 {
+  clear: both;
+  width: 318px;
+}
+/* line 340, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003340}}
+.blocks-area {
+  overflow: hidden;
+  padding-top: 10px;
+}
+/* line 345, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003345}}
+.rw-button {
+  width: 351px;
+  background: #000;
+  height: 65px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+/* line 353, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003353}}
+.girl-card-bottom.no-padd {
+  padding-bottom: 0 !important;
+}
+/* line 357, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003357}}
+.icons-obm {
+  width: 100%;
+  height: auto;
+  background: #fe5200;
+  padding-top: 9px;
+  margin-top: 20px;
+}
+/* line 365, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003365}}
+.icons-obm .button.trans {
+  margin-bottom: 11px !important;
+  margin-top: 34px;
+}
+/* line 370, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003370}}
+.content > .title {
+  text-align: left !important;
+  font-size: 24px;
+}
+/* line 375, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003375}}
+.ico-obm1 {
+  background: url(../../img/ws1.png) 0 0 no-repeat;
+  width: 70px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 383, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003383}}
+.ico-obm2 {
+  background: url(../../img/ws3.png) 0 0 no-repeat;
+  width: 113px;
+  height: 33px;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 18px;
+}
+/* line 392, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003392}}
+.ico-obm3 {
+  background: url(../../img/ws4.jpg) 0 0 no-repeat;
+  width: 55px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 400, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003400}}
+.ico-obm4 {
+  background: url(../../img/ws5.png) 0 0 no-repeat;
+  width: 80px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 408, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003408}}
+.ico-obm5 {
+  background: url(../../img/ws6.png) 0 0 no-repeat;
+  width: 75px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 416, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003416}}
+.ico-obm6 {
+  background: url(../../img/ws7.jpg) 0 0 no-repeat;
+  width: 90px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 424, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003424}}
+.ico-obm7 {
+  background: url(../../img/ws8.jpg) 0 0 no-repeat;
+  width: 70px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 432, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003432}}
+.icons1-obm {
+  margin-left: 49px;
+  padding-top: 26px;
+}
+/* line 437, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003437}}
+.ico-obm8 {
+  background: url(https://webtransfer.com/images/pmtrust.jpg) 0 0 no-repeat;
+  width: 50px;
+  height: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+/* line 445, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003445}}
+.icons-obm {
+  width: 100%;
+  height: auto;
+  background: #fe5200;
+  padding-top: 9px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+/* line 454, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003454}}
+div#containern.no-padding-content {
+  margin-left: -21px;
+  margin-right: -20px;
+}
+/* line 459, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003459}}
+.wtsw-logo {
+  width: 184px;
+  height: 106px;
+  background: url(../../img/logowtt.png) 0 0 no-repeat;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+/* line 467, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003467}}
+.bg-block {
+  background: #fff;
+  padding: 20px;
+  padding-top: 42px;
+}
+/* line 474, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003474}}
+.bg-block h2 {
+  color: #000;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 19px;
+  line-height: 32px;
+}
+/* line 482, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003482}}
+.bg-block h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  /* margin-top: 98px; */
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 11px;
+  color: #333 !important;
+}
+/* line 495, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003495}}
+.bg-block h2 {
+  color: #000;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 23px;
+  width: 464px;
+  margin: 0 auto;
+}
+/* line 505, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003505}}
+.blocks-area .block-white img {
+  opacity: 0.9;
+  background-size: cover !important;
+  width: 89%;
+}
+/* line 511, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003511}}
+.bg-block .block-white {
+  width: 112px !important;
+  height: 63px !important;
+  margin-top: 14px;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  margin-left: 24.4px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+  box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.45);
+}
+/* line 525, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003525}}
+.bg-block {
+  background: url(https://webtransfer.com/img/sws.png) no-repeat !important;
+  width: 711px !important;
+  height: 474px;
+  background-size: cover !important;
+  padding-bottom: 71px !important;
+}
+/* line 533, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003533}}
+.content > .title {
+  text-align: left !important;
+}
+/* line 537, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003537}}
+.blocks-area .block-white img {
+  opacity: 1 !important;
+}
+/* line 541, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003541}}
+.clks2-rus {
+  position: absolute;
+  color: #fff;
+  width: 107px;
+  margin-left: 592px;
+  line-height: 20px;
+  margin-top: -109px;
+  font-size: 13px;
+  background: #FF5100;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+}
+/* line 555, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003555}}
+div#container {
+  max-width: 702px;
+  margin: 0 auto;
+}
+/* line 560, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003560}}
+.clks2 {
+  position: absolute;
+  color: #fff;
+  width: 107px;
+  margin-left: 593px;
+  line-height: 20px;
+  margin-top: -98px;
+  font-size: 13px;
+  background: #FF5100;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+}
+/* line 574, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003574}}
+.clks2:hover {
+  background: #FFFFFF;
+  color: #333;
+}
+/* line 579, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003579}}
+.clks2-rus {
+  position: absolute;
+  color: #fff;
+  width: 107px;
+  margin-left: -130px;
+  line-height: 20px;
+  margin-top: 54px;
+  font-size: 13px;
+  background: #FF5100;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+}
+/* line 593, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003593}}
+.clks2-rus:hover {
+  background: #FFFFFF;
+  color: #333;
+}
+/* line 598, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003598}}
+#modal_form {
+  width: 300px;
+  height: 300px;
+  /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed;
+  /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%;
+  /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%;
+  /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px;
+  /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none;
+  /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0;
+  /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5;
+  /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+/* line 616, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003616}}
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+/* Пoдлoжкa */
+/* line 627, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003627}}
+#overlay {
+  z-index: 9999;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+/* line 640, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003640}}
+.modal_div {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  border: 0;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 10000;
+  padding: 20px 20px;
+}
+/* line 657, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003657}}
+span.modal_close {
+  cursor: pointer;
+  float: right;
+  font-size: 23px;
+  margin-top: -10px;
+  opacity: 0.7;
+}
+/* line 665, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003665}}
+span.modal_close:hover {
+  opacity: 1;
+}
+/* line 669, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003669}}
+.modal-s {
+  font-size: 17px;
+  text-align: center;
+}
+/* line 674, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003674}}
+.modal-inp label {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 679, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003679}}
+.modal-inp {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+/* line 684, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003684}}
+.btns-b {
+  text-align: center;
+  background: #fff;
+  padding: 14px;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  border: 0;
+  background: #FF5200 !important;
+  color: #fff !important;
+  -moz-box-shadow: 3.5px 5.8px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 3.5px 5.8px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 3.5px 5.8px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 21px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 709, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003709}}
+.btns-b:hover {
+  opacity: 0.8;
+}
+/* line 713, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003713}}
+.glyphicon-sv:before {
+  content: '';
+  font-size: 0 !important;
+  position: absolute;
+  width: 18px;
+  margin-top: -15px;
+  margin-left: -16px;
+  height: 20px;
+  background: url(/img/icon_mch.png) 0 0 no-repeat;
+  background-size: contain !important;
+}
+/* line 725, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003725}}
+.glyphicon-s:before {
+  content: '';
+  font-size: 0 !important;
+  position: absolute;
+  width: 18px;
+  margin-top: -15px;
+  margin-left: -16px;
+  height: 20px;
+  background: url(/img/icon_mch.png) 0 0 no-repeat;
+  background-size: contain !important;
+}
+/* line 737, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003737}}
+#topup-modal .filter-option.pull-left {
+  padding-left: 9px;
+}
+/* line 741, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003741}}
+#topup-modal .bootstrap-select .glyphicon {
+  padding-left: 9px;
+}
+/* line 745, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003745}}
+#topup-modal {
+  width: 350px;
+  margin-left: -175px;
+}
+/* line 750, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003750}}
+.validation-box {
+  color: #ff0000;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 756, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003756}}
+.validation-box-2 {
+  color: #ff0000;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 762, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003762}}
+.info-box {
+  color: #ff0000;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 768, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003768}}
+input.error1 {
+  border: 1px solid #f37272 !important;
+  box-shadow: none !important;
+}
+/* line 773, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003773}}
+.but-submit[disabled] {
+  background: gray !important;
+  cursor: no-drop;
+}
+/* line 778, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003778}}
+.never-show {
+  display: none !important;
+}
+/* line 782, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003782}}
+#form-topup-visa-2 .btns-b[disabled] {
+  background: gray !important;
+  cursor: no-drop;
+}
+/* line 787, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003787}}
+body .no-padding-content {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 5px !important;
+}
+/* line 793, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003793}}
+body .girl-card-bottom .block-white50 {
+  width: 193.9px;
+  height: 78px;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  margin-left: 28.4px;
+  margin-bottom: 24px;
+}
+/* line 803, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003803}}
+body .girl-card-bottom .block-white {
+  width: 138px;
+  height: 78px;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  margin-left: 28.8px;
+  margin-bottom: 24px;
+}
+/* line 813, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003813}}
+div#containern {
+  margin-left: -10px !important;
+}
+/* line 817, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003817}}
+body .girl-card-bottom .block-white50 {
+  margin-left: 0;
+  width: 31.33%;
+  padding: 0px;
+  margin: 1%;
+}
+/* line 824, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003824}}
+body .girl-card-bottom .block-white {
+  margin-left: 0;
+  width: 20%;
+  padding: 0;
+}
+/* line 830, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003830}}
+.blocks-area {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* line 835, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003835}}
+body .girl-card-bottom .block-white {
+  margin-left: 0;
+  width: 18%;
+  padding: 10px;
+  margin: 1%;
+}
+@media (max-width: 767px) {
+  /* line 843, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003843}}
+  body .girl-card-bottom .block-white50 {
+    margin-left: 0;
+    width: 47.5%;
+    padding: 0px;
+    margin: 1%;
+  }
+  /* line 850, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003850}}
+  body .girl-card-bottom .block-white {
+    margin-left: 0;
+    width: 31%;
+    padding: 10px;
+    margin: 1%;
+    height: 106px;
+  }
+  /* line 858, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003858}}
+  .block-white50.srtw {
+    height: 162px !important;
+  }
+}
+@media (max-width: 450px) {
+  /* line 865, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003865}}
+  body .girl-card-bottom .block-white {
+    margin-left: 0;
+    width: 47.4%;
+    padding: 10px;
+    margin: 1%;
+    height: 106px;
+  }
+  /* line 873, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003873}}
+  body .girl-card-bottom .block-white50 {
+    margin-left: 0;
+    width: 47.2%;
+    padding: 0px;
+    margin: 1%;
+  }
+}
+/* line 882, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003882}}
+td.title-in-table {
+  background: rgba(0, 0, 0, 0.28);
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+/* line 889, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003889}}
+.table-block-ex span {
+  font-size: 11px;
+  color: #cecece;
+}
+/* line 894, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003894}}
+.table-block-ex td {
+  background: rgba(255, 255, 255, 0.24);
+}
+/* line 898, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003898}}
+.table-block-ex td {
+  color: #fff;
+  padding: 10px;
+}
+/* line 903, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003903}}
+.table-block-ex tr:nth-child(2n) td {
+  background: #000;
+}
+/* line 907, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003907}}
+.table-block-ex tr:nth-child(2n) td {
+  background: rgba(255, 255, 255, 0.24);
+}
+/* line 911, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003911}}
+.table-block-ex table {
+  margin: 0 auto;
+  min-width: 94% !important;
+}
+/* line 916, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003916}}
+.settings-wrapper table.tablk {
+  width: 100%;
+  color: #fff;
+}
+/* line 921, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003921}}
+.settings-wrapper table.tablk td {
+  padding: 10px 19px;
+}
+/* line 925, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003925}}
+.settings-wrapper table.tablk td:last-child {
+  text-align: right;
+}
+/* line 929, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003929}}
+.settings-wrapper table.tablk {
+  margin-top: 0;
+  border-top: 1px solid #6ea0df;
+}
+/* line 934, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003934}}
+.settings-wrapper .tabls {
+  margin-top: 24px;
+  margin-right: 20px;
+}
+/* line 939, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003939}}
+.credit-main-area.padding-fx h3 {
+  line-height: 27px;
+}
+/* line 943, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003943}}
+.credit-main-area.padding-fx b {
+  line-height: 20px !important;
+  margin-bottom: -4px;
+  display: block;
+}
+/* line 949, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003949}}
+td.title-in-table {
+  background: rgba(0, 0, 0, 0.28);
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+/* line 956, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003956}}
+.table-block-ex table {
+  margin: 0 auto;
+  min-width: 315px;
+}
+/* line 961, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003961}}
+.txt-cn {
+  text-align: center !important;
+}
+/* line 965, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003965}}
+.table-block-ex tbody tr td {
+  cursor: pointer;
+}
+/* line 969, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003969}}
+.table-block-ex tbody tr:hover td {
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+/* line 973, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003973}}
+.table-block-ex tbody tr {
+  border: 1px solid #fff;
+}
+/* line 977, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003977}}
+.info-card-wrapper * {
+  box-sizing: content-box;
+}
+/* line 981, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003981}}
+.info-card-wrapper .card-full {
+  position: relative;
+  max-width: 255px;
+  height: 140px;
+}
+/* line 987, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\00003987}}
+.info-card-wrapper .blks-btn {
+  border: 0;
+  border-radius: 50px;
+  padding: 11px 41px;
+  margin-right: 15px;
+  color: #fff;
+  width: 138px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 11px;
+  background: #d63749;
+}
+/* line 1000, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031000}}
+.info-card-wrapper .blks-btn:hover {
+  background: #c13244;
+  color: #ffffff;
+}
+/* line 1005, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031005}}
+.info-card-wrapper .sparrow {
+  border: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../../../src/img/log-sparrow.png) 0 0 no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: 11px;
+  right: 30px;
+}
+/* line 1016, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031016}}
+.info-card-wrapper .sparrow {
+  cursor: pointer;
+}
+/* line 1020, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031020}}
+.info-card-wrapper .chat-panel-bottom {
+  position: fixed;
+  background: #0753ab;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.75);
+  height: 100%;
+}
+/* line 1032, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031032}}
+.info-card-wrapper .chat-panel-bottom {
+  display: none;
+}
+/* line 1036, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031036}}
+.info-card-wrapper .hide-xts {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 324px;
+  margin-top: 81px;
+  background: rgba(222, 222, 221, 0.92);
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+/* line 1048, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031048}}
+.info-card-wrapper .stz {
+  display: none;
+}
+/* line 1052, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031052}}
+.info-card-wrapper .avst {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-top: -72px;
+  z-index: 22;
+  margin-left: 106px;
+  cursor: pointer;
+  background: #000000;
+}
+@media (min-width: 1200px) {
+  /* line 1064, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031064}}
+  .info-card-wrapper.wrapper {
+    margin-right: 22% !important;
+  }
+  /* line 1068, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031068}}
+  .info-card-wrapper .chat-panel-bottom {
+    display: block !important;
+    width: 22% !important;
+  }
+  /* line 1073, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031073}}
+  .info-card-wrapper .icon-area.chat {
+    right: -40% !important;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1080, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031080}}
+  .info-card-wrapper .colv-3 {
+    width: 33.33%;
+    float: left;
+  }
+  /* line 1085, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031085}}
+  .info-card-wrapper .contact-panel {
+    margin-right: -40%;
+  }
+  /* line 1089, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031089}}
+  .info-card-wrapper .mobile-mn .stars-area {
+    margin-top: -2px;
+  }
+  /* line 1093, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031093}}
+  .info-card-wrapper .no-shows {
+    display: none;
+  }
+  /* line 1097, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031097}}
+  .info-card-wrapper .header strong {
+    display: none;
+  }
+  /* line 1101, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031101}}
+  .info-card-wrapper .nobl-c {
+    display: none !important;
+  }
+  /* line 1105, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031105}}
+  .info-card-wrapper .chats-blk {
+    position: relative;
+    height: 76px;
+  }
+  /* line 1110, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031110}}
+  .info-card-wrapper .colv-3 {
+    width: 33.17%;
+    float: left;
+    border-right: 1px solid #186bd1;
+  }
+  /* line 1116, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031116}}
+  .info-card-wrapper .colv-3:first-child {
+    border-left: 1px solid #186bd1;
+  }
+  /* line 1120, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031120}}
+  .info-card-wrapper .responsive:first-child {
+    border-top: 1px solid #2b74d2;
+    margin-top: 0;
+  }
+}
+/* line 1126, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031126}}
+.info-card-wrapper .responsive:first-child {
+  margin-top: 0;
+}
+/* line 1130, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031130}}
+.info-card-wrapper .header {
+  padding: 0;
+  height: auto !important;
+}
+/* line 1135, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031135}}
+.info-card-wrapper .contact-panel h3 {
+  font-size: 17px;
+  text-align: left;
+}
+/* line 1140, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031140}}
+.info-card-wrapper ul.ulck-menu a {
+  display: block !important;
+  top: auto !important;
+  position: relative;
+  border: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+}
+/* line 1153, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031153}}
+.info-card-wrapper ul.ulck-menu a:before,
+ul.ulck-menu a:after {
+  display: none !important;
+}
+/* line 1157, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031157}}
+.info-card-wrapper ul.ulck-menu li {
+  list-style: none !important;
+}
+/* line 1161, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031161}}
+.info-card-wrapper ul.ulck-menu li {
+  float: left;
+}
+/* line 1165, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031165}}
+.info-card-wrapper ul.ulck-menu {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+/* line 1171, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031171}}
+.info-card-wrapper .contact-panel h3 {
+  font-size: 17px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+/* line 1178, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031178}}
+.info-card-wrapper ul.ulck-menu .active a {
+  background: #fff;
+  color: #186bd1;
+  border-radius: 50px;
+  padding-left: 27px;
+}
+/* line 1185, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031185}}
+.info-card-wrapper ul.ulck-menu a {
+  display: block !important;
+  top: auto !important;
+  position: relative;
+  border: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: .8px;
+  padding: 0;
+  padding-right: 27px;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 34px !important;
+  line-height: 34px;
+}
+/* line 1206, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031206}}
+.info-card-wrapper ul.ulck-menu {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+}
+/* line 1213, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031213}}
+.info-card-wrapper ul.ulck-menu .active a {
+  margin-right: 23px;
+}
+/* line 1216, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031216}}
+.info-card-wrapper .chats-area-bl {
+  color: #fff;
+  padding-left: 74px;
+  max-width: 195px;
+}
+/* line 1222, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031222}}
+.close-blocks {
+  position: relative;
+  margin-top: -17px;
+  margin-right: -48px;
+}
+/* line 1228, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031228}}
+.info-card-wrapper .icon-area.chat {
+  right: 5px;
+  margin-top: 16px;
+}
+/* line 1233, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031233}}
+.info-card-wrapper .scroller-b {
+  height: calc(100vh - 87px);
+}
+/* line 1237, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031237}}
+.info-card-wrapper .contents {
+  padding: 0 !important;
+}
+/* line 1241, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031241}}
+.info-card-wrapper .ltos {
+  width: 100%;
+  height: 50px;
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0, #1e5799 100%);
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0, #1e5799 100%);
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0, #1e5799 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#1e5799', GradientType=0);
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}
+@media (max-width: 1199px) {
+  /* line 1254, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031254}}
+  .info-card-wrapper .scroller-b {
+    height: calc(100vh - 148px);
+  }
+  /* line 1258, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031258}}
+  .info-card-wrapper .card-full {
+    position: relative;
+    max-width: 275px;
+    height: 140px;
+  }
+  /* line 1264, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031264}}
+  .info-card-wrapper .chats-blk {
+    position: relative;
+    height: 75px;
+  }
+  /* line 1269, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031269}}
+  .close-blocks {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 267px;
+  }
+  /* line 1277, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031277}}
+  .info-card-wrapper .contact-panel {
+    padding: 20px;
+    background: #186bd1;
+    overflow: hidden;
+    margin-top: 3px;
+    height: 16px;
+  }
+  /* line 1285, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031285}}
+  .info-card-wrapper .ulck-menu {
+    display: none !important;
+  }
+  /* line 1289, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031289}}
+  .info-card-wrapper .icon-area.chat {
+    right: 5px;
+    margin-top: -9px;
+  }
+  /* line 1294, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031294}}
+  .info-card-wrapper .header a {
+    top: 1px;
+  }
+  /* line 1298, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031298}}
+  .info-card-wrapper .contact-panel {
+    padding: 20px;
+    background: #186bd1;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  /* line 1305, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031305}}
+  .info-card-wrapper .contact-panel h3 {
+    display: none;
+  }
+}
+/* line 1310, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031310}}
+.info-card-wrapper .colv-3 .id-area {
+  color: #3b90f5;
+  margin-top: -8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: -3px;
+}
+/* line 1319, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031319}}
+.info-card-wrapper .account-img-area-n {
+  cursor: pointer;
+  width: 75px !important;
+  height: 60px !important;
+}
+@media (max-width: 1199px) {
+  /* line 1326, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031326}}
+  .info-card-wrapper .contact-panel {
+    display: none;
+  }
+  /* line 1330, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031330}}
+  .info-card-wrapper .nav-nt li {
+    padding: 3px 11px;
+    margin: 3px 2px 5px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 1338, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031338}}
+  .info-card-wrapper .del {
+    width: 80px;
+    background: #d63650;
+    float: right;
+    height: 90px;
+    margin-top: 0;
+  }
+  /* line 1346, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031346}}
+  .info-card-wrapper .download {
+    width: 80px;
+    background: #37a8d2;
+    float: right;
+    height: 90px;
+    margin-top: 0;
+    position: absolute;
+    right: 80px;
+  }
+  /* line 1356, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031356}}
+  .info-card-wrapper .hover-blk {
+    top: 0;
+  }
+  /* line 1360, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031360}}
+  .info-card-wrapper .hover-blk {
+    top: 0 !important;
+  }
+}
+/* line 1365, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031365}}
+.info-card-wrapper .header {
+  padding: 0 !important;
+}
+/* line 1369, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031369}}
+.info-card-wrapper .clzs {
+  padding: 20px;
+  background: #0c5cbd;
+}
+/* line 1374, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031374}}
+.info-card-wrapper .img-ls img {
+  width: 64px;
+  margin-right: 14px;
+  margin-top: 1px;
+}
+/* line 1380, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031380}}
+.info-card-wrapper .card-h {
+  position: absolute;
+  bottom: 14px;
+  color: #fff;
+  width: 100%;
+}
+/* line 1387, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031387}}
+.info-card-wrapper .card-full {
+  position: relative;
+}
+/* line 1391, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031391}}
+.info-card-wrapper .card-h .flr {
+  float: right;
+}
+/* line 1395, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031395}}
+.info-card-wrapper .card-h .fll {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 1401, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031401}}
+.info-card-wrapper .card-h .flr {
+  float: right;
+  margin-right: 31px;
+  font-size: 13px;
+}
+/* line 1407, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031407}}
+.info-card-wrapper .card-h .fll {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+/* line 1414, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031414}}
+.info-card-wrapper .avst {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-top: -72px;
+  z-index: 22;
+  margin-left: 106px;
+  cursor: pointer;
+  background: #000000;
+}
+/* line 1425, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031425}}
+.info-card-wrapper .stz.show-main-navs {
+  display: block;
+}
+/* line 1429, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031429}}
+.info-card-wrapper .hide-xts textarea {
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding-top: 9px;
+  height: 100px;
+}
+/* line 1438, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031438}}
+.info-card-wrapper .hide-xts input {
+  border: 0;
+}
+/* line 1442, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031442}}
+.info-card-wrapper .hide-xts input {
+  margin-bottom: 15px;
+}
+/* line 1446, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031446}}
+.info-card-wrapper .hide-xts .button {
+  width: 128px;
+}
+/* line 1450, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031450}}
+.info-card-wrapper .form-control:focus {
+  border-color: #ed7a00 !important;
+  border: 1px solid #ed7a00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 1458, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031458}}
+.info-card-wrapper textarea:focus {
+  border-color: #ed7a00 !important;
+  border: 1px solid #ed7a00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 1466, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031466}}
+.info-card-wrapper .form-areant input:focus {
+  border: 1px solid #ed7a00;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: none !important;
+}
+/* line 1473, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031473}}
+.info-card-wrapper .hide-xts {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 174px;
+  margin-top: 35px;
+  background: #0b53a8;
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: none;
+  margin-right: 6px;
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 99;
+}
+/* line 1488, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031488}}
+.info-card-wrapper .hide-xts.stz a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: bold;
+}
+/* line 1496, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031496}}
+.info-card-wrapper .hide-xts.stz a:hover {
+  opacity: 0.8;
+}
+/* line 1500, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031500}}
+.close-block {
+  position: absolute;
+  width: 53px;
+  height: 47px;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+/* line 1510, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031510}}
+.card-full {
+  background: #0b4c94;
+  border-radius: 12px;
+  padding: 17px;
+  position: relative;
+  height: 140px;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.56);
+  margin-top: -85px;
+}
+/* line 1520, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031520}}
+.info-card-wrapper .numb-card {
+  color: #1d72de;
+  position: relative;
+  right: auto;
+  top: 23px;
+  color: #fff !important;
+  letter-spacing: 5px;
+  font-size: 17px;
+}
+/* line 1530, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031530}}
+.info-card-wrapper .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+}
+/* line 1537, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031537}}
+.info-card-wrapper .prise-art span {
+  font-size: 17px;
+  vertical-align: top;
+}
+/* line 1542, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031542}}
+.info-card-wrapper .prise-art strong {
+  font-weight: normal;
+  font-size: 18px;
+}
+/* line 1547, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031547}}
+.info-card-wrapper .img-ls {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+/* line 1553, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031553}}
+.info-card-wrapper .visa {
+  background: #1f73d6;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.18) !important;
+}
+/* line 1558, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031558}}
+.info-card-wrapper .master {
+  background: #3b87df;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.18) !important;
+}
+/* line 1563, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031563}}
+.info-card-wrapper .-n {
+  margin: 26px auto 0;
+}
+/* line 1567, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031567}}
+.info-card-wrapper .img-ls img {
+  width: 64px;
+  margin-right: 14px;
+  margin-top: 1px;
+}
+/* line 1573, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031573}}
+.info-card-wrapper .card-h {
+  position: absolute;
+  bottom: 14px;
+  color: #fff;
+  width: 100%;
+}
+/* line 1580, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031580}}
+.info-card-wrapper .card-full {
+  position: relative;
+}
+/* line 1584, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031584}}
+.info-card-wrapper .card-h .flr {
+  float: right;
+}
+/* line 1588, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031588}}
+.info-card-wrapper .card-h .fll {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 1594, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031594}}
+.info-card-wrapper .card-h .flr {
+  float: right;
+  margin-right: 31px;
+  font-size: 13px;
+}
+/* line 1600, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031600}}
+.info-card-wrapper .card-h .fll {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+/* line 1607, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031607}}
+.info-card-wrapper .clbv {
+  max-width: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 12px;
+}
+/* line 1614, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031614}}
+.info-card-wrapper .prv-ns.stl-creds {
+  padding-left: 51px;
+}
+/* line 1618, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031618}}
+.info-card-wrapper .pluso-s {
+  color: #48d8fa;
+}
+/* line 1622, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031622}}
+.info-card-wrapper .minus-s {
+  color: #ffffff;
+}
+/* line 1626, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031626}}
+.info-card-wrapper .stl-creds .fll-p p {
+  font-weight: normal;
+  color: #94afe4;
+  margin-top: -5px;
+}
+/* line 1632, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031632}}
+.info-card-wrapper .pod-cards {
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 1637, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031637}}
+h3.pluso-s strong {
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  font-weight: normal;
+  margin-top: 3px;
+}
+/* line 1645, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031645}}
+h3.minus-s strong {
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  margin-top: 3px;
+  color: #a41e2a;
+}
+/* line 1653, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031653}}
+.info-card-wrapper .prv-ns.stl-creds {
+  position: relative;
+  margin-bottom: -12px;
+  padding-left: 40px;
+}
+/* line 1659, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031659}}
+.info-card-wrapper .prv-ns.stl-creds:before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #1acbf7 !important;
+  border-radius: 50px;
+  border: none;
+  margin-left: -18px;
+  margin-top: 10px;
+  z-index: 9;
+}
+/* line 1672, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031672}}
+.info-card-wrapper .prv-ns.stl-creds:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #4892e9;
+  left: 26px;
+  top: 16px;
+}
+/* line 1682, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031682}}
+.info-card-wrapper .fll-p h3 {
+  font-size: 12px;
+  overflow: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  margin-top: 10px;
+}
+/* line 1691, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031691}}
+.info-card-wrapper .pod-cards {
+  margin-top: 23px !important;
+}
+/* line 1695, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031695}}
+.info-card-wrapper .prv-ns.stl-creds {
+  position: relative;
+}
+/* line 1699, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031699}}
+.info-card-wrapper .prv-ns.stl-creds .flr-p {
+  float: right;
+  text-align: right;
+  margin-right: 0;
+  margin-top: -2px;
+}
+/* line 1706, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031706}}
+.info-card-wrapper .min-ar.prv-ns.stl-creds:before {
+  background: #ffffff !important;
+}
+/* line 1710, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031710}}
+.info-card-wrapper .flr-p h3 {
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 123px;
+  margin-top: 12px !important;
+  font-weight: normal !important;
+}
+/* line 1720, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031720}}
+.info-card-wrapper .stl-creds .fll-p p {
+  font-weight: normal;
+  color: #fff;
+  margin-top: -12px;
+  font-size: 9px;
+  margin-bottom: 21px;
+}
+/* line 1728, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031728}}
+.info-card-wrapper .stl-creds .fll-p p span {
+  color: #fff;
+  margin-left: 5px;
+}
+/* line 1733, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031733}}
+.info-card-wrapper .nsrov-nt {
+  background: #0b5bba;
+  margin-top: 30px;
+  overflow: hidden;
+}
+/* line 1739, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031739}}
+.info-card-wrapper .dv1 {
+  width: 50%;
+  float: left;
+  position: relative;
+  color: #ffffff;
+}
+/* line 1746, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031746}}
+.info-card-wrapper .dv1:after {
+  content: '';
+  position: absolute;
+  height: 42px;
+  width: 1px;
+  background: #4892e9;
+  top: 0;
+  right: 0;
+}
+/* line 1756, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031756}}
+.info-card-wrapper .dv2 {
+  width: 50%;
+  float: left;
+  position: relative;
+  color: #ffffff;
+}
+/* line 1763, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031763}}
+.info-card-wrapper .clbv {
+  max-width: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 12px;
+  padding-top: 20px;
+}
+/* line 1771, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031771}}
+.info-card-wrapper .clbv p {
+  text-align: center;
+  font-size: 22px;
+}
+/* line 1776, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031776}}
+.info-card-wrapper .clbv span {
+  text-align: center;
+  display: block;
+  color: #4c9cf5;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 17px;
+  margin-top: -8px;
+}
+@media (max-width: 400px) {
+  /* line 1787, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031787}}
+  .info-card-wrapper .clbv p {
+    text-align: center;
+    font-size: 19px;
+  }
+  /* line 1792, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031792}}
+  .info-card-wrapper .card-full {
+    height: 155px;
+  }
+}
+/* line 1797, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031797}}
+.info-card-wrapper .chat-panel-bottom {
+  margin-top: 87px;
+}
+/* line 1801, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031801}}
+.info-card-wrapper .contact-panel {
+  padding: 20px;
+  background: #186bd1;
+  overflow: hidden;
+}
+/* line 1807, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031807}}
+.info-card-wrapper .arrow-st {
+  display: none !important;
+}
+/* line 1811, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031811}}
+.info-card-wrapper .icon-area.chat {
+  margin-top: 16px;
+}
+/* line 1815, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031815}}
+.info-card-wrapper .clzs {
+  padding: 20px;
+  background: #0c5cbd;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  /* line 1822, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031822}}
+  .info-card-wrapper .cards-area {
+    padding-left: 22px;
+    padding-right: 23px;
+    margin-top: 25px;
+    max-width: 350px;
+    margin: 0 auto;
+    min-width: 350px;
+    float: left;
+    padding-left: 0;
+  }
+}
+/* line 1834, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031834}}
+.info-card-wrapper .clact {
+  position: absolute;
+  top: 0;
+  margin-left: 324px;
+}
+/* line 1840, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031840}}
+.info-card-wrapper .clact {
+  color: #ffffff;
+}
+/* line 1844, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031844}}
+.info-card-wrapper .ics-nb {
+  float: left;
+  margin-right: 10px;
+  padding-left: 37px;
+}
+/* line 1850, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031850}}
+.info-card-wrapper .ics-nb p {
+  color: #46a8e9;
+  margin-top: -10px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+/* line 1857, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031857}}
+.info-card-wrapper .bl1:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 1868, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031868}}
+.info-card-wrapper .bl2:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 1879, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031879}}
+.info-card-wrapper .bl3:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 1890, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031890}}
+.info-card-wrapper .clact h3 {
+  font-size: 14px;
+}
+/* line 1894, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031894}}
+.info-card-wrapper .oparation-blk h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #fff;
+  margin-left: 20px;
+}
+/* line 1901, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031901}}
+.info-card-wrapper .all-nts {
+  float: left;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 43px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+/* line 1910, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031910}}
+.info-card-wrapper .all-nts.active {
+  color: #05d0db;
+}
+/* line 1914, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031914}}
+.info-card-wrapper .search-line {
+  position: relative;
+}
+/* line 1918, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031918}}
+.info-card-wrapper .search-line {
+  width: 23px;
+  height: 20px;
+  border: 0;
+  background: url(../../../src/img/loup.png) 0 0 no-repeat;
+  float: right;
+  margin-right: 10px;
+  top: 11px;
+  position: absolute;
+  right: 9px;
+  background-size: contain;
+  cursor: pointer;
+}
+/* line 1932, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031932}}
+.info-card-wrapper .search-line input {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  float: right;
+  margin-right: 21px;
+  margin-top: 15px;
+  width: 164px;
+  color: #fff !important;
+  padding-right: 29px;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+/* line 1946, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031946}}
+.info-card-wrapper table.tablk {
+  width: 100%;
+  color: #ffffff;
+}
+/* line 1951, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031951}}
+.info-card-wrapper table.tablk td {
+  padding: 10px 19px;
+}
+/* line 1955, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031955}}
+.info-card-wrapper table.tablk td:last-child {
+  text-align: right;
+}
+/* line 1959, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031959}}
+.info-card-wrapper table.tablk {
+  margin-top: 0;
+  border-top: 1px solid #6ea0df;
+}
+/* line 1964, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031964}}
+.info-card-wrapper .tabls {
+  height: auto !important;
+  margin-top: 24px;
+}
+/* line 1969, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031969}}
+.info-card-wrapper .btns-area {
+  clear: both;
+  display: block;
+  margin-top: 21px;
+  float: right;
+}
+/* line 1976, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031976}}
+.info-card-wrapper .btns-area {
+  width: 183px !important;
+  padding: 12px !important;
+}
+/* line 1981, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031981}}
+.info-card-wrapper .btns-area :before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../../../src/img/b2.png) 0 0 no-repeat;
+  right: 17px;
+  margin-top: -2px;
+}
+/* line 1991, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031991}}
+.info-card-wrapper .btns-area :hover {
+  background: #eee !important;
+  color: #0b5bba !important;
+}
+/* line 1996, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000031996}}
+.info-card-wrapper .car-ur {
+  color: #fff;
+  padding-left: 20px;
+  margin-top: 22px;
+  position: relative;
+}
+/* line 2003, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032003}}
+.info-card-wrapper .car-ur:after {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #6ea0df;
+  margin-top: 7px;
+}
+/* line 2013, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032013}}
+.info-card-wrapper .clk-1 {
+  background: #1a6ed3;
+  padding: 20px;
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+/* line 2021, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032021}}
+.info-card-wrapper .clft {
+  padding-left: 19px;
+  margin-top: 20px;
+  padding-right: 19px;
+}
+/* line 2027, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032027}}
+.info-card-wrapper .clk-1 {
+  background: #1a6ed3;
+  padding: 17px;
+  float: left;
+  width: 107px;
+  margin-right: 11px;
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+}
+/* line 2039, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032039}}
+.info-card-wrapper .clk-1 p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+/* line 2044, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032044}}
+.info-card-wrapper .clft {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+/* line 2049, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032049}}
+.info-card-wrapper .clk-1 h4 {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 18px;
+}
+/* line 2055, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032055}}
+.info-card-wrapper .clk-1 p {
+  margin-bottom: 0;
+}
+/* line 2059, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032059}}
+.info-card-wrapper .btns-area {
+  width: 183px !important;
+  padding: 12px !important;
+  margin-top: 20px;
+  padding-right: 37px !important;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  /* line 2068, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032068}}
+  .info-card-wrapper .icon-area.chat {
+    margin-top: -9px;
+  }
+  /* line 2072, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032072}}
+  .info-card-wrapper .scroller-b {
+    height: calc(100vh - 47px) !important;
+  }
+  /* line 2076, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032076}}
+  .info-card-wrapper .ics-nb h4 {
+    font-size: 12px;
+  }
+  /* line 2080, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032080}}
+  .info-card-wrapper .block-bts {
+    margin-top: 52px;
+    clear: both;
+    overflow: hidden;
+  }
+  /* line 2086, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032086}}
+  .info-card-wrapper .tabls {
+    height: 100% !important;
+    margin-top: 24px;
+  }
+  /* line 2091, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032091}}
+  .info-card-wrapper .search-line {
+    display: none;
+  }
+  /* line 2095, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032095}}
+  .info-card-wrapper .all-nts {
+    float: left;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 8px;
+    margin-top: 18px;
+    cursor: pointer;
+  }
+  /* line 2104, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032104}}
+  .info-card-wrapper .clzs {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 2109, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032109}}
+  .info-card-wrapper .clk-1 {
+    background: #1a6ed3;
+    padding: 20px;
+    float: left;
+    width: 28%;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  /* line 2120, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032120}}
+  .info-card-wrapper .clzs {
+    padding: 35px;
+    background: #0c5cbd;
+    overflow: hidden;
+  }
+  /* line 2126, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032126}}
+  .info-card-wrapper .clact {
+    color: #fff;
+    position: relative;
+    margin: 0;
+    width: 310px;
+    margin: 0 auto;
+  }
+  /* line 2134, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032134}}
+  .info-card-wrapper .card-full:first-child {
+    box-shadow: none;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+  /* line 2140, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032140}}
+  .info-card-wrapper .search-line input {
+    display: none;
+  }
+}
+/* line 2145, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032145}}
+.info-card-wrapper .ntra {
+  color: #fff;
+  font-size: 12px;
+  padding: 16px;
+  padding-top: 0;
+  float: left;
+}
+/* line 2153, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032153}}
+.info-card-wrapper .cvlk {
+  color: #fff;
+  float: right;
+  padding-right: 15px;
+}
+/* line 2159, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032159}}
+.info-card-wrapper .ntra {
+  font-size: 15px;
+}
+/* line 2163, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032163}}
+.info-card-wrapper .ntra span {
+  font-size: 11px;
+}
+/* line 2167, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032167}}
+.info-card-wrapper .cards-ns {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.16);
+}
+/* line 2172, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032172}}
+.info-card-wrapper .cards-ns {
+  padding-top: 17px;
+  border-top: 1px solid rgba(238, 238, 238, 0.16);
+  padding-bottom: 20px;
+}
+/* line 2178, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032178}}
+.info-card-wrapper .add-btns {
+  background: none;
+  border: 2px solid #fff;
+  padding: 12px 25px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* line 2192, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032192}}
+.info-card-wrapper .add-btns:hover {
+  opacity: 0.8;
+}
+/* line 2196, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032196}}
+.info-card-wrapper .cvlk span {
+  display: block;
+  position: absolute;
+  right: 14px;
+  margin-top: -6px;
+  font-size: 12px;
+  color: #56a0fc;
+}
+/* line 2205, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032205}}
+.info-card-wrapper .cvlk strong {
+  font-size: 10px;
+}
+/* line 2209, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032209}}
+.info-card-wrapper .cards-ns {
+  border-left: 3px solid #0753ab;
+}
+/* line 2213, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032213}}
+.info-card-wrapper .cards-ns:hover {
+  background: #1561b9;
+  border-left: 3px solid #05d0db;
+}
+/* line 2218, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032218}}
+.info-card-wrapper .cl-ic {
+  background: url(../../../src/img/vs.png) 0 0 no-repeat;
+  width: 30px;
+  height: 22px;
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 17px;
+  background-size: contain;
+}
+/* line 2228, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032228}}
+.info-card-wrapper .cl-ic2 {
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  margin-left: 50px;
+  margin-top: 21px;
+}
+/* line 2236, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032236}}
+.info-card-wrapper .cl-ics {
+  background: url(../../../src/img/vs2.png) 0 0 no-repeat;
+  width: 30px;
+  height: 22px;
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 17px;
+  background-size: contain;
+}
+/* line 2246, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032246}}
+.info-card-wrapper .mobile-mn .menu-title {
+  display: block;
+  clear: both;
+  margin-top: 18px;
+}
+/* line 2252, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032252}}
+.info-card-wrapper .scroller-b .cards-ns:first-child {
+  margin-top: 0 !important;
+}
+/* line 2256, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032256}}
+.info-card-wrapper .scroller-b .cards-ns {
+  margin-top: -1px;
+}
+/* line 2260, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032260}}
+.info-card-wrapper .chat-panel-bottom .scroller-b {
+  height: calc(100vh - 155px) !important;
+}
+/* line 2264, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032264}}
+.info-card-wrapper .scroller-b .add-btns {
+  margin-bottom: 20px;
+}
+/* line 2268, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032268}}
+.btns-area.flr-btss {
+  float: right;
+  margin-right: 7px;
+  margin-top: 10px;
+}
+/* line 2274, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032274}}
+.color-whts {
+  color: #fff;
+  font-size: 9px !important;
+  margin-top: 4px;
+}
+/* line 2280, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032280}}
+.color-whts span {
+  color: #92aee3 !important;
+}
+/* line 2284, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032284}}
+.date-area span {
+  float: right;
+}
+/* line 2288, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032288}}
+span.cldsd {
+  display: block;
+  margin-top: 18px;
+  float: left;
+}
+/* line 2294, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032294}}
+p.cldsd {
+  margin-top: 13px;
+  display: block;
+  float: left;
+}
+/* line 2300, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032300}}
+p.cldsd span {
+  display: block;
+  margin-top: 18px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* line 2307, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032307}}
+.date-area .plus-stl {
+  float: right;
+  color: #48d8fa;
+}
+/* line 2312, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032312}}
+.date-area .minus-stl {
+  float: right;
+  color: #ffffff;
+}
+/* line 2317, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032317}}
+.date-area {
+  z-index: 0;
+}
+/* line 2321, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032321}}
+.info-card-wrapper .stl-creds .fll-p p.tx-id-card span {
+  color: #63aaff;
+}
+/* line 2325, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032325}}
+.info-card-wrapper .stl-creds .fll-p p.tx-id-card {
+  margin: 2px 0 10px -5px;
+  font-size: 7pt;
+}
+/* line 2330, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032330}}
+.info-card-wrapper .bl1:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -40px;
+}
+/* line 2341, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032341}}
+.info-card-wrapper .bl2:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -40px;
+}
+/* line 2352, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032352}}
+.info-card-wrapper .bl3:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #186bd1;
+  border-radius: 150px;
+  margin-top: 16px;
+  margin-left: -39px;
+}
+/* line 2363, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032363}}
+.info-card-wrapper .plastic-card-t .card-full {
+  background: url(../../../src/img/rcard.png) 0 0 no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 1px 1px 13px 0 rgba(50, 50, 50, 0.28) !important;
+}
+/* line 2369, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032369}}
+.info-card-wrapper .virtual-card-t .card-full {
+  background: url(https://telegraf.money/telegraf.money/www/src/img/vcard.png) 0 0 no-repeat !important;
+  background-size: cover !important;
+  box-shadow: 1px 1px 13px 0 rgba(50, 50, 50, 0.28) !important;
+}
+/* line 2375, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032375}}
+.info-card-wrapper .numb-card {
+  top: 37px;
+}
+/* line 2379, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032379}}
+.wrapper.cards-wrapper.guarantee-wrapper .crd1:before {
+  display: none;
+}
+/* line 2383, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032383}}
+.cards-wrapper input,
+UNUSED.cards-wrapper textarea {
+  color: #ffffff !important;
+}
+/* line 2387, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032387}}
+.scroller-b-Info_card .ics-nb:before {
+  display: none;
+}
+/* line 2391, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032391}}
+.info-card-wrapper .ics-nb {
+  float: left;
+  margin-right: 34px;
+  padding-left: 3px;
+  text-align: left;
+}
+@media (min-width: 1200px) {
+  /* line 2399, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032399}}
+  .info-card-wrapper .fll-p h3 {
+    max-width: 260px;
+  }
+}
+/* line 2404, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032404}}
+.info-card-wrapper .btns-area button:before {
+  content: '';
+  left: 41px;
+  margin-top: 2px;
+}
+/* line 2410, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032410}}
+.info-card-wrapper .btns-area {
+  padding-right: 10px !important;
+  padding-left: 25px !important;
+}
+/* line 2415, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032415}}
+body .info-card-wrapper .prv-ns.stl-creds::before {
+  margin-left: 0 !important;
+  left: 22px !important;
+}
+/* line 2420, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032420}}
+body .info-card-wrapper .blks-btn span {
+  color: #000;
+  background: #f2cd26;
+  border-radius: 50px;
+  font-weight: normal;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -15px;
+  padding: 0 10px;
+  height: 22px;
+  line-height: 22px;
+}
+/* line 2433, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032433}}
+a.blks-btn {
+  background: #fff;
+  border: 0;
+  border-radius: 50px;
+  padding: 9px 16px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #0b5bba;
+  width: 138px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+/* line 2448, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032448}}
+a.blks-btn {
+  background: #d63749;
+  color: #ffffff;
+}
+/* line 2453, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032453}}
+a.blks-btn:hover {
+  background: #c23446;
+}
+/* line 2457, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032457}}
+.block-bts.mobile-block-bts {
+  display: none;
+}
+@media (max-width: 899px) {
+  /* line 2462, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032462}}
+  .block-bts.mobile-block-bts {
+    display: block;
+  }
+}
+/* line 2467, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032467}}
+.info-card-wrapper .modal-body {
+  overflow: hidden;
+}
+/* line 2471, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032471}}
+.info-card-wrapper .modal-body .numb-card {
+  font-size: 14px;
+}
+/* line 2475, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032475}}
+.info-card-wrapper .prise-art span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+/* line 2480, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032480}}
+.cards-area.info-card.virtual-card-t {
+  float: none;
+  width: 280px !important;
+  min-width: 280px;
+  padding: 0;
+}
+/* line 2487, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032487}}
+.info-card-wrapper .modal-body {
+  background: #0D63CA;
+}
+/* line 2491, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032491}}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 27px;
+}
+/* line 2502, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032502}}
+button.close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+/* line 2508, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032508}}
+div#cardModal h1 {
+  font-size: 22px;
+  margin-bottom: 21px;
+}
+/* line 2513, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032513}}
+.imp-area-modal-card {
+  max-width: 282px;
+  margin: 0 auto;
+}
+/* line 2518, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032518}}
+.imp-area-modal-card button.button-n {
+  width: 282px !important;
+  max-width: 282px;
+  box-sizing: border-box;
+  margin-top: 33px;
+  margin-bottom: 29px;
+}
+/* line 2526, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032526}}
+.txt-modal-area {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* line 2533, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032533}}
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.22);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+/* line 2546, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032546}}
+span.dbts {
+  color: #fff !important;
+  position: absolute;
+  bottom: 30px;
+  display: block;
+}
+/* line 2553, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032553}}
+.modal-body .img-ls {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  margin-left: 11px;
+}
+/* line 2560, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032560}}
+.modal-body .img-ls img {
+  width: 57px !important;
+  margin-top: -16px !important;
+  display: block;
+  float: left !important;
+}
+/* line 2567, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032567}}
+.modal-body .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+  float: right;
+  clear: both;
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+/* line 2579, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032579}}
+.modal-body .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+  margin-top: -15px;
+}
+/* line 2587, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032587}}
+.modal-body .prise-art strong {
+  font-weight: normal;
+  font-size: 18px;
+}
+/* line 2592, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032592}}
+.modal-body .prise-art strong {
+  margin-left: -6px;
+}
+/* line 2596, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032596}}
+.modal-body .prise-art strong i {
+  font-style: normal !important;
+  font-size: 14px;
+}
+/* line 2601, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032601}}
+.scroller-b.nano.__nano.scroller-b-Topup .girl-card-bottom.no-padd {
+  margin-left: -3px;
+}
+/* line 2605, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032605}}
+.new-cards-area .card-h .fll {
+  text-align: left;
+}
+/* line 2609, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032609}}
+.scroller-b-Topup .modal-body .prise-art {
+  color: #fff !important;
+  margin-left: -5px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
+  margin-top: -8px;
+}
+/* line 2617, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032617}}
+.scroller-b-Topup .modal-body h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* line 2622, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032622}}
+.scroller-b-Topup .cards-area.info-card.virtual-card-t .card-full {
+  background: url(../../../src/img/vcard.png);
+  background-size: cover;
+}
+/* line 2627, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032627}}
+.scroller-b.nano.__nano.scroller-b-Topup h1 {
+  color: #fff;
+  margin-top: -5px;
+  margin-bottom: 24px;
+}
+/* line 2633, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032633}}
+.scroller-b-Topup .cards-area.info-card.virtual-card-t.card-real .card-full {
+  background: url(../../../src/img/rcard.png);
+  background-size: cover;
+}
+/* line 2638, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032638}}
+.scroller-b-Topup .modal-body .prise-art strong {
+  margin-left: 2px;
+}
+/* line 2642, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032642}}
+.scroller-b-Topup .modal-body .prise-art {
+  margin-right: -5px;
+}
+@media (max-width: 767px) {
+  /* line 2647, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032647}}
+  body .girl-card-bottom .block-white50 {
+    padding-top: 11px !important;
+    height: 106px;
+  }
+}
+/* line 2654, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032654}}
+.btn-area-cards button.button-n.left-btn {
+  width: 48% !important;
+  float: left;
+  min-width: 40%;
+  font-size: 15px;
+  height: 46px;
+  padding-top: 13px;
+}
+/* line 2663, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032663}}
+.btn-area-cards button.button-n.right-btn {
+  width: 48% !important;
+  float: right;
+  min-width: 40%;
+  clear: none;
+  background: none;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  font-size: 15px;
+  height: 46px;
+  padding-top: 13px;
+}
+/* line 2676, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032676}}
+.btn-area-cards button.button-n.right-btn:hover {
+  opacity: 0.8;
+}
+/* line 2680, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032680}}
+.btn-area-cards {
+  clear: both;
+}
+/* line 2684, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032684}}
+.scroller-b-Topup .clzs {
+  margin-top: 0px !important;
+}
+@media (max-width: 767px) {
+  /* line 2687, Topup.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032687}}
+  .scroller-b-Topup button.button-n.right-btn {
+    margin-top: 28px !important;
+  }
+}
+/* line 2690, Topup.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Topup\/Topup\.less}line{font-family:\000032690}}
+body .imp-area-modal-card button.button-n {
+  width: 282px!important;
+  max-width: 282px;
+  box-sizing: border-box;
+  margin-top: 27px !important;
+  margin-bottom: 29px;
+}
+/*# sourceMappingURL=Topup.css.map */

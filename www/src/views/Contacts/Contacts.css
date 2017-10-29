@@ -1,0 +1,258 @@
+/* contacts style */
+/* line 7, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\000037}}
+.contasts-no-padding {
+  padding: 0;
+}
+/* line 10, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000310}}
+.contacts-blk {
+  background: #f2f2f2;
+  text-transform: uppercase;
+  color: #95949a;
+  padding: 2px 15px;
+  font-size: 11px;
+  text-align: left;
+}
+/* line 19, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000319}}
+.im_dialog_photo {
+  margin-top: 0;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 27, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000327}}
+.chat-in-im_dialog_no_avatar {
+  margin-top: 0;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 39px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  overflow: hidden;
+}
+/* line 41, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000341}}
+.chat-in-im_dialog_message_wrap {
+  word-wrap: break-word;
+  height: 43px;
+  text-align: left;
+  border-bottom: 1px solid #cacaca;
+  margin-left: 52px;
+  padding-right: 10px;
+  padding-top: 2px;
+}
+/* line 51, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000351}}
+.chat-in_dialog_person {
+  color: #222;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 62, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000362}}
+.chat-in-im_dialog_message {
+  margin-top: 0;
+  font-size: 8.2pt;
+  font-weight: 400;
+  color: #808080;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 72, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000372}}
+div.im_dialog_photo {
+  margin-right: 5px;
+}
+/* line 79, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000379}}
+.chat-in_dialog_date {
+  color: #646464;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 90, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000390}}
+.chat-in_dialog {
+  background: #fff;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+/* line 95, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000395}}
+.chat-in_dialog.chat-users {
+  cursor: pointer;
+}
+/* line 98, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\0000398}}
+.chat-in_dialog.chat-users:hover {
+  cursor: pointer;
+  background: #f5f5f5;
+}
+/* line 102, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003102}}
+.chat-in-im_dialog_photo {
+  margin-top: 0;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+/* line 111, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003111}}
+.chat-in-pull-left {
+  margin-top: 0;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 121, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003121}}
+.Invite_Friends_color {
+  color: #0F80D6;
+  padding-top: 9px;
+}
+/* line 126, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003126}}
+.plus_invite {
+  color: #0F80D6;
+  font-size: 29px;
+  font-weight: 100;
+  padding-top: 2px;
+}
+/* line 139, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003139}}
+.chat-in-input-area {
+  padding: 8px;
+  background: #fff;
+  position: relative;
+}
+/* line 146, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003146}}
+.chat-in-input-area input {
+  width: 100%;
+  background: #ECEDEE;
+  border: 0;
+  border-radius: 4px;
+  height: 21px;
+  padding-left: 26px;
+  box-sizing: border-box;
+}
+/* line 156, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003156}}
+.chat-in-input-area button {
+  border: 0;
+  background: url(../../../src/img/search-loup.png) 0 0 no-repeat;
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  background-size: contain;
+  top: 10px;
+}
+/* line 167, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003167}}
+.chat-in-input-area ::-webkit-input-placeholder {
+  color: #95949A;
+}
+/* line 168, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003168}}
+.chat-in-input-area ::-moz-placeholder {
+  color: #95949A;
+}
+/* Firefox 19+ */
+/* line 169, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003169}}
+.chat-in-input-area :-moz-placeholder {
+  color: #95949A;
+}
+/* Firefox 18- */
+/* line 170, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003170}}
+.chat-in-input-area :-ms-input-placeholder {
+  color: #95949A;
+}
+/* line 172, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003172}}
+.chat-in-input-area :focus {
+  outline: none;
+}
+/* line 178, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003178}}
+.chat-in-user-main-section .chat-in-im_dialog_message_wrap {
+  border-bottom: 0px solid #cacaca;
+}
+/* line 182, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003182}}
+.chat-in-user-main-section .chat-in-pull-left,
+.chat-in-user-main-section .chat-in-pull-left img,
+.chat-in-user-main-section .im_dialog_photo {
+  width: 55px;
+  height: 55px;
+  margin-right: 11px;
+}
+/* line 188, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003188}}
+.chat-in-user-main-section.chat-in_dialog {
+  background: #fff;
+  padding-top: 4px;
+  padding-left: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+/* line 196, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003196}}
+.chat-in-user-main-section .chat-in_dialog_person {
+  color: #222;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 1200px) {
+  /* line 209, Contacts.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003209}}
+  .scroller-b.nano.__nano.scroller-b-Contacts {
+    height: calc(100vh - 91px);
+  }
+}
+@media (max-width: 1199px) {
+  /* line 216, Contacts.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003216}}
+  .scroller-b.nano.__nano.scroller-b-Contacts {
+    height: calc(100vh - 77px);
+  }
+}
+/* line 221, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003221}}
+.scroller-b.nano.__nano.scroller-b-Contacts button.button-n {
+  margin-top: 13px;
+}
+/* line 225, Contacts.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Contacts\/Contacts\.less}line{font-family:\00003225}}
+ul.ulck-menu {
+  margin-top: 12px;
+}
+/*# sourceMappingURL=Contacts.css.map */

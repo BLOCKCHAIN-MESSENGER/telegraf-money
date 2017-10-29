@@ -1,0 +1,325 @@
+<div class="wrapper cards-wrapper new-cards-area">
+    <div class="contents">
+        <div id="">
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Партнеры')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Партнеры')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<div class="icon-area chat"></div>-->
+            <scroll class_scroll="scroller-b-Affiliates" class_content="" id_content="">
+
+                <div class="credit-area">
+                    <div class="tabs-credit">
+                        <div class="crd1 {{#if tabPage == 'my'}}active{{/if}} gvc1" on-click="setPage:affiliates:my">
+                            {{_e('Сеть')}}
+                        </div>
+                        <div class="crd1 {{#if tabPage == 'profit'}}active{{/if}} gvc3"
+                             on-click="setPage:affiliates:profit">
+                            {{_e('Прибыль')}}
+                        </div>
+
+                        <div class="crd1 {{#if tabPage == 'about'}}active{{/if}} gvc2"
+                             on-click="setPage:affiliates:about">
+                            {{_e('О программе')}}
+                            <!--<span class="notifications-l">1</span>-->
+                        </div>
+
+                    </div>
+
+                    {{#if tabPage == 'my'}}
+                    <div class="credit-main-area padding-fx" style="padding: 0">
+
+                        <div class="colv-3" style="width: 100%;padding: 0 !important;">
+                            {{#if partners_finish}}
+                            {{#if partners.length > 0}}
+                            <div class="contacts">
+                                <div class="chats-blk">
+                                    <button class="button-n" on-click="addPartner">{{_e('Пригласить партнера')}}
+                                    </button>
+
+                                </div>
+                            </div>
+                            {{#partners:i}}
+
+                            <div class="contacts" on-click="openChats:{{i}}">
+
+
+                                <div class="chats-blk">
+
+                                    <div class="im_dialog_photo2 pull-left">
+
+                                        <avatar src="{{avatar_path}}" label="{{short_name}}"
+                                                class_img="account-img-area-n avatar-contact"
+                                                class_label="chat-in-im_dialog_no_avatars avatar-contact"/>
+
+
+                                    </div>
+                                    <div class="chat-in-im_dialog_message_wraps">
+                                        <div class="chat-in_dialog_persons">{{full_name}}</div>
+                                        <div class="id-area">user id : {{webtransfer_id}}</div>
+
+                                        <div class="chat-in-im_dialog_messages name_area">
+                                            <div class="stars-area">
+                                                <div class="full-star"></div>
+                                                <div class="full-star"></div>
+                                                <div class="full-star"></div>
+                                                <div class="no-star"></div>
+                                                <div class="no-star"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            {{/}}
+                            {{else}}
+                            <div class="mv-area">
+
+                                <img class="img-main-section" src="./src/img/chats2.png"
+                                     onerror="this.src='../../.'+this.src;this.onerror = null;">
+
+                                <h2>
+                                    {{_e('У вас нет партнеров')}}
+                                </h2>
+
+                                <button class="button-n" on-click="addPartner">{{_e('Пригласить партнера')}}</button>
+
+                                <br>
+
+                            </div>
+                            {{/if}}
+                            {{else}}
+                            <div class="fixed-loader"></div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if tabPage == 'profit'}}
+                    <div class="credit-main-area padding-fx">
+                        <table class="grid-table no-border-top" style="color: #fff">
+                            <thead class="grid-thead">
+                            <tr class="header-tr-label no-border-bottom">
+
+                                <th class="gr_th_date_kontract" style="width: 12%">
+                                    <div class="sel-table"><label>{{_e('Дата')}}</label></div>
+                                </th>
+                                <th class="gr_th_full_name" style="width: 17%">
+                                    <div class="sel-table"><label>{{_e('Имя')}}</label></div>
+                                </th>
+                                <th class="gr_th_summa" style="width: 13%">
+                                    <div class="sel-table"><label>{{_e('Сумма/Ставка/Дней')}}</label></div>
+                                </th>
+                                <th class="gr_th_income" style="width: 12%">
+                                    <div class="sel-table"><label>{{_e('Прибыль')}}</label></div>
+                                </th>
+                            </tr>
+                            <tr class="header-tr-filter no-border-bottom">
+
+                                <th class="gr_th_date_kontract">
+                                    <div class="sel-table"></div>
+                                </th>
+                                <th class="gr_th_full_name">
+                                    <div class="sel-table"></div>
+                                </th>
+                                <th class="gr_th_summa">
+                                    <div class="sel-table"></div>
+                                </th>
+                                <th class="gr_th_income">
+                                    <div class="sel-table"></div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="grid-tbody">
+                            {{#if profit_load}}
+                            {{#if profit.length > 0}}
+                            {{#profit}}
+
+                            <tr>
+                                <td class="td_date_kontract" data-val="{{date_kontract}}">{{date_kontract.split(' ')[0]}}
+                                </td>
+                                <td class="td_full_name" data-val="{{id_user}}">{{name}} {{sername}}</td>
+
+                                <td class="td_summa" data-val="{{summa}}">
+                                    {{#if currency =='USD'}}${{/if}}
+                                    {{#if currency =='EUR'}}€{{/if}}
+                                    {{#if currency =='GBR'}}£{{/if}}
+                                    {{(+summa).toFixed(0)}}/{{percent}} %/{{time}}
+                                </td>
+                                <td class="td_income" data-val="{{income}}">{{income}}</td>
+                            </tr>
+                            {{/}}
+                            {{else}}
+                            <tr>
+                                <td class="td_date_kontract" data-val="VISA" colspan="4">Not Found</td>
+                            </tr>
+                            {{/if}}
+                            {{else}}
+                            <div class="fixed-loader"></div>
+                            {{/if}}
+
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+
+                    {{#if tabPage == 'about'}}
+                    <div class="credit-main-area padding-fx">
+
+                        <div style="color: #fff">
+
+                            <div style="color: #fff">
+                                <center><h2>{{_e('Приглашай друзей в Telegraf Money и получай до 50% от их прибыли.')}}</h2></center>
+                                <center style="    font-size: 44px;"><h3>{{_e('При регистрации друзья получат бонус $50!')}}</h3>
+                                </center>
+                                <div class="test-lgt">
+                                    <img class="bzt3 mCS_img_loaded"
+                                         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwMCA0MDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8ZyBpZD0iWE1MSURfMTM3OF8iPgoJPHBhdGggaWQ9IlhNTElEXzEzODRfIiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE0My40MzcsMTMwSDU0Ljg4MmMtMS4xOSwxMy4xOTEtMTEuNjksMjMuNjkxLTI0Ljg4MiwyNC44ODJ2OTAuMjM2ICAgYzEzLjE5MSwxLjE5LDIzLjY5MiwxMS42OSwyNC44ODIsMjQuODgyaDg4LjU1NUMxMjMuMDQzLDI1My41LDExMCwyMjguMjc1LDExMCwyMDBTMTIzLjA0MywxNDYuNSwxNDMuNDM3LDEzMHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzg1XyIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yNTYuNTYzLDI3MGg4OC41NTVjMS4xOS0xMy4xOTEsMTEuNjktMjMuNjkxLDI0Ljg4Mi0yNC44ODJ2LTkwLjIzNiAgIGMtMTMuMTkxLTEuMTktMjMuNjkyLTExLjY5LTI0Ljg4Mi0yNC44ODJoLTg4LjU1NUMyNzYuOTU2LDE0Ni41LDI5MCwxNzEuNzI1LDI5MCwyMDBTMjc2Ljk1NiwyNTMuNSwyNTYuNTYzLDI3MHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzg2XyIgc3R5bGU9ImZpbGw6IzZEQTU0NDsiIGQ9Ik0yMDAsMTAwdjI0LjVoNi44NDN2MTYuMjU4YzYuOTczLDAuNjQ4LDEzLjUyMSwyLjIwMSwxOS42MzgsNC42NyAgIGM2LjExNywyLjQ3MiwxMS40MjksNC45OTIsMTUuOTM2LDcuNTY0bC0xMS41OSwyMS44OTdjLTAuMzIxLTAuNDI5LTEuMjYyLTEuMTMtMi44MTctMi4wOTljLTEuNTU2LTAuOTYzLTMuNTQyLTIuMDA4LTUuOTU2LTMuMTM3ICAgYy0yLjQxNi0xLjEyMy01LjA5OC0yLjE5OS04LjA0OS0zLjIyMWMtMi45NTMtMS4wMi01LjkzLTEuNzM4LTguOTM0LTIuMTd2MjEuODkybDUuMTUxLDEuMjg5ICAgYzUuNDczLDEuNTAzLDEwLjQwOCwzLjEzOCwxNC44MSw0LjkwOGM0LjM5OCwxLjc3MSw4LjEyOSwzLjk3MiwxMS4xODcsNi42MDJjMy4wNiwyLjYzMiw1LjQxOSw1LjgyLDcuMDgyLDkuNTc4ICAgYzEuNjY0LDMuNzU2LDIuNDk2LDguMjY2LDIuNDk2LDEzLjUyNGMwLDYuMTE1LTEuMDcyLDExLjMyLTMuMjE3LDE1LjYxMWMtMi4xNTEsNC4yOTgtNS4wMjEsNy44MDctOC42MTMsMTAuNTQ2ICAgYy0zLjU5NywyLjczNy03LjcyOCw0LjgwNy0xMi4zOTUsNi4xOTdjLTQuNjcxLDEuMzkxLTkuNTc5LDIuMTk5LTE0LjczLDIuNDEzVjI3NS41SDIwMFYzMDBoMjAwVjEwMEgyMDB6IE0yNTYuNTYzLDEzMGg4OC41NTUgICBjMS4xOSwxMy4xOTEsMTEuNjksMjMuNjkxLDI0Ljg4MiwyNC44ODJ2OTAuMjM2Yy0xMy4xOTEsMS4xOS0yMy42OTIsMTEuNjktMjQuODgyLDI0Ljg4MmgtODguNTU1ICAgQzI3Ni45NTYsMjUzLjUsMjkwLDIyOC4yNzUsMjkwLDIwMFMyNzYuOTU2LDE0Ni41LDI1Ni41NjMsMTMweiIvPgoJPHBhdGggaWQ9IlhNTElEXzEzODlfIiBzdHlsZT0iZmlsbDojNkRBNTQ0OyIgZD0iTTIxNy40NjcsMjI0LjYzYzAtMi43OS0xLjEyNy00Ljk2NC0zLjM4MS02LjUxOSAgIGMtMi4yNTUtMS41NTgtNS4yNTktMi45NzctOS4wMTQtNC4yNjd2MTkuMzE4QzIxMy4zMzQsMjMyLjg0MiwyMTcuNDY3LDIyOS45OTUsMjE3LjQ2NywyMjQuNjN6Ii8+Cgk8cGF0aCBpZD0iWE1MSURfMTM5MF8iIHN0eWxlPSJmaWxsOiM5MURDNUE7IiBkPSJNMTg2LjIzNSwxNzMuNDM5YzAsMi42ODQsMC45MzksNC44MDEsMi44Miw2LjM1OCAgIGMxLjg3NCwxLjU1OSw0LjY5MSwyLjkyNyw4LjQ0OSw0LjEwNnYtMTkuNzk5QzE4OS45OTEsMTY0Ljc0NSwxODYuMjM1LDE2Ny44NTksMTg2LjIzNSwxNzMuNDM5eiIvPgoJPHBhdGggaWQ9IlhNTElEXzEzOTFfIiBzdHlsZT0iZmlsbDojOTFEQzVBOyIgZD0iTTIwMCwyNzUuNWgtNC4yNjZ2LTE4LjgzNmMtNy40MDQtMC42NDMtMTQuNzMxLTIuMTQzLTIxLjk3NC00LjUwNSAgIGMtNy4yNDMtMi4zNTktMTMuNzY1LTUuNDczLTE5LjU1OC05LjM0bDExLjU5LTIzLjAyMWMwLjQyOSwwLjU0MSwxLjU4MSwxLjQyNywzLjQ2MSwyLjY1NmMxLjg3NSwxLjIzOCw0LjI2NiwyLjUyMiw3LjE2MywzLjg2MiAgIGMyLjg5NywxLjM0OSw2LjE3MSwyLjYzMiw5LjgxOSwzLjg2OWMzLjY0OSwxLjIzMiw3LjQwNywyLjExNywxMS4yNjksMi42NTV2LTIxLjQxbC03LjcyNy0yLjI1NyAgIGMtNS4yNTktMS42MS05LjgxOS0zLjM1NS0xMy42ODItNS4yM2MtMy44NjUtMS44NzgtNy4wNTktNC4wNTItOS41NzktNi41MThjLTIuNTIzLTIuNDY5LTQuNDAzLTUuMzE2LTUuNjM2LTguNTMzICAgYy0xLjIzMy0zLjIyMS0xLjg1MS02Ljk3OS0xLjg1MS0xMS4yNzJjMC01LjU3OSwwLjk2NS0xMC41NDEsMi44OTktMTQuODkxYzEuOTMxLTQuMzQ0LDQuNTMxLTguMDcsNy44MDctMTEuMTg4ICAgYzMuMjcyLTMuMTExLDcuMTM0LTUuNTUsMTEuNTkxLTcuMzIxYzQuNDUxLTEuNzcsOS4yNTUtMi45MjQsMTQuNDA3LTMuNDY0VjEyNC41SDIwMFYxMDBIMHYyMDBoMjAwVjI3NS41eiBNMTQzLjQzNywyNzBINTQuODgyICAgYy0xLjE5LTEzLjE5MS0xMS42OS0yMy42OTEtMjQuODgyLTI0Ljg4MnYtOTAuMjM2YzEzLjE5MS0xLjE5LDIzLjY5Mi0xMS42OSwyNC44ODItMjQuODgyaDg4LjU1NSAgIEMxMjMuMDQzLDE0Ni41LDExMCwxNzEuNzI1LDExMCwyMDBTMTIzLjA0MywyNTMuNSwxNDMuNDM3LDI3MHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzk0XyIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0xOTUuNzM0LDE0MC43NThjLTUuMTUyLDAuNTQtOS45NTYsMS42OTMtMTQuNDA3LDMuNDY0ICAgYy00LjQ1NiwxLjc3MS04LjMxOCw0LjIxLTExLjU5MSw3LjMyMWMtMy4yNzYsMy4xMTgtNS44NzYsNi44NDUtNy44MDcsMTEuMTg4Yy0xLjkzNCw0LjM1LTIuODk5LDkuMzEyLTIuODk5LDE0Ljg5MSAgIGMwLDQuMjk0LDAuNjE4LDguMDUyLDEuODUxLDExLjI3MmMxLjIzMywzLjIxNywzLjExNCw2LjA2NCw1LjYzNiw4LjUzM2MyLjUyLDIuNDY2LDUuNzEzLDQuNjQsOS41NzksNi41MTggICBjMy44NjIsMS44NzQsOC40MjMsMy42MTksMTMuNjgyLDUuMjNsNy43MjcsMi4yNTd2MjEuNDFjLTMuODYyLTAuNTM4LTcuNjItMS40MjMtMTEuMjY5LTIuNjU1ICAgYy0zLjY0OC0xLjIzNy02LjkyMi0yLjUyLTkuODE5LTMuODY5Yy0yLjg5Ny0xLjM0LTUuMjg4LTIuNjI0LTcuMTYzLTMuODYyYy0xLjg4LTEuMjI5LTMuMDMzLTIuMTE1LTMuNDYxLTIuNjU2bC0xMS41OSwyMy4wMjEgICBjNS43OTMsMy44NjcsMTIuMzE1LDYuOTgsMTkuNTU4LDkuMzRjNy4yNDMsMi4zNjIsMTQuNTcsMy44NjIsMjEuOTc0LDQuNTA1VjI3NS41SDIwMGg2Ljg0M3YtMTguNjc2ICAgYzUuMTUxLTAuMjE0LDEwLjA2LTEuMDIyLDE0LjczLTIuNDEzYzQuNjY3LTEuMzkxLDguNzk4LTMuNDYsMTIuMzk1LTYuMTk3YzMuNTkyLTIuNzM5LDYuNDYyLTYuMjQ4LDguNjEzLTEwLjU0NiAgIGMyLjE0NS00LjI5MSwzLjIxNy05LjQ5NiwzLjIxNy0xNS42MTFjMC01LjI1OS0wLjgzMS05Ljc2OC0yLjQ5Ni0xMy41MjRjLTEuNjYzLTMuNzU4LTQuMDIzLTYuOTQ2LTcuMDgyLTkuNTc4ICAgYy0zLjA1OC0yLjYzLTYuNzg5LTQuODMxLTExLjE4Ny02LjYwMmMtNC40MDItMS43Ny05LjMzNy0zLjQwNS0xNC44MS00LjkwOGwtNS4xNTEtMS4yODl2LTIxLjg5MiAgIGMzLjAwMywwLjQzMiw1Ljk4MSwxLjE1LDguOTM0LDIuMTdjMi45NTEsMS4wMjEsNS42MzMsMi4wOTgsOC4wNDksMy4yMjFjMi40MTUsMS4xMjksNC40LDIuMTc0LDUuOTU2LDMuMTM3ICAgYzEuNTU1LDAuOTY5LDIuNDk2LDEuNjcsMi44MTcsMi4wOTlsMTEuNTktMjEuODk3Yy00LjUwNy0yLjU3Mi05LjgxOS01LjA5My0xNS45MzYtNy41NjRjLTYuMTE4LTIuNDY5LTEyLjY2Ni00LjAyMi0xOS42MzgtNC42NyAgIFYxMjQuNUgyMDBoLTQuMjY2VjE0MC43NTh6IE0yMDUuMDcyLDIxMy44NDVjMy43NTUsMS4yOSw2Ljc1OSwyLjcwOSw5LjAxNCw0LjI2N2MyLjI1NCwxLjU1NSwzLjM4MSwzLjcyOSwzLjM4MSw2LjUxOSAgIGMwLDUuMzY1LTQuMTMzLDguMjEyLTEyLjM5NSw4LjUzM1YyMTMuODQ1eiBNMTk3LjUwNCwxODMuOTAzYy0zLjc1OC0xLjE4LTYuNTc1LTIuNTQ3LTguNDQ5LTQuMTA2ICAgYy0xLjg4MS0xLjU1OC0yLjgyLTMuNjc1LTIuODItNi4zNThjMC01LjU3OSwzLjc1Ni04LjY5MywxMS4yNjktOS4zMzRWMTgzLjkwM3oiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K">
+
+
+                                    <img class="bzt3 lzt mCS_img_loaded"
+                                         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwMCA0MDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8ZyBpZD0iWE1MSURfMTM3OF8iPgoJPHBhdGggaWQ9IlhNTElEXzEzODRfIiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE0My40MzcsMTMwSDU0Ljg4MmMtMS4xOSwxMy4xOTEtMTEuNjksMjMuNjkxLTI0Ljg4MiwyNC44ODJ2OTAuMjM2ICAgYzEzLjE5MSwxLjE5LDIzLjY5MiwxMS42OSwyNC44ODIsMjQuODgyaDg4LjU1NUMxMjMuMDQzLDI1My41LDExMCwyMjguMjc1LDExMCwyMDBTMTIzLjA0MywxNDYuNSwxNDMuNDM3LDEzMHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzg1XyIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yNTYuNTYzLDI3MGg4OC41NTVjMS4xOS0xMy4xOTEsMTEuNjktMjMuNjkxLDI0Ljg4Mi0yNC44ODJ2LTkwLjIzNiAgIGMtMTMuMTkxLTEuMTktMjMuNjkyLTExLjY5LTI0Ljg4Mi0yNC44ODJoLTg4LjU1NUMyNzYuOTU2LDE0Ni41LDI5MCwxNzEuNzI1LDI5MCwyMDBTMjc2Ljk1NiwyNTMuNSwyNTYuNTYzLDI3MHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzg2XyIgc3R5bGU9ImZpbGw6IzZEQTU0NDsiIGQ9Ik0yMDAsMTAwdjI0LjVoNi44NDN2MTYuMjU4YzYuOTczLDAuNjQ4LDEzLjUyMSwyLjIwMSwxOS42MzgsNC42NyAgIGM2LjExNywyLjQ3MiwxMS40MjksNC45OTIsMTUuOTM2LDcuNTY0bC0xMS41OSwyMS44OTdjLTAuMzIxLTAuNDI5LTEuMjYyLTEuMTMtMi44MTctMi4wOTljLTEuNTU2LTAuOTYzLTMuNTQyLTIuMDA4LTUuOTU2LTMuMTM3ICAgYy0yLjQxNi0xLjEyMy01LjA5OC0yLjE5OS04LjA0OS0zLjIyMWMtMi45NTMtMS4wMi01LjkzLTEuNzM4LTguOTM0LTIuMTd2MjEuODkybDUuMTUxLDEuMjg5ICAgYzUuNDczLDEuNTAzLDEwLjQwOCwzLjEzOCwxNC44MSw0LjkwOGM0LjM5OCwxLjc3MSw4LjEyOSwzLjk3MiwxMS4xODcsNi42MDJjMy4wNiwyLjYzMiw1LjQxOSw1LjgyLDcuMDgyLDkuNTc4ICAgYzEuNjY0LDMuNzU2LDIuNDk2LDguMjY2LDIuNDk2LDEzLjUyNGMwLDYuMTE1LTEuMDcyLDExLjMyLTMuMjE3LDE1LjYxMWMtMi4xNTEsNC4yOTgtNS4wMjEsNy44MDctOC42MTMsMTAuNTQ2ICAgYy0zLjU5NywyLjczNy03LjcyOCw0LjgwNy0xMi4zOTUsNi4xOTdjLTQuNjcxLDEuMzkxLTkuNTc5LDIuMTk5LTE0LjczLDIuNDEzVjI3NS41SDIwMFYzMDBoMjAwVjEwMEgyMDB6IE0yNTYuNTYzLDEzMGg4OC41NTUgICBjMS4xOSwxMy4xOTEsMTEuNjksMjMuNjkxLDI0Ljg4MiwyNC44ODJ2OTAuMjM2Yy0xMy4xOTEsMS4xOS0yMy42OTIsMTEuNjktMjQuODgyLDI0Ljg4MmgtODguNTU1ICAgQzI3Ni45NTYsMjUzLjUsMjkwLDIyOC4yNzUsMjkwLDIwMFMyNzYuOTU2LDE0Ni41LDI1Ni41NjMsMTMweiIvPgoJPHBhdGggaWQ9IlhNTElEXzEzODlfIiBzdHlsZT0iZmlsbDojNkRBNTQ0OyIgZD0iTTIxNy40NjcsMjI0LjYzYzAtMi43OS0xLjEyNy00Ljk2NC0zLjM4MS02LjUxOSAgIGMtMi4yNTUtMS41NTgtNS4yNTktMi45NzctOS4wMTQtNC4yNjd2MTkuMzE4QzIxMy4zMzQsMjMyLjg0MiwyMTcuNDY3LDIyOS45OTUsMjE3LjQ2NywyMjQuNjN6Ii8+Cgk8cGF0aCBpZD0iWE1MSURfMTM5MF8iIHN0eWxlPSJmaWxsOiM5MURDNUE7IiBkPSJNMTg2LjIzNSwxNzMuNDM5YzAsMi42ODQsMC45MzksNC44MDEsMi44Miw2LjM1OCAgIGMxLjg3NCwxLjU1OSw0LjY5MSwyLjkyNyw4LjQ0OSw0LjEwNnYtMTkuNzk5QzE4OS45OTEsMTY0Ljc0NSwxODYuMjM1LDE2Ny44NTksMTg2LjIzNSwxNzMuNDM5eiIvPgoJPHBhdGggaWQ9IlhNTElEXzEzOTFfIiBzdHlsZT0iZmlsbDojOTFEQzVBOyIgZD0iTTIwMCwyNzUuNWgtNC4yNjZ2LTE4LjgzNmMtNy40MDQtMC42NDMtMTQuNzMxLTIuMTQzLTIxLjk3NC00LjUwNSAgIGMtNy4yNDMtMi4zNTktMTMuNzY1LTUuNDczLTE5LjU1OC05LjM0bDExLjU5LTIzLjAyMWMwLjQyOSwwLjU0MSwxLjU4MSwxLjQyNywzLjQ2MSwyLjY1NmMxLjg3NSwxLjIzOCw0LjI2NiwyLjUyMiw3LjE2MywzLjg2MiAgIGMyLjg5NywxLjM0OSw2LjE3MSwyLjYzMiw5LjgxOSwzLjg2OWMzLjY0OSwxLjIzMiw3LjQwNywyLjExNywxMS4yNjksMi42NTV2LTIxLjQxbC03LjcyNy0yLjI1NyAgIGMtNS4yNTktMS42MS05LjgxOS0zLjM1NS0xMy42ODItNS4yM2MtMy44NjUtMS44NzgtNy4wNTktNC4wNTItOS41NzktNi41MThjLTIuNTIzLTIuNDY5LTQuNDAzLTUuMzE2LTUuNjM2LTguNTMzICAgYy0xLjIzMy0zLjIyMS0xLjg1MS02Ljk3OS0xLjg1MS0xMS4yNzJjMC01LjU3OSwwLjk2NS0xMC41NDEsMi44OTktMTQuODkxYzEuOTMxLTQuMzQ0LDQuNTMxLTguMDcsNy44MDctMTEuMTg4ICAgYzMuMjcyLTMuMTExLDcuMTM0LTUuNTUsMTEuNTkxLTcuMzIxYzQuNDUxLTEuNzcsOS4yNTUtMi45MjQsMTQuNDA3LTMuNDY0VjEyNC41SDIwMFYxMDBIMHYyMDBoMjAwVjI3NS41eiBNMTQzLjQzNywyNzBINTQuODgyICAgYy0xLjE5LTEzLjE5MS0xMS42OS0yMy42OTEtMjQuODgyLTI0Ljg4MnYtOTAuMjM2YzEzLjE5MS0xLjE5LDIzLjY5Mi0xMS42OSwyNC44ODItMjQuODgyaDg4LjU1NSAgIEMxMjMuMDQzLDE0Ni41LDExMCwxNzEuNzI1LDExMCwyMDBTMTIzLjA0MywyNTMuNSwxNDMuNDM3LDI3MHoiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMzk0XyIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0xOTUuNzM0LDE0MC43NThjLTUuMTUyLDAuNTQtOS45NTYsMS42OTMtMTQuNDA3LDMuNDY0ICAgYy00LjQ1NiwxLjc3MS04LjMxOCw0LjIxLTExLjU5MSw3LjMyMWMtMy4yNzYsMy4xMTgtNS44NzYsNi44NDUtNy44MDcsMTEuMTg4Yy0xLjkzNCw0LjM1LTIuODk5LDkuMzEyLTIuODk5LDE0Ljg5MSAgIGMwLDQuMjk0LDAuNjE4LDguMDUyLDEuODUxLDExLjI3MmMxLjIzMywzLjIxNywzLjExNCw2LjA2NCw1LjYzNiw4LjUzM2MyLjUyLDIuNDY2LDUuNzEzLDQuNjQsOS41NzksNi41MTggICBjMy44NjIsMS44NzQsOC40MjMsMy42MTksMTMuNjgyLDUuMjNsNy43MjcsMi4yNTd2MjEuNDFjLTMuODYyLTAuNTM4LTcuNjItMS40MjMtMTEuMjY5LTIuNjU1ICAgYy0zLjY0OC0xLjIzNy02LjkyMi0yLjUyLTkuODE5LTMuODY5Yy0yLjg5Ny0xLjM0LTUuMjg4LTIuNjI0LTcuMTYzLTMuODYyYy0xLjg4LTEuMjI5LTMuMDMzLTIuMTE1LTMuNDYxLTIuNjU2bC0xMS41OSwyMy4wMjEgICBjNS43OTMsMy44NjcsMTIuMzE1LDYuOTgsMTkuNTU4LDkuMzRjNy4yNDMsMi4zNjIsMTQuNTcsMy44NjIsMjEuOTc0LDQuNTA1VjI3NS41SDIwMGg2Ljg0M3YtMTguNjc2ICAgYzUuMTUxLTAuMjE0LDEwLjA2LTEuMDIyLDE0LjczLTIuNDEzYzQuNjY3LTEuMzkxLDguNzk4LTMuNDYsMTIuMzk1LTYuMTk3YzMuNTkyLTIuNzM5LDYuNDYyLTYuMjQ4LDguNjEzLTEwLjU0NiAgIGMyLjE0NS00LjI5MSwzLjIxNy05LjQ5NiwzLjIxNy0xNS42MTFjMC01LjI1OS0wLjgzMS05Ljc2OC0yLjQ5Ni0xMy41MjRjLTEuNjYzLTMuNzU4LTQuMDIzLTYuOTQ2LTcuMDgyLTkuNTc4ICAgYy0zLjA1OC0yLjYzLTYuNzg5LTQuODMxLTExLjE4Ny02LjYwMmMtNC40MDItMS43Ny05LjMzNy0zLjQwNS0xNC44MS00LjkwOGwtNS4xNTEtMS4yODl2LTIxLjg5MiAgIGMzLjAwMywwLjQzMiw1Ljk4MSwxLjE1LDguOTM0LDIuMTdjMi45NTEsMS4wMjEsNS42MzMsMi4wOTgsOC4wNDksMy4yMjFjMi40MTUsMS4xMjksNC40LDIuMTc0LDUuOTU2LDMuMTM3ICAgYzEuNTU1LDAuOTY5LDIuNDk2LDEuNjcsMi44MTcsMi4wOTlsMTEuNTktMjEuODk3Yy00LjUwNy0yLjU3Mi05LjgxOS01LjA5My0xNS45MzYtNy41NjRjLTYuMTE4LTIuNDY5LTEyLjY2Ni00LjAyMi0xOS42MzgtNC42NyAgIFYxMjQuNUgyMDBoLTQuMjY2VjE0MC43NTh6IE0yMDUuMDcyLDIxMy44NDVjMy43NTUsMS4yOSw2Ljc1OSwyLjcwOSw5LjAxNCw0LjI2N2MyLjI1NCwxLjU1NSwzLjM4MSwzLjcyOSwzLjM4MSw2LjUxOSAgIGMwLDUuMzY1LTQuMTMzLDguMjEyLTEyLjM5NSw4LjUzM1YyMTMuODQ1eiBNMTk3LjUwNCwxODMuOTAzYy0zLjc1OC0xLjE4LTYuNTc1LTIuNTQ3LTguNDQ5LTQuMTA2ICAgYy0xLjg4MS0xLjU1OC0yLjgyLTMuNjc1LTIuODItNi4zNThjMC01LjU3OSwzLjc1Ni04LjY5MywxMS4yNjktOS4zMzRWMTgzLjkwM3oiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K">
+
+                                    <img class="bzt2 szt1 mCS_img_loaded"
+                                         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIgZmlsbD0iI0ZGREE0NCIvPgogIDwvZz4KPC9zdmc+Cg==">
+                                    <img class="bzt2 szt2 mCS_img_loaded"
+                                         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIgZmlsbD0iI0ZGREE0NCIvPgogIDwvZz4KPC9zdmc+Cg==">
+                                    <img class="bzt1 mCS_img_loaded"
+                                         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU4IDU4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1OCA1ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnIGlkPSJYTUxJRF82OV8iPgoJPHBhdGggaWQ9IlhNTElEXzExNV8iIHN0eWxlPSJmaWxsOiNGMEM0MUI7IiBkPSJNNTQuNzgzLDUwSDMuMjE3QzEuNDQsNTAsMCw0OC41NiwwLDQ2Ljc4M1YxMS4yMTdDMCw5LjQ0LDEuNDQsOCwzLjIxNyw4aDUxLjU2NiAgIEM1Ni41Niw4LDU4LDkuNDQsNTgsMTEuMjE3djM1LjU2NkM1OCw0OC41Niw1Ni41Niw1MCw1NC43ODMsNTAiLz4KCTxyZWN0IGlkPSJYTUxJRF8xMTRfIiB5PSIxMyIgc3R5bGU9ImZpbGw6IzgwNkY1RTsiIHdpZHRoPSI1OCIgaGVpZ2h0PSI4Ii8+Cgk8cGF0aCBpZD0iWE1MSURfMTEzXyIgc3R5bGU9ImZpbGw6I0Y5RUFCMDsiIGQ9Ik0xNSwyOEg2Yy0wLjU1MiwwLTEtMC40NDgtMS0xczAuNDQ4LTEsMS0xaDljMC41NTIsMCwxLDAuNDQ4LDEsMVMxNS41NTIsMjgsMTUsMjgiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMTJfIiBzdHlsZT0iZmlsbDojRjlFQUIwOyIgZD0iTTI4LDI4aC05Yy0wLjU1MiwwLTEtMC40NDgtMS0xczAuNDQ4LTEsMS0xaDljMC41NTIsMCwxLDAuNDQ4LDEsMVMyOC41NTIsMjgsMjgsMjggICAiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMTFfIiBzdHlsZT0iZmlsbDojRjlFQUIwOyIgZD0iTTcsMzNINmMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMWgxYzAuNTUyLDAsMSwwLjQ0OCwxLDFTNy41NTIsMzMsNywzMyIvPgoJPHBhdGggaWQ9IlhNTElEXzExMF8iIHN0eWxlPSJmaWxsOiNGOUVBQjA7IiBkPSJNMTMsMzNoLTJjLTAuNTUyLDAtMS0wLjQ0OC0xLTFzMC40NDgtMSwxLTFoMmMwLjU1MiwwLDEsMC40NDgsMSwxUzEzLjU1MiwzMywxMywzMyAgICIvPgoJPHBhdGggaWQ9IlhNTElEXzEwOV8iIHN0eWxlPSJmaWxsOiNGOUVBQjA7IiBkPSJNMTgsMzNoLTFjLTAuNTUyLDAtMS0wLjQ0OC0xLTFzMC40NDgtMSwxLTFoMWMwLjU1MiwwLDEsMC40NDgsMSwxUzE4LjU1MiwzMywxOCwzMyAgICIvPgoJPHBhdGggaWQ9IlhNTElEXzEwOF8iIHN0eWxlPSJmaWxsOiNGOUVBQjA7IiBkPSJNMjQsMzNoLTJjLTAuNTUyLDAtMS0wLjQ0OC0xLTFzMC40NDgtMSwxLTFoMmMwLjU1MiwwLDEsMC40NDgsMSwxUzI0LjU1MiwzMywyNCwzMyAgICIvPgoJPHBhdGggaWQ9IlhNTElEXzEwN18iIHN0eWxlPSJmaWxsOiNGOUVBQjA7IiBkPSJNMjgsMzNjLTAuMjYsMC0wLjUyLTAuMTEtMC43MS0wLjI5QzI3LjExLDMyLjUyLDI3LDMyLjI3LDI3LDMyICAgYzAtMC4yNiwwLjExLTAuNTIsMC4yOS0wLjcxYzAuMzctMC4zNywxLjA0LTAuMzcsMS40MiwwQzI4Ljg5LDMxLjQ4LDI5LDMxLjc0LDI5LDMycy0wLjExLDAuNTItMC4yOSwwLjcxICAgQzI4LjUyLDMyLjg5LDI4LjI2LDMzLDI4LDMzIi8+Cgk8cGF0aCBpZD0iWE1MSURfMTA2XyIgc3R5bGU9ImZpbGw6I0RCMjIxNTsiIGQ9Ik00NiwzOWMwLDMuMzE0LTIuNjg2LDYtNiw2cy02LTIuNjg2LTYtNnMyLjY4Ni02LDYtNlM0NiwzNS42ODYsNDYsMzkiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMDVfIiBzdHlsZT0iZmlsbDojMjQ1RUE5OyIgZD0iTTUzLDM5YzAsMy4zMTQtMi42ODYsNi02LDZzLTYtMi42ODYtNi02czIuNjg2LTYsNi02UzUzLDM1LjY4Niw1MywzOSIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">
+
+                                </div>
+                                <br>
+                                <b style="line-height: 20px;">{{_e('Создай свою команду первоклассных партнеров')}}</b><br>
+                                {{_e('Запуская Кредит до Востребования через Telegraf Money, ваши друзья будут получать до 30% прибыли каждый месяц. Вы, как старший партнер, получите до 50% от их заработка. Дополнительно мы подарим вам бонус $50 за каждого друга.')}}
+                                <br>
+                                <b style="line-height: 20px;">
+                                <br>{{_e('Научи друга зарабатывать в Telegraf Money и получи до 50% от его прибыли!')}}
+                                </b>
+                                <br>
+                                {{_e('Партнерская программа Telegraf Money позволяет вам получать высокий доход от прибыли ваших друзей, получаемой от выдаваемых ими через Мессенджер займов. Мы отдаём вам от 20 до 50% от полученной ими прибыли. Также вы получаете дополнительный доход в размере 5% от прибыли каждого привлеченного вашим другом участника.')}}
+                                <br>
+
+                                <b style="line-height: 20px;"><a on-click="add_share" class="pointer a-link">{{_e('Предложение ограничено - подключи друзей к Telegraf Money прямо сейчас!')}}</a>
+                                </b>
+                                <br>
+
+
+
+                                <b style="line-height: 20px;"> {{_e('Как получить прибыль с каждого друга и заработать бонусы?')}}</b>
+                                <br>
+
+                                {{_e('Пригласить друга в команду в Telegraf Money очень просто - отправь приглашение со своей партнерской ссылкой любым удобным способом: электронной почтой, через социальные сети, личным сообщением через СМС или любой Мессенджер (Telegram, WhatsApp, Skype, Viber и др).')}}
+                                <br><br>
+                                <b style="line-height: 20px;">{{_e('Заработать в Интернете возможно – подскажи другу, что это можно сделать в Telegraf Money.')}}</b>
+                                <br>
+                                {{_e('Когда кто-то зарегистрируется по партнерской ссылке в Telegraf Money, выдаст займ и получит по нему прибыль, то вы сразу же получите от 20 до 50% с прибыли партнера. Ваш заработок полностью зависит от объёма денежных средств друзей в выданных ими займах и запущенных Кредитах до Востребования. Чем больше у вас партнеров и чем активнее они работают, тем больший заработок по партнерской программе вы получаете.')}}
+                                <br><br>
+                                {{_e('Вся прибыль от партнеров отражается в партнерском кабинете и зачисляется на карту в тот момент, когда ваш друг получает прибыль. В партнерском кабинете также отражается прибыль от партнеров, приглашенных вашими друзьями, вы получите 5% от их прибыли -  это наша благодарность за продвижение Telegraf Money!')}}
+                                <br><br>
+                                {{_e('Партнерская прибыль зависит от объёма денежных средств ваших друзей в выданных ими займах и запущенных Кредитах до Востребования, и рассчитывается на конец месяца, если ваш оборот составил :')}}
+
+
+                                <br><br>
+                                <div class="table-block">
+                                    <table style="margin: 0 auto;">
+                                        <tbody>
+                                        <tr>
+                                            <td>{{_e('До $1000 - 20% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{_e('От $1000 до $5000 - 30% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{_e('От $5000 до $10000 - 35% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{_e('От $10 000 до $50 000 - 40% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{_e('От $50 000 до $100 000 - 45% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{_e('Свыше $100 000 - 50% и 5% от 2й линии')}}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <style>
+                                        .table-block td {
+                                            background: rgba(255, 255, 255, 0.24);
+                                        }
+
+                                        .table-block td {
+                                            color: #fff;
+                                            padding: 10px;
+                                        }
+
+                                        .table-block tr:nth-child(2n) td {
+                                            background: #000;
+                                        }
+
+                                        .table-block tr:nth-child(2n) td {
+                                            background: rgba(0, 0, 0, 0.28);
+                                        }
+                                    </style>
+                                </div>
+
+                                <br><b style="line-height: 20px;">
+                                {{_e("Как использовать бонус?")}}
+
+                            </b> <br>
+                                {{_e('Каждый новый пользователь получает при регистрации в Мессенджере бесплатную виртуальную карту VISA или MasterCard. На нее зачисляется бонус $50, который пользователь может использовать для запуска Кредита до Востребования. Все, что нужно сделать — просто выдать кредит с Мессенджера! Полученная прибыль также поступает на карту и может быть использована для снятия.')}}
+                                <br><br><b style="line-height: 20px;">
+                                {{_e('Ограничения:')}}
+
+                            </b> <br>
+                                {{_e('Единовременные бонусы можно использовать только для запуска Кредита до Востребования или займа с опцией “Гарант” в Telegraf Money на срок до 10 (десяти) дней. Бонусы невозможно снять с карты. В случае выдачи займа с использованием бонуса, выплаты по займу, полученные с помощью бонуса, будут будут погашены. На вашу карту поступит только заработанная прибыль.')}}<br></div>
+                            <br>
+                            <center><h2>{{_e('Удачи')}} ✌️</h2></center>
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+
+            </scroll>
+
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+
+        <ul class="nav-nt">
+            <li class="active">
+                <a class="pointer">{{_e('Активные карты')}}</a>
+            </li>
+            <!--<li>-->
+            <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+            <!--</li>-->
+
+        </ul>
+
+        <div class="spl-icn"></div>
+        <scroll class_scroll="scroller-b-Cards-component-cards" class_content="" id_content="">
+
+            <Cards/>
+        </scroll>
+    </div>
+
+</div>

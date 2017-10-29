@@ -1,0 +1,204 @@
+<div class="wrapper profile-wrapper">
+
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Профиль')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Профиль')}}</h3>
+                    <!--<ul class="ulck-menu">-->
+                    <!--<li class="active">-->
+                    <!--<a href="#">История</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#">Архив</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#">Новый чат</a>-->
+                    <!--</li>-->
+
+                    <!--</ul>-->
+
+
+                </div>
+
+            </div>
+
+
+            <scroll class_scroll="" class_content="" id_content="">
+                <div class="acc-nts">
+                    <div class="plus-l es2" onclick="Messenger.openChat(false,{{MyProfile.webtransfer_id}})"></div>
+                    <div class="plus-r ev2" on-click="setPage:ProfileEdit"></div>
+                    {{#if MyProfile.avatar_path}}
+                    <img class="account-img-area mCS_img_loaded" src="{{MyProfile.avatar_path}}"
+                         on-error="errorAvatarMy"/>
+                    {{else}}
+                    <span class="chat-in-user_bgcolor_12 account-img-area mCS_img_loaded profile-name-short_ava">{{MyProfile.name_short}}</span>
+                    {{/if}}
+
+                    <rating rating="{{MyProfile.rating}}" count="{{MyProfile.count_reviews}}" fullname=""/>
+
+                    <h4>{{MyProfile.first_name + ' '+ MyProfile.last_name}}</h4>
+                    <h5 class="user-id-a">User Id: {{MyProfile.webtransfer_id}}</h5>
+
+                    {{#if finance_load}}
+                    <div class="icons-lt">
+                        <div class="ics-nb bl2">
+                            <h4>$ {{finance.guarantee.toFixed(2)}}</h4>
+                            <p>{{_e('Кредиты')}}</p>
+                        </div>
+                        <div class="ics-nb bl2">
+                            <h4>$ {{(+finance.invests).toFixed(2)}}</h4>
+                            <p>{{_e('Займы')}}</p>
+                        </div>
+                        <div class="ics-nb bl3">
+                            <h4>$ {{finance.guarantee.toFixed(2)}}</h4>
+                            <p>{{_e('Гарантии')}}</p>
+                        </div>
+                    </div>
+                    {{/if}}
+
+                </div>
+
+
+                <!--<button class="flr-btn button-n red-btn">Редактировать профиль</button>-->
+
+                <br>
+
+                <div class="date-area mx-data">
+                    <div class="ars-bg">{{_e('Информация')}}</div>
+                </div>
+
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('ID пользователя')}}</span>
+                    <span class="lt2">{{MyProfile.webtransfer_id}}</span>
+                </div>
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Имя')}}</span>
+                    <span class="lt2">{{MyProfile.first_name}}</span>
+                </div>
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Фамилия')}}</span>
+                    <span class="lt2">{{MyProfile.last_name}}</span>
+                </div>
+
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Дата рождения')}}</span>
+                    {{#if MyProfile.born &&MyProfile.born != ''}}
+                    <span class="lt2">{{MyProfile.born}}</span>
+
+                    {{else}}
+                    <span class="lt2">{{_e('Не указана')}}</span>
+                    {{/if}}
+
+                </div>
+                {{#if MyProfile.sex &&MyProfile.sex != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Пол')}}</span>
+
+                    {{#if MyProfile.sex == 1}}
+                    <span class="lt2">{{_e('Мужской')}}</span>
+                    {{elseif MyProfile.sex == 2}}
+                    <span class="lt2">{{_e('Женский')}}</span>
+                    {{else}}
+                    <span class="lt2">{{_e('Не указан')}}</span>
+                    {{/if}}
+
+                </div>
+                {{/if}}
+
+                <div class="date-area mx-data">
+                    <div class="ars-bg">{{_e('Рейтинг')}}</div>
+                </div>
+
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Количество отзывов')}}</span>
+                    <span class="lt2">{{MyProfile.count_reviews}}</span>
+                </div>
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Средняя оценка')}}</span>
+                    <span class="lt2">{{+MyProfile.rating/100}} {{_e('из')}} 5</span>
+                </div>
+
+                <div class="date-area mx-data">
+                    <div class="ars-bg">{{_e('Адрес')}}</div>
+                </div>
+                {{#if MyProfile.place &&MyProfile.place != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Страна')}}</span>
+                    <span class="lt2">{{MyProfile.place}}</span>
+                </div>
+                {{/if}}
+
+                {{#if MyProfile.adr_town &&MyProfile.adr_town != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Город')}}</span>
+                    <span class="lt2">{{MyProfile.adr_town}}</span>
+                </div>
+                {{/if}}
+                {{#if MyProfile.adr_index &&MyProfile.adr_index != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Индекс')}}</span>
+                    <span class="lt2">{{MyProfile.adr_index}}</span>
+                </div>
+                {{/if}}
+                {{#if MyProfile.adr_street &&MyProfile.adr_street != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Улица')}}</span>
+                    <span class="lt2">{{MyProfile.adr_street}}</span>
+                </div>
+                {{/if}}
+                {{#if MyProfile.adr_flat &&MyProfile.adr_flat != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Дом, Кв')}}</span>
+                    <span class="lt2">{{MyProfile.adr_flat}}</span>
+                </div>
+                {{/if}}
+
+
+                <div class="date-area mx-data">
+                    <div class="ars-bg">{{_e('Контактная информация')}}</div>
+                </div>
+                {{#if MyProfile.skype &&MyProfile.skype != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Skype')}}</span>
+                    <span class="lt2">{{MyProfile.skype}}</span>
+                </div>
+                {{/if}}
+                {{#if MyProfile.phone &&MyProfile.phone != ''}}
+                <div class="fls-bl">
+                    <span class="lt1">{{_e('Телефон')}}</span>
+                    <span class="lt2">{{MyProfile.phone}}</span>
+                </div>
+                {{/if}}
+                {{#if MyProfile.email &&MyProfile.email != ''}}
+                <!--<div class="fls-bl">-->
+                    <!--<span class="lt1">{{_e('E-mail')}}</span>-->
+                    <!--<span class="lt2">{{MyProfile.email}}</span>-->
+                <!--</div>-->
+                {{/if}}
+                <br>
+
+                <div class="clearfix"></div>
+
+
+                <div class="close-block"></div>
+            </scroll>
+
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+        <h1>{{_e('Чаты')}} <i class="fa fa-commenting-o" aria-hidden="true"></i></h1>
+        <div class="spl-icn"></div>
+        <scroll class_scroll="" class_content="" id_content="">
+            <Chats/>
+        </scroll>
+    </div>
+
+</div>

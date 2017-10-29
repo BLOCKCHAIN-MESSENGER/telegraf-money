@@ -1,0 +1,803 @@
+<script type="text/javascript" src="src/js/eth-util.js"></script>
+
+<div class="wrapper cards-wrapper debit-wrapper">
+    <div class="contents">
+        <div>
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>Wallets</strong>
+                <div class="contact-panel">
+                    <h3>Wallets</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <scroll class_scroll="scroller-b-debitcoin" class_content="" id_content="">
+
+                <div class="tabs-credit">
+                    <div class="crd1 {{#if tab == 'gold'}}active{{/if}} gvc1" on-click="setPage:debitcoin:gold">DEBIT Coin</div>
+                    <div class="crd1 {{#if tab == 'btc'}}active{{/if}} gvc1" on-click="setPage:debitcoin:btc">Bitcoin</div>
+                    <div class="crd1 {{#if tab == 'eth'}}active{{/if}} gvc1" on-click="setPage:debitcoin:eth">Ethereum</div>
+                    <!--<div class="crd1 {{#if tab == 'partner'}}active{{/if}} gvc2" on-click="setPage:debitcoin:partner">-->
+                        <!--Partner program-->
+                    <!--</div>-->
+                    <!--<div class="crd1 {{#if tabPage == 'active'}}active{{/if}} gvc3" on-click="setPage:credit:active">{{_e('Мои кредиты')}}-->
+                    <!--</div>-->
+                </div>
+                <br>
+                <div class="credit-area" style="">
+                    {{#if tab == 'gold'}}
+                    <div class="cnt-area">
+                        {{#if eth_status_dev ==true}}
+                        <div class="alert alert-warning" style="width: 451px;margin: 0 auto;padding: 6px 24px;">
+                            <div style="width: 10%; display: inline-block;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                            </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+                            <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('Сервер выполняет синхронизацию с Blockchain ваши средства будут доступны через несколько часов')}}
+                        </div>
+                        </div>
+                        {{/if}}
+                        <div class="fll">
+                            <div class="money-ns fll">
+                                <img src="./src/img/debit_coin_gold.png"
+                                     onerror="this.src='../../.'+this.src;this.onerror = null;" class="mnt"
+                                     style="    padding: 8px;">
+                            </div>
+                            <div class="dbt-ns fll" style="width: 279px;margin-top: 8px;">
+                                <input type="text" style="font-size:15px;display: inline-block;width: 236px"
+                                       class="form-control" aria-describedby="basic-addon2233" readonly
+                                       id="address-wallet-inp-get2233" value="{{debit_token.wallet.address}}">
+                                <span class="input-group-addon"
+                                      style="cursor: pointer;display: inline-block;width: 37px;border-radius: 6px;position: relative;padding: 10px;height: 33px;z-index: 111;"
+                                      id="basic-addon22233" data-clipboard-target="#address-wallet-inp-get2233"><i
+                                        class="fa fa-clipboard" aria-hidden="true"></i></span>
+                            </div>
+
+                            <div class="btn-st">
+                                <div class="btn-area-cards">
+                                    <button class="button-n left-btn" on-click="openModal:send">
+                                        {{_e('Отправить')}}
+                                    </button>
+                                    <button class="button-n right-btn" on-click="openModal:get">
+                                        {{_e('Пополнить.')}}
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flr">
+                            <div class="mnt-s">{{finance_debit_coin_gold}} DBC
+                                {{#if !finance_debit_coin_gold_virtual || +finance_debit_coin_gold_virtual<=0}}
+                                <hr style="margin: 6px 0 6px 25px;">
+                                {{/if}}
+                                <div style="display: inline-block;
+    border: 1px dotted;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 1px;">{{+(+finance_eth).toFixed(4)}} ETH <span style="font-size: 12px;color: #3590f5;">(≈ ${{(+finance_ethusd).toFixed(2)}})</span>
+                                </div>
+                                {{#if finance_debit_coin_gold_virtual && +finance_debit_coin_gold_virtual>0}}
+                                <button class="button-n " on-click="openModal:virualdbc"
+                                        style="text-decoration: unset;font-size: 13px;padding: 4px;margin-top: 6px;margin-right: 0;">
+                                    Transfer {{(+finance_debit_coin_gold_virtual).toFixed(2)}} eDBC to DBC
+                                </button>
+                                {{/if}}
+                            </div>
+                            <div class="mnt-s2">
+
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="tabs-panel">
+                            <a href="#" on-click="setSubTab:wallet" {{#if sub_tab=='wallet'}}class="active"{{/if}}>{{_e('Кошелек')}}</a>
+                            <a href="#" on-click="setSubTab:tx" {{#if sub_tab=='tx'}}class="active"{{/if}}>{{_e('Транзакции')}}</a>
+                            <a href="#" on-click="setSubTab:partner" {{#if sub_tab=='partner'}}class="active"{{/if}}>{{_e('Партнерская программа')}}</a>
+                        </div>
+                        {{#if sub_tab == 'partner'}}
+                        <div class="cnt-area">
+                            <div class="fll">
+                                <div class="money-ns fll">
+                                    <!--<img src="./src/img/debit_coin_silver.png"-->
+                                    <!--onerror="this.src='../../.'+this.src;this.onerror = null;" class="mnt"-->
+                                    <!--style="    padding: 8px;">-->
+                                </div>
+                                <div class="dbt-ns fll">
+                                    {{_e('Ваша партнерская ссылка:')}}
+                                    <div class="input-group" style="   width: 300px;">
+                                        <input type="text" style="background: none" class="form-control"
+                                               aria-describedby="basic-addon22" id="address-wallet-inp-get22"
+                                               value="https://debitcoin.io/{{MyProfile.webtransfer_id}}/">
+                                        <span class="input-group-addon" style="cursor: pointer;" id="basic-addon222"
+                                              data-clipboard-target="#address-wallet-inp-get22">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                    </span>
+                                    </div>
+
+
+                                </div>
+
+                                <!--<div class="btn-st">-->
+                                <!--<div class="btn-area-cards">-->
+                                <!--<button class="button-n left-btn">{{_e('Отправить')}}</button>-->
+                                <!--<button class="button-n right-btn">{{_e('Пополнить.')}}</button>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="flr">
+                                <div class="mnt-s">{{total_proff}} DBC</div>
+                                <div class="mnt-s2">{{_e('Итого получено')}}</div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="tabs-panel">
+                                <a href="#" class="active">{{_e('Транзакции')}}</a>
+                                <a href="#">{{_e('Регистрация личного сайта DEBITcoin.io')}} *SOON*</a>
+                            </div>
+
+                            <div class="tls-ls"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                {{_e('Транзакции ваших партнеров')}}
+                                <p>
+                                    {{_e('Транзакции DEBIT Coin которые совершили ваши партнеры за которые начислено или будут начислены DBC')}}
+                                </p>
+                                {{#transactions_partner}}
+                                {{#if pay_status ==='1' || @index<3}}
+                                {{#if !transactions_partner[@index-1] || transactions_partner[@index-1].date != date}}
+                                <div class="date-area">{{date}}</div>
+                                {{/if}}
+                                <div class="prv-ns stl-creds {{#if type_ == '-'}}min-ar{{/if}}">
+                                    <div class="fll-p arw1"><p class="cldsd"><span>{{time}}</span></p>
+                                        <h3>Buy DBC to <a href="https://etherscan.io/address/{{to_address}}"
+                                                          target="_blank">{{to_address}}</a> from {{coin}}:{{address}}
+                                            <p class="tx-id-card">
+                                            <span>{{#if txHash}}Tx: <a href="https://etherscan.io/tx/{{txHash}}"
+                                                                       target="_blank">{{txHash}}</a>{{else}} Tx wait.. {{amount}} {{coin}} (~{{(+dbc).toFixed(2)}} DBC){{/if}}</span>
+                                            </p>
+                                        </h3>
+                                    </div>
+                                    <div class="flr-p"><h3
+                                            class="{{#if type_ == '-'}}minus-s{{/if}}{{#if type_ == '+'}}pluso-s{{/if}}">
+                                        {{type_}}
+                                        {{#if pay_status !=='1'}}0.00{{else}}
+                                        {{(+dbc/100*+transactions_partner_info.referal).toFixed(2)}}
+                                        {{/if}} DBC
+                                        <strong>{{+(+received).toFixed(4)}} {{coin}}
+                                            (~{{+(+dbc).toFixed(2)}} DBC)</strong></h3></div>
+                                </div>
+                                {{/if}}
+                                {{/}}
+                            </div>
+
+
+                        </div>
+                        {{/if}}
+                        {{#if sub_tab == 'wallet'}}
+                        <div class="tls-ls">
+
+
+                            <a class="btn_link_ert" href="https://www.myetherwallet.com/" target="_blank">
+                                <img src="./src/img/logo-myetherwallet.svg" height="100%" alt="MyEtherWallet">
+                            </a>
+
+
+                            <a class="btn_link_ert" style="background: #fff;float: right;"
+                               href="https://etherscan.io/address/{{debit_token.wallet.address}}#tokentxns"
+                               target="_blank"><img src="./src/img/EtherscanLogo-transparent-b.png" height="100%"
+                                                    alt="Etherscan"></a>
+
+                            {{#if showPrivate_ }}
+                            <p class="inpbort">{{debit_tokenPrivateKey}}</p>
+                            <button class="button-n right-btn" on-click="showPrivate">{{_e('Скрыть')}}</button>
+                            {{else}}
+                            <div style="padding-top: 40px;">
+                                <button class="button-n left-btn" on-click="showPrivate">
+                                    {{_e('Показать Private Key')}}
+                                </button>
+                                {{#if !cryptoAccount}}
+                                <button class="button-n right-btn" on-click="keyStoreFile">
+                                    {{_e('Скачать Keystore File')}}
+                                </button>
+                                {{/if}}
+                            </div>
+                            {{/if}}
+
+                        </div>
+                        {{/if}}
+                        {{#if sub_tab == 'tx'}}
+                        <div class="tls-ls">
+                            <div class="pod-cards">
+
+                                {{#transactionsDBC}}
+                                {{#if type !='approve'}}
+                                {{#if !transactionsDBC[@index-1] || transactionsDBC[@index-1].date != date}}
+                                <div class="date-area">{{date}}</div>
+                                {{/if}}
+                                <div class="prv-ns stl-creds {{#if type_ == '-'}}min-ar{{/if}}">
+                                    <div class="fll-p arw1"><p class="cldsd"><span>{{time}}</span></p>
+                                        <h3>Transfer from <a href="https://etherscan.io/address/{{from}}"
+                                                             target="_blank">{{from}}</a> to
+                                            <a href="https://etherscan.io/address/{{to}}" target="_blank">{{to}}</a>
+                                            <p class="tx-id-card">
+                                                <span>TxHash: <a href="https://etherscan.io/tx/{{transactionHash}}"
+                                                                 target="_blank">{{transactionHash}}</a></span>
+                                            </p>
+                                        </h3>
+                                    </div>
+                                    <div class="flr-p"><h3
+                                            class="{{#if type_ == '-'}}minus-s{{/if}}{{#if type_ == '+'}}pluso-s{{/if}}">
+                                        {{type_}} {{value}} {{tokenInfo.symbol}} </h3></div>
+                                </div>
+                                {{/if}}
+                                {{/}}
+                            </div>
+
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            {{_e('Ваши транзакции')}}
+                            <p>{{_e('Транзакции осуществляются, когда вы получаете и отправляете DEBIT Coin')}}</p>
+                        </div>
+                        {{/if}}
+
+
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'btc'}}
+                    <div class="cnt-area">
+                        <div class="fll">
+                            <div class="money-ns fll">
+                                <img src="./src/img/bitcoin.png"
+                                     onerror="this.src='../../.'+this.src;this.onerror = null;" class="mnt"
+                                     style="    padding: 8px;">
+                            </div>
+                            <div class="dbt-ns fll" style="width: 279px;margin-top: 8px;">
+                                <input type="text" style="font-size:15px;display: inline-block;width: 236px"
+                                       class="form-control" aria-describedby="basic-addon2233" readonly
+                                       id="address-wallet-inp-get2233" value="{{btc_debit_token.wallet.address}}">
+                                <span class="input-group-addon"
+                                      style="cursor: pointer;display: inline-block;width: 37px;border-radius: 6px;position: relative;padding: 10px;height: 33px;z-index: 111;"
+                                      id="basic-addon22233" data-clipboard-target="#address-wallet-inp-get2233"><i
+                                        class="fa fa-clipboard" aria-hidden="true"></i></span>
+                            </div>
+
+                            <div class="btn-st">
+                                <div class="btn-area-cards">
+                                    <button class="button-n left-btn" on-click="openModal:send">
+                                        {{_e('Отправить')}}
+                                    </button>
+                                    <button class="button-n right-btn" on-click="openModal:getbtc">
+                                        {{_e('Пополнить.')}}
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flr">
+                            <div class="mnt-s">{{btc_finance_btc}} BTC
+
+                            </div>
+                            <div class="mnt-s2">
+
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="tabs-panel">
+                            <a href="#" on-click="setSubTab:wallet" {{#if sub_tab=='wallet'}}class="active"{{/if}}>{{_e('Кошелек')}}</a>
+                            <a href="#" on-click="setSubTab:tx" {{#if sub_tab=='tx'}}class="active"{{/if}}>{{_e('Транзакции')}}</a>
+                        </div>
+                        {{#if sub_tab == 'wallet'}}
+                        <div class="tls-ls">
+
+
+                            <a class="btn_link_ert" style="background: #fff;float: right;"
+                               href="https://blockchain.info/ru/wallet/#/login"
+                               target="_blank"><img src="./src/img/blockchaininfo.jpg"  style="    width: auto !important;max-width: none; max-height: 70px;"
+                                                    alt="Blockchain.Info"></a>
+
+                            {{#if showPrivate_ }}
+                            <p class="inpbort">{{debit_tokenPrivateKey}}</p>
+                            <p class="inpbort">{{debit_tokenPrivateKey_2}}</p>
+                            <button class="button-n right-btn" on-click="showPrivate">{{_e('Скрыть')}}</button>
+                            {{else}}
+                            <div style="padding-top: 40px;">
+                                <button class="button-n left-btn" on-click="showPrivate:btc">
+                                    {{_e('Показать id кашелька и пароль')}}
+                                </button>
+                                <!--<button class="button-n right-btn" on-click="keyStoreFile">-->
+                                    <!--{{_e('Скачать Keystore File')}}-->
+                                <!--</button>-->
+                            </div>
+                            {{/if}}
+
+                        </div>
+                        {{/if}}
+                        {{#if sub_tab == 'tx'}}
+                        <div class="tls-ls">
+                            <div class="pod-cards">
+
+                                {{#transactionsBTC}}
+                                {{#if type !='approve'}}
+                                {{#if !transactionsBTC[@index-1] || transactionsBTC[@index-1].date != date}}
+                                <div class="date-area">{{date}}</div>
+                                {{/if}}
+                                <div class="prv-ns stl-creds {{#if type_ == '-'}}min-ar{{/if}}">
+                                    <div class="fll-p arw1"><p class="cldsd"><span>{{time}}</span></p>
+                                        <h3>Transfer from
+
+                                            {{#inputs}}
+                                            <a href="https://blockchain.info/address/{{prev_out.addr}}" target="_blank">{{prev_out.addr}}</a>,
+                                            {{/}}
+                                            <br>
+                                            to
+                                            <br>
+                                            {{#if type_ == '+'}}{{btc_debit_token.wallet.address}}{{/if}}
+                                            {{#if type_ == '-'}}
+                                            {{#out}}
+                                            <a href="https://blockchain.info/address/{{addr}}" target="_blank">{{addr}}</a> ({{value/100000000}} BTC),<br>
+                                            {{/}}
+                                            {{/if}}
+
+
+                                            <p class="tx-id-card">
+                                                <span>TxHash: <a href="https://blockchain.info/tx/{{transactionHash}}"
+                                                                 target="_blank">{{hash}}</a></span>
+                                            </p>
+                                        </h3>
+                                    </div>
+                                    <div class="flr-p"><h3
+                                            class="{{#if type_ == '-'}}minus-s{{/if}}{{#if type_ == '+'}}pluso-s{{/if}}">{{type_}}{{value}} BTC </h3></div>
+                                </div>
+                                {{/if}}
+                                {{/}}
+                            </div>
+
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            {{_e('Ваши транзакции')}}
+                            <p>{{_e('Транзакции осуществляются, когда вы получаете и отправляете')}} Bitcoin</p>
+                        </div>
+                        {{/if}}
+
+
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'eth'}}
+                    <div class="cnt-area">
+                        {{#if eth_status_dev ==true}}
+                        <div class="alert alert-warning" style="width: 451px;margin: 0 auto;padding: 6px 24px;">
+                            <div style="width: 10%; display: inline-block;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                            </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+                            <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('Сервер выполняет синхронизацию с Blockchain ваши средства будут доступны через несколько часов')}}
+                        </div>
+                        </div>
+                        {{/if}}
+                        <div class="fll">
+                            <div class="money-ns fll">
+                                <img src="./src/img/eth.png"
+                                     onerror="this.src='../../.'+this.src;this.onerror = null;" class="mnt"
+                                     style="    padding: 8px;">
+                            </div>
+                            <div class="dbt-ns fll" style="width: 279px;margin-top: 8px;">
+                                <input type="text" style="font-size:15px;display: inline-block;width: 236px"
+                                       class="form-control" aria-describedby="basic-addon2233" readonly
+                                       id="address-wallet-inp-get2233" value="{{debit_token.wallet.address}}">
+                                <span class="input-group-addon"
+                                      style="cursor: pointer;display: inline-block;width: 37px;border-radius: 6px;position: relative;padding: 10px;height: 33px;z-index: 111;"
+                                      id="basic-addon22233" data-clipboard-target="#address-wallet-inp-get2233"><i
+                                        class="fa fa-clipboard" aria-hidden="true"></i></span>
+                            </div>
+
+                            <div class="btn-st">
+                                <div class="btn-area-cards">
+                                    <button class="button-n left-btn" on-click="openModal:send">
+                                        {{_e('Отправить')}}
+                                    </button>
+                                    <button class="button-n right-btn" on-click="openModal:get">
+                                        {{_e('Пополнить.')}}
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flr">
+                            <div class="mnt-s">
+                                {{+(+finance_eth).toFixed(4)}} ETH
+                                <hr style="margin: 6px 0 6px 25px;">
+                            </div>
+                            <div class="mnt-s2">
+                                <div style="display: inline-block;
+    border: 1px dotted;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 1px;"><span style="font-size: 12px;color: #3590f5;">(≈ ${{(+finance_ethusd).toFixed(2)}})</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="tabs-panel">
+                            <a href="#" on-click="setSubTab:wallet" {{#if sub_tab=='wallet'}}class="active"{{/if}}>{{_e('Кошелек')}}</a>
+                            <a href="#" on-click="setSubTab:tx" {{#if sub_tab=='tx'}}class="active"{{/if}}>{{_e('Транзакции')}}</a>
+                        </div>
+                        {{#if sub_tab == 'wallet'}}
+                        <div class="tls-ls">
+
+
+                            <a class="btn_link_ert" href="https://www.myetherwallet.com/" target="_blank">
+                                <img src="./src/img/logo-myetherwallet.svg" height="100%" alt="MyEtherWallet">
+                            </a>
+
+
+                            <a class="btn_link_ert" style="background: #fff;float: right;"
+                               href="https://etherscan.io/address/{{debit_token.wallet.address}}"
+                               target="_blank"><img src="./src/img/EtherscanLogo-transparent-b.png" height="100%"
+                                                    alt="Etherscan"></a>
+
+                            {{#if showPrivate_ }}
+                            <p class="inpbort">{{debit_tokenPrivateKey}}</p>
+                            <button class="button-n right-btn" on-click="showPrivate">{{_e('Скрыть')}}</button>
+                            {{else}}
+                            <div style="padding-top: 40px;">
+                                <button class="button-n left-btn" on-click="showPrivate">
+                                    {{_e('Показать Private Key')}}
+                                </button>
+                                {{#if !cryptoAccount}}
+                                <button class="button-n right-btn" on-click="keyStoreFile">
+                                    {{_e('Скачать Keystore File')}}
+                                </button>
+                                {{/if}}
+                            </div>
+                            {{/if}}
+
+                        </div>
+                        {{/if}}
+                        {{#if sub_tab == 'tx'}}
+                        <div class="tls-ls">
+                            <div class="pod-cards">
+
+                                {{#transactionsETH}}
+                                {{#if type !='approve'}}
+                                {{#if !transactionsETH[@index-1] || transactionsETH[@index-1].date != date}}
+                                <div class="date-area">{{date}}</div>
+                                {{/if}}
+                                <div class="prv-ns stl-creds {{#if type_ == '-'}}min-ar{{/if}}">
+                                    <div class="fll-p arw1"><p class="cldsd"><span>{{time}}</span></p>
+                                        <h3>Transfer from <a href="https://etherscan.io/address/{{from}}"
+                                                             target="_blank">{{from}}</a> to
+                                            <a href="https://etherscan.io/address/{{to}}" target="_blank">{{to}}</a>
+                                            <p class="tx-id-card">
+                                                <span>TxHash: <a href="https://etherscan.io/tx/{{hash}}"
+                                                                 target="_blank">{{hash}}</a></span>
+                                            </p>
+                                        </h3>
+                                    </div>
+                                    <div class="flr-p"><h3
+                                            class="{{#if type_ == '-'}}minus-s{{/if}}{{#if type_ == '+'}}pluso-s{{/if}}">
+                                        {{type_}} {{value}} {{tokenInfo.symbol}} </h3></div>
+                                </div>
+                                {{/if}}
+                                {{/}}
+                            </div>
+
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            {{_e('Ваши транзакции')}}
+                            <p>{{_e('Транзакции осуществляются, когда вы получаете и отправляете')}} Ethereum</p>
+                        </div>
+                        {{/if}}
+
+
+                    </div>
+                    {{/if}}
+                    {{#if tab == 'partner'}}
+                    test
+                    {{/if}}
+                </div>
+
+
+            </scroll>
+
+
+        </div>
+
+        <div class="arrow-st"></div>
+
+        <div class="chat-panel-bottom">
+            <div class="ltos"></div>
+
+            <ul class="nav-nt">
+                <li class="active">
+                    <a href="#">{{_e('Активные карты')}}</a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+                <!--</li>-->
+
+            </ul>
+
+            <div class="spl-icn"></div>
+            <scroll class_scroll="" class_content="" id_content="">
+
+                <Cards/>
+                <button class="add-btns" on-click="setPage:cards">View all cards</button>
+
+
+            </scroll>
+        </div>
+
+        <div class="modal fade info-card-wrapper" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModal"
+             aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h1>{{_e('Получить')}}</h1>
+                        <div id="qr_code_vdc2" style="">
+                            <i style="font-size: 42px;" class="fa fa-qrcode qr-ns" aria-hidden="true"></i>
+                        </div>
+
+                        <br>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <form action="">
+
+
+                            <div class="imp-area-modal-card2">
+
+                                <div class="select-form">
+                                    <label>{{_e('Копировать и поделиться адресом')}}</label>
+                                    <a href="#" class="vqr" style="display: none">{{_e('Просмотреть QR-код')}}</a>
+
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="{{#if tab == 'btc'}}{{btc_debit_token.wallet.address}}{{else}}{{debit_token.wallet.address}}{{/if}}"
+                                               aria-describedby="basic-addon22" id="address-wallet-inp-get">
+                                        <span class="input-group-addon" style="cursor: pointer;" id="basic-addon22"
+                                              data-clipboard-target="#address-wallet-inp-get"><i class="fa fa-clipboard"
+                                                                                                 aria-hidden="true"></i></span>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="btn-area-cards">
+                                        <button onclick="window.open('https://debitcoin.io','_blank')"
+                                                class="button-n left-btn" id="buy_debitcoin"
+                                                aria-hidden="true">{{_e('Купить DEBIT Coin')}}
+                                        </button>
+                                        <button class="button-n right-btn" type="button" data-dismiss="modal"
+                                                aria-hidden="true">
+                                            {{_e('Закрыть')}}
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade info-card-wrapper" id="cardModal2" tabindex="-1" role="dialog"
+             aria-labelledby="cardModal2"
+             aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h1>{{_e('Отправить')}}</h1>
+                        <div class="osd-area">
+                            {{#if tab == 'gold'}}
+                            {{_e('Мгновенно отправьте DEBIT Coin на любой адрес DEBIT Coin (Ethereum Token).')}}
+                            {{/if}}
+                            {{#if tab == 'eth'}}
+                            {{_e('Мгновенно отправьте Ethereum на любой адрес Ethereum. (ETH)')}}
+                            {{/if}}
+                            {{#if tab == 'btc'}}
+                            {{_e('Мгновенно отправьте Bitcoin на любой адрес Bitcoin. (BTC)')}}
+                            {{/if}}
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <form action="">
+
+
+                            <div class="imp-area-modal-card2">
+
+                                <div class="select-form">
+                                    <label>{{_e('Кому адрес:')}}</label>
+                                    <a class="vqr pointer" on-click="barcodeScanner">{{_e('Сканировать QR Code')}}</a>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"
+                                               placeholder="0x577F56a16080787323A8E4A9227c040b1C2017cD"
+                                               aria-describedby="basic-addon2" id="address-wallet-inp">
+                                        <span class="input-group-addon" style="cursor: pointer;" id="basic-addon2"><i
+                                                style="font-size: 22px;" class="fa fa-link" id="address-wallet-i"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="select-form">
+                                    <label>{{_e('Сумма:')}}</label>
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="0" id="amount-wallet-inp">
+                                        <span class="input-group-addon"
+                                              aria-describedby="amount-wallet-inp">
+                                            {{#if tab == 'gold'}}DEBIT Coin{{/if}}
+                                            {{#if tab == 'eth'}}ETH{{/if}}
+                                            {{#if tab == 'btc'}}BTC{{/if}}
+                                            </span>
+                                    </div>
+                                </div>
+                                {{#if tab != 'btc'}}
+                                <div class="select-form" style="padding: 0 20px;">
+                                    <label>Gas Price: </label>
+                                    <input id="ex21" type="text"
+                                           data-provide="slider"
+                                           data-slider-ticks="[1,2,3,4,5]"
+                                           data-lider-tooltip="top"
+                                           data-slider-ticks-labels='["{{_e('Очень медленно')}}","{{_e('Медленно')}}","{{_e('Средне')}}", "{{_e('Быстро')}}", "{{_e('Очень быстро')}}"]'
+                                    data-slider-min="1"
+                                    data-slider-max="5"
+                                    data-slider-step="1"
+                                    data-slider-value="4"
+                                    onchange="console.log()"/>
+                                </div>
+                                {{/if}}
+
+
+                                <div class="clearfix"></div>
+                                <!-- button block -->
+                                <div class="btn-area-cards">
+                                    <button class="button-n left-btn" type="button" data-dismiss="modal"
+                                            aria-hidden="true">{{_e('Отмена')}}
+                                    </button>
+                                    <button class="button-n right-btn" type="button" on-click="sendCoin:{{tab}}">
+                                        {{_e('Перевести')}}
+                                    </button>
+                                </div>
+
+                                <br>
+                                <br>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade info-card-wrapper" id="cardModal3" tabindex="-1" role="dialog"
+             aria-labelledby="cardModal2"
+             aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="padding: 20px;">
+                        <div style="max-width: 400px; margin: 0 auto;">
+                            <h1>{{_e('Ошибка')}}</h1>
+                            <div class="osd-area">
+                                {{_e('У вас недостачно ETH (Газа) для оплаты комиссии за транзакцию пожалуйста, пополните свой ETH адрес:')}}
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                            <div class="input-group">
+                                <input style="background: none;" type="text" class="form-control"
+                                       value="{{debit_token.wallet.address}}"
+                                       aria-describedby="basic-addon2299" id="address-wallet-inp-get99">
+                                <span class="input-group-addon" style="cursor: pointer;" id="basic-addon2299"
+                                      data-clipboard-target="#address-wallet-inp-get"><i class="fa fa-clipboard"
+                                                                                         aria-hidden="true"></i></span>
+                            </div>
+                            <div class="osd-area">{{_e('Рекомендуемая минимальная сумма - 0.01 ETH')}}</div>
+                            <br>
+                            <div style="max-width: 100%;text-align: -webkit-center;">
+                                <a target="_blank" href="https://www.bestchange.ru/?p=312759"
+                                   style="margin: 0 auto;"><img
+                                        src="http://www.bestchange.ru/images/banners/300x100-11.jpg"
+                                        alt="Самые дешевые обменники"
+                                        title="BestChange.ru - Мониторинг обменников в интернете" width="300"
+                                        height="100" border="0"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

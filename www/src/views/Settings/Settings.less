@@ -1,0 +1,567 @@
+.lange-icon{
+  color: #ffffff;
+  left: 50%;
+  position: relative;
+  /* text-align: center; */
+  margin-left: -42px;
+  font-size: 7em;
+}
+.text-art-w {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.text-art-w a {
+  color: #91bff7;
+}
+
+.text-art-w a:hover {
+  text-decoration: none;
+}
+
+.modal-chat-area-info {
+  padding: 20px;
+  width: 400px;
+  background: #0756b5;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 45px;
+}
+
+.area-info-namels {
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 18px;
+  font-size: 22px;
+  margin-top: -10px;
+}
+
+.area-info-namels strong {
+  font-weight: 600;
+  display: block;
+  font-size: 12px;
+  color: #91bff7;
+  margin-top: -2px;
+}
+.btn-secure{
+  font-size: 15px !important;
+  padding: 8px !important;;
+  margin-top: -2px !important;;
+  float: right;
+  margin-bottom: 20px !important;;
+}
+
+@media (min-width: 300px) {
+  .mv-area.code-area-sec_Sett {
+
+    position: relative;
+    left: 50%;
+    height: 415px;
+    margin-left: -135px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-height: 600px) {
+  .mv-area.code-area-sec_Sett{
+    position: absolute;
+    width: 270px;
+    height: 225px;
+    top: 50%;
+    left: 50%;
+    margin-left: -135px;
+    margin-top: -270px;
+  }
+}
+@media (min-height: 600px) {
+  .mv-area.code-area-sec_Sett {
+    margin-top: -243px !important;
+  }
+}
+
+@media (max-width: 699px){
+  .sendmoney-wrapper .scroller-b {
+    height: calc(100vh - 130px) !important;
+  }
+}
+@media (min-width: 700px){
+  .sendmoney-wrapper .scroller-b {
+    height: calc(100vh - 108px);
+  }
+}
+.mv-area.code-area-sec_Sett {
+  padding-top: 45px;
+}
+
+.mv-area.code-area-sec_Sett {
+  padding-top: 40px;
+}
+.code-area-sec_Sett .fa.fa-4x {
+  display: block;
+  margin: 0 auto !important;
+  float: none !important;
+  width: 48px;
+}
+
+.mv-area.code-area-sec_Sett .select-form {
+  text-align: center;
+}
+
+.mv-area.code-area-sec_Sett button.button-n.fll.btn-secure {
+  margin: 0 auto;
+  display: block;
+  float: none !important;
+}
+.psh-id {
+  color: #fff;
+  font-size: 11px;
+  margin-left: 0px;
+  margin-top: 4px;
+}
+
+
+
+
+//new
+.mv-area.code-area-sec_Sett {
+  width: 100% !important;
+  left: 0 !important;
+  max-width: 320px;
+  right: 0 !important;
+  margin: 0 auto;
+}
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.mv-area.code-area-sec_Sett .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.mv-area.code-area-sec_Sett .checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.mv-area.code-area-sec_Sett .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.mv-area.code-area-sec_Sett .checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.mv-area.code-area-sec_Sett .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.mv-area.code-area-sec_Sett .checkbox:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.mv-area.code-area-sec_Sett .checkbox:checked + label:after {
+  left: 26px;
+}
+/* Показываем получение фокуса. */
+
+.mv-area.code-area-sec_Sett .onoffswitch {
+  margin-top: 9px;
+}
+
+.mv-area.code-area-sec_Sett .checkbox:checked + label:before {
+  background: #74a3de;
+}
+
+
+.checbox-area-ns:first-child .menu-hh{
+  margin-top: 40px;
+}
+
+.menu-hh {
+  color: #fff;
+  font-size: 16px;
+  text-transform: none;
+  margin-bottom: 40px;
+  margin-top: 0px !important;
+}
+
+.w50-ar{
+  width:50%;
+  float: left;
+}
+
+
+.settings > h4{
+  padding-top: 40px !important;
+}
+
+.credit-area.form-profile.settings h4:first-child {
+  margin-top: 40px !important;
+}
+
+label span {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+
+}
+
+
+label span {
+  float: right;
+}
+
+.checkbox + label {
+  cursor: pointer;
+  width: 100% !important;
+  display: block;
+}
+
+.w50-ar {
+  margin-top: 20px;
+}
+
+.cbxl {
+  overflow: visible;
+  clear: both;
+  margin-bottom: 14px;
+  padding: 15px;
+}
+
+.credit-main-area {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+.onoffswitch {
+  position: relative; width: 90px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "";
+  padding-left: 10px;
+  background-color: #34A7C1; color: #FFFFFF;
+}
+
+.onoffswitch-switch {
+  display: block; width: 18px; margin: 6px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 56px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #0C5CBD;
+  border-radius: 20px;
+}
+
+.onoffswitch-inner:after {
+  content: "";
+  padding-right: 10px;
+  background-color: #377dd3;
+  color: #999999;
+  text-align: right;
+}
+
+.onoffswitch-switch{
+  border-color: #fff !important;
+}
+
+.onoffswitch {
+  float: right;
+}
+
+.cbxl {
+  overflow: visible;
+  clear: both;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+span.cnvl {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 5px;
+  display: block;
+  float: left;
+}
+
+
+
+@media (max-width: 1199px){
+  .w50-ar{
+    width: 100% !important;
+  }
+
+
+
+}
+
+span.cnvl {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+  float: left;
+  max-width: 153px;
+  line-height: 15px;
+}
+
+.cbxl {
+  overflow: hidden;
+  padding-right: 23px;
+  height: 45px;
+}
+@media (max-width: 1199px){
+  .cbxl {
+    padding-right: 0;
+  }
+  .w50-ar {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1200px){
+  .credit-area.form-profile.settings .credit-main-area {
+    padding-left: 20px;
+  }
+
+  button.button-n.flr {
+    float: right;
+  }
+
+  .checbox-area-ns {
+    padding-left: 5px;
+  }
+
+  .cbxl {
+    padding-right: 50px;
+  }
+}
+
+.wzs-33{
+  width: 33% !important;
+  display: inline-block;
+}
+
+.wzs-33 .in-divs{
+  padding-right: 20px;
+}
+
+.wzs-33 .jq-selectbox .placeholder{
+  color: #fff;
+}
+
+.no-hidden-area{
+  overflow: visible;
+}
+
+.wzs-33 {
+  width: 32% !important;
+  display: inline-block;
+  vertical-align: top;
+}
+.in-divs span.cnvl{
+  margin-top: 0 !important;
+}
+
+.block-ntl{
+  margin-bottom: 20px;
+}
+
+.wzs-33{
+  min-height: 2px;
+}
+
+.feedback {
+  max-width: 440px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+
+.wsw-50 {
+  width: 49%;
+  float: left;
+}
+
+.wsw-50.flr {
+  width: 49%;
+  float: right;
+}
+
+.feedback textarea.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 115px;
+  max-width: 100%;
+  max-height: 100%;
+  color: #fff !important;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.feedback .jq-selectbox .placeholder{
+  color: #fff !important;
+}
+
+@media (max-width: 1199px){
+  .wzs-33 .in-divs {
+    padding-right: 5px;
+  }
+
+  .settings-wrapper .search-line input {
+    width: 100% !important;
+
+  }
+
+  .wsw-50{
+    width: 100% !important;
+
+  }
+
+  .in-divs span {
+    font-size: 11px;
+  }
+
+
+
+}
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  left: 26px;
+}
+/* Показываем получение фокуса. */
+
+.onoffswitch {
+  margin-top: 4px;
+}
+
+.checkbox:checked + label:before {
+  background: #74a3de;
+}
+
+.scroller-b.nano.__nano.scroller-b-Settings button.button-n.fll {
+  float: none !important;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Telegraf Money",
+  "version": "2.8.0",
+  "author": "Bogdan <www.clsa.ru@gmail.com>",
+  "manifestUrl": "https://telegraf.money/download/update/package.json",
+  "packages": {
+    "mac": {
+      "url": "https://telegraf.money/download/update/osx.zip"
+    },
+    "win": {
+      "url": "https://telegraf.money/download/update/win.zip"
+    }
+  }
+}

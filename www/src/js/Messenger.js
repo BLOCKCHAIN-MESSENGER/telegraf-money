@@ -1,8 +1,12 @@
 window.__cards_storage = false;
 window.__wallet_storage = false;
+window.__crypto_wallet_dbc = false;
+window.__crypto_wallets = [];
 try {
     window.__cards_storage = JSON.parse(localStorage.getItem('cards'));
     window.__wallet_storage = JSON.parse(localStorage.getItem('wallet'));
+    window.__crypto_wallet_dbc = JSON.parse(localStorage.getItem('crypto_wallet_dbc'));
+    window.__crypto_wallets = JSON.parse(localStorage.getItem('crypto_wallets_db'));
 } catch (e) {
     console.warn("JSON warn localStorage:", e);
 }
@@ -12,6 +16,121 @@ function getCookie(name) {
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define([], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory();
+    } else {
+        root.lsbridge = factory();
+    }
+}(this, function () {
+
+    /*
+     - Storing messages in localStorage.
+     - Clients subscribe to the changes and
+     they get notified if a new message arrives.
+     */
+
+    var api = {};
+
+    api.isLSAvailable = (function () {
+        var mod = '_';
+        try {
+            localStorage.setItem(mod, mod);
+            localStorage.removeItem(mod);
+            return true;
+        } catch (e) {
+            return false;
+        }
+    })();
+
+    if (api.isLSAvailable) {
+
+        var interval = 100
+            , intervalForRemoval = 200
+            , ls = localStorage
+            , listeners = {}
+            , isLoopStarted = false
+            , buffer = {};
+
+        var loop = function () {
+            for (var namespace in listeners) {
+                var data = ls.getItem(namespace);
+                if (data && buffer[namespace] && buffer[namespace].indexOf(data) === -1) {
+                    buffer[namespace].push(data);
+                    try {
+                        var parsed = JSON.parse(data);
+                        if (parsed) data = parsed;
+                    } catch (e) {
+                    }
+                    for (var i = 0; i < listeners[namespace].length; i++) {
+                        listeners[namespace][i](data);
+                    }
+                    if (!ls.getItem(namespace + '-removeit')) {
+                        ls.setItem(namespace + '-removeit', '1');
+                        (function (n) {
+                            setTimeout(function () {
+                                ls.removeItem(n);
+                                ls.removeItem(n + '-removeit');
+                                buffer[namespace] = [];
+                            }, intervalForRemoval);
+                        })(namespace);
+                    }
+                } else if (!data) {
+                    buffer[namespace] = [];
+                }
+            }
+            setTimeout(loop, interval);
+            return true;
+        };
+
+        api.send = function (namespace, data) {
+            var raw = '';
+            if (typeof data === 'function') {
+                data = data();
+            }
+            if (typeof data === 'object') {
+                raw = JSON.stringify(data);
+            } else {
+                raw = data;
+            }
+            ls.setItem(namespace, raw);
+        };
+
+
+        api.subscribe = function (namespace, cb) {
+            if (!listeners[namespace]) {
+                listeners[namespace] = [];
+                buffer[namespace] = [];
+            }
+            listeners[namespace].push(cb);
+            if (!isLoopStarted) {
+                isLoopStarted = loop();
+            }
+        };
+
+        api.unsubscribe = function (namespace) {
+            if (listeners[namespace]) {
+                listeners[namespace] = [];
+            }
+            if (buffer[namespace]) {
+                buffer[namespace] = [];
+            }
+        };
+
+        api.getBuffer = function () {
+            return buffer;
+        }
+
+    } else {
+        api.send = api.subscribe = function () {
+            throw new Error('localStorage not supported.');
+        }
+    }
+
+    return api;
+}));
 var Messenger = {
     event: {},
     page: null,
@@ -187,17 +306,20 @@ var Messenger = {
             });
         }
         if ('debitcoin' == page) {
-            requireElement({name: 'Debitcoin', ver: '1.1.0', element: '#contentApplication'}, {
+            page = 'CryptoWallet';
+        }
+        if ('CryptoWallet' == page) {
+            requireElement({name: 'Cryptowallet', ver: '1.1.0', element: '#contentApplication'}, {
                 cnt: 0,
                 afterlast: function (name) {
 
-                    if (!tabPage) tabPage = 'gold';
+                    if (!tabPage) tabPage = 'all';
                     if (name) name = name + 'App';
                     Messenger.page = name;
                     if (ractiveComponent && Messenger.page && ractiveComponent[Messenger.page] && !ractiveComponent[Messenger.page].fragment.rendered) {
                         ractiveComponent[Messenger.page].render();
                         if (tabPage)
-                            ractiveComponent['wtc-DebitcoinApp'].set('tab', tabPage);
+                            ractiveComponent['wtc-CryptowalletApp'].set('tab', tabPage);
                     }
                 }
             });
@@ -498,9 +620,11 @@ var Messenger = {
     finance: {
         cards: window.__cards_storage,
         cards_all: [],
+        crypto_wallet_dbc: window.__crypto_wallet_dbc,
         callback_cnt: 0,
         microinvests: [],
         data: {wallet: window.__wallet_storage},
+
         update_wait: false,
 
         update: function () {
@@ -1327,7 +1451,9 @@ var Messenger = {
             if (param_url_this().openDialog) {
                 Messenger.setPage('chats');
                 Messenger.openChat(false, param_url_this().openDialog);
-                setTimeout(function(){Messenger.setPage('chats')},1000);
+                setTimeout(function () {
+                    Messenger.setPage('chats')
+                }, 1000);
             }
 
             else if (param_url_this().default_page) {
@@ -1429,11 +1555,11 @@ var Messenger = {
                 MyProfile = {
                     first_name: address_my,
                     last_name: "",
-                    name_short: address_my[2]+address_my[3],
+                    name_short: address_my[2] + address_my[3],
                     status: "success",
                     webtransfer_id: address_my
                 };
-                localStorage.setItem('MyProfile',JSON.stringify(MyProfile));
+                localStorage.setItem('MyProfile', JSON.stringify(MyProfile));
                 Messenger.MyProfileUpdate();
                 noty({
                     text: _chat_e('Не удается установить соединение с серверами Telegraf.Money'),
@@ -1612,6 +1738,66 @@ var Messenger = {
                 });
             });
         else swal.close();
+    },
+    crypto: {
+
+        wallets: window.__crypto_wallets || [],
+        add: function (address, type, privateKey, client) {
+            for (var key in  Messenger.crypto.wallets) {
+                if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type) {
+                    return false;
+                }
+            }
+            Messenger.crypto.wallets.push({address: address, type: type, privateKey: privateKey, client: client});
+            Messenger.crypto.update(address);
+            lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
+            localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+            return true;
+        },
+        update: function (address) {
+            for (var key in  Messenger.crypto.wallets) {
+                if (address) {
+                    if (Messenger.crypto.wallets[key].address === address) {
+                        Crypto.getBalance(Messenger.crypto.wallets[key].address, Messenger.crypto.wallets[key].type, function (_address, type, balance) {
+                            for (var key1 in  Messenger.crypto.wallets) {
+                                if (Messenger.crypto.wallets[key1].address === _address && Messenger.crypto.wallets[key1].type === type) Messenger.crypto.wallets[key].balance = balance;
+                            }
+                            lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
+                            localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                        });
+                    }
+                } else {
+                    Crypto.getBalance(Messenger.crypto.wallets[key].address, Messenger.crypto.wallets[key].type, function (_address, type, balance) {
+                        for (var key1 in  Messenger.crypto.wallets) {
+                            if (Messenger.crypto.wallets[key1].address === _address && Messenger.crypto.wallets[key1].type === type) Messenger.crypto.wallets[key].balance = balance;
+                        }
+                        lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
+                        localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                    });
+                }
+
+
+            }
+        },
+        remove: function (address, type) {
+            for (var key in  Messenger.crypto.wallets) {
+                if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type) {
+                    Messenger.crypto.wallets[key] = undefined;
+                    lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
+                    localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                    return true;
+                }
+            }
+            return false;
+        },
+        find: function (address, type) {
+            for (var key in  Messenger.crypto.wallets) {
+                if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type)
+                    return Messenger.crypto.wallets[key];
+
+            }
+            return false;
+        }
     }
 };
 

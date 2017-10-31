@@ -33,7 +33,7 @@ var WtcCredit = Ractive.extend({
             ractiveComponent['wtc-CreditApp'].set('microinvests_summa', summa.toFixed(2));
             ractiveComponent['wtc-CreditApp'].set('microinvests_current_income', current_income.toFixed(2));
             ractiveComponent['wtc-CreditApp'].set('microinvests_total', (+summa + (+current_income.toFixed(2))));
-            $(Messenger.body.credit.selector).mCustomScrollbar('update');
+            // $(Messenger.body.credit.selector).mCustomScrollbar('update');
 
         });
         $('input, select').styler({

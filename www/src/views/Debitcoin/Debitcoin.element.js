@@ -1,251 +1,18 @@
-
-var abi = [
-    {
-        "constant": true,
-        "inputs": [],
-        "name": "name",
-        "outputs": [{"name": "", "type": "string"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_spender", "type": "address"}, {"name": "_value", "type": "uint256"}],
-        "name": "approve",
-        "outputs": [{"name": "success", "type": "bool"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_disable", "type": "bool"}],
-        "name": "disableTransfers",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "totalSupply",
-        "outputs": [{"name": "", "type": "uint256"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "MiningRewardPerETHBlock",
-        "outputs": [{"name": "", "type": "uint256"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_from", "type": "address"}, {"name": "_to", "type": "address"}, {
-            "name": "_value",
-            "type": "uint256"
-        }],
-        "name": "transferFrom",
-        "outputs": [{"name": "success", "type": "bool"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "decimals",
-        "outputs": [{"name": "", "type": "uint8"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_amount", "type": "uint256"}],
-        "name": "ChangeMiningReward",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "version",
-        "outputs": [{"name": "", "type": "string"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "standard",
-        "outputs": [{"name": "", "type": "string"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_token", "type": "address"}, {"name": "_to", "type": "address"}, {
-            "name": "_amount",
-            "type": "uint256"
-        }],
-        "name": "withdrawTokens",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [{"name": "", "type": "address"}],
-        "name": "balanceOf",
-        "outputs": [{"name": "", "type": "uint256"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [],
-        "name": "acceptOwnership",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_to", "type": "address"}, {"name": "_amount", "type": "uint256"}],
-        "name": "issue",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "owner",
-        "outputs": [{"name": "", "type": "address"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "symbol",
-        "outputs": [{"name": "", "type": "string"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_from", "type": "address"}, {"name": "_amount", "type": "uint256"}],
-        "name": "destroy",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_to", "type": "address"}, {"name": "_value", "type": "uint256"}],
-        "name": "transfer",
-        "outputs": [{"name": "success", "type": "bool"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "transfersEnabled",
-        "outputs": [{"name": "", "type": "bool"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [],
-        "name": "TransferMinersReward",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "newOwner",
-        "outputs": [{"name": "", "type": "address"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [{"name": "", "type": "address"}, {"name": "", "type": "address"}],
-        "name": "allowance",
-        "outputs": [{"name": "", "type": "uint256"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": true,
-        "inputs": [],
-        "name": "lastBlockRewarded",
-        "outputs": [{"name": "", "type": "uint256"}],
-        "payable": false,
-        "type": "function"
-    }, {
-        "constant": false,
-        "inputs": [{"name": "_newOwner", "type": "address"}],
-        "name": "transferOwnership",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-    }, {
-        "inputs": [{"name": "_name", "type": "string"}, {"name": "_symbol", "type": "string"}, {
-            "name": "_decimals",
-            "type": "uint8"
-        }], "payable": false, "type": "constructor"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": false, "name": "_token", "type": "address"}],
-        "name": "DebitCoinTokenGenesis",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": false, "name": "_amount", "type": "uint256"}],
-        "name": "Issuance",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": false, "name": "_amount", "type": "uint256"}],
-        "name": "Destruction",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": false, "name": "_amount", "type": "uint256"}],
-        "name": "MiningRewardChanged",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": true, "name": "_from", "type": "address"}, {
-            "indexed": true,
-            "name": "_to",
-            "type": "address"
-        }, {"indexed": false, "name": "_value", "type": "uint256"}],
-        "name": "MiningRewardSent",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": false, "name": "_prevOwner", "type": "address"}, {
-            "indexed": false,
-            "name": "_newOwner",
-            "type": "address"
-        }],
-        "name": "OwnerUpdate",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": true, "name": "_from", "type": "address"}, {
-            "indexed": true,
-            "name": "_to",
-            "type": "address"
-        }, {"indexed": false, "name": "_value", "type": "uint256"}],
-        "name": "Transfer",
-        "type": "event"
-    }, {
-        "anonymous": false,
-        "inputs": [{"indexed": true, "name": "_owner", "type": "address"}, {
-            "indexed": true,
-            "name": "_spender",
-            "type": "address"
-        }, {"indexed": false, "name": "_value", "type": "uint256"}],
-        "name": "Approval",
-        "type": "event"
-    }
-]; // ABI Contract
-var _contract_fixed = 100000000;
-var _address = '0x95408930d6323ac7aa69e6c2cbfe58774d565fa8'; // smart contract address
-
 var contract = web3.eth.contract(abi).at(_address);
 var WtcDebitcoin = Ractive.extend({
     oninit: function () {
         console.log('Debitcoin.oninit !');
+
+        if (window.__crypto_wallet_dbc && typeof window.__crypto_wallet_dbc === "object" && window.__crypto_wallet_dbc.wallet) {
+            ractiveComponent['wtc-DebitcoinApp'].set('debit_token', Messenger.finance.crypto_wallet_dbc);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
+        }else{
+            ractiveComponent['wtc-DebitcoinApp'].set('debit_token.wallet.address', 'Loading...');
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', '...');
+        }
         ractiveComponent['wtc-DebitcoinApp'].set('MyProfile', MyProfile);
-        ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', '...');
         ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btc', '...');
         ractiveComponent['wtc-DebitcoinApp'].set('eth_finance_eth', '...');
         ractiveComponent['wtc-DebitcoinApp'].set('sub_tab', 'wallet');
@@ -283,105 +50,137 @@ var WtcDebitcoin = Ractive.extend({
                 });
                 ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', wallet_my.wallet.balance.eth);
                 ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', wallet_my.wallet.balance.ethusd);
-                API('getPartnerTxDebitCoin', {}, false, function (response) {
-                    if (!response.partner || !response.partner[0] || !response.partner[0].referal) {
-                        response.partner = [{referal: 10}];
+            }
+        }
+
+        Messenger.auth_action.call_wait_auth(function () {
+            if (tab_ === 'gold' || tab_ === 'eth') {
+                if (localStorage.getItem('installTime') && localStorage.getItem('installTime') === 'crypto.wallet.eth.auth') {
+                    ractiveComponent['wtc-DebitcoinApp'].set('cryptoAccount', true);
+
+                    var priv = localStorage.getItem('walletPrivateKey');
+                    var address_my = keythereum.privateKeyToAddress(priv);
+                    var wallet_my = {
+                        wallet: {
+                            address: address_my,
+                            balance: {
+                                eth: +(+web3.eth.getBalance(address_my) / 1000000000000000000).toFixed(8),
+                                ethusd: 0,
+                                dbc: (+contract.balanceOf(address_my) / _contract_fixed).toFixed(2)
+                            }
+                        }
+                    };
+                    ractiveComponent['wtc-DebitcoinApp'].set('debit_token', wallet_my);
+                    ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', wallet_my.wallet.balance.dbc);
+                    $.ajax({
+                        url: 'https://api.coinmarketcap.com/v1/ticker/ethereum/', type: 'get', success: function (res) {
+                            try {
+                                wallet_my.wallet.balance.ethusd = (wallet_my.wallet.balance.eth * res[0].price_usd).toFixed(2);
+                                ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', wallet_my.wallet.balance.ethusd);
+                            } catch (e) {
+                                console.error('ERROR parse coinmarketcap', e)
+                            }
+                        }
+                    });
+                    ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', wallet_my.wallet.balance.eth);
+                    ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', wallet_my.wallet.balance.ethusd);
+                    API('getPartnerTxDebitCoin', {}, false, function (response) {
+                        if (!response.partner || !response.partner[0] || !response.partner[0].referal) {
+                            response.partner = [{referal: 10}];
+                        }
+
+                        var total_proff = 0;
+                        for (var i in response.txes) {
+                            var price;
+                            if (!response.txes[i].period || +response.txes[i].period === 1) {
+                                price = 0.1248
+                            }
+                            else if (+response.txes[i].period === 2) {
+                                price = 0.1743
+                            }
+                            else if (+response.txes[i].period === 3) {
+                                price = 0.4324
+
+                            } else if (+response.txes[i].period === 4) {
+                                price = 0.7533234
+                            } else if (+response.txes[i].period === 5) {
+                                price = 0.6
+                            } else if (+response.txes[i].period === 6) {
+                                price = 0.75
+                            } else if (+response.txes[i].period === 7) {
+                                price = 0.60
+                            } else {
+                                price = 1
+                            }
+                            var update_time = moment(response.txes[i].update_at);
+                            var date_now = update_time.format('DD.MM.YYYY');
+                            var time = update_time.format('HH:mm');
+                            response.txes[i].date = date_now;
+                            response.txes[i].time = time;
+                            response.txes[i].partner_profit = 0;
+                            if (response.txes[i].pay_status === '1')
+                                response.txes[i].partner_profit = +(+response.txes[i].dbc / 100 * +response.partner[0].referal).toFixed(2);
+
+                            total_proff += response.txes[i].partner_profit;
+                            response.txes[i].type_ = '+';
+                        }
+                        ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner', response.txes);
+                        ractiveComponent['wtc-DebitcoinApp'].set('total_proff', (total_proff.toFixed(2)));
+                        ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner_info', response.partner[0]);
+                    });
+                } else {
+                    API('eth_status', {}, false, function (res) {
+                        ractiveComponent['wtc-DebitcoinApp'].set('eth_status_dev', res.eth_status_dev);
+                    });
+
+                    Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
+                        ractiveComponent['wtc-DebitcoinApp'].set('debit_token', Messenger.finance.crypto_wallet_dbc);
+                        ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
+                        ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
+                        ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
+                        if (alldata && alldata.wallet)
+                            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
+                    });
+                }
+            }
+            if (tab_ === 'btc') {
+                API('wallet_coin', {type: 'BTC'}, false, function (res) {
+                    if (res.error) {
+                        return swal({
+                            customClass: 'swal-telegraf-modal select-form text-center',
+                            buttonsStyling: false,
+                            confirmButtonClass: 'button-n',
+                            cancelButtonClass: 'cansel-btns',
+                            title: _chat_e('Уппс...') + ', ' + res.err.code,
+                            type: 'error',
+                            confirmButtonText: _chat_e('Ок'),
+                            showCancelButton: false,
+                            text: 'Error:' + res.error
+                        });
                     }
-
-                    var total_proff = 0;
-                    for (var i in response.txes) {
-                        var price;
-                        if (!response.txes[i].period || +response.txes[i].period === 1) {
-                            price = 0.1248
-                        }
-                        else if (+response.txes[i].period === 2) {
-                            price = 0.1743
-                        }
-                        else if (+response.txes[i].period === 3) {
-                            price = 0.4324
-
-                        } else if (+response.txes[i].period === 4) {
-                            price = 0.7533234
-                        } else if (+response.txes[i].period === 5) {
-                            price = 0.6
-                        } else if (+response.txes[i].period === 6) {
-                            price = 0.75
-                        } else if (+response.txes[i].period === 7) {
-                            price = 0.60
-                        } else {
-                            price = 1
-                        }
-                        var update_time = moment(response.txes[i].update_at);
-                        var date_now = update_time.format('DD.MM.YYYY');
-                        var time = update_time.format('HH:mm');
-                        response.txes[i].date = date_now;
-                        response.txes[i].time = time;
-                        response.txes[i].partner_profit = 0;
-                        if (response.txes[i].pay_status === '1')
-                            response.txes[i].partner_profit = +(+response.txes[i].dbc / 100 * +response.partner[0].referal).toFixed(2);
-
-                        total_proff += response.txes[i].partner_profit;
-                        response.txes[i].type_ = '+';
-                    }
-                    ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner', response.txes);
-                    ractiveComponent['wtc-DebitcoinApp'].set('total_proff', (total_proff.toFixed(2)));
-                    ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner_info', response.partner[0]);
-                });
-            } else {
-                API('eth_status', {}, false, function (res) {
-                    ractiveComponent['wtc-DebitcoinApp'].set('eth_status_dev', res.eth_status_dev);
-                });
-
-                API('wallet_coin', {type: 'DBC'}, false, function (res) {
-                    ractiveComponent['wtc-DebitcoinApp'].set('debit_token', res);
-                    ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', res.wallet.balance.dbc);
-                    ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', res.wallet.balance.eth);
-                    ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', res.wallet.balance.ethusd);
+                    ractiveComponent['wtc-DebitcoinApp'].set('btc_debit_token', res);
+                    ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_debit_coin_gold', res.wallet.balance.dbc);
+                    ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btc', res.wallet.balance.btc);
+                    ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btcusd', res.wallet.balance.btcusd);
                 }, true);
 
                 Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
+
                     if (alldata && alldata.wallet)
                         ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
                 });
             }
-        }
-        if (tab_ === 'btc') {
-
-            API('wallet_coin', {type: 'BTC'}, false, function (res) {
-                if (res.error) {
-                    return swal({
-                        customClass: 'swal-telegraf-modal select-form text-center',
-                        buttonsStyling: false,
-                        confirmButtonClass: 'button-n',
-                        cancelButtonClass: 'cansel-btns',
-                        title: _chat_e('Уппс...') + ', ' + res.err.code,
-                        type: 'error',
-                        confirmButtonText: _chat_e('Ок'),
-                        showCancelButton: false,
-                        text: 'Error:' + res.error
-                    });
-                }
-                ractiveComponent['wtc-DebitcoinApp'].set('btc_debit_token', res);
-                ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_debit_coin_gold', res.wallet.balance.dbc);
-                ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btc', res.wallet.balance.btc);
-                ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btcusd', res.wallet.balance.btcusd);
-            }, true);
-
             Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-                if (alldata && alldata.wallet)
-                    ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
+                if (!cards || cards.length == 0) cards = false;
+                console.log(arguments);
+
+                ractiveComponent['wtc-DebitcoinApp'].set('finance_cards', cards);
+                if (alldata) {
+                    ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_silver', alldata.wallet["debit-coin"]);
+                    ractiveComponent['wtc-DebitcoinApp'].set('finance_cards_load', true);
+                }
+
             });
-        }
-        Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-            if (!cards || cards.length == 0) cards = false;
-            console.log(arguments);
-
-            ractiveComponent['wtc-DebitcoinApp'].set('finance_cards', cards);
-            if (alldata) {
-                ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_silver', alldata.wallet["debit-coin"]);
-                ractiveComponent['wtc-DebitcoinApp'].set('finance_cards_load', true);
-            }
-
         });
 
         // API('get_balance_wallet_coin', {type: 'ETH'}, false, function (result_balance) {
@@ -400,112 +199,272 @@ var WtcDebitcoin = Ractive.extend({
     }
 });
 
+Messenger.auth_action.call_wait_auth(function () {
+    setInterval(function () {
+        API('wallet_coin', {type: 'DBC'}, false, function (res) {
+            ractiveComponent['wtc-DebitcoinApp'].set('debit_token', res);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', res.wallet.balance.dbc);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', res.wallet.balance.eth);
+            ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', res.wallet.balance.ethusd);
+        }, true);
 
+    }, 5000);
+    var clipboard99 = new Clipboard('#basic-addon2299');
+    var clipboard = new Clipboard('#basic-addon22');
+    var clipboard2 = new Clipboard('#basic-addon222');
+    var clipboard233 = new Clipboard('#basic-addon22233');
 
-var clipboard99 = new Clipboard('#basic-addon2299');
-var clipboard = new Clipboard('#basic-addon22');
-var clipboard2 = new Clipboard('#basic-addon222');
-var clipboard233 = new Clipboard('#basic-addon22233');
-
-clipboard99.on('success', function (e) {
-    noty({
-        text: _chat_e('Успешно!') + '<br>' + _chat_e('Адрес скопирован в буфер обмена.'),
-        type: 'success',
-        theme: 'metroui',
-        layout: 'topCenter',
-        timeout: 4000,
-        progressBar: true,
-        animation: {
-            open: 'animated fadeInDown',
-            close: 'animated fadeOutUp'
-        }
-    });
-
-    e.clearSelection();
-});
-clipboard99.on('error', function (e) {
-    window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
-});
-clipboard.on('success', function (e) {
-    noty({
-        text: _chat_e('Успешно!') + '<br>' + _chat_e('Адрес скопирован в буфер обмена.'),
-        type: 'success',
-        theme: 'metroui',
-        layout: 'topCenter',
-        timeout: 4000,
-        progressBar: true,
-        animation: {
-            open: 'animated fadeInDown',
-            close: 'animated fadeOutUp'
-        }
-    });
-
-    e.clearSelection();
-});
-clipboard.on('error', function (e) {
-    window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
-});
-clipboard2.on('success', function (e) {
-    noty({
-        text: _chat_e('Успешно!') + '<br> Partner ' + _chat_e('Адрес скопирован в буфер обмена.'),
-        type: 'success',
-        theme: 'metroui',
-        layout: 'topCenter',
-        timeout: 4000,
-        progressBar: true,
-        animation: {
-            open: 'animated fadeInDown',
-            close: 'animated fadeOutUp'
-        }
-    });
-
-    e.clearSelection();
-});
-clipboard2.on('error', function (e) {
-    window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
-});
-clipboard233.on('success', function (e) {
-    noty({
-        text: _chat_e('Успешно!') + '<br> ' + _chat_e('Адрес скопирован в буфер обмена.'),
-        type: 'success',
-        theme: 'metroui',
-        layout: 'topCenter',
-        timeout: 4000,
-        progressBar: true,
-        animation: {
-            open: 'animated fadeInDown',
-            close: 'animated fadeOutUp'
-        }
-    });
-
-    e.clearSelection();
-});
-clipboard233.on('error', function (e) {
-    window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
-});
-function GweiByID(id) {
-    var oid = {1: 3, 2: 9, 3: 15, 4: 21, 5: 30, 6: 40};
-    return oid[id];
-}
-ractiveComponent['wtc-DebitcoinApp'].set('tab', 'gold');
-ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
-    if (pageS == 'send') {
-        $('#cardModal2').modal();
-        $("#ex21").bootstrapSlider({
-            ticks_toolti: true, formatter: function (id) {
-                return GweiByID(id) + ' Gwei';
-
+    clipboard99.on('success', function (e) {
+        noty({
+            text: _chat_e('Успешно!') + '<br>' + _chat_e('Адрес скопирован в буфер обмена.'),
+            type: 'success',
+            theme: 'metroui',
+            layout: 'topCenter',
+            timeout: 4000,
+            progressBar: true,
+            animation: {
+                open: 'animated fadeInDown',
+                close: 'animated fadeOutUp'
             }
         });
-        setTimeout(function () {
-            $("#ex21").bootstrapSlider('refresh')
-        }, 501);
-        setTimeout(function () {
-            $("#ex21").bootstrapSlider('refresh')
-        }, 1500);
 
+        e.clearSelection();
+    });
+    clipboard99.on('error', function (e) {
+        window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
+    });
+    clipboard.on('success', function (e) {
+        noty({
+            text: _chat_e('Успешно!') + '<br>' + _chat_e('Адрес скопирован в буфер обмена.'),
+            type: 'success',
+            theme: 'metroui',
+            layout: 'topCenter',
+            timeout: 4000,
+            progressBar: true,
+            animation: {
+                open: 'animated fadeInDown',
+                close: 'animated fadeOutUp'
+            }
+        });
+
+        e.clearSelection();
+    });
+    clipboard.on('error', function (e) {
+        window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
+    });
+    clipboard2.on('success', function (e) {
+        noty({
+            text: _chat_e('Успешно!') + '<br> Partner ' + _chat_e('Адрес скопирован в буфер обмена.'),
+            type: 'success',
+            theme: 'metroui',
+            layout: 'topCenter',
+            timeout: 4000,
+            progressBar: true,
+            animation: {
+                open: 'animated fadeInDown',
+                close: 'animated fadeOutUp'
+            }
+        });
+
+        e.clearSelection();
+    });
+    clipboard2.on('error', function (e) {
+        window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
+    });
+    clipboard233.on('success', function (e) {
+        noty({
+            text: _chat_e('Успешно!') + '<br> ' + _chat_e('Адрес скопирован в буфер обмена.'),
+            type: 'success',
+            theme: 'metroui',
+            layout: 'topCenter',
+            timeout: 4000,
+            progressBar: true,
+            animation: {
+                open: 'animated fadeInDown',
+                close: 'animated fadeOutUp'
+            }
+        });
+
+        e.clearSelection();
+    });
+    clipboard233.on('error', function (e) {
+        window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
+    });
+    function GweiByID(id) {
+        var oid = {1: 3, 2: 9, 3: 15, 4: 21, 5: 30, 6: 40};
+        return oid[id];
     }
-    if (pageS == 'virualdbc') {
+
+    ractiveComponent['wtc-DebitcoinApp'].set('tab', 'gold');
+    ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
+        if (pageS == 'send') {
+            $('#cardModal2').modal();
+            $("#ex21").bootstrapSlider({
+                ticks_toolti: true, formatter: function (id) {
+                    return GweiByID(id) + ' Gwei';
+
+                }
+            });
+            setTimeout(function () {
+                $("#ex21").bootstrapSlider('refresh')
+            }, 501);
+            setTimeout(function () {
+                $("#ex21").bootstrapSlider('refresh')
+            }, 1500);
+
+        }
+        if (pageS == 'virualdbc') {
+            swal({
+                title: _chat_e('Подтверждение'),
+                type: 'question',
+                customClass: 'swal-telegraf-modal select-form',
+
+                buttonsStyling: false,
+                confirmButtonClass: 'button-n',
+                cancelButtonClass: 'cansel-btns',
+                confirmButtonText: _chat_e('Да'),
+                cancelButtonText: _chat_e('Отменить'),
+                showCancelButton: true,
+                text: _chat_e('Вы действительно хотите перевести:') + ' <strong>' + ractiveComponent['wtc-DebitcoinApp'].get('finance_debit_coin_gold_virtual') + ' eDBC</strong><br>' + _chat_e('На основной адрес DBC'),
+                showLoaderOnConfirm: true,
+                preConfirm: function () {
+                    swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        title: _chat_e('Создание перевода DEBIT Coin...'),
+                        closeOnConfirm: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        showConfirmButton: true,
+                        showCancelButton: false,
+                        showLoaderOnConfirm: true,
+                        text: '',
+                        preConfirm: function () {
+                            return new Promise(function (resolve, reject) {
+                                // here should be AJAX request
+                                setTimeout(function () {
+                                    resolve();
+                                }, 30000);
+                            });
+                        },
+                    });
+
+                    swal.showLoading();
+
+                    API('eDBC_transfrer_DBC', {
+                        amount: ractiveComponent['wtc-DebitcoinApp'].get('finance_debit_coin_gold_virtual')
+                    }, false, function (res) {
+                        Messenger.finance.update();
+                        if (res.error) {
+                            return swal({
+                                customClass: 'swal-telegraf-modal select-form text-center',
+                                buttonsStyling: false,
+                                confirmButtonClass: 'button-n',
+                                cancelButtonClass: 'cansel-btns',
+                                title: _chat_e('Уппс...'),
+                                type: 'error',
+                                confirmButtonText: _chat_e('Ок'),
+                                showCancelButton: false,
+                                text: 'Error:' + res.error
+                            });
+                        }
+                        return swal({
+                            customClass: 'swal-telegraf-modal select-form text-center',
+                            buttonsStyling: false,
+                            confirmButtonClass: 'button-n',
+                            cancelButtonClass: 'cansel-btns',
+                            title: _chat_e('Успешно'),
+                            type: 'success',
+                            confirmButtonText: _chat_e('Ок'),
+                            showCancelButton: false,
+                            text: _chat_e('Перевод отправлен в обработку txHash:') + ' ' + res.txHash
+                        });
+
+                    }, true);
+                }
+            });
+        }
+        if (pageS == 'get') {
+            $('#cardModal').modal();
+            $('#buy_debitcoin').css('display', 'block');
+
+            document.getElementById("qr_code_vdc2").innerHTML = '';
+            new QRCode(document.getElementById("qr_code_vdc2"), {
+                text: ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address,
+                width: 170,
+                height: 170,
+                colorDark: "#000000",
+                colorLight: "#fff",
+                correctLevel: QRCode.CorrectLevel.L
+            });
+        }
+        if (pageS == 'getbtc') {
+            $('#cardModal').modal();
+            $('#buy_debitcoin').css('display', 'none');
+            document.getElementById("qr_code_vdc2").innerHTML = '';
+            new QRCode(document.getElementById("qr_code_vdc2"), {
+                text: ractiveComponent['wtc-DebitcoinApp'].get('btc_debit_token').wallet.address,
+                width: 170,
+                height: 170,
+                colorDark: "#000000",
+                colorLight: "#fff",
+                correctLevel: QRCode.CorrectLevel.L
+            });
+        }
+
+    });
+    ractiveComponent['wtc-DebitcoinApp'].on('sendCoin', function (e, tab) {
+        var __typeCoin = 'DBC';
+        var commision = '</strong> GasPrice: <strong>' + GweiByID($("#ex21").bootstrapSlider('getValue')) + ' Gwei</strong>';
+        if (tab === 'eth') {
+            __typeCoin = 'ETH';
+        }
+        if (tab === 'btc') {
+            commision = '</strong> Fee: <strong>0.0001 BTC</strong>'
+            __typeCoin = 'BTC';
+        }
+        if ($('#amount-wallet-inp').val() <= 0 || isNaN($('#amount-wallet-inp').val())) {
+            return noty({
+                text: _chat_e('Ошибка:') + ' <br>' + _chat_e('Неверная сумма перевода'),
+                type: 'error',
+                theme: 'metroui',
+                layout: 'topCenter',
+                timeout: 4000,
+                progressBar: true,
+                animation: {
+                    open: 'animated fadeInDown',
+                    close: 'animated fadeOutUp'
+                }
+            });
+        }
+        var tab_ = ractiveComponent['wtc-DebitcoinApp'].get('tab');
+
+        var myAddress;
+        if (tab_ === 'gold') {
+            myAddress = ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address;
+        }
+
+        if (tab_ === 'eth') {
+            myAddress = ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address;
+        }
+        if (tab_ === 'btc') {
+            myAddress = ractiveComponent['wtc-DebitcoinApp'].get('btc_debit_token').wallet.address;
+        }
+
+        if ($('#address-wallet-inp').val() === '' || $('#address-wallet-inp').val().length < 10 || $('#address-wallet-inp').val().length > 60) {
+            return noty({
+                text: _chat_e('Ошибка:') + ' <br>' + _chat_e('Неверный адрес кошелька'),
+                type: 'error',
+                theme: 'metroui',
+                layout: 'topCenter',
+                timeout: 4000,
+                progressBar: true,
+                animation: {
+                    open: 'animated fadeInDown',
+                    close: 'animated fadeOutUp'
+                }
+            });
+        }
+        $('#cardModal2').modal('hide');
         swal({
             title: _chat_e('Подтверждение'),
             type: 'question',
@@ -517,12 +476,12 @@ ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
             confirmButtonText: _chat_e('Да'),
             cancelButtonText: _chat_e('Отменить'),
             showCancelButton: true,
-            text: _chat_e('Вы действительно хотите перевести:') + ' <strong>' + ractiveComponent['wtc-DebitcoinApp'].get('finance_debit_coin_gold_virtual') + ' eDBC</strong><br>' + _chat_e('На основной адрес DBC'),
+            text: _chat_e('Вы действительно хотите перевести:') + ' <strong>' + $('#amount-wallet-inp').val() + ' ' + __typeCoin + '</strong><br>' + _chat_e('На адрес:') + ' <strong>' + $('#address-wallet-inp').val() + commision,
             showLoaderOnConfirm: true,
             preConfirm: function () {
                 swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
-                    title: _chat_e('Создание перевода DEBIT Coin...'),
+                    title: _chat_e('Создание перевода...'),
                     closeOnConfirm: false,
                     allowOutsideClick: false,
                     allowEscapeKey: false,
@@ -542,11 +501,19 @@ ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
 
                 swal.showLoading();
 
-                API('eDBC_transfrer_DBC', {
-                    amount: ractiveComponent['wtc-DebitcoinApp'].get('finance_debit_coin_gold_virtual')
+                API('transfer_coin', {
+                    from: myAddress,
+                    to: $('#address-wallet-inp').val(),
+                    type: __typeCoin,
+                    gasPrice: GweiByID($("#ex21").bootstrapSlider('getValue')),
+                    amount: $('#amount-wallet-inp').val()
                 }, false, function (res) {
-                    Messenger.finance.update();
                     if (res.error) {
+                        if (1155121 === res.error_code) {
+                            swal.close();
+                            $('#cardModal3').modal('show');
+                            return false;
+                        }
                         return swal({
                             customClass: 'swal-telegraf-modal select-form text-center',
                             buttonsStyling: false,
@@ -559,6 +526,8 @@ ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
                             text: 'Error:' + res.error
                         });
                     }
+                    var scan_url_ = 'https://etherscan.io/tx/';
+                    if (res.type === 'BTC') scan_url_ = 'https://blockchain.info/tx/';
                     return swal({
                         customClass: 'swal-telegraf-modal select-form text-center',
                         buttonsStyling: false,
@@ -568,172 +537,12 @@ ractiveComponent['wtc-DebitcoinApp'].on('openModal', function (e, pageS) {
                         type: 'success',
                         confirmButtonText: _chat_e('Ок'),
                         showCancelButton: false,
-                        text: _chat_e('Перевод отправлен в обработку txHash:') + ' ' + res.txHash
+                        text: _chat_e('Перевод отправлен в обработку txHash:') + ' <a href="' + scan_url_ + res.txHash + '" target="_blank">' + res.txHash + '</a>'
                     });
 
                 }, true);
             }
         });
-    }
-    if (pageS == 'get') {
-        $('#cardModal').modal();
-        $('#buy_debitcoin').css('display', 'block');
-
-        document.getElementById("qr_code_vdc2").innerHTML = '';
-        new QRCode(document.getElementById("qr_code_vdc2"), {
-            text: ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address,
-            width: 170,
-            height: 170,
-            colorDark: "#000000",
-            colorLight: "#fff",
-            correctLevel: QRCode.CorrectLevel.L
-        });
-    }
-    if (pageS == 'getbtc') {
-        $('#cardModal').modal();
-        $('#buy_debitcoin').css('display', 'none');
-        document.getElementById("qr_code_vdc2").innerHTML = '';
-        new QRCode(document.getElementById("qr_code_vdc2"), {
-            text: ractiveComponent['wtc-DebitcoinApp'].get('btc_debit_token').wallet.address,
-            width: 170,
-            height: 170,
-            colorDark: "#000000",
-            colorLight: "#fff",
-            correctLevel: QRCode.CorrectLevel.L
-        });
-    }
-
-});
-ractiveComponent['wtc-DebitcoinApp'].on('sendCoin', function (e, tab) {
-    var __typeCoin = 'DBC';
-    var commision = '</strong> GasPrice: <strong>' + GweiByID($("#ex21").bootstrapSlider('getValue')) + ' Gwei</strong>';
-    if (tab === 'eth') {
-        __typeCoin = 'ETH';
-    }
-    if (tab === 'btc') {
-        commision = '</strong> Fee: <strong>0.0001 BTC</strong>'
-        __typeCoin = 'BTC';
-    }
-    if ($('#amount-wallet-inp').val() <= 0 || isNaN($('#amount-wallet-inp').val())) {
-        return noty({
-            text: _chat_e('Ошибка:') + ' <br>' + _chat_e('Неверная сумма перевода'),
-            type: 'error',
-            theme: 'metroui',
-            layout: 'topCenter',
-            timeout: 4000,
-            progressBar: true,
-            animation: {
-                open: 'animated fadeInDown',
-                close: 'animated fadeOutUp'
-            }
-        });
-    }
-    var tab_ = ractiveComponent['wtc-DebitcoinApp'].get('tab');
-
-    var myAddress;
-    if (tab_ === 'gold') {
-        myAddress = ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address;
-    }
-
-    if (tab_ === 'eth') {
-        myAddress = ractiveComponent['wtc-DebitcoinApp'].get('debit_token').wallet.address;
-    }
-    if (tab_ === 'btc') {
-        myAddress = ractiveComponent['wtc-DebitcoinApp'].get('btc_debit_token').wallet.address;
-    }
-
-    if ($('#address-wallet-inp').val() === '' || $('#address-wallet-inp').val().length < 10 || $('#address-wallet-inp').val().length > 60) {
-        return noty({
-            text: _chat_e('Ошибка:') + ' <br>' + _chat_e('Неверный адрес кошелька'),
-            type: 'error',
-            theme: 'metroui',
-            layout: 'topCenter',
-            timeout: 4000,
-            progressBar: true,
-            animation: {
-                open: 'animated fadeInDown',
-                close: 'animated fadeOutUp'
-            }
-        });
-    }
-    $('#cardModal2').modal('hide');
-    swal({
-        title: _chat_e('Подтверждение'),
-        type: 'question',
-        customClass: 'swal-telegraf-modal select-form',
-
-        buttonsStyling: false,
-        confirmButtonClass: 'button-n',
-        cancelButtonClass: 'cansel-btns',
-        confirmButtonText: _chat_e('Да'),
-        cancelButtonText: _chat_e('Отменить'),
-        showCancelButton: true,
-        text: _chat_e('Вы действительно хотите перевести:') + ' <strong>' + $('#amount-wallet-inp').val() + ' ' + __typeCoin + '</strong><br>' + _chat_e('На адрес:') + ' <strong>' + $('#address-wallet-inp').val() + commision,
-        showLoaderOnConfirm: true,
-        preConfirm: function () {
-            swal({
-                customClass: 'swal-telegraf-modal select-form text-center',
-                title: _chat_e('Создание перевода...'),
-                closeOnConfirm: false,
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                showConfirmButton: true,
-                showCancelButton: false,
-                showLoaderOnConfirm: true,
-                text: '',
-                preConfirm: function () {
-                    return new Promise(function (resolve, reject) {
-                        // here should be AJAX request
-                        setTimeout(function () {
-                            resolve();
-                        }, 30000);
-                    });
-                },
-            });
-
-            swal.showLoading();
-
-            API('transfer_coin', {
-                from: myAddress,
-                to: $('#address-wallet-inp').val(),
-                type: __typeCoin,
-                gasPrice: GweiByID($("#ex21").bootstrapSlider('getValue')),
-                amount: $('#amount-wallet-inp').val()
-            }, false, function (res) {
-                if (res.error) {
-                    if (1155121 === res.error_code) {
-                        swal.close();
-                        $('#cardModal3').modal('show');
-                        return false;
-                    }
-                    return swal({
-                        customClass: 'swal-telegraf-modal select-form text-center',
-                        buttonsStyling: false,
-                        confirmButtonClass: 'button-n',
-                        cancelButtonClass: 'cansel-btns',
-                        title: _chat_e('Уппс...'),
-                        type: 'error',
-                        confirmButtonText: _chat_e('Ок'),
-                        showCancelButton: false,
-                        text: 'Error:' + res.error
-                    });
-                }
-                var scan_url_ = 'https://etherscan.io/tx/';
-                if (res.type === 'BTC') scan_url_ = 'https://blockchain.info/tx/';
-                return swal({
-                    customClass: 'swal-telegraf-modal select-form text-center',
-                    buttonsStyling: false,
-                    confirmButtonClass: 'button-n',
-                    cancelButtonClass: 'cansel-btns',
-                    title: _chat_e('Успешно'),
-                    type: 'success',
-                    confirmButtonText: _chat_e('Ок'),
-                    showCancelButton: false,
-                    text: _chat_e('Перевод отправлен в обработку txHash:') + ' <a href="' + scan_url_ + res.txHash + '" target="_blank">' + res.txHash + '</a>'
-                });
-
-            }, true);
-        }
     });
 });
 ractiveComponent['wtc-DebitcoinApp'].on('barcodeScanner', function (e, pageS) {
@@ -833,6 +642,7 @@ ractiveComponent['wtc-DebitcoinApp'].on('setSubTab', function (e, pageS) {
                 ractiveComponent['wtc-DebitcoinApp'].set('transactions' + response.type, response.tx);
                 ractiveComponent['wtc-DebitcoinApp'].set('transactions_load' + response.type, true);
             }
+
             if (response.type === 'ETH') {
                 for (var i in response.tx) {
                     var update_time = moment(new Date(response.tx[i].timestamp * 1000));
@@ -1260,106 +1070,3 @@ function transfer_coin(user, param, callback) {
 
 }
 
-
-
-ractiveComponent['wtc-DebitcoinApp'].set('MyProfile', MyProfile);
-ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', '...');
-ractiveComponent['wtc-DebitcoinApp'].set('btc_finance_btc', '...');
-ractiveComponent['wtc-DebitcoinApp'].set('eth_finance_eth', '...');
-ractiveComponent['wtc-DebitcoinApp'].set('sub_tab', 'wallet');
-ractiveComponent['wtc-DebitcoinApp'].set('showPrivate_', false);
-ractiveComponent['wtc-DebitcoinApp'].set('eth_status', true);
-ractiveComponent['wtc-DebitcoinApp'].set('cryptoAccount', false);
-var tab_ = ractiveComponent['wtc-DebitcoinApp'].get('tab');
-if (tab_ === 'gold' || tab_ === 'eth') {
-    if (localStorage.getItem('installTime') && localStorage.getItem('installTime') === 'crypto.wallet.eth.auth') {
-        ractiveComponent['wtc-DebitcoinApp'].set('cryptoAccount', true);
-
-        var priv = localStorage.getItem('walletPrivateKey');
-        var address_my = keythereum.privateKeyToAddress(priv);
-        var wallet_my = {
-            wallet: {
-                address: address_my,
-                balance: {
-                    eth: +(+web3.eth.getBalance(address_my) / 1000000000000000000).toFixed(8),
-                    ethusd: 0,
-                    dbc: (+contract.balanceOf(address_my) / _contract_fixed).toFixed(2)
-                }
-            }
-        };
-        ractiveComponent['wtc-DebitcoinApp'].set('debit_token', wallet_my);
-        ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', wallet_my.wallet.balance.dbc);
-        $.ajax({
-            url: 'https://api.coinmarketcap.com/v1/ticker/ethereum/', type: 'get', success: function (res) {
-                try {
-                    wallet_my.wallet.balance.ethusd = (wallet_my.wallet.balance.eth * res[0].price_usd).toFixed(2);
-                    ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', wallet_my.wallet.balance.ethusd);
-                } catch (e) {
-                    console.error('ERROR parse coinmarketcap', e)
-                }
-            }
-        });
-        ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', wallet_my.wallet.balance.eth);
-        ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', wallet_my.wallet.balance.ethusd);
-        API('getPartnerTxDebitCoin', {}, false, function (response) {
-            if (!response.partner || !response.partner[0] || !response.partner[0].referal) {
-                response.partner = [{referal: 10}];
-            }
-
-            var total_proff = 0;
-            for (var i in response.txes) {
-                var price;
-                if (!response.txes[i].period || +response.txes[i].period === 1) {
-                    price = 0.1248
-                }
-                else if (+response.txes[i].period === 2) {
-                    price = 0.1743
-                }
-                else if (+response.txes[i].period === 3) {
-                    price = 0.4324
-
-                } else if (+response.txes[i].period === 4) {
-                    price = 0.7533234
-                } else if (+response.txes[i].period === 5) {
-                    price = 0.6
-                } else if (+response.txes[i].period === 6) {
-                    price = 0.75
-                } else if (+response.txes[i].period === 7) {
-                    price = 0.60
-                } else {
-                    price = 1
-                }
-                var update_time = moment(response.txes[i].update_at);
-                var date_now = update_time.format('DD.MM.YYYY');
-                var time = update_time.format('HH:mm');
-                response.txes[i].date = date_now;
-                response.txes[i].time = time;
-                response.txes[i].partner_profit = 0;
-                if (response.txes[i].pay_status === '1')
-                    response.txes[i].partner_profit = +(+response.txes[i].dbc / 100 * +response.partner[0].referal).toFixed(2);
-
-                total_proff += response.txes[i].partner_profit;
-                response.txes[i].type_ = '+';
-            }
-            ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner', response.txes);
-            ractiveComponent['wtc-DebitcoinApp'].set('total_proff', (total_proff.toFixed(2)));
-            ractiveComponent['wtc-DebitcoinApp'].set('transactions_partner_info', response.partner[0]);
-        });
-    } else {
-        API('eth_status', {}, false, function (res) {
-            ractiveComponent['wtc-DebitcoinApp'].set('eth_status_dev', res.eth_status_dev);
-        });
-
-        API('wallet_coin', {type: 'DBC'}, false, function (res) {
-            ractiveComponent['wtc-DebitcoinApp'].set('debit_token', res);
-            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', res.wallet.balance.dbc);
-            ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', res.wallet.balance.eth);
-            ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', res.wallet.balance.ethusd);
-        }, true);
-
-        Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-            if (alldata && alldata.wallet)
-                ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
-        });
-    }
-}

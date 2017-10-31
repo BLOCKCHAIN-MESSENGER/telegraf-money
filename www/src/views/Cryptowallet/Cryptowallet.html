@@ -1,0 +1,624 @@
+<script type="text/javascript" src="src/js/eth-util.js"></script>
+<div class="wrapper cards-wrapper new-cards-area cryptoWallet debit-wrapper">
+    <div class="contents">
+        <div id="">
+            <div class="header chat-hr">
+                <a href="#menu">
+                    <span></span>
+                </a> <strong>{{_e('Кошельки')}}</strong>
+                <div class="contact-panel">
+                    <h3>{{_e('Кошельки')}}</h3>
+
+
+                    <div class="close-blocks">
+                        <div class="cls3" on-click="setPage:sendmoney"></div>
+                        <div class="cls1" on-click="setPage:guarantee"></div>
+                        <div class="cls2" on-click="setPage:credit"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<div class="icon-area chat"></div>-->
+            <scroll class_scroll="scroller-b-Cards" class_content="" id_content="">
+                {{#if tab === 'all'}}
+
+                {{#if load}}
+                {{#crypto_wallets}}
+                <div class="clzs">
+
+                    <div class="cards-area">
+
+                        <div>
+
+                            <div class="">
+                                <div class="flipper">
+                                    <div class="front card-full {{#if type =='DBC'}}
+                                card-real
+                                {{else}}
+                                card-virtual
+                                {{/if}}">
+                                        <div class="img-l">
+                                            <div class="prise-art">
+
+
+                                                <strong>
+                                                    <i>{{balance}}</i></strong>
+                                                {{type}}
+                                            </div>
+                                        </div>
+
+                                        <div class="img-ls">
+                                            {{#if type =='ETH'}}
+                                            <!--visa-->
+                                            <img src="./src/img/eth.png" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                            {{/if}}
+
+                                            {{#if type =='BTC'}}
+                                            <!--visa-->
+                                            <img src="./src/img/btc_card.png" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                            {{/if}}
+
+                                            {{#if type =='DBC'}}
+                                            <!--visa-->
+                                            <img src="./src/img/dbc_card.png" class="mCS_img_loaded"
+                                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                                            {{/if}}
+
+                                        </div>
+
+                                        <div class="numb-card">{{address}}</div>
+                                        <span class="dbts"></span>
+
+                                        <div class="card-h">
+                                            <div class="fll">~{{(usd[type] * +balance).toFixed(2)}} USD</div>
+                                            <div class="flr">
+                                                {{#if client == true}}
+                                                Decentralized Wallet
+                                                {{else}}
+                                                Cloud Wallet
+                                                {{/if}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="clact">
+                            <h3>
+                                Wallet <span
+                                    style="font-size: 9px;">{{#if client == true}}
+                                                Decentralized Wallet
+                                                {{else}}
+                                                Cloud Wallet
+                                                {{/if}} </span>
+
+                            </h3>
+                            <div class="blko">
+                                <span class="summ"></span>
+                            </div>
+
+                            <div class="balance-nv">
+                                <h5>
+                                    {{balance}} <i>{{type}}</i>
+                                </h5>
+                                <br>
+                                <p style="margin-top: 0;">{{_e('Баланс кошелька:')}} {{address}}</p>
+                                <a class="info-areas pointer" on-click="wallet_open:{{.}}">{{_e('Информация')}}</a>
+                            </div>
+
+                            <!--<div class="block-bts m-blk">-->
+                            <!--<a class="blks-btn block-button pointer" style="text-align: center;text-decoration: none;" on-click="setPage:topup:{{cloud_card_id}}">{{_e('Пополнить')}}-->
+                            <!--&lt;!&ndash;<span>{{_e('+ 50% Бонус')}}</span>&ndash;&gt;-->
+                            <!--</a>-->
+                            <!--</div>-->
+                        </div>
+
+
+                    </div>
+
+                </div>
+                    {{else}}
+                    <center><h2>{{_e('У вас нет импортированных кошельков.')}}</h2></center>
+                    {{/}}
+
+                    <button class="button-n flr-btn" on-click="AddCryptoWallet">{{_e('Добавить крипто кошелек')}}</button>
+                    <button class="button-n btn-upd" on-click="updateWalletOfCloudServer">{{_e('Скачать кошельки из Telegraf Cloud')}}
+                    </button>
+
+                    {{else}}
+                    <div class="cards-area" style="height: 89vh;">
+                        <div class="fixed-loader"></div>
+                    </div>
+                    {{/if}}
+                {{else}}
+                <div class="cnt-area">
+                    {{#if eth_status_dev ==true}}
+                    <div class="alert alert-warning" style="width: 451px;margin: 0 auto;padding: 6px 24px;">
+                        <div style="width: 10%; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 78.561 78.561" style="enable-background:new 0 0 78.561 78.561;" xml:space="preserve">
+<g>
+	<g>
+		<circle cx="39.28" cy="57.772" r="3.632" style="fill: #8f6d3b;"></circle>
+		<path d="M38.792,48.347c1.104,0,2-0.896,2-2v-19c0-1.104-0.896-2-2-2s-2,0.896-2,2v19C36.792,47.451,37.688,48.347,38.792,48.347z    " style="fill: #8f6d3b;"></path>
+		<path d="M46.57,11.542l-0.091-0.141c-1.852-2.854-3.766-5.806-7.199-5.806c-3.578,0-5.45,2.994-7.26,5.891    c-0.009,0.014-0.065,0.104-0.074,0.119L0.278,65.266C0.096,65.574,0,65.735,0,66.092c0,3.896,3.135,6.874,6.988,6.874h64.585    c3.854,0,6.988-2.979,6.988-6.874c0-0.357-0.096-0.614-0.277-0.921L46.57,11.542z M71.573,68.966H6.988    c-1.461,0-2.717-0.951-2.95-2.394l31.374-53.061c1.554-2.487,2.572-3.963,3.868-3.963c1.261,0,2.457,1.87,3.843,4.006    l31.399,53.007C74.29,68.003,73.034,68.966,71.573,68.966z" style="fill: #8f6d3b;"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        </div><div style="    width: 88%;
+    display: inline-block;
+    margin-left: 2%;">
+                        <strong style="font-weight: 600 !important;">{{_e('Внимание')}}!</strong> {{_e('Сервер выполняет синхронизацию с Blockchain ваши средства будут доступны через несколько часов')}}
+                    </div>
+                    </div>
+                    {{/if}}
+                    <div class="fll">
+                        <div class="money-ns fll">
+
+                            {{#if wallet.type =='ETH'}}
+                            <!--visa-->
+                            <img src="./src/img/eth.png" class="mnt" style="    padding: 8px;"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                            {{/if}}
+
+                            {{#if wallet.type =='BTC'}}
+                            <!--visa-->
+                            <img src="./src/img/btc_card.png" class="mnt" style="    padding: 8px;"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                            {{/if}}
+
+                            {{#if wallet.type =='DBC'}}
+                            <!--visa-->
+                            <img src="./src/img/dbc_card.png" class="mnt" style="    padding: 8px;"
+                                 onerror="this.src='../../.'+this.src;this.onerror = null;">
+                            {{/if}}
+
+                        </div>
+                        <div class="dbt-ns fll" style="width: 279px;margin-top: 8px;">
+                            <input type="text" style="font-size:15px;display: inline-block;width: 236px"
+                                   class="form-control" aria-describedby="basic-addon2233" readonly
+                                   id="address-wallet-inp-get2233" value="{{wallet.address}}">
+                            <span class="input-group-addon"
+                                  style="cursor: pointer;display: inline-block;width: 37px;border-radius: 6px;position: relative;padding: 10px;height: 33px;z-index: 111;"
+                                  id="basic-addon22233" data-clipboard-target="#address-wallet-inp-get2233"><i
+                                    class="fa fa-clipboard" aria-hidden="true"></i></span>
+                        </div>
+
+                        <div class="btn-st">
+                            <div class="btn-area-cards">
+                                <button class="button-n left-btn" on-click="openModal:send">
+                                    {{_e('Отправить')}}
+                                </button>
+                                <button class="button-n right-btn" on-click="openModal:get">
+                                    {{_e('Пополнить.')}}
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flr">
+                        <div class="mnt-s">{{wallet.balance}} {{wallet.type}}
+                            <hr style="margin: 6px 0 6px 25px;">
+                            <div style="display: inline-block;
+    border: 1px dotted;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 1px;">{{+(+wallet.balance).toFixed(4)}}  {{wallet.type}} <span style="font-size: 12px;color: #3590f5;">(≈ ${{(+wallet.balance).toFixed(2)}})</span>
+                            </div>
+
+                        </div>
+                        <div class="mnt-s2">
+
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="tabs-panel">
+                        <a href="#" on-click="setSubTab:wallet" {{#if sub_tab=='wallet'}}class="active"{{/if}}>{{_e('Кошелек')}}</a>
+                        <a href="#" on-click="setSubTab:tx" {{#if sub_tab=='tx'}}class="active"{{/if}}>{{_e('Транзакции')}}</a>
+                        <!--<a href="#" on-click="setSubTab:partner" {{#if sub_tab=='partner'}}class="active"{{/if}}>{{_e('Партнерская программа')}}</a>-->
+                    </div>
+
+                    {{#if sub_tab == 'wallet'}}
+                    <div class="tls-ls">
+
+
+                        <a class="btn_link_ert" href="https://www.myetherwallet.com/" target="_blank">
+                            <img src="./src/img/logo-myetherwallet.svg" height="100%" alt="MyEtherWallet">
+                        </a>
+
+
+                        <a class="btn_link_ert" style="background: #fff;float: right;"
+                           href="https://etherscan.io/address/{{debit_token.wallet.address}}#tokentxns"
+                           target="_blank"><img src="./src/img/EtherscanLogo-transparent-b.png" height="100%"
+                                                alt="Etherscan"></a>
+
+                        {{#if showPrivate_ }}
+                        <p class="inpbort">{{debit_tokenPrivateKey}}</p>
+                        <button class="button-n right-btn" on-click="showPrivate">{{_e('Скрыть')}}</button>
+                        {{else}}
+                        <div style="padding-top: 40px;">
+                            <button class="button-n left-btn" on-click="showPrivate">
+                                {{_e('Показать Private Key')}}
+                            </button>
+                            {{#if !cryptoAccount}}
+                            <button class="button-n right-btn" on-click="keyStoreFile">
+                                {{_e('Скачать Keystore File')}}
+                            </button>
+                            {{/if}}
+                        </div>
+                        {{/if}}
+
+                    </div>
+                    {{/if}}
+                    {{#if sub_tab == 'tx'}}
+                    <div class="tls-ls">
+                        <div class="pod-cards">
+
+
+                            {{#transactions}}
+                            {{#if type !='approve'}}
+                            {{#if !transactions[@index-1] || transactions[@index-1].date != date}}
+                            <div class="date-area">{{date}}</div>
+                            {{/if}}
+                            <div class="prv-ns stl-creds {{#if type_ == '-'}}min-ar{{/if}}">
+                                <div class="fll-p arw1"><p class="cldsd"><span>{{time}}</span></p>
+                                    <h3>Transfer from <a href="https://etherscan.io/address/{{from}}"
+                                                         target="_blank">{{from}}</a> to
+                                        <a href="https://etherscan.io/address/{{to}}" target="_blank">{{to}}</a>
+                                        <p class="tx-id-card">
+                                                <span>TxHash: <a href="https://etherscan.io/tx/{{hash}}"
+                                                                 target="_blank">{{hash}}</a>
+                                                    {{#if wallet.type !== 'DBC'}}
+                                                    {{#if isError === "0"}}
+                                                    <span style="    color: #0cf10c;
+    font-size: 12px;
+    font-weight: 600 !important;">Success ({{confirmations}})</span>
+                                                    {{else}}
+                                                    <span style="    color: red;
+    font-size: 12px;
+    font-weight: 600 !important;">Error</span>
+                                                    {{/if}}
+                                                    {{/if}}
+                                                </span>
+                                        </p>
+                                    </h3>
+                                </div>
+                                <div class="flr-p"><h3
+                                        class="{{#if type_ == '-'}}minus-s{{/if}}{{#if type_ == '+'}}pluso-s{{/if}}">
+                                    {{type_}} {{value}} {{wallet.type}}<span style="font-size: 10px;
+    display: block;
+    color: #d0d0d0;
+    font-weight: 600 !important;">{{#if wallet.type!=='DBC'}}Fee: {{fee}} {{wallet.type}}{{/if}}</span></h3></div>
+                            </div>
+                            {{/if}}
+                            {{/}}
+                        </div>
+                        {{#if !transactions_load}}
+                            <div class="fixed-loader"></div>
+                        {{/if}}
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        {{_e('Ваши транзакции')}}
+                        <p>{{_e('Транзакции осуществляются, когда вы получаете и отправляете')}} {{wallet.type}}</p>
+                    </div>
+                    {{/if}}
+
+
+                </div>
+
+                {{/if}}
+
+            </scroll>
+
+        </div>
+    </div>
+
+    <div class="arrow-st"></div>
+
+    <div class="chat-panel-bottom">
+        <div class="ltos"></div>
+
+        <ul class="nav-nt">
+            <!--<li class="active">-->
+            <!--<a class="pointer">{{_e('Активные карты')}}</a>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href="#">{{_e('Заблокированные')}}</a>-->
+            <!--</li>-->
+
+        </ul>
+
+        <div class="spl-icn"></div>
+        <scroll class_scroll="scroller-b-Cards-component-cards" class_content="" id_content="">
+            <h2>Attention!</h2>
+            <hr>
+            <p style="    color: #fff;padding: 15px;text-align: center;">
+                While we used the Send page to access your wallet this time, it is not recommended that you do so in the
+                future. You only need your address in order to see your balance. Do not enter your private key anywhere
+                if you just want to check on the balance or see incoming / outgoing transactions.
+                <br>
+                <br>
+                Instead, search your address (or bookmark it) on etherscan.io.
+                <br>
+                <br>
+                While you are at it, you should bookmark Telegraf.Money as well.
+                <br>
+                <br>
+                Telegraf Money is a client-side wallet, which means you hold your keys. If someone gets your private key
+                (keystore file, mnemonic, passwords), they have complete access to your funds. There is no stopping
+                transactions, canceling transactions, or resetting passwords. Once a transaction is on the blockchain,
+                it's final.
+                <br>
+                <br>
+                For this reason, it is very, very important to keep your private key a secret and use it as rarely as
+                possible. Only enter it on sites after double-checking to be sure you are on the correct site.
+            </p>
+        </scroll>
+    </div>
+
+    <div class="modal fade info-card-wrapper" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModal"
+         aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1>{{_e('Получить')}}</h1>
+                    <div id="qr_code_vdc2" style="">
+                        <i style="font-size: 42px;" class="fa fa-qrcode qr-ns" aria-hidden="true"></i>
+                    </div>
+
+                    <br>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <form action="">
+
+
+                        <div class="imp-area-modal-card2">
+
+                            <div class="select-form">
+                                <label>{{_e('Копировать и поделиться адресом')}}</label>
+                                <a href="#" class="vqr" style="display: none">{{_e('Просмотреть QR-код')}}</a>
+
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                           value="{{wallet.address}}"
+                                           aria-describedby="basic-addon22" id="address-wallet-inp-get">
+                                    <span class="input-group-addon" style="cursor: pointer;" id="basic-addon22"
+                                          data-clipboard-target="#address-wallet-inp-get"><i class="fa fa-clipboard"
+                                                                                             aria-hidden="true"></i></span>
+                                </div>
+
+                                <br>
+
+                                <div class="btn-area-cards">
+                                    <button onclick="window.open('https://debitcoin.io','_blank')"
+                                            class="button-n left-btn" id="buy_debitcoin"
+                                            aria-hidden="true">{{_e('Купить DEBIT Coin')}}
+                                    </button>
+                                    <button class="button-n right-btn" type="button" data-dismiss="modal"
+                                            aria-hidden="true">
+                                        {{_e('Закрыть')}}
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade info-card-wrapper" id="cardModal2" tabindex="-1" role="dialog"
+         aria-labelledby="cardModal2"
+         aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1>{{_e('Отправить')}}</h1>
+                    <div class="osd-area">
+                        {{#if wallet.type == 'DBC'}}
+                        {{_e('Мгновенно отправьте DEBIT Coin на любой адрес DEBIT Coin (Ethereum Token).')}}
+                        {{/if}}
+                        {{#if wallet.type == 'ETH'}}
+                        {{_e('Мгновенно отправьте Ethereum на любой адрес Ethereum. (ETH)')}}
+                        {{/if}}
+                        {{#if wallet.type == 'BTC'}}
+                        {{_e('Мгновенно отправьте Bitcoin на любой адрес Bitcoin. (BTC)')}}
+                        {{/if}}
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <form action="">
+
+
+                        <div class="imp-area-modal-card2">
+
+                            <div class="select-form">
+                                <label>{{_e('Кому адрес:')}}</label>
+                                <a class="vqr pointer" on-click="barcodeScanner">{{_e('Сканировать QR Code')}}</a>
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                           placeholder="0x577F56a16080787323A8E4A9227c040b1C2017cD"
+                                           aria-describedby="basic-addon2" id="address-wallet-inp">
+                                    <span class="input-group-addon" style="cursor: pointer;" id="basic-addon2"><i
+                                            style="font-size: 22px;" class="fa fa-link" id="address-wallet-i"
+                                            aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="select-form">
+                                <label>{{_e('Сумма:')}}</label>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="0" id="amount-wallet-inp">
+                                    <span class="input-group-addon"
+                                          aria-describedby="amount-wallet-inp">
+                                            {{#if wallet.type == 'DBC'}}DEBIT Coin{{/if}}
+                                            {{#if wallet.type == 'ETH'}}ETH{{/if}}
+                                            {{#if wallet.type == 'BTC'}}BTC{{/if}}
+                                            </span>
+                                </div>
+                            </div>
+                            {{#if tab != 'btc'}}
+                            <div class="select-form" style="padding: 0 20px;">
+                                <label>Gas Price: </label>
+                                <input id="ex21" type="text"
+                                       data-provide="slider"
+                                       data-slider-ticks="[1,2,3,4,5]"
+                                       data-lider-tooltip="top"
+                                       data-slider-ticks-labels='["{{_e('Очень медленно')}}","{{_e('Медленно')}}","{{_e('Средне')}}",
+                                "{{_e('Быстро')}}", "{{_e('Очень быстро')}}"]'
+                                data-slider-min="1"
+                                data-slider-max="5"
+                                data-slider-step="1"
+                                data-slider-value="4"
+                                onchange="console.log()"/>
+                            </div>
+                            {{/if}}
+
+
+                            <div class="clearfix"></div>
+                            <!-- button block -->
+                            <div class="btn-area-cards">
+                                <button class="button-n left-btn" type="button" on-click="sendCoin:{{wallet.type}}">
+                                    {{_e('Перевести')}}
+                                </button>
+                                <button class="button-n right-btn" type="button" data-dismiss="modal"
+                                        aria-hidden="true">{{_e('Отмена')}}
+                                </button>
+
+                            </div>
+
+                            <br>
+                            <br>
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade info-card-wrapper" id="cardModal3" tabindex="-1" role="dialog"
+         aria-labelledby="cardModal2"
+         aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body" style="padding: 20px;">
+                    <div style="max-width: 400px; margin: 0 auto;">
+                        <h1>{{_e('Ошибка')}}</h1>
+                        <div class="osd-area">
+                            {{_e('У вас недостачно ETH (Газа) для оплаты комиссии за транзакцию пожалуйста, пополните свой ETH адрес:')}}
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                        <div class="input-group">
+                            <input style="background: none;" type="text" class="form-control"
+                                   value="{{debit_token.wallet.address}}"
+                                   aria-describedby="basic-addon2299" id="address-wallet-inp-get99">
+                            <span class="input-group-addon" style="cursor: pointer;" id="basic-addon2299"
+                                  data-clipboard-target="#address-wallet-inp-get"><i class="fa fa-clipboard"
+                                                                                     aria-hidden="true"></i></span>
+                        </div>
+                        <div class="osd-area">{{_e('Рекомендуемая минимальная сумма - 0.01 ETH')}}</div>
+                        <br>
+                        <div style="max-width: 100%;text-align: -webkit-center;">
+                            <a target="_blank" href="https://www.bestchange.ru/?p=312759"
+                               style="margin: 0 auto;"><img
+                                    src="http://www.bestchange.ru/images/banners/300x100-11.jpg"
+                                    alt="Самые дешевые обменники"
+                                    title="BestChange.ru - Мониторинг обменников в интернете" width="300"
+                                    height="100" border="0"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal db-modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="newModal"
+         aria-hidden="true" style="display: none; position:absolute;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="group-16">
+                        <p class="text-2">{{_e('Добавить или Импортировать кошелек')}}</p>
+                        <p class="text-3">{{_e('Telegraf.Money не держит ваши ключи для вас. Мы не можем обращаться к учетным записям, восстанавливать ключи, сбрасывать пароли и делать обратные транзакции. Защитите свои ключи. Вы сами несете ответственность за сохранность своих доступов.')}}</p>
+                        <div class="group-28 group" id="addressType" style="text-align: center;">
+                            <!--<input class="radio" id="btcradio" type="radio" name="addresstype" value="BTC" disabled="disabled"> <label for="btcradio">Bitcoin</label>-->
+                            <input class="radio" id="ethradio" type="radio" name="addresstype" value="ETH"
+                                   style="margin-left: 20px"> <label for="ethradio">Ethereum</label>
+                            <input class="radio" id="dbradio" type="radio" name="addresstype" value="DBC"
+                                   style="margin-left: 20px" checked=""> <label for="dbradio">Debitcoin</label>
+                            <!--<input class="radio" id="e20radio" type="radio" name="addresstype" value="ERC-20" disabled="disabled"> <label for="btcradio">Other ERC-20</label>-->
+                        </div>
+
+                    </div>
+
+                    <div class="buttons-area-db">
+
+                        <button class="button-n add-new" on-click="new_crypto_wallet">{{_e('Добавить новый кошелек')}}
+                        </button>
+                        <br>
+                        <hr>
+                        <div class="import-text-st">{{_e('Импорт кошелека')}}</div>
+                        <input type="file" style="display: none" id="file-input-keystore">
+                        <button class="button-n import-btn" onclick="$('#file-input-keystore').trigger('click');">
+                            {{_e('Импорт KeyStore File')}}
+                        </button>
+                        <button class="button-n import-btn" on-click="import_crypto_wallet_privatekey">{{_e('Импорт Private Key')}}
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

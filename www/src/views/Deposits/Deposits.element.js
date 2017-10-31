@@ -50,11 +50,12 @@ var WtcDeposits = Ractive.extend({
                 }
 
             });
-            API('wallet_coin', {type: 'DBC'}, false, function (res) {
-                ractiveComponent['wtc-DepositsApp'].set('debit_token', res);
-                ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold', res.wallet.balance.dbc);
-                ractiveComponent['wtc-DepositsApp'].set('finance_eth', res.wallet.balance.eth);
-                ractiveComponent['wtc-DepositsApp'].set('eth_finance_eth', res.wallet.balance.eth.toFixed(4));
+            Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
+                ractiveComponent['wtc-DepositsApp'].set('debit_token',Messenger.finance.crypto_wallet_dbc);
+                ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold',Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
+                ractiveComponent['wtc-DepositsApp'].set('finance_eth',Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
+                ractiveComponent['wtc-DepositsApp'].set('eth_finance_eth',Messenger.finance.crypto_wallet_dbc.wallet.balance.eth.toFixed(4));
+                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd',Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
 
                 ractiveComponent['wtc-DepositsApp'].set('finance_ethusd', res.wallet.balance.ethusd);
                 if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');

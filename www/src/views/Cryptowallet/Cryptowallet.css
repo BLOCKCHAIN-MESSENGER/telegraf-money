@@ -1,23 +1,23 @@
 /* line 1, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031}}
-body .new-cards-area .clzs:hover {
+body .cryptoWallet .clzs:hover {
   z-index: 1 !important;
   position: relative !important;
 }
 /* line 5, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000035}}
-.new-cards-area .clzs {
+.cryptoWallet .clzs {
   clear: both !important;
   height: 214px;
 }
 /* line 9, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000039}}
-.new-cards-area .back.card-full {
+.cryptoWallet .back.card-full {
   margin-top: -174px !important;
 }
 /* line 12, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000312}}
-.new-cards-area p.ppls {
+.cryptoWallet p.ppls {
   clear: both;
   display: block;
   width: 100%;
@@ -29,14 +29,14 @@ body .new-cards-area .clzs:hover {
 }
 /* line 22, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000322}}
-.new-cards-area .block-icon {
+.cryptoWallet .block-icon {
   width: 20px !important;
   margin-top: 1px !important;
 }
 @media (min-width: 900px) {
   /* line 27, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000327}}
-  .new-cards-area .back.card-full {
+  .cryptoWallet .back.card-full {
     margin-top: -174px !important;
     margin-left: 60px;
     background: #dc323d;
@@ -49,7 +49,7 @@ body .new-cards-area .clzs:hover {
 @media (min-width: 900px) and (max-width: 899px) {
   /* line 39, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000339}}
-  .new-cards-area .back.card-full {
+  .cryptoWallet .back.card-full {
     margin-top: -174px !important;
     margin-left: 20px !important;
     background: #dc323d;
@@ -62,23 +62,23 @@ body .new-cards-area .clzs:hover {
 @media (max-width: 600px) {
   /* line 50, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000350}}
-  .new-cards-area .clzs:first-child .back.card-full {
+  .cryptoWallet .clzs:first-child .back.card-full {
     margin-top: -200px !important;
   }
   /* line 53, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000353}}
-  .new-cards-area .clzs .back.card-full {
+  .cryptoWallet .clzs .back.card-full {
     margin-top: -200px !important;
   }
 }
 /* line 57, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000357}}
-body .new-cards-area .clzs .card-full {
+body .cryptoWallet .clzs .card-full {
   box-shadow: 1px 1px 13px 0px rgba(50, 50, 50, 0.28) !important;
 }
 /* line 60, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000360}}
-.new-cards-area .flip-container {
+.cryptoWallet .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
@@ -86,7 +86,7 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 66, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000366}}
-.new-cards-area .flip-container:hover .flipper {
+.cryptoWallet .flip-container:hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
@@ -94,12 +94,12 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 72, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000372}}
-.new-cards-area .prise-art strong {
+.cryptoWallet .prise-art strong {
   margin-left: -6px;
 }
 /* line 75, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000375}}
-.new-cards-area .flipper {
+.cryptoWallet .flipper {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
   -moz-transition: 0.6s;
@@ -112,7 +112,7 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 86, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000386}}
-.new-cards-area .front,
+.cryptoWallet .front,
 .back {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -125,12 +125,12 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 96, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000396}}
-.new-cards-area .front {
+.cryptoWallet .front {
   z-index: 2;
 }
 /* line 99, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\0000399}}
-.new-cards-area .back {
+.cryptoWallet .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
@@ -144,12 +144,12 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 111, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003111}}
-.new-cards-area .block-icon {
+.cryptoWallet .block-icon {
   top: 78px !important;
 }
 /* line 114, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003114}}
-.new-cards-area .balance-nv a {
+.cryptoWallet .balance-nv a {
   background: #ffffff;
   border: 0;
   border-radius: 50px;
@@ -176,37 +176,37 @@ body .new-cards-area .clzs .card-full {
 }
 /* line 140, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003140}}
-body .new-cards-area .balance-nv a:hover {
+body .cryptoWallet .balance-nv a:hover {
   background: #D63749 !important;
   color: #fff !important;
   opacity: 1 !important;
 }
 /* line 145, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003145}}
-.new-cards-area .hover-area-card h5 {
+.cryptoWallet .hover-area-card h5 {
   position: absolute !important;
   margin-top: 90px !important;
 }
 @media (max-width: 310px) {
   /* line 150, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003150}}
-  body .new-cards-area .numb-card {
+  body .cryptoWallet .numb-card {
     font-size: 13px !important;
   }
   /* line 153, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003153}}
-  body .new-cards-area .prise-art {
+  body .cryptoWallet .prise-art {
     font-size: 19px !important;
   }
   /* line 156, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003156}}
-  body .new-cards-area .card-full {
+  body .cryptoWallet .card-full {
     height: 137px;
   }
 }
 /* line 160, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003160}}
-.new-cards-area a.info-areas {
+.cryptoWallet a.info-areas {
   clear: both;
   display: block;
   margin-bottom: -22px;
@@ -215,12 +215,12 @@ body .new-cards-area .balance-nv a:hover {
 }
 /* line 167, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003167}}
-.new-cards-area a.info-areas:hover {
+.cryptoWallet a.info-areas:hover {
   opacity: 0.8;
 }
 /* line 170, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003170}}
-.new-cards-area .hover-area-card h5 {
+.cryptoWallet .hover-area-card h5 {
   color: #fff;
   margin-top: 0px;
   height: 20px;
@@ -231,19 +231,19 @@ body .new-cards-area .balance-nv a:hover {
 @media (min-width: 900px) {
   /* line 179, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003179}}
-  .new-cards-area .card-full a.info-areas {
+  .cryptoWallet .card-full a.info-areas {
     display: none !important;
   }
   /* line 182, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003182}}
-  .new-cards-area .hover-area-card .clast-dv,
-  .new-cards-area .hover-area-card button.act-al {
+  .cryptoWallet .hover-area-card .clast-dv,
+  .cryptoWallet .hover-area-card button.act-al {
     display: none !important;
   }
 }
 /* line 186, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003186}}
-body .new-cards-area .back.card-full:hover {
+body .cryptoWallet .back.card-full:hover {
   background: #dc323d;
   background: -moz-linear-gradient(top, #dc323d 0%, #6d0019 100%);
   background: -webkit-linear-gradient(top, #dc323d 0%, #6d0019 100%);
@@ -252,7 +252,7 @@ body .new-cards-area .back.card-full:hover {
 }
 /* line 193, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003193}}
-body .new-cards-area a.info-areas {
+body .cryptoWallet a.info-areas {
   clear: both;
   display: block;
   margin-bottom: -36px;
@@ -266,21 +266,21 @@ body .new-cards-area a.info-areas {
 }
 /* line 205, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003205}}
-.new-cards-area .img-ls {
+.cryptoWallet .img-ls {
   float: left;
   right: auto;
   left: 12px;
 }
 /* line 210, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003210}}
-.new-cards-area .card-full img {
+.cryptoWallet .card-full img {
   display: block;
   float: left !important;
 }
 @media (min-width: 360px) and (max-width: 699px) {
   /* line 215, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003215}}
-  .new-cards-area .card-full {
+  .cryptoWallet .card-full {
     position: relative;
     max-width: 321px !important;
     height: 173px !important;
@@ -288,21 +288,21 @@ body .new-cards-area a.info-areas {
 }
 /* line 221, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003221}}
-.new-cards-area a.info-areas:hover {
+.cryptoWallet a.info-areas:hover {
   background: #DC323D !important;
   color: #fff !important;
   opacity: 1 !important;
 }
 /* line 226, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003226}}
-.cryptoWallet .new-cards-area .img-l i {
+.cryptoWallet .cryptoWallet .img-l i {
   font-style: normal;
   font-size: 11px;
   vertical-align: text-bottom;
 }
 /* line 231, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003231}}
-.cryptoWallet .new-cards-area .balance-nv h5 i {
+.cryptoWallet .cryptoWallet .balance-nv h5 i {
   font-style: normal;
   font-size: 18px;
   margin-left: -6px;
@@ -325,7 +325,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 249, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003249}}
-.new-cards-area .prise-art {
+.cryptoWallet .prise-art {
   color: #fff !important;
   margin-left: -5px;
   font-size: 29px;
@@ -338,14 +338,14 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 260, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003260}}
-.new-cards-area .card-full {
+.cryptoWallet .card-full {
   position: relative;
   max-width: 255px;
   height: 140px;
 }
 /* line 265, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003265}}
-.new-cards-area a.blks-btn {
+.cryptoWallet a.blks-btn {
   background: #ffffff;
   border: 0;
   border-radius: 50px;
@@ -361,13 +361,13 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 279, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003279}}
-.new-cards-area a.blks-btn:hover {
+.cryptoWallet a.blks-btn:hover {
   background: #D63749;
   color: #fff;
 }
 /* line 283, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003283}}
-.new-cards-area .chat-panel-bottom {
+.cryptoWallet .chat-panel-bottom {
   position: fixed;
   background: #0753ab;
   top: 0;
@@ -380,40 +380,40 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 294, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003294}}
-.new-cards-area .chat-panel-bottom {
+.cryptoWallet .chat-panel-bottom {
   display: none;
 }
 @media (min-width: 900px) {
   /* line 298, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003298}}
-  .new-cards-area.wrapper {
+  .cryptoWallet.wrapper {
     margin-right: 22% !important;
   }
 }
 @media (min-width: 900px) {
   /* line 303, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003303}}
-  .new-cards-area .colv-3 {
+  .cryptoWallet .colv-3 {
     width: 33.33%;
     float: left;
   }
   /* line 307, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003307}}
-  .new-cards-area .contact-panel {
+  .cryptoWallet .contact-panel {
     margin-right: -40%;
   }
 }
 @media (max-width: 899px) {
   /* line 312, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003312}}
-  .new-cards-area .card-full {
+  .cryptoWallet .card-full {
     position: relative;
     max-width: 275px;
     height: 140px;
   }
   /* line 317, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003317}}
-  .new-cards-area .close-blocks {
+  .cryptoWallet .close-blocks {
     display: block;
     float: none !important;
     margin: 0 auto;
@@ -423,13 +423,13 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 325, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003325}}
-.new-cards-area .clzs {
+.cryptoWallet .clzs {
   padding: 20px;
   background: #0C5CBD;
 }
 /* line 329, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003329}}
-.new-cards-area .card-h {
+.cryptoWallet .card-h {
   position: absolute;
   bottom: 14px;
   color: #fff;
@@ -437,31 +437,31 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 335, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003335}}
-.new-cards-area .card-full {
+.cryptoWallet .card-full {
   position: relative;
 }
 /* line 338, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003338}}
-.new-cards-area .card-h .flr {
+.cryptoWallet .card-h .flr {
   float: right;
 }
 /* line 341, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003341}}
-.new-cards-area .card-h .fll {
+.cryptoWallet .card-h .fll {
   float: left;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 /* line 346, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003346}}
-.new-cards-area .card-h .flr {
+.cryptoWallet .card-h .flr {
   float: right;
   margin-right: 31px;
   font-size: 13px;
 }
 /* line 351, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003351}}
-.new-cards-area .card-h .fll {
+.cryptoWallet .card-h .fll {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -473,7 +473,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 361, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003361}}
-.new-cards-area .form-control:focus {
+.cryptoWallet .form-control:focus {
   border-color: #ED7A00 !important;
   border: 1px solid #ED7A00;
   outline: 0;
@@ -482,7 +482,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 368, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003368}}
-.new-cards-area textarea:focus {
+.cryptoWallet textarea:focus {
   border-color: #ED7A00 !important;
   border: 1px solid #ED7A00;
   outline: 0;
@@ -491,7 +491,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 375, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003375}}
-.new-cards-area .form-areant input:focus {
+.cryptoWallet .form-areant input:focus {
   border: 1px solid #ED7A00;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -499,12 +499,12 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 381, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003381}}
-.new-cards-area .hide-xts.stz a:hover {
+.cryptoWallet .hide-xts.stz a:hover {
   opacity: 0.8;
 }
 /* line 384, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003384}}
-.card-full.new-cards-area {
+.card-full.cryptoWallet {
   border-radius: 12px;
   padding: 17px;
   position: relative;
@@ -514,7 +514,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 392, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003392}}
-.new-cards-area .numb-card {
+.cryptoWallet .numb-card {
   color: #1d72de;
   position: relative;
   right: auto;
@@ -525,7 +525,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 403, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003403}}
-.new-cards-area .prise-art {
+.cryptoWallet .prise-art {
   color: #fff !important;
   margin-left: -5px;
   font-size: 29px;
@@ -533,44 +533,44 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 409, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003409}}
-.new-cards-area .prise-art span {
+.cryptoWallet .prise-art span {
   font-size: 17px;
   vertical-align: top;
 }
 /* line 413, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003413}}
-.new-cards-area .prise-art strong {
+.cryptoWallet .prise-art strong {
   font-weight: normal;
   font-size: 18px;
 }
 /* line 417, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003417}}
-.new-cards-area .img-ls {
+.cryptoWallet .img-ls {
   position: absolute;
   right: 0;
   top: 13px;
 }
 /* line 422, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003422}}
-.new-cards-area .visa {
+.cryptoWallet .visa {
   background: #1F73D6;
 }
 /* line 426, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003426}}
-.new-cards-area .button-n {
+.cryptoWallet .button-n {
   margin: 26px auto 0;
   margin-bottom: 20px;
 }
 /* line 430, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003430}}
-.new-cards-area .img-ls img {
+.cryptoWallet .img-ls img {
   width: 64px;
   margin-right: 14px;
   margin-top: 1px;
 }
 /* line 435, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003435}}
-.new-cards-area .card-h {
+.cryptoWallet .card-h {
   position: absolute;
   bottom: 14px;
   color: #fff;
@@ -578,31 +578,31 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 441, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003441}}
-.new-cards-area .card-full {
+.cryptoWallet .card-full {
   position: relative;
 }
 /* line 444, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003444}}
-.new-cards-area .card-h .flr {
+.cryptoWallet .card-h .flr {
   float: right;
 }
 /* line 447, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003447}}
-.new-cards-area .card-h .fll {
+.cryptoWallet .card-h .fll {
   float: left;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 /* line 452, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003452}}
-.new-cards-area .card-h .flr {
+.cryptoWallet .card-h .flr {
   float: right;
   margin-right: 31px;
   font-size: 13px;
 }
 /* line 457, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003457}}
-.new-cards-area .card-h .fll {
+.cryptoWallet .card-h .fll {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -610,7 +610,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 463, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003463}}
-.new-cards-area .prv-ns.stl-creds:before {
+.cryptoWallet .prv-ns.stl-creds:before {
   content: '';
   position: absolute;
   width: 9px;
@@ -624,7 +624,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 475, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003475}}
-.new-cards-area .prv-ns.stl-creds:after {
+.cryptoWallet .prv-ns.stl-creds:after {
   content: '';
   position: absolute;
   height: 100%;
@@ -635,17 +635,17 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 484, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003484}}
-.new-cards-area .prv-ns.stl-creds {
+.cryptoWallet .prv-ns.stl-creds {
   position: relative;
 }
 /* line 488, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003488}}
-.new-cards-area .min-ar.prv-ns.stl-creds:before {
+.cryptoWallet .min-ar.prv-ns.stl-creds:before {
   background: #fff !important;
 }
 /* line 491, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003491}}
-.new-cards-area .dv1:after {
+.cryptoWallet .dv1:after {
   content: '';
   position: absolute;
   height: 42px;
@@ -657,31 +657,31 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (max-width: 400px) {
   /* line 501, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003501}}
-  .new-cards-area .clbv p {
+  .cryptoWallet .clbv p {
     text-align: center;
     font-size: 19px;
   }
   /* line 505, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003505}}
-  .new-cards-area .card-full {
+  .cryptoWallet .card-full {
     height: 155px;
   }
 }
 /* line 509, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003509}}
-.new-cards-area .chat-panel-bottom {
+.cryptoWallet .chat-panel-bottom {
   margin-top: 100px;
 }
 /* line 512, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003512}}
-.new-cards-area .contact-panel {
+.cryptoWallet .contact-panel {
   padding: 20px;
   background: #186bd1;
   overflow: hidden;
 }
 /* line 517, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003517}}
-.new-cards-area .clzs {
+.cryptoWallet .clzs {
   padding: 20px;
   background: #0C5CBD;
   overflow: hidden;
@@ -692,7 +692,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (min-width: 900px) {
   /* line 526, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003526}}
-  .new-cards-area .cards-area {
+  .cryptoWallet .cards-area {
     padding-left: 22px;
     padding-right: 23px;
     margin-top: 25px;
@@ -705,19 +705,19 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 537, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003537}}
-.new-cards-area .clact {
+.cryptoWallet .clact {
   position: absolute;
   top: 0;
   margin-left: 324px;
 }
 /* line 542, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003542}}
-.new-cards-area .clact {
+.cryptoWallet .clact {
   color: #fff;
 }
 /* line 545, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003545}}
-.new-cards-area .bl1:before {
+.cryptoWallet .bl1:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -729,7 +729,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 555, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003555}}
-.new-cards-area .bl2:before {
+.cryptoWallet .bl2:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -741,7 +741,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 565, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003565}}
-.new-cards-area .bl3:before {
+.cryptoWallet .bl3:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -753,14 +753,14 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 575, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003575}}
-.new-cards-area .clact h3 {
+.cryptoWallet .clact h3 {
   font-size: 17px;
   letter-spacing: 1px;
   margin-top: 22px;
 }
 /* line 580, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003580}}
-.new-cards-area .btns-area button:before {
+.cryptoWallet .btns-area button:before {
   content: '';
   position: absolute;
   width: 20px;
@@ -771,13 +771,13 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 589, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003589}}
-.new-cards-area .btns-area button:hover {
+.cryptoWallet .btns-area button:hover {
   background: #eee !important;
   color: #0B5BBA !important;
 }
 /* line 593, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003593}}
-.new-cards-area .car-ur:after {
+.cryptoWallet .car-ur:after {
   display: none;
   content: '';
   position: absolute;
@@ -789,7 +789,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (max-width: 899px) {
   /* line 603, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003603}}
-  .new-cards-area a.blks-btn {
+  .cryptoWallet a.blks-btn {
     background: #ffffff;
     border: 0;
     border-radius: 50px;
@@ -804,20 +804,20 @@ body .cryptoWallet .clzs .card-full.card-virtual {
   }
   /* line 616, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003616}}
-  .new-cards-area .block-bts {
+  .cryptoWallet .block-bts {
     margin-top: 52px;
     clear: both;
     overflow: hidden;
   }
   /* line 621, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003621}}
-  .new-cards-area .clzs {
+  .cryptoWallet .clzs {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
   /* line 625, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003625}}
-  .new-cards-area .clk-1 {
+  .cryptoWallet .clk-1 {
     background: #1a6ed3;
     padding: 20px;
     float: left;
@@ -829,14 +829,14 @@ body .cryptoWallet .clzs .card-full.card-virtual {
   }
   /* line 635, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003635}}
-  .new-cards-area .clzs {
+  .cryptoWallet .clzs {
     padding: 35px;
     background: #0C5CBD;
     overflow: hidden;
   }
   /* line 640, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003640}}
-  .new-cards-area .clact {
+  .cryptoWallet .clact {
     color: #fff;
     position: relative;
     margin: 0;
@@ -845,7 +845,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
   }
   /* line 647, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003647}}
-  .new-cards-area .card-full:first-child {
+  .cryptoWallet .card-full:first-child {
     box-shadow: none;
     margin-top: 0;
     margin: 0 auto;
@@ -853,24 +853,24 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 653, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003653}}
-.new-cards-area button.add-btns:hover {
+.cryptoWallet button.add-btns:hover {
   opacity: 0.8;
 }
 /* line 656, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003656}}
-.new-cards-area .cards-ns {
+.cryptoWallet .cards-ns {
   border-left: 3px solid #0753AB;
 }
 /* line 659, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003659}}
-.new-cards-area .cards-ns:hover {
+.cryptoWallet .cards-ns:hover {
   background: #1561b9;
   border-left: 3px solid #05D0DB;
 }
 @media (min-width: 900px) {
   /* line 664, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003664}}
-  .new-cards-area a.blks-btn {
+  .cryptoWallet a.blks-btn {
     margin-top: 49px;
     clear: both;
     float: left;
@@ -878,14 +878,14 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 671, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003671}}
-.new-cards-area h3 .sta {
+.cryptoWallet h3 .sta {
   font-size: 11px !important;
   padding-left: 40px !important;
   vertical-align: middle !important;
 }
 /* line 676, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003676}}
-.new-cards-area h3 .sta:before {
+.cryptoWallet h3 .sta:before {
   content: '';
   position: absolute;
   background: url(../../../src/img/status.png) 0 0 no-repeat;
@@ -897,14 +897,14 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 686, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003686}}
-.new-cards-area .balance-nv h5 {
+.cryptoWallet .balance-nv h5 {
   font-size: 34px;
   letter-spacing: 1px;
   float: left;
 }
 /* line 691, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003691}}
-.new-cards-area .balance-nv span {
+.cryptoWallet .balance-nv span {
   font-size: 20px;
   margin-top: 3px;
   display: block;
@@ -912,7 +912,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 697, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003697}}
-.new-cards-area .balance-nv p {
+.cryptoWallet .balance-nv p {
   color: #328dfc;
   max-width: 99px;
   float: left;
@@ -923,72 +923,72 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 706, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003706}}
-.new-cards-area .balance-nv {
+.cryptoWallet .balance-nv {
   margin-top: -14px;
 }
 @media (max-width: 899px) {
   /* line 710, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003710}}
-  .new-cards-area h3 .sta {
+  .cryptoWallet h3 .sta {
     font-size: 0 !important;
   }
   /* line 713, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003713}}
-  .new-cards-area h3 .sta:before {
+  .cryptoWallet h3 .sta:before {
     margin-left: -39px;
     margin-top: -4px;
   }
   /* line 717, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003717}}
-  .new-cards-area .clact h3 {
+  .cryptoWallet .clact h3 {
     text-align: center;
   }
   /* line 720, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003720}}
-  .new-cards-area a.blks-btn {
+  .cryptoWallet a.blks-btn {
     margin: 20px auto 0;
     display: block;
   }
   /* line 724, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003724}}
-  .new-cards-area .balance-nv h5 {
+  .cryptoWallet .balance-nv h5 {
     margin-top: 18px !important;
   }
   /* line 727, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003727}}
-  .new-cards-area .balance-nv p {
+  .cryptoWallet .balance-nv p {
     color: #fff !important;
   }
   /* line 730, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003730}}
-  .new-cards-area .balance-nv span {
+  .cryptoWallet .balance-nv span {
     display: inline-block;
     float: none;
     vertical-align: middle;
   }
   /* line 735, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003735}}
-  body .new-cards-area .block-bts.m-blk {
+  body .cryptoWallet .block-bts.m-blk {
     margin-top: 9px !important;
   }
 }
 @media (min-width: 900px) {
   /* line 740, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003740}}
-  .new-cards-area .flr-btn {
+  .cryptoWallet .flr-btn {
     float: left !important;
     margin-left: 20px !important;
   }
 }
 /* line 745, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003745}}
-.new-cards-area .img-ls img {
+.cryptoWallet .img-ls img {
   width: 40px !important;
   margin-top: 0px !important;
 }
 /* line 749, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003749}}
-.new-cards-area .dbts {
+.cryptoWallet .dbts {
   color: #fff !important;
   position: absolute;
   bottom: 29px;
@@ -997,47 +997,47 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (max-width: 899px) {
   /* line 756, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003756}}
-  .new-cards-area .tab-cards .clact {
+  .cryptoWallet .tab-cards .clact {
     display: none;
   }
   /* line 759, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003759}}
-  .new-cards-area .tab-cards .clzs {
+  .cryptoWallet .tab-cards .clzs {
     border: 0 !important;
     background: none;
   }
   /* line 763, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003763}}
-  .new-cards-area .tab-cards .clzs:first-child {
+  .cryptoWallet .tab-cards .clzs:first-child {
     margin-top: 0;
     padding-top: 30px !important;
   }
   /* line 767, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003767}}
-  .new-cards-area .tab-cards .clzs {
+  .cryptoWallet .tab-cards .clzs {
     margin-top: -140px;
     padding-top: 0 !important;
   }
   /* line 771, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003771}}
-  .new-cards-area .tab-cards .card-full:hover .hover-area-card {
+  .cryptoWallet .tab-cards .card-full:hover .hover-area-card {
     display: block;
   }
   /* line 774, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003774}}
-  .new-cards-area .tab-cards .balance-nv span {
+  .cryptoWallet .tab-cards .balance-nv span {
     margin-top: -6px;
   }
 }
 /* line 778, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003778}}
-.new-cards-area .hover-area-card h5 {
+.cryptoWallet .hover-area-card h5 {
   color: #fff;
   margin-top: 5px;
 }
 /* line 782, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003782}}
-.new-cards-area .clast-dv {
+.cryptoWallet .clast-dv {
   color: #fff !important;
   float: left;
   display: block;
@@ -1048,7 +1048,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 791, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003791}}
-.new-cards-area button.act-al {
+.cryptoWallet button.act-al {
   position: absolute;
   right: 12px;
   bottom: 18px;
@@ -1061,22 +1061,22 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 802, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003802}}
-.new-cards-area button.act-al:hover {
+.cryptoWallet button.act-al:hover {
   opacity: 0.8;
 }
 /* line 805, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003805}}
-.new-cards-area .clast-dv {
+.cryptoWallet .clast-dv {
   cursor: pointer;
 }
 /* line 808, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003808}}
-.new-cards-area .clast-dv:hover {
+.cryptoWallet .clast-dv:hover {
   opacity: 0.8;
 }
 /* line 811, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003811}}
-.new-cards-area .block-area:before {
+.cryptoWallet .block-area:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -1088,7 +1088,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 821, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003821}}
-.new-cards-area .block-icon {
+.cryptoWallet .block-icon {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -1099,7 +1099,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 830, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003830}}
-.new-cards-area .card-line {
+.cryptoWallet .card-line {
   width: 100%;
   background: #000;
   height: 40px;
@@ -1127,12 +1127,12 @@ body .cryptoWallet .clzs .card-full.card-virtual {
   }
   /* line 854, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003854}}
-  body .new-cards-area .card-full {
+  body .cryptoWallet .card-full {
     max-width: 287px;
   }
   /* line 858, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003858}}
-  body .new-cards-area .back.card-full {
+  body .cryptoWallet .back.card-full {
     margin-top: -170px !important;
     margin-left: 42px !important;
   }
@@ -1140,52 +1140,52 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (min-width: 900px) {
   /* line 867, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003867}}
-  body .new-cards-area .back.card-full {
+  body .cryptoWallet .back.card-full {
     margin-top: -170px !important;
     margin-left: 40px !important;
   }
   /* line 873, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003873}}
-  body .new-cards-area .card-full {
+  body .cryptoWallet .card-full {
     height: 172px;
   }
   /* line 877, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003877}}
-  body .cards-wrapper .clact {
+  body .cryptoWallet .clact {
     display: block !important;
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
   /* line 884, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003884}}
-  .new-cards-area.wrapper {
+  .cryptoWallet.wrapper {
     margin-right: 0 !important;
   }
   /* line 887, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003887}}
-  .new-cards-area a.blks-btn.block-button {
+  .cryptoWallet a.blks-btn.block-button {
     margin-top: 0 !important;
   }
   /* line 891, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003891}}
-  body .new-cards-area .back.card-full {
+  body .cryptoWallet .back.card-full {
     margin-left: 19px !important;
   }
 }
 @media (max-width: 899px) {
   /* line 899, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003899}}
-  body .new-cards-area .clzs {
+  body .cryptoWallet .clzs {
     height: auto !important;
   }
   /* line 903, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003903}}
-  body .cards-wrapper .clact {
+  body .cryptoWallet .clact {
     display: none !important;
   }
   /* line 908, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003908}}
-  body .new-cards-area .clzs {
+  body .cryptoWallet .clzs {
     border-bottom: 0 !important;
     background: none !important;
   }
@@ -1201,7 +1201,7 @@ body .cryptoWallet .clzs .card-full.card-virtual {
   }
   /* line 921, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003921}}
-  body .new-cards-area .card-full {
+  body .cryptoWallet .card-full {
     height: 184px !important;
   }
   /* line 926, Cryptowallet.less */
@@ -1218,13 +1218,13 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 @media (min-width: 700px) and (max-width: 899px) {
   /* line 941, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003941}}
-  body .new-cards-area .back.card-full {
+  body .cryptoWallet .back.card-full {
     margin-left: 15px !important;
   }
 }
 /* line 946, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003946}}
-.new-cards-area .chat-panel-bottom {
+.cryptoWallet .chat-panel-bottom {
   margin-top: 87px;
 }
 @media (min-width: 1200px) {
@@ -1253,22 +1253,22 @@ body .cryptoWallet .clzs .card-full.card-virtual {
 }
 /* line 971, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003971}}
-body .wrapper.new-cards-area .back.card-full {
+body .wrapper.cryptoWallet .back.card-full {
   z-index: 88;
 }
 /* line 975, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003975}}
-body .wrapper.new-cards-area .back.card-full {
+body .wrapper.cryptoWallet .back.card-full {
   margin-left: -1px !important;
 }
 /* line 979, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003979}}
-body .wrapper.new-cards-area .flipper {
+body .wrapper.cryptoWallet .flipper {
   width: 287px;
 }
 /* line 983, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003983}}
-body .wrapper.new-cards-area .blks-btn span {
+body .wrapper.cryptoWallet .blks-btn span {
   color: #000;
   background: #F2CD26;
   border-radius: 50px;
@@ -1283,13 +1283,13 @@ body .wrapper.new-cards-area .blks-btn span {
 }
 /* line 998, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\00003998}}
-.new-cards-area a.blks-btn {
+.cryptoWallet a.blks-btn {
   background: #d63749;
   color: #fff;
 }
 /* line 1002, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031002}}
-.new-cards-area a.blks-btn:hover {
+.cryptoWallet a.blks-btn:hover {
   background: #c23446;
 }
 /* line 1005, Cryptowallet.less */
@@ -1312,7 +1312,7 @@ body .wrapper.new-cards-area .blks-btn span {
 @media (max-width: 899px) {
   /* line 1021, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031021}}
-  body .new-cards-area .block-bts.m-blk a {
+  body .cryptoWallet .block-bts.m-blk a {
     float: left;
     margin-top: 37px;
     width: 140px;
@@ -1320,17 +1320,17 @@ body .wrapper.new-cards-area .blks-btn span {
 }
 /* line 1027, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031027}}
-body .wrapper.new-cards-area .back.card-full {
+body .wrapper.cryptoWallet .back.card-full {
   z-index: 88;
 }
 /* line 1031, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031031}}
-body .wrapper.new-cards-area .back.card-full {
+body .wrapper.cryptoWallet .back.card-full {
   margin-left: -1px !important;
 }
 /* line 1035, Cryptowallet.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000031035}}
-body .wrapper.new-cards-area .flipper {
+body .wrapper.cryptoWallet .flipper {
   width: 287px;
 }
 /* line 1038, Cryptowallet.less */
@@ -3492,7 +3492,7 @@ body .debit-wrapper .tls-ls a.btn_link_ert {
 @media (max-width: 400px) {
   /* line 2739, Cryptowallet.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000032739}}
-  body .cards-wrapper .button-n {
+  body .cryptoWallet .button-n {
     margin: 20px auto 0;
     width: 100% !important;
     min-width: 100% !important;
@@ -3669,5 +3669,13 @@ body .debit-wrapper .stl-creds .fll-p p.tx-id-card {
 .db-modal .modal-body .buttons-area-db button.button-n.import-btn:hover {
   color: #186bd1 !important;
   background: #ffffff;
+}
+/* line 2897, Cryptowallet.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Cryptowallet\/Cryptowallet\.less}line{font-family:\000032897}}
+.cryptoWallet .balance-nv h5 i {
+  font-style: normal;
+  font-size: 18px;
+  margin-left: -6px;
+  vertical-align: super;
 }
 /*# sourceMappingURL=Cryptowallet.css.map */

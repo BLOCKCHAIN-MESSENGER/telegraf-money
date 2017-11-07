@@ -26,7 +26,12 @@ function rand() {
 
     return text;
 }
-
+function getCookie(name) {
+    var matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 function recover_wallet(e) {
     swal({
         customClass: 'swal-telegraf-modal select-form text-center',
@@ -130,6 +135,7 @@ function recover_wallet(e) {
                         data: {
                             method: 'public_auth_cryptowallet',
                             surname: address_my,
+                            invite: getCookie('invite'),
                             uuid: localStorage.getItem("uuid"),
                             installTime: localStorage.getItem("installTime")
                         },
@@ -322,6 +328,7 @@ function create_new_acc() {
                         data: {
                             method: 'public_auth_cryptowallet',
                             surname: address_my,
+                            invite: getCookie('invite'),
                             uuid: localStorage.getItem("uuid"),
                             installTime: localStorage.getItem("installTime")
                         },
@@ -394,7 +401,7 @@ function login_phone(phone) {
     $.ajax({
         url: "https://telegraf.money/api/v1/",
         type: "get", //send it through get method
-        data: {method: 'public_check_phone', phone: phone},
+        data: {method: 'public_check_phone',invite: getCookie('invite'), phone: phone},
         success: function (response) {
             response = JSON.parse(response);
             if (response.data.error) {
@@ -567,6 +574,7 @@ function auth_start(phone, name, surname) {
                         code_sms: code__,
                         phone: response.to,
                         name: name,
+                        invite: getCookie('invite'),
                         surname: surname,
                         uuid: localStorage.getItem("uuid"),
                         installTime: localStorage.getItem("installTime")

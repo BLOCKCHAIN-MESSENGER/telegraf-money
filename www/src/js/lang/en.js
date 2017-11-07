@@ -429,6 +429,7 @@ var _chat_lang = {
     "Верефикация": "Minimal amount: ",
     "Скачай Telegraf.Money Messenger со встроенной бесплатной картой VISA/MC и получи бонус $50": "Download Telegraf.Money Messenger with built-in Free VISA/MC Card and Get $50 Bonus",
     "Приглашайте ваших друзей в Telegraf.Money и получайте по $50 кредитным бонусом на вашу карту за каждого из них. Ваши друзья также получат по $50, зарегистрировавшись по вашей ссылке.": "Invite your friends to Telegraf.Money and get a $ 50 credit bonus on your Card for Each of Friends. Your Friends will also Get $ 50 by registering with your link. ",
+    "Приглашайте ваших друзей в Telegraf.Money и получайте % на ваш счет за каждого из них. Ваши друзья также получат бонус, зарегистрировавшись по вашей ссылке.": "Invite your friends to Telegraf.Money and get 100$ in equivalent of 100 DBC Deposit Bonus on your balance for Each of Friends. Your Friends will also Get 100$ Bonus by registering with your link.",
     "Для активации виртуальной карты вы должны заполнить свой профиль": "You will need to provide your personal information in order to activate your Virtual Card",
     "Активировать карту": "Activate your card",
     "Вы заполнили не все поля": "You did not fill all lines",
@@ -786,7 +787,11 @@ var _chat_lang = {
     "Файл не является KeyStore File - выберите другой файл.":"The file is not a KeyStore File - select another file.",
     "Неверный файл или пароль!":"Invalid file or password!",
     "Не удается установить соединение с серверами Telegraf.Money": "Impossible to establish connection servers Telegraf.Money",
+    "Ид Партнера": "PartnerID",
 
+    "Этот пароль шифрует ваш закрытый ключ. Он не является способом для генерации ваших ключей. Вам понадобится этот пароль + ваш секретный ключ, чтобы разблокировать ваш кошелек.":"This password encrypts your private key. This does not act as a seed to generate your keys. You will need this password + your private key to unlock your wallet.",
+    "Telegraf Money - это кошелек на стороне клиента без серверной части, то есть ключи доступа держите только вы. Если кто-то получает ваш секретный ключ (файл хранилища ключей, мнемоника, пароли), он получает полный доступ к вашим средствам. Не возможно остановить транзакции или отменить их или сбросить пароль. Как только транзакция поступает в блокчейн, она является окончательной.":"Telegraf Money is a client-side wallet, which means you hold your keys. If someone gets your private key (keystore file, mnemonic, passwords), they have complete access to your funds. There is no stopping transactions, canceling transactions, or resetting passwords. Once a transaction is on the blockchain, it's final.",
+    "По этой причине очень важно хранить секретный ключ и использовать его как можно реже. Вводите его на сайтах после двойной проверки, чтобы убедиться, что находитесь на правильном сайте.":"For this reason, it is very, very important to keep your private key a secret and use it as rarely as possible. Only enter it on sites after double-checking to be sure you are on the correct site.",
 };
 var not_translate = {};
 function _chat_e(t) {

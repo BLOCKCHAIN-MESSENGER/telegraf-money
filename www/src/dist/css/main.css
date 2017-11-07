@@ -8390,4 +8390,17 @@ input[type=submit].styler[disabled] {
 
 @font-face {
     font-family: Raleway-Light;
-    src: url(Raleway-Light.eot?#iefix) format('embedded-opentype'),  url(Raleway-Light.woff) format('woff'), url(Raleway-Light.ttf)  format('truetype'), url(Raleway-Light.svg#Raleway-Light) format('svg');font-weight:400;font-style:normal}:not(i){font-weight:400!important;font-family:Raleway-Light!important}
+    src: url(../fonts/RalewayLight.eot?#iefix) format('embedded-opentype'),  url(../fonts/RalewayLight.woff) format('woff'), url(../fonts/RalewayLight.ttf)  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#ractive_chat_module *:not(i) {
+    font-weight: normal !important;
+    font-family: Raleway-Light !important;
+}
+body .demo-2 #ip-container div.logo-text_slog.translate{
+    font-family: 'Open Sans',sans-serif !important;
+}
+body .demo-2 #ip-container div.logo-text.translate{
+    font-family: 'Open Sans',arial,sans-serif!important;font-weight:700!important}

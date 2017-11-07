@@ -1,5 +1,5 @@
 <script type="text/javascript" src="src/js/eth-util.js"></script>
-<div class="wrapper cards-wrapper new-cards-area cryptoWallet debit-wrapper">
+<div class="wrapper cards-wrapper cryptoWallet debit-wrapper">
     <div class="contents">
         <div id="">
             <div class="header chat-hr">
@@ -34,11 +34,7 @@
 
                             <div class="">
                                 <div class="flipper">
-                                    <div class="front card-full {{#if type =='DBC'}}
-                                card-real
-                                {{else}}
-                                card-virtual
-                                {{/if}}">
+                                    <div class="front card-full card-real">
                                         <div class="img-l">
                                             <div class="prise-art">
 
@@ -91,15 +87,7 @@
                         </div>
 
                         <div class="clact">
-                            <h3>
-                                Wallet <span
-                                    style="font-size: 9px;">{{#if client == true}}
-                                                Decentralized Wallet
-                                                {{else}}
-                                                Cloud Wallet
-                                                {{/if}} </span>
-
-                            </h3>
+                            <h3>{{#if client == true}}Decentralized Wallet{{else}}Cloud Wallet{{/if}}</h3>
                             <div class="blko">
                                 <span class="summ"></span>
                             </div>
@@ -127,11 +115,8 @@
                     {{else}}
                     <center><h2>{{_e('У вас нет импортированных кошельков.')}}</h2></center>
                     {{/}}
-
                     <button class="button-n flr-btn" on-click="AddCryptoWallet">{{_e('Добавить крипто кошелек')}}</button>
-                    <button class="button-n btn-upd" on-click="updateWalletOfCloudServer">{{_e('Скачать кошельки из Telegraf Cloud')}}
-                    </button>
-
+                    <button class="button-n btn-upd" on-click="updateWalletOfCloudServer">{{_e('Скачать кошельки из Telegraf Cloud')}}</button>
                     {{else}}
                     <div class="cards-area" style="height: 89vh;">
                         <div class="fixed-loader"></div>
@@ -243,9 +228,7 @@
                             </div>
 
                         </div>
-                        <div class="mnt-s2">
-
-                        </div>
+                        <div class="mnt-s2"></div>
                     </div>
 
                     <div class="clearfix"></div>
@@ -366,28 +349,14 @@
 
         <div class="spl-icn"></div>
         <scroll class_scroll="scroller-b-Cards-component-cards" class_content="" id_content="">
-            <h2>Attention!</h2>
+            <h2>{{_e('Внимание!')}}</h2>
+
             <hr>
             <p style="    color: #fff;padding: 15px;text-align: center;">
-                While we used the Send page to access your wallet this time, it is not recommended that you do so in the
-                future. You only need your address in order to see your balance. Do not enter your private key anywhere
-                if you just want to check on the balance or see incoming / outgoing transactions.
+                {{_e("Telegraf Money - это кошелек на стороне клиента без серверной части, то есть ключи доступа держите только вы. Если кто-то получает ваш секретный ключ (файл хранилища ключей, мнемоника, пароли), он получает полный доступ к вашим средствам. Не возможно остановить транзакции или отменить их или сбросить пароль. Как только транзакция поступает в блокчейн, она является окончательной.")}}
                 <br>
                 <br>
-                Instead, search your address (or bookmark it) on etherscan.io.
-                <br>
-                <br>
-                While you are at it, you should bookmark Telegraf.Money as well.
-                <br>
-                <br>
-                Telegraf Money is a client-side wallet, which means you hold your keys. If someone gets your private key
-                (keystore file, mnemonic, passwords), they have complete access to your funds. There is no stopping
-                transactions, canceling transactions, or resetting passwords. Once a transaction is on the blockchain,
-                it's final.
-                <br>
-                <br>
-                For this reason, it is very, very important to keep your private key a secret and use it as rarely as
-                possible. Only enter it on sites after double-checking to be sure you are on the correct site.
+                {{_e("По этой причине очень важно хранить секретный ключ и использовать его как можно реже. Вводите его на сайтах после двойной проверки, чтобы убедиться, что находитесь на правильном сайте.")}}
             </p>
         </scroll>
     </div>
@@ -592,7 +561,7 @@
                             <input class="radio" id="ethradio" type="radio" name="addresstype" value="ETH"
                                    style="margin-left: 20px"> <label for="ethradio">Ethereum</label>
                             <input class="radio" id="dbradio" type="radio" name="addresstype" value="DBC"
-                                   style="margin-left: 20px" checked=""> <label for="dbradio">Debitcoin</label>
+                                   style="margin-left: 20px" checked=""> <label for="dbradio">DebitCoin</label>
                             <!--<input class="radio" id="e20radio" type="radio" name="addresstype" value="ERC-20" disabled="disabled"> <label for="btcradio">Other ERC-20</label>-->
                         </div>
 

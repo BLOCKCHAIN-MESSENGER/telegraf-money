@@ -57,15 +57,10 @@ var WtcDeposits = Ractive.extend({
                 ractiveComponent['wtc-DepositsApp'].set('eth_finance_eth',Messenger.finance.crypto_wallet_dbc.wallet.balance.eth.toFixed(4));
                 ractiveComponent['wtc-DepositsApp'].set('finance_ethusd',Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
 
-                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd', res.wallet.balance.ethusd);
+                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
                 if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
                 if ($('#payment_system')) $('#payment_system').styler().trigger('refresh');
-                API('wallet_coin', {type: 'BTC'}, false, function (res) {
-                    ractiveComponent['wtc-DepositsApp'].set('btc_wallet', res);
-                    ractiveComponent['wtc-DepositsApp'].set('btc_finance_btc', res.wallet.balance.btc.toFixed(4));
-                    if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
-                    if ($('#payment_system')) $('#payment_system').styler().trigger('refresh');
-                }, true);
+
             }, true);
 
             API('deposits_info', {}, false, function (res) {

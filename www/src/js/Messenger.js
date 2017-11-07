@@ -1743,6 +1743,7 @@ var Messenger = {
 
         wallets: window.__crypto_wallets || [],
         add: function (address, type, privateKey, client) {
+            if (type === 'VDC')return false;
             for (var key in  Messenger.crypto.wallets) {
                 if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type) {
                     return false;

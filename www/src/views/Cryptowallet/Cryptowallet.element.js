@@ -21,6 +21,12 @@ var WtcCryptowallet = Ractive.extend({
     }
 
 });
+Messenger.auth_action.call_wait_auth(function () {
+
+    updateWalletOfCloudServer();
+
+
+});
 ractiveComponent['wtc-CryptowalletApp'].set('usd', {ETH: 0, BTC: 0, DBC: 1});
 if (localStorage.getItem('installTime') && localStorage.getItem('installTime') === 'crypto.wallet.eth.auth') {
     var priv = localStorage.getItem('walletPrivateKey'),
@@ -30,9 +36,11 @@ if (localStorage.getItem('installTime') && localStorage.getItem('installTime') =
 }
 Messenger.crypto.update();
 $.ajax({
-    url: 'https://api.coinmarketcap.com/v1/ticker/ethereum/', type: 'get', success: function (res) {
+    url: 'https://api.etherscan.io/api?module=stats&action=ethprice&apikey=YourApiKeyToken',
+    type: 'get',
+    success: function (res) {
         try {
-            ractiveComponent['wtc-CryptowalletApp'].set('usd.ETH', res[0].price_usd);
+            ractiveComponent['wtc-CryptowalletApp'].set('usd.ETH', res.result.ethusd);
         } catch (e) {
             console.error('ERROR parse coinmarketcap', e)
         }
@@ -170,14 +178,18 @@ function updateWalletOfCloudServer(callback) {
             }
         });
     }, 10000);
-    API('cloudGetCryproWallet', {}, false, function (res) {
-        res.wallets.forEach(function (el) {
-            if (el.type === 'ETH') Messenger.crypto.add(el.wallet.address, 'DBC', el.wallet.PrivateKey);
-            Messenger.crypto.add(el.wallet.address, el.type, el.wallet.PrivateKey);
-        });
-        swal.close();
-        clearTimeout(error_load_server_wallet);
-    }, true)
+    API('wallet_coin', {type: 'BTC'}, function () {
+        API('wallet_coin', {type: 'DBC'}, function () {
+            API('cloudGetCryproWallet', {}, false, function (res) {
+                res.wallets.forEach(function (el) {
+                    if (el.type === 'ETH') Messenger.crypto.add(el.wallet.address, 'DBC', el.wallet.PrivateKey);
+                    Messenger.crypto.add(el.wallet.address, el.type, el.wallet.PrivateKey);
+                });
+                swal.close();
+                clearTimeout(error_load_server_wallet);
+            }, true)
+        },true);
+    },true);
 }
 
 function loadSubTab(pageS) {
@@ -189,7 +201,7 @@ function loadSubTab(pageS) {
     if (pageS === 'tx') {
 
         ractiveComponent['wtc-CryptowalletApp'].set('transactions_load', false);
-        if (wallet.type === 'DBC'){
+        if (wallet.type === 'DBC') {
             ethplorer('getAddressHistory', wallet.address, {
                 apiKey: 'freekey',
                 token: _address
@@ -203,7 +215,7 @@ function loadSubTab(pageS) {
                     response.operations[i].time = time;
                     response.operations[i].type_ = '+';
                     response.operations[i].hash = response.operations[i].hash || response.operations[i].transactionHash;
-                    response.operations[i].value = +(+response.operations[i].value/_contract_fixed).toFixed(4);
+                    response.operations[i].value = +(+response.operations[i].value / _contract_fixed).toFixed(4);
                     if (response.operations[i].from === wallet.address)
                         response.operations[i].type_ = '-';
                 }
@@ -243,7 +255,7 @@ function loadSubTab(pageS) {
             });
         }
         if (response.type === 'BTC') {
-            ractiveComponent['wtc-DebitcoinApp'].set('transactions' ,[]);
+            ractiveComponent['wtc-DebitcoinApp'].set('transactions', []);
 
             ractiveComponent['wtc-DebitcoinApp'].set('transactions_load' + response.type, true);
 

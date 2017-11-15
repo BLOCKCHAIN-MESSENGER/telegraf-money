@@ -94,8 +94,6 @@ $('.obms').click(function () {
 $('.avst').click(function () {
     $('.stz').css('display', 'none');
 });
-
-
 $(document).mouseup(function (e) {
     var container = $(".stz");
     if (container.has(e.target).length === 0) {
@@ -271,7 +269,7 @@ Messenger.on('avatar_message_err', function ( index) {
     }, 100)
 });
 var event_message;
-Messenger.on('more_message', function () {
+ractiveComponent['wtc-ChatApp'].on('more_message', function () {
     ractiveComponent['wtc-ChatApp'].set('messages_more', 'load');
     Messenger.chat.getHistory(function () {
         ractiveComponent['wtc-ChatApp'].set('messages_more', 'more');

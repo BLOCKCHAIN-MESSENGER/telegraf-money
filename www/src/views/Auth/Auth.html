@@ -187,12 +187,20 @@
 
     <div class="container">
         <div class="nl-area">
-            <div class="logo"></div>
+            {{#if hideAppName}}
+            <center style="color: #fff;font-size: 20px;font-weight: 700;">Authentication</center>
+            {{else}}
+            {{{logo}}}
+
             <div class="logo-text">
-                Telegra<span class="telegraf-f-key-color">f</span>
-                Money
+                {{#if titleApp}}
+                {{titleApp}}
+                {{else}}
+                Telegra<span class="telegraf-f-key-color">f</span> Money
+                {{/if}}
             </div>
-            <div class="logo-text_slog">BLOCKCHAIN EVERYWHERE...</div>
+            <div class="logo-text_slog">{{subjectApp}}</div>
+            {{/if}}
         </div>
 
 
@@ -257,6 +265,7 @@
 
         <input type="file" style="display: none" id="file-input-keystore">
         <a class="button click-btn click-btn2" style="margin-top: 20px;" onclick="$('#file-input-keystore').trigger('click');">{{_e('Войти используя KeyStoreFile')}}</a>
+        <a class="button click-btn click-btn2" style="margin-top: 20px;" onclick="loginPrivateKey()">{{_e('Войти используя Private Key')}}</a>
         <a class="button click-btn click-btn2" style="margin-top: 20px;background: #fff;color: #0d63ca !important;" onclick="create_new_acc()">{{_e('Создать аккаунт')}}</a>
         {{#if old_login}}
         <hr>

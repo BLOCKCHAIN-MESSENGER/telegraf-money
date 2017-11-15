@@ -133,14 +133,14 @@ var WtcDebitcoin = Ractive.extend({
                         ractiveComponent['wtc-DebitcoinApp'].set('eth_status_dev', res.eth_status_dev);
                     });
 
-                    Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-                        ractiveComponent['wtc-DebitcoinApp'].set('debit_token', Messenger.finance.crypto_wallet_dbc);
-                        ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
-                        ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
-                        ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
-                        if (alldata && alldata.wallet)
-                            ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
-                    });
+                    // Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
+                    //     ractiveComponent['wtc-DebitcoinApp'].set('debit_token', Messenger.finance.crypto_wallet_dbc);
+                    //     ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold', Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
+                    //     ractiveComponent['wtc-DebitcoinApp'].set('finance_eth', Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
+                    //     ractiveComponent['wtc-DebitcoinApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
+                    //     if (alldata && alldata.wallet)
+                    //         ractiveComponent['wtc-DebitcoinApp'].set('finance_debit_coin_gold_virtual', alldata.wallet["debit-coin-gold"]);
+                    // });
                 }
             }
             if (tab_ === 'btc') {

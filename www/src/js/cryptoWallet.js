@@ -604,15 +604,18 @@ var contract = false;
 var Crypto = {
     getBalance: function (addr, type, cb) {
         if (type === 'ETH') {
-
             cb && cb(addr, type, (+web3.eth.getBalance(addr) / 1000000000000000000).toFixed(4));
+            return (+web3.eth.getBalance(addr) / 1000000000000000000).toFixed(4)
         }
         if (type === 'DBC') {
             if(! contract) contract = web3.eth.contract(abi).at(_address);
             cb && cb(addr, type, (+contract.balanceOf(addr) / _contract_fixed).toFixed(2));
+            return (+contract.balanceOf(addr) / _contract_fixed).toFixed(2)
+
         }
         if (type === 'BTC') {
             cb && cb(addr, type, 0.00.toFixed(6));
+            return 0.00.toFixed(6)
         }
 
     },

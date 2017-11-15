@@ -6,16 +6,18 @@ try {
     window.__cards_storage = JSON.parse(localStorage.getItem('cards'));
     window.__wallet_storage = JSON.parse(localStorage.getItem('wallet'));
     window.__crypto_wallet_dbc = JSON.parse(localStorage.getItem('crypto_wallet_dbc'));
-    window.__crypto_wallets = JSON.parse(localStorage.getItem('crypto_wallets_db'));
+    window.__crypto_wallets = JSON.parse(localStorage.getItem('crypto_wallets_db' + localStorage.user_id));
 } catch (e) {
     console.warn("JSON warn localStorage:", e);
 }
+
 function getCookie(name) {
     var matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([], factory);
@@ -1305,6 +1307,7 @@ var Messenger = {
                 });
                 return false;
             }
+
             function sort_for_data(a, b) {
                 if (moment(a.updated_at, moment.ISO_8601) < moment(b.updated_at, moment.ISO_8601)) return 1;
                 if (moment(a.updated_at, moment.ISO_8601) > moment(b.updated_at, moment.ISO_8601)) return -1;
@@ -1322,7 +1325,7 @@ var Messenger = {
         callback_save: function (name, fn) {
 
             Messenger.threads.cb_function_arr[name] = fn;
-            if (Messenger.threads.data.length == 0) {
+            if (Messenger.threads.data.length === 0) {
                 Messenger.threads.update();
             } else {
                 fn(Messenger.threads.data)
@@ -1743,7 +1746,7 @@ var Messenger = {
 
         wallets: window.__crypto_wallets || [],
         add: function (address, type, privateKey, client) {
-            if (type === 'VDC')return false;
+            if (type === 'VDC') return false;
             for (var key in  Messenger.crypto.wallets) {
                 if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type) {
                     return false;
@@ -1752,7 +1755,7 @@ var Messenger = {
             Messenger.crypto.wallets.push({address: address, type: type, privateKey: privateKey, client: client});
             Messenger.crypto.update(address);
             lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
-            localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+            localStorage.setItem('crypto_wallets_db' + localStorage.user_id, JSON.stringify(Messenger.crypto.wallets));
             return true;
         },
         update: function (address) {
@@ -1764,7 +1767,7 @@ var Messenger = {
                                 if (Messenger.crypto.wallets[key1].address === _address && Messenger.crypto.wallets[key1].type === type) Messenger.crypto.wallets[key].balance = balance;
                             }
                             lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
-                            localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                            localStorage.setItem('crypto_wallets_db' + localStorage.user_id, JSON.stringify(Messenger.crypto.wallets));
                         });
                     }
                 } else {
@@ -1773,7 +1776,7 @@ var Messenger = {
                             if (Messenger.crypto.wallets[key1].address === _address && Messenger.crypto.wallets[key1].type === type) Messenger.crypto.wallets[key].balance = balance;
                         }
                         lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
-                        localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                        localStorage.setItem('crypto_wallets_db' + localStorage.user_id, JSON.stringify(Messenger.crypto.wallets));
                     });
                 }
 
@@ -1785,7 +1788,7 @@ var Messenger = {
                 if (Messenger.crypto.wallets[key].address === address && Messenger.crypto.wallets[key].type === type) {
                     Messenger.crypto.wallets[key] = undefined;
                     lsbridge.send('crypto_wallets', Messenger.crypto.wallets);
-                    localStorage.setItem('crypto_wallets_db', JSON.stringify(Messenger.crypto.wallets));
+                    localStorage.setItem('crypto_wallets_db' + localStorage.user_id, JSON.stringify(Messenger.crypto.wallets));
                     return true;
                 }
             }
@@ -1813,6 +1816,7 @@ $.fn.extend({
         });
     }
 });
+
 function scan_card_by_id(card_id) {
     var finance_cards = Messenger.finance.cards;
     for (var key in  finance_cards) {
@@ -1821,6 +1825,7 @@ function scan_card_by_id(card_id) {
         }
     }
 }
+
 function secure(text, s_cb, e_cb, target) {
     API('get_user_security_info', {target: target}, false, function (response) {
         if (response.status != 'success') return swal({
@@ -1909,6 +1914,7 @@ function secure(text, s_cb, e_cb, target) {
 
     }, true);
 }
+
 procent = 0.05;
 // animate css <=
 Messenger.on('ComponentsOnRender', function (name) {

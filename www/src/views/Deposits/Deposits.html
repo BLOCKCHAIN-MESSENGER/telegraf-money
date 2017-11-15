@@ -1,17 +1,12 @@
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="http://code.highcharts.com/modules/no-data-to-display.js"></script>
-<div class="wrapper cards-wrapper deposits-wrapper">
-
-
+<div class="wrapper cards-wrapper deposits-wrapper" style="margin-right:0 !important;">
     <div class="contents">
         <div>
             <div class="header chat-hr">
                 <a href="#menu">
                     <span></span>
-                </a> <strong>Deposits</strong>
+                </a> <strong>Blockchain-deposits</strong>
                 <div class="contact-panel">
-                    <h3>Deposits</h3>
+                    <h3>Blockchain-deposits</h3>
 
                     <div class="close-blocks">
                         <div class="cls3"></div>
@@ -33,7 +28,7 @@
                             {{_e('Создать депозит')}}
                         </div>
                         <div class="crd1 {{#if tab == 'active'}}active{{/if}} gvc2" on-click="setPage:deposits:active">
-                            {{_e('Мои Депозиты')}}
+                            {{_e('Мои депозиты')}}
                         </div>
                         <div class="crd1 {{#if tab == 'info'}}active{{/if}} gvc3" on-click="setPage:deposits:info">
                             {{_e('О депозите')}}
@@ -43,12 +38,36 @@
                         <a href="{{form.link}}" id="pay_start" style="display: none" target="_blank"></a>
                         {{#if tab == 'create'}}
                         <div class="credit-main-area">
+                            <div class="row col-area-fx b8" id="b8"
+                                 style="margin: 0;padding-top: 15px; display: none">
+                                {{#if !loaddepositsList}}
+
+                                <h2>Loading...</h2>
+                                {{/if}}
+                            </div>
                             <div class="card-area-inner">
+
                                 <div class="select-form">
                                     <label>{{_e('Счет')}}</label>
                                     <select class="sels" id="payment_system">
-                                        <option class="" value="WDG">DEBIT Coin - {{finance_debit_coin_gold}} DBC</option>
-                                        <option class="" value="ETX">Ethereum - {{eth_finance_eth}} ETH</option>
+
+                                        {{#crypto_wallets}}
+                                        {{#if type ==='DBC'}}
+                                        <option class="" value="{{address}}" data-type="{{type}}" data-balance="{{balance}}">
+                                            <b style="    font-weight: 600 !important;">{{type}}: {{(+balance).toFixed(6)}}</b>
+                                            <span style="    width: 130px;
+    font-size: 11px !important;
+    position: relative;
+    float: right;
+    padding-right: 15px;
+    overflow: hidden;">{{address}}</span>
+                                        </option>
+                                        {{/if}}
+                                        {{else}}
+                                        <option class="" value="no">{{_e('У вас нет активных кошельков')}}</option>
+                                        {{/}}
+
+
                                     </select>
 
                                 </div>
@@ -80,20 +99,9 @@
                                             <input class="" value="1.0" id="input_deposits_prc" type="tel"
                                                    onkeyup="change_input_deposit()"></div>
                                     </div>
-                                    <div class="col-xs-6">
-                                        <button class="button-n __no"
-                                                style="margin-top: 55px;height: 41px;padding-top: 10px;"
-                                                on-click="popularebtn:1">{{_e('Популярные')}}
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="row col-area-fx b8" id="b8"
-                                     style="margin: 0;padding-top: 15px; display: none;">
-                                    {{#if !loaddepositsList}}
 
-                                    <h2>Loading...</h2>
-                                    {{/if}}
                                 </div>
+
                                 <div class="select-form">
                                     <label>{{_e('Период депозита')}}</label>
                                     <input id="ex21" type="text"
@@ -195,9 +203,10 @@
 
                             <div class="card-area-inner" style="    max-width: 600px; color: #fff;">
                                 <div class="tabs-panel" style="    border-radius: 33px; text-align: center;border: 1px dashed;padding: 10px;margin: 0 auto;max-width: 360px;padding-left: 30px;">
-                                    <a href="javascript:void 0;" {{#if payment_system_deposits == 'WDG'}}class="active"{{/if}} on-click="get_deposits:WDG">DEBIT Coin</a>
+                                    <a href="javascript:void 0;" {{#if payment_system_deposits == 'WDG'}}class="active"{{/if}} on-click="get_deposits:WDG">DEBITCoin</a>
                                     <a href="javascript:void 0;" {{#if payment_system_deposits == 'BTX'}}class="active"{{/if}} on-click="get_deposits:BTX">Bitcoin</a>
                                     <a href="javascript:void 0;" {{#if payment_system_deposits == 'ETX'}}class="active"{{/if}} on-click="get_deposits:ETX">Ethereum</a></div>
+                                {{#if depositsList_loader}}
                                 {{#depositsList[payment_system_deposits]}}
                                 <div class="toggle">
                                     <div class="title" on-click="openToggle:{{id}}">
@@ -252,9 +261,7 @@
                                                 </div>
 
 
-                                                <div class="ws25">
-                      <span class="oneFour" style=""><span class="dst">{{+(+percent).toFixed(2)}}% </span><br>
-                              {{_e('Процент (в день)')}} </span></div>
+                                                <div class="ws25"><span class="oneFour" style=""><span class="dst">{{+(+percent).toFixed(2)}}% </span><br>{{_e('Процент (в день)')}} </span></div>
                                                 <div class="ws25"><span class="oneFour" style="">              <span
                                                         class="oneFour out-summa"
                                                         style="margin-right:0px;">
@@ -305,12 +312,17 @@
                                     </div>
                                 </div>
                                 {{else}}
-                                <img src="./src/img/loader.gif" onerror="this.src='../../.'+this.src;this.onerror = null;" style="float: right;
-    width: 50px;
-    padding: 3px 10px;
-    position: absolute;"/>
-
+                                <h2>
+                                    {{_e('У вас нет депозитов.')}}
+                                </h2>
+                                <button class="button-n" on-click="setPage:deposits:create">{{_e('Создать депозит')}}</button>
+                                <br>
                                 {{/}}
+                                {{else}}
+                                <div style="width: 100%">
+                                    <img src="./src/img/loader.gif" onerror="this.src='../../.'+this.src;this.onerror = null;" style="float: right;width: 50px;padding: 3px 10px;position: absolute;margin: 0 auto;"/>
+                                </div>
+                                {{/if}}
                             </div>
                         </div>
                         {{/if}}
@@ -321,7 +333,7 @@
                                 <h2>{{_e('ЧТО ТАКОЕ BLOCKCHAIN-ДЕПОЗИТ')}}</h2>
                                 <br>
                                 <br>
-                                <span>{{_e('BLOCKCHAIN-ДЕПОЗИТ - это Blockchain P2P-рынок небанковских депозитов,где проценты и сроки по депозитам устанавливают сами участники. Модель Blockchain-депозитов базируется на смарт-контрактах платформы Ethereum - депозиты частных лиц объединяются в коллективные депозитные фонды (ДАО) по различным параметрам на отдельных кошельках блокчейна, откуда участники получают прибыль и возврат депозитов. Валютой депозита является DEBIT Coin.')}}</span>
+                                <span>{{_e('BLOCKCHAIN-ДЕПОЗИТ - это Blockchain P2P-рынок небанковских депозитов,где проценты и сроки по депозитам устанавливают сами участники. Модель Blockchain-депозитов базируется на смарт-контрактах платформы Ethereum - депозиты частных лиц объединяются в коллективные депозитные фонды (ДАО) по различным параметрам на отдельных кошельках блокчейна, откуда участники получают прибыль и возврат депозитов.')}}</span>
                                 <br>
                                 <br>
                                 <span>{{_e('При этом, каждый депозит по условиям контракта является одновременно частью общего страхового фонда всех участников на получение прибыли и тела депозита из суммы коллективного депозитного фонда, т.е. создавая депозит, его владелец получает страховку на получение профита и тела депозита, в том числе из сумм других участников. Чем больше участников, тем выше сумма общего страхового фонда!')}}</span>
@@ -348,7 +360,7 @@
 
                                 </span>
                                 <br>
-                                {{_e('Сервис предоставлен партнером')}} <a href="https://socialcloudbank.com/{{_e('lang')}}/how_it_works" target="_blank">Social Cloud Bank</a>
+
 
                             </div>
                         </div>
@@ -365,30 +377,5 @@
 
             </scroll>
         </div>
-        <div class="arrow-st"></div>
-
-        <div class="chat-panel-bottom">
-            <div class="ltos"></div>
-
-            <ul class="nav-nt">
-                <li class="active">
-                    <a href="#">{{_e('Активные карты')}}</a>
-                </li>
-                <!--<li>-->
-                <!--<a href="#">{{_e('Заблокированные')}}</a>-->
-                <!--</li>-->
-
-            </ul>
-
-            <div class="spl-icn"></div>
-            <scroll class_scroll="" class_content="" id_content="">
-
-                <Cards/>
-                <button class="add-btns" on-click="setPage:cards">View all cards</button>
-
-
-            </scroll>
-        </div>
-
     </div>
 </div>

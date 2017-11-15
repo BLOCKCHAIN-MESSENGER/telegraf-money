@@ -1,10 +1,40 @@
 var WtcAuth = Ractive.extend({
     oninit: function () {
         console.log('Auth.oninit !');
+        if (param_url_this().logo_url) {
+            ractiveComponent["wtc-AuthApp"].set('logo', '<img class="logo" src="' + param_url_this().logo_url + '" onerror="this.onerror = \'https://telegraf.money/telegraf.money/www/src/img/logo.png\';"/>');
+            procent = 0.29;
+            setTimeout(function () {
+            $('#loader_id2').animate({opacity:0},1000);
+            $('#loader_id').animate({opacity:1},1000)
+            },1000)
+
+        }else {
+            ractiveComponent["wtc-AuthApp"].set('logo', '<img class="logo" src="./src/img/logo.png" onerror="this.onerror = \'https://telegraf.money/telegraf.money/www/src/img/logo.png\';"/>');
+            setTimeout(function () {
+                procent = 0.30;
+            },1000)
+        }
+        if (param_url_this().titleApp)
+            ractiveComponent["wtc-AuthApp"].set('titleApp', param_url_this().titleApp);
+        else
+            ractiveComponent["wtc-AuthApp"].set('titleApp', false);
+        if (param_url_this().subjectApp)
+            ractiveComponent["wtc-AuthApp"].set('subjectApp', param_url_this().subjectApp);
+        else
+            ractiveComponent["wtc-AuthApp"].set('subjectApp', 'BLOCKCHAIN EVERYWHERE...');
+
+        if (param_url_this().titleApp === 'false')
+            ractiveComponent["wtc-AuthApp"].set('titleApp', '');
+        if (param_url_this().subjectApp === 'false')
+            ractiveComponent["wtc-AuthApp"].set('subjectApp', '');
+
         if (param_url_this().login === 'social')
             ractiveComponent["wtc-AuthApp"].set('old_login', 1);
+        if (param_url_this().hideAppName === '1')
+            ractiveComponent["wtc-AuthApp"].set('hideAppName', true);
 
-        procent = 0.30;
+
     },
     onrender: function () {
         console.log('Auth.onrender !');
@@ -15,6 +45,11 @@ var WtcAuth = Ractive.extend({
     }
 
 });
+$.support.cors = true;
+function loading_ok() {
+    $('#loader_id').animate({opacity:0},300);
+    procent = 0.30;
+}
 var web3 = new Web3();
 
 function rand() {
@@ -26,12 +61,14 @@ function rand() {
 
     return text;
 }
+
 function getCookie(name) {
     var matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+
 function recover_wallet(e) {
     swal({
         customClass: 'swal-telegraf-modal select-form text-center',
@@ -78,15 +115,15 @@ function recover_wallet(e) {
                 '<form action="#" onsubmit="return false;" style="margin-top: 20px;">' +
                 '<div class="select-form">' +
                 '<label>' + _chat_e('Адрес:') + '</label>' +
-                '<input class="form-control" style="font-size: 11px;font-weight: 300;" value="0x' + keyObject.address + '" id="phone_f_fff" disabled="disabled"></div>' +
+                '<input class="form-control" style="font-size: 11px;font-weight: 300;" value="0x' + keyObject.address + '" autocomplete="off" disabled="disabled"></div>' +
                 '<label>' + _chat_e('Пароль') + '</label>' +
-                '<input class="form-control" placeholder="' + _chat_e('Пароль от KeyStore File:') + '" id="code_sms12" autocomplete="off" type="password"></div>' +
+                '<input class="form-control" placeholder="' + _chat_e('Пароль от KeyStore File:') + '" id="code_sms121" autocomplete="off" type="password"></div>' +
                 '</form>' +
                 // '<p class="spls-p">' + text + '</p>' +
                 '<br>' +
                 '</div>'
             }).then(function () {
-                var pass_wallet = $('#code_sms12').val();
+                var pass_wallet = $('#code_sms121').val();
                 swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
                     title: 'Open you Account...',
@@ -117,48 +154,10 @@ function recover_wallet(e) {
                         text: _chat_e('Неверный файл или пароль!')
                     });
                 }, 3000);
-                console.log(keythereum.recover(pass_wallet, keyObject, function (privateKey) {
+                keythereum.recover(pass_wallet, keyObject, function (privateKey) {
                     clearTimeout(err_modal);
-
-                    console.log('privateKey', privateKey.toString('hex'));
-                    localStorage.setItem('walletPrivateKey', privateKey.toString('hex'));
-                    localStorage.setItem('uuid', web3.sha3(privateKey.toString('hex')));
-                    localStorage.setItem('installTime', 'crypto.wallet.eth.auth');
-                    var address_my = keythereum.privateKeyToAddress(privateKey.toString('hex'));
-                    localStorage.setItem('auth', 'ok');
-                    localStorage.setItem('user_id', 'not');
-
-
-                    $.ajax({
-                        url: "https://telegraf.money/api/v1/",
-                        type: "get", //send it through get method
-                        data: {
-                            method: 'public_auth_cryptowallet',
-                            surname: address_my,
-                            invite: getCookie('invite'),
-                            uuid: localStorage.getItem("uuid"),
-                            installTime: localStorage.getItem("installTime")
-                        },
-                        success: function (response) {
-
-                            try {
-                                response = JSON.parse(response);
-                                if (response && response.resultAuth && response.resultAuth.user_id) {
-                                    localStorage.setItem('user_id', response.resultAuth.user_id);
-                                }
-                                location.reload();
-                            } catch (e) {
-                                console.error('error auth req00113', e);
-                                location.reload();
-
-                            }
-
-                        },
-                        error: function () {
-                            location.reload();
-                        }
-                    });
-                }));
+                    login_privatkey(privateKey.toString('hex'));
+                });
             }, function () {
                 swal.close();
             });
@@ -178,8 +177,10 @@ function recover_wallet(e) {
 
 
 }
+
 document.getElementById('file-input-keystore')
     .addEventListener('change', recover_wallet, false);
+
 function create_new_acc() {
 
 
@@ -204,7 +205,7 @@ function create_new_acc() {
         '<form action="#" onsubmit="return false;" style="margin-top: 20px;">' +
         '<div class="select-form">' +
         '<label>' + _chat_e('Адрес:') + '</label>' +
-        '<input class="form-control" style="font-size: 11px;font-weight: 300;" value="' + keythereum.privateKeyToAddress(dk.privateKey) + '" id="phone_f_fff" disabled="disabled"></div>' +
+        '<input class="form-control" style="font-size: 11px;font-weight: 300;" value="' + keythereum.privateKeyToAddress(dk.privateKey) + '" autocomplete="off" disabled="disabled"></div>' +
         '<label>' + _chat_e('Пароль для KeyStore File:') + '</label>' +
         '<input class="form-control" placeholder="' + _chat_e('(Пароль: 8-15 символов)') + '" id="code_sms12" autocomplete="off" type="password"></div>' +
         '</form>' +
@@ -268,10 +269,10 @@ function create_new_acc() {
                 '<br><strong style="font-weight:600!important">Do not share it!</strong> Your funds will be stolen if you use this file on a malicious/phishing site.' +
                 '<br><strong style="font-weight:600!important">Make a backup!</strong> Secure it like the millions of dollars it may one day be worth.' +
                 '</div></div>' +
-                '<form action="#" onsubmit="return false;" style="margin-top: 20px;">' +
+                '<form action="#dont_req" onsubmit="return false;" style="margin-top: 20px;">' +
                 '<div class="select-form">' +
                 '<label>' + _chat_e('Адрес:') + '</label>' +
-                '<input class="form-control" style="font-size: 12px;font-weight: 600;" value="' + walletAddres + '" id="phone_f_fff" disabled="disabled"></div>' +
+                '<input class="form-control" style="font-size: 12px;font-weight: 600;" value="' + walletAddres + '" autocomplete="off" disabled="disabled"></div>' +
                 '<label>' + _chat_e('Пароль для KeyStore File:') + '</label>' +
                 '<input class="form-control" value="' + pass_wallet + '" id="code_sms12" autocomplete="off" disabled="disabled"></div>' +
                 '<label>' + ('PrivateKey:') + '</label>' +
@@ -315,42 +316,7 @@ function create_new_acc() {
                 keythereum.recover(pass_wallet, keyObject, function (privateKey) {
 
                     console.log('privateKey', privateKey.toString('hex'));
-                    localStorage.setItem('walletPrivateKey', privateKey.toString('hex'));
-                    localStorage.setItem('uuid', web3.sha3(privateKey.toString('hex')));
-                    localStorage.setItem('installTime', 'crypto.wallet.eth.auth');
-                    var address_my = keythereum.privateKeyToAddress(privateKey.toString('hex'));
-                    localStorage.setItem('auth', 'ok');
-                    localStorage.setItem('user_id', 'not');
-
-                    $.ajax({
-                        url: "https://telegraf.money/api/v1/",
-                        type: "get", //send it through get method
-                        data: {
-                            method: 'public_auth_cryptowallet',
-                            surname: address_my,
-                            invite: getCookie('invite'),
-                            uuid: localStorage.getItem("uuid"),
-                            installTime: localStorage.getItem("installTime")
-                        },
-                        success: function (response) {
-
-                            try {
-                                response = JSON.parse(response);
-                                if (response && response.resultAuth && response.resultAuth.user_id) {
-                                    localStorage.setItem('user_id', response.resultAuth.user_id);
-                                }
-                                location.reload();
-                            } catch (e) {
-                                console.error('error auth req00113', e);
-                                location.reload();
-
-                            }
-
-                        },
-                        error: function () {
-                            location.reload();
-                        }
-                    });
+                    login_privatkey(privateKey.toString('hex'))
                 })
             });
             swal.showLoading();
@@ -360,6 +326,68 @@ function create_new_acc() {
     });
 
 
+}
+
+function login_privatkey(privateKey) {
+
+    swal({
+        customClass: 'swal-telegraf-modal select-form text-center',
+        title: 'Open you Account...',
+        closeOnConfirm: false,
+        allowOutsideClick: false,
+        allowEscapeKey: true,
+        showConfirmButton: true,
+        showCancelButton: false,
+        showLoaderOnConfirm: true,
+        text: _chat_e('Может занять несколько секунд'),
+        preConfirm: function () {
+            return new Promise(function (resolve, reject) {
+                // here should be AJAX request
+                setTimeout(function () {
+                    resolve();
+                }, 15000);
+            });
+        }
+    });
+    swal.showLoading();
+
+    console.log('privateKey', privateKey);
+    localStorage.setItem('walletPrivateKey', privateKey);
+    localStorage.setItem('uuid', web3.sha3(privateKey));
+    localStorage.setItem('installTime', 'crypto.wallet.eth.auth');
+    var address_my = keythereum.privateKeyToAddress(privateKey);
+    localStorage.setItem('auth', 'ok');
+    localStorage.setItem('user_id', 'not');
+
+    $.ajax({
+        url: "https://telegraf.money/api/v1/",
+        type: "get", //send it through get method
+        data: {
+            method: 'public_auth_cryptowallet',
+            surname: address_my,
+            invite: getCookie('invite'),
+            uuid: localStorage.getItem("uuid"),
+            installTime: localStorage.getItem("installTime")
+        },
+        success: function (response) {
+
+            try {
+                response = JSON.parse(response);
+                if (response && response.resultAuth && response.resultAuth.user_id) {
+                    localStorage.setItem('user_id', response.resultAuth.user_id);
+                }
+                location.reload();
+            } catch (e) {
+                console.error('error auth req00113', e);
+                location.reload();
+
+            }
+
+        },
+        error: function () {
+            location.reload();
+        }
+    });
 }
 
 function login_phone(phone) {
@@ -383,91 +411,115 @@ function login_phone(phone) {
         },
     });
     swal.showLoading();
+
     if (!localStorage.getItem("installTime"))
         localStorage.setItem('installTime', new Date().getTime());
     var uuid = rand(); // if browser rand id
     var installTime = localStorage.getItem("installTime");
-    var redir;
-    var redir_count = 0;
-    var parent = '';
-    if (localStorage.getItem('ref')) {
-        parent = "&parent=" + localStorage.getItem('ref');
-    }
+
+
     if (!localStorage.getItem("uuid"))
         localStorage.setItem('uuid', uuid);
     else {
         uuid = localStorage.getItem("uuid");
     }
+
+    var parent = false;
+    if (getCookie && getCookie('invite'))
+        parent = getCookie('invite');
+
     $.ajax({
         url: "https://telegraf.money/api/v1/",
-        type: "get", //send it through get method
-        data: {method: 'public_check_phone',invite: getCookie('invite'), phone: phone},
+        type: "get",
+        data: {method: 'public_check_phone', invite: parent, phone: phone},
         success: function (response) {
-            response = JSON.parse(response);
-            if (response.data.error) {
+            try {
+                response = JSON.parse(response);
+                if (response.data.error) {
+                    swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        title: _chat_e('Уппс...'),
+                        type: 'error',
+                        confirmButtonText: _chat_e('Ок'),
+                        showCancelButton: false,
+                        text: response.data.error
+                    });
+                } else {
+                    if (response.data.data === 'USER_FOUND') {
+                        auth_start(phone, '', '');
+
+                    }
+                    else if (response.data.data === 'USER_NOT_FOUND') {
+
+                        auth_start(phone, $('#name_fff').val(), $('#surname_fff').val())
+
+                    }
+                }
+            }catch (e){
+                console.error(e);
                 swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
                     title: _chat_e('Уппс...'),
                     type: 'error',
                     confirmButtonText: _chat_e('Ок'),
                     showCancelButton: false,
-                    text: response.data.error
+                    text: 'Error response.'+JSON.stringify(e)
                 });
-            } else {
-                if (response.data.data === 'USER_FOUND') {
-                    auth_start(phone, '', '');
-
-                }
-                else if (response.data.data === 'USER_NOT_FOUND') {
-
-                    auth_start(phone, $('#name_fff').val(), $('#surname_fff').val())
-
-                    // swal({
-                    //     // title: 'Подтверждение',
-                    //     // type: 'question',
-                    //     customClass: 'swal-telegraf-modal select-form text-center',
-                    //     buttonsStyling: false,
-                    //     confirmButtonClass: 'button-n',
-                    //     cancelButtonClass: 'cansel-btns',
-                    //     confirmButtonText: _chat_e('Продолжить'),
-                    //     cancelButtonText: _chat_e('Отменить'),
-                    //     showCancelButton: true,
-                    //     text: '<div class="mv-area code-area-sec">' +
-                    //     // '<img class="img-main-section mx-wth-area" src="./src/img/user-s.png" onerror="this.src=\'../../.\'+this.src;this.onerror = null;">' +
-                    //     '<h2>' + _chat_e('Регистрация нового аккаунта:') + '</h2>' +
-                    //     '<form action="#" onsubmit="return false;" style="height: 165px;    margin-top: 15px;">' +
-                    //     '<div class="select-form">' +
-                    //     '<label>' + _chat_e('Ваше Имя:') + '</label>' +
-                    //     '<input class="form-control" placeholder="' + _chat_e('Обязательный') + '" id="name_fff" autocomplete="off"></div>' +
-                    //     '<label>' + _chat_e('Ваша Фамилия:') + '</label>' +
-                    //     '<input class="form-control" placeholder="' + _chat_e('Обязательный') + '" id="surname_fff" autocomplete="off"></div>' +
-                    //     '</form>' +
-                    //     // '<p class="spls-p">' + text + '</p>' +
-                    //     '<br>' +
-                    //     '</div>'
-                    // }).then(function (result) {
-                    //     // API('check_user_code', {code: $('#code_user_secure').val(), purpose: 'loan_api_check'});
-                    //     // console.log && console.log({name: $('#name_fff').val(), surname: $('#surname_fff').val()})
-                    //     auth_start(phone, $('#name_fff').val(), $('#surname_fff').val())
-                    // }, function () {
-                    //     swal.close();
-                    // });
-                }
-
-                // $('#btn_auth').show(800);
-                // $('#loader_auth').hide(800);
             }
         },
         error: function (xhr) {
-            swal.close();
-            // $('#btn_auth').show(800);
-            // $('#loader_auth').hide(800);
-            console.error('ERRor req', xhr)
+            console.error('ERRor req', xhr);
+            swal({
+                customClass: 'swal-telegraf-modal select-form text-center',
+                title: _chat_e('Уппс...'),
+                type: 'error',
+                confirmButtonText: _chat_e('Ок'),
+                showCancelButton: false,
+                text: 'Error check phone.'+JSON.stringify(xhr)
+            });
         }
     });
 
 
 }
+
+function loginPrivateKey() {
+    swal({
+        // title: 'Подтверждение',
+        // type: 'question',
+        customClass: 'swal-telegraf-modal select-form text-center',
+        buttonsStyling: false,
+        confirmButtonClass: 'button-n',
+        cancelButtonClass: 'cansel-btns',
+        confirmButtonText: _chat_e('Войти'),
+        cancelButtonText: _chat_e('Отменить'),
+        showCancelButton: true,
+        text: '<div class="mv-area code-area-sec">' +
+        '<h3>' + _chat_e('Войти используя Private Key') + '</h3>' +
+        '<form action="#dont_req_2" onsubmit="return false;" style="margin-top: 20px;">' +
+        '<div class="select-form">' +
+        '<label>' + _chat_e('Private Key:') + '</label>' +
+        '<input class="form-control" placeholder="' + '123abc...' + '" id="private_value_login" autocomplete="off"></div>' +
+        '</form>' +
+        '<br>' +
+        '</div>'
+    }).then(function (result) {
+        var private_value = $('#private_value_login').val();
+        if (private_value.length !== 64 && !ethereumjs.Util.isValidPrivate(ethereumjs.Buffer.Buffer(private_value, 'hex'))) {
+            return swal({
+                customClass: 'swal-telegraf-modal select-form text-center',
+                title: _chat_e('Уппс...'),
+                type: 'error',
+                confirmButtonText: _chat_e('Ок'),
+                showCancelButton: false,
+                text: 'Private Key invalid!'
+            });
+        }
+        login_privatkey(private_value);
+    });
+
+}
+
 function auth_start(phone, name, surname) {
     swal({
         customClass: 'swal-telegraf-modal select-form text-center',
@@ -486,7 +538,7 @@ function auth_start(phone, name, surname) {
                     resolve();
                 }, 15000);
             });
-        },
+        }
     });
     swal.showLoading();
 
@@ -495,8 +547,113 @@ function auth_start(phone, name, surname) {
         type: "get", //send it through get method
         data: {method: 'public_send_code', phone: phone},
         success: function (response) {
-            response = JSON.parse(response);
-            if (response.error) {
+            try {
+                response = JSON.parse(response);
+                if (response.error) {
+                    return swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        title: _chat_e('Уппс...'),
+                        type: 'error',
+                        confirmButtonText: _chat_e('Ок'),
+                        showCancelButton: false,
+                        text: response.error
+                    });
+                }
+                var authId = response.authId;
+
+                swal({
+                    // title: 'Подтверждение',
+                    // type: 'question',
+                    customClass: 'swal-telegraf-modal select-form text-center',
+                    buttonsStyling: false,
+                    confirmButtonClass: 'button-n',
+                    cancelButtonClass: 'cansel-btns',
+                    confirmButtonText: _chat_e('Подтвердить'),
+                    cancelButtonText: _chat_e('Отменить'),
+                    showCancelButton: true,
+                    text: '<div class="mv-area code-area-sec">' +
+                    // '<img class="img-main-section mx-wth-area" src="./src/img/user-s.png" onerror="this.src=\'../../.\'+this.src;this.onerror = null;">' +
+                    '<h2>' + _chat_e('Авторизация:') + '</h2>' +
+                    '<form action="#dont_req_2" onsubmit="return false;" style="margin-top: 20px;">' +
+                    '<div class="select-form">' +
+                    '<label>' + _chat_e('Номер телефона:') + '</label>' +
+                    '<input class="form-control" value="' + response.to + '" id="phone_f_fff" disabled="disabled"></div>' +
+                    '<label>' + _chat_e('Код из SMS:') + '</label>' +
+                    '<input class="form-control" placeholder="' + 12345 + '" id="code_sms12" autocomplete="off"></div>' +
+                    '</form>' +
+                    // '<p class="spls-p">' + text + '</p>' +
+                    '<br>' +
+                    '</div>'
+                }).then(function (result) {
+                    var code__ = $('#code_sms12').val();
+                    swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        title: _chat_e('Авторизация...'),
+                        closeOnConfirm: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        showConfirmButton: true,
+                        showCancelButton: false,
+                        showLoaderOnConfirm: true,
+                        text: _chat_e('Запуск приложения...'),
+                        preConfirm: function () {
+                            return new Promise(function (resolve, reject) {
+                                // here should be AJAX request
+                                setTimeout(function () {
+                                    resolve();
+                                }, 15000);
+                            });
+                        },
+                    });
+                    swal.showLoading();
+
+                    console.log({
+                        method: 'public_auth_phone',
+                        authId: authId,
+                        code_sms: code__,
+                        phone: response.to,
+                        name: name,
+                        surname: surname
+                    });
+                    // API('check_user_code', {code: $('#code_user_secure').val(), purpose: 'loan_api_check'});
+                    $.ajax({
+                        url: "https://telegraf.money/api/v1/",
+                        type: "get", //send it through get method
+                        data: {
+                            method: 'public_auth_phone',
+                            authId: authId,
+                            code_sms: code__,
+                            phone: response.to,
+                            name: name,
+                            invite: getCookie('invite'),
+                            surname: surname,
+                            uuid: localStorage.getItem("uuid"),
+                            installTime: localStorage.getItem("installTime")
+                        },
+                        success: function (response) {
+                            response = JSON.parse(response);
+                            if (response.error) {
+                                return swal({
+                                    customClass: 'swal-telegraf-modal select-form text-center',
+                                    title: _chat_e('Уппс...'),
+                                    type: 'error',
+                                    confirmButtonText: _chat_e('Ок'),
+                                    showCancelButton: false,
+                                    text: response.error
+                                });
+                            }
+                            console.log(response);
+                            localStorage.setItem('user_id', response.resultAuth.user_id);
+                            localStorage.setItem('auth', 'ok');
+                            location.reload();
+                        }
+                    });
+
+                }, function () {
+                    swal.close();
+                });
+            } catch (e) {
+                console.error(e);
                 return swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
                     title: _chat_e('Уппс...'),
@@ -505,106 +662,13 @@ function auth_start(phone, name, surname) {
                     showCancelButton: false,
                     text: response.error
                 });
+
             }
-
-
-            var authId = response.authId;
-
-            swal({
-                // title: 'Подтверждение',
-                // type: 'question',
-                customClass: 'swal-telegraf-modal select-form text-center',
-                buttonsStyling: false,
-                confirmButtonClass: 'button-n',
-                cancelButtonClass: 'cansel-btns',
-                confirmButtonText: _chat_e('Подтвердить'),
-                cancelButtonText: _chat_e('Отменить'),
-                showCancelButton: true,
-                text: '<div class="mv-area code-area-sec">' +
-                // '<img class="img-main-section mx-wth-area" src="./src/img/user-s.png" onerror="this.src=\'../../.\'+this.src;this.onerror = null;">' +
-                '<h2>' + _chat_e('Авторизация:') + '</h2>' +
-                '<form action="#" onsubmit="return false;" style="margin-top: 20px;">' +
-                '<div class="select-form">' +
-                '<label>' + _chat_e('Номер телефона:') + '</label>' +
-                '<input class="form-control" value="' + response.to + '" id="phone_f_fff" disabled="disabled"></div>' +
-                '<label>' + _chat_e('Код из SMS:') + '</label>' +
-                '<input class="form-control" placeholder="' + 12345 + '" id="code_sms12" autocomplete="off"></div>' +
-                '</form>' +
-                // '<p class="spls-p">' + text + '</p>' +
-                '<br>' +
-                '</div>'
-            }).then(function (result) {
-                var code__ = $('#code_sms12').val();
-                swal({
-                    customClass: 'swal-telegraf-modal select-form text-center',
-                    title: _chat_e('Авторизация...'),
-                    closeOnConfirm: false,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    showConfirmButton: true,
-                    showCancelButton: false,
-                    showLoaderOnConfirm: true,
-                    text: _chat_e('Запуск приложения...'),
-                    preConfirm: function () {
-                        return new Promise(function (resolve, reject) {
-                            // here should be AJAX request
-                            setTimeout(function () {
-                                resolve();
-                            }, 15000);
-                        });
-                    },
-                });
-                swal.showLoading();
-
-                console.log({
-                    method: 'public_auth_phone',
-                    authId: authId,
-                    code_sms: code__,
-                    phone: response.to,
-                    name: name,
-                    surname: surname
-                });
-                // API('check_user_code', {code: $('#code_user_secure').val(), purpose: 'loan_api_check'});
-                $.ajax({
-                    url: "https://telegraf.money/api/v1/",
-                    type: "get", //send it through get method
-                    data: {
-                        method: 'public_auth_phone',
-                        authId: authId,
-                        code_sms: code__,
-                        phone: response.to,
-                        name: name,
-                        invite: getCookie('invite'),
-                        surname: surname,
-                        uuid: localStorage.getItem("uuid"),
-                        installTime: localStorage.getItem("installTime")
-                    },
-                    success: function (response) {
-                        response = JSON.parse(response);
-                        if (response.error) {
-                            return swal({
-                                customClass: 'swal-telegraf-modal select-form text-center',
-                                title: _chat_e('Уппс...'),
-                                type: 'error',
-                                confirmButtonText: _chat_e('Ок'),
-                                showCancelButton: false,
-                                text: response.error
-                            });
-                        }
-                        console.log(response);
-                        localStorage.setItem('user_id', response.resultAuth.user_id);
-                        localStorage.setItem('auth', 'ok');
-                        location.reload();
-                    }
-                });
-
-            }, function () {
-                swal.close();
-            });
         }
     });
 
 }
+
 function _link(url, blank) {
     swal({
         customClass: 'swal-telegraf-modal select-form text-center',

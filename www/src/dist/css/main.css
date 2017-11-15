@@ -8390,7 +8390,7 @@ input[type=submit].styler[disabled] {
 
 @font-face {
     font-family: Raleway-Light;
-    src: url(../fonts/RalewayLight.eot?#iefix) format('embedded-opentype'),  url(../fonts/RalewayLight.woff) format('woff'), url(../fonts/RalewayLight.ttf)  format('truetype');
+    src: url(Raleway-Light.eot?#iefix) format('embedded-opentype'),  url(Raleway-Light.woff) format('woff'), url(Raleway-Light.ttf)  format('truetype'), url(Raleway-Light.svg#Raleway-Light) format('svg');
     font-weight: normal;
     font-style: normal;
 }

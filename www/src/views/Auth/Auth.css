@@ -19,7 +19,6 @@ body {
 /* line 15, Auth.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bogdanmedvedev\/Library\/Mobile Documents\/com~apple~CloudDocs\/Documents\/telegraf\.money\/www\/src\/views\/Auth\/Auth\.less}line{font-family:\0000315}}
 .logo {
-  background: url(../../img/logo.png) 0 0 no-repeat !important;
   margin-left: -1px;
   width: 97px;
   height: 97px;

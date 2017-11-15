@@ -33,7 +33,7 @@
                         <div>
 
                             <div class="">
-                                <div class="flipper">
+                                <div class="flipper" on-click="wallet_open:{{.}}">
                                     <div class="front card-full card-real">
                                         <div class="img-l">
                                             <div class="prise-art">
@@ -112,18 +112,18 @@
                     </div>
 
                 </div>
-                    {{else}}
-                    <center><h2>{{_e('У вас нет импортированных кошельков.')}}</h2></center>
-                    {{/}}
-                    <button class="button-n flr-btn" on-click="AddCryptoWallet">{{_e('Добавить крипто кошелек')}}</button>
-                    <button class="button-n btn-upd" on-click="updateWalletOfCloudServer">{{_e('Скачать кошельки из Telegraf Cloud')}}</button>
-                    {{else}}
-                    <div class="cards-area" style="height: 89vh;">
-                        <div class="fixed-loader"></div>
-                    </div>
-                    {{/if}}
                 {{else}}
-                <div class="cnt-area">
+                <center><h2>{{_e('У вас нет импортированных кошельков.')}}</h2></center>
+                {{/}}
+                <button class="button-n flr-btn" on-click="AddCryptoWallet">{{_e('Добавить крипто кошелек')}}</button>
+                <button class="button-n btn-upd" on-click="updateWalletOfCloudServer" style="margin-bottom: 20px;">{{_e('Скачать кошельки из Cloud')}}</button>
+                {{else}}
+                <div class="cards-area" style="height: 89vh;">
+                    <div class="fixed-loader"></div>
+                </div>
+                {{/if}}
+                {{else}}
+                <div class="cnt-area detalis_crypto">
                     {{#if eth_status_dev ==true}}
                     <div class="alert alert-warning" style="width: 451px;margin: 0 auto;padding: 6px 24px;">
                         <div style="width: 10%; display: inline-block;">
@@ -314,7 +314,7 @@
                             {{/}}
                         </div>
                         {{#if !transactions_load}}
-                            <div class="fixed-loader"></div>
+                        <div class="fixed-loader"></div>
                         {{/if}}
                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
                         {{_e('Ваши транзакции')}}

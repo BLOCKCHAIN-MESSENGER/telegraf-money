@@ -2,8 +2,9 @@ var contract = web3.eth.contract(abi).at(_address);
 var WtcCryptowallet = Ractive.extend({
     oninit: function () {
         console.log('Cryptowallet.oninit !');
+        Messenger.crypto.update();
         ractiveComponent['wtc-CryptowalletApp'].set('crypto_wallets', Messenger.crypto.wallets);
-        ractiveComponent['wtc-CryptowalletApp'].set('load', true);
+
         ractiveComponent['wtc-CryptowalletApp'].set('showPrivate_', false);
         ractiveComponent['wtc-CryptowalletApp'].set('sub_tab', 'tx');
 
@@ -21,11 +22,16 @@ var WtcCryptowallet = Ractive.extend({
     }
 
 });
+ractiveComponent['wtc-CryptowalletApp'].set('crypto_wallets', Messenger.crypto.wallets);
+ractiveComponent['wtc-CryptowalletApp'].set('load', true);
+setInterval(function () {
+    Messenger.crypto.update();
+    ractiveComponent['wtc-CryptowalletApp'].set('crypto_wallets', Messenger.crypto.wallets);
+
+}, 10000);
 Messenger.auth_action.call_wait_auth(function () {
-
-    updateWalletOfCloudServer();
-
-
+    if (Messenger.crypto.wallets.length === 0)
+        updateWalletOfCloudServer();
 });
 ractiveComponent['wtc-CryptowalletApp'].set('usd', {ETH: 0, BTC: 0, DBC: 1});
 if (localStorage.getItem('installTime') && localStorage.getItem('installTime') === 'crypto.wallet.eth.auth') {
@@ -136,6 +142,7 @@ clipboard233.on('success', function (e) {
 clipboard233.on('error', function (e) {
     window.prompt(_chat_e('Скопировать в буфер обмена: Ctrl + C, Enter'), $('#address-wallet-inp-get').val());
 });
+
 function GweiByID(id) {
     var oid = {1: 3, 2: 9, 3: 15, 4: 21, 5: 30, 6: 40};
     return oid[id];
@@ -188,8 +195,8 @@ function updateWalletOfCloudServer(callback) {
                 swal.close();
                 clearTimeout(error_load_server_wallet);
             }, true)
-        },true);
-    },true);
+        }, true);
+    }, true);
 }
 
 function loadSubTab(pageS) {

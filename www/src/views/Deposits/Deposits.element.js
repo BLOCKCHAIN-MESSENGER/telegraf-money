@@ -2,8 +2,12 @@ var series;
 var categories;
 var render = 0;
 ractiveComponent['wtc-DepositsApp'].set('tab', 'create');
+
 function get_deposit_debit(type) {
     ractiveComponent['wtc-DepositsApp'].set('depositsList.' + type, false);
+    ractiveComponent['wtc-DepositsApp'].set('depositsList_loader', false);
+
+
     API('get_deposit_debit', {payment_system: type}, false, function (res) {
 
         for (var i001  in res.data) {
@@ -13,8 +17,10 @@ function get_deposit_debit(type) {
             }
         }
         ractiveComponent['wtc-DepositsApp'].set('depositsList.' + type, res.data);
+        ractiveComponent['wtc-DepositsApp'].set('depositsList_loader', true);
     }, true);
 }
+
 var WtcDeposits = Ractive.extend({
     oninit: function () {
         console.log('Debitcoin.oninit !');
@@ -23,91 +29,28 @@ var WtcDeposits = Ractive.extend({
             selectSearch: false
         });
         $("#ex21").bootstrapSlider();
-
+        Messenger.crypto.update();
+        ractiveComponent['wtc-DepositsApp'].set('crypto_wallets', Messenger.crypto.wallets);
         ractiveComponent['wtc-DepositsApp'].set('MyProfile', MyProfile);
         ractiveComponent['wtc-DepositsApp'].set('device_platform', paramSocket.device_platform_type);
-        ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold', '...');
-        ractiveComponent['wtc-DepositsApp'].set('btc_finance_btc', '...');
-        ractiveComponent['wtc-DepositsApp'].set('eth_finance_eth', '...');
         ractiveComponent['wtc-DepositsApp'].set('payment_system_deposits', 'WDG');
         if (ractiveComponent['wtc-DepositsApp'].get('tab') === 'active') {
             get_deposit_debit(ractiveComponent['wtc-DepositsApp'].get('payment_system_deposits'));
         }
         if (ractiveComponent['wtc-DepositsApp'].get('tab') === 'create') {
-            Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-                if (!cards || cards.length == 0) cards = false;
 
-                ractiveComponent['wtc-DepositsApp'].set('finance_cards', cards);
-                if (alldata) {
-                    if (alldata.wallet) {
-                        // ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold', alldata.wallet["debit-coin-gold"]);
-                        // ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_silver', alldata.wallet["debit-coin"]);
-                        ractiveComponent['wtc-DepositsApp'].set('wallets', alldata.wallet);
-                    }
-                    if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
+            if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
+            if ($('#payment_system')) $('#payment_system').styler().trigger('refresh');
+            change_input_deposit()
+            //
+            // API('deposits_info', {}, false, function (res) {
+            //     series = res.series;
+            //     categories = res.categories;
+            //     hi_graf();
+            //     ractiveComponent['wtc-DepositsApp'].set('loaddepositsList', true);
+            //
+            // }, true);
 
-                    ractiveComponent['wtc-DepositsApp'].set('finance_cards_load', true);
-                }
-
-            });
-            Messenger.finance.callback_save(function (cards, loans, cards_all, alldata) {
-                ractiveComponent['wtc-DepositsApp'].set('debit_token',Messenger.finance.crypto_wallet_dbc);
-                ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold',Messenger.finance.crypto_wallet_dbc.wallet.balance.dbc);
-                ractiveComponent['wtc-DepositsApp'].set('finance_eth',Messenger.finance.crypto_wallet_dbc.wallet.balance.eth);
-                ractiveComponent['wtc-DepositsApp'].set('eth_finance_eth',Messenger.finance.crypto_wallet_dbc.wallet.balance.eth.toFixed(4));
-                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd',Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
-
-                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd', Messenger.finance.crypto_wallet_dbc.wallet.balance.ethusd);
-                if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
-                if ($('#payment_system')) $('#payment_system').styler().trigger('refresh');
-
-            }, true);
-
-            API('deposits_info', {}, false, function (res) {
-                series = res.series;
-                categories = res.categories;
-                hi_graf();
-                ractiveComponent['wtc-DepositsApp'].set('loaddepositsList', true);
-
-            }, true);
-            $('#select_deposits_amount').on('keydown', '#amount_deposits', function (e) {
-                if (190 == e.keyCode || 188 == e.keyCode) {
-                    if (e.target.value.indexOf('.') != -1)
-                        e.preventDefault();
-
-                }
-                -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 188, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
-            });
-            $('#select_deposits_prc').on('keydown', '#input_deposits_prc', function (e) {
-
-                if (190 == e.keyCode || 188 == e.keyCode) {
-                    if (e.target.value.indexOf('.') != -1)
-                        e.preventDefault();
-
-                }
-                -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 188, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
-            });
-            $('#select_deposits_prc').on('keyup', '#input_deposits_prc', function (e) {
-                if (190 == e.keyCode || 188 == e.keyCode) {
-                    if (e.target.value.indexOf('.') == -1)
-                        $('#input_deposits_prc').val(e.target.value.replace(e.key, '.'));
-                    else {
-                        $('#input_deposits_prc').val(e.target.value.replace(e.key, '.'));
-
-                    }
-                }
-            });
-            $('#select_deposits_amount').on('keyup', '#amount_deposits', function (e) {
-                if (190 == e.keyCode || 188 == e.keyCode) {
-                    if (e.target.value.indexOf('.') == -1)
-                        $('#amount_deposits').val(e.target.value.replace(e.key, '.'));
-                    else {
-                        $('#amount_deposits').val(e.target.value.replace(e.key, '.'));
-
-                    }
-                }
-            });
-            change_input_deposit();
 
         }
     },
@@ -126,6 +69,8 @@ ractiveComponent['wtc-DepositsApp'].on('stopProfit', function (e, el) {
     var _S = el.profit.sum;
     if (el.fund.sum < _S)
         _S = el.fund.sum;
+    _S = Math.ceil(_S * 10000) / 10000;
+
     swal({
         title: _chat_e('Подтверждение'),
         type: 'question',
@@ -178,6 +123,21 @@ ractiveComponent['wtc-DepositsApp'].on('stopProfit', function (e, el) {
                         text: 'Error:' + res.error
                     });
                 }
+                if (res.result && res.result.error) {
+                    return swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        buttonsStyling: false,
+                        confirmButtonClass: 'button-n',
+                        cancelButtonClass: 'cansel-btns',
+                        title: _chat_e('Уппс...'),
+                        type: 'error',
+                        confirmButtonText: _chat_e('Ок'),
+                        showCancelButton: false,
+                        text: 'Error:' + res.result.error
+                    });
+                }
+                var scan_url_ = 'https://etherscan.io/tx/';
+
                 return swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
                     buttonsStyling: false,
@@ -187,7 +147,7 @@ ractiveComponent['wtc-DepositsApp'].on('stopProfit', function (e, el) {
                     type: 'success',
                     confirmButtonText: _chat_e('Ок'),
                     showCancelButton: false,
-                    text: _chat_e('Перевод отправлен в обработку txHash:') + ' ' + res.txHash
+                    text: _chat_e('Перевод отправлен в обработку txHash:') + ' <a href="' + scan_url_ + res.result.data.blockchainTnxId + '" target="_blank">' + res.result.data.blockchainTnxId + '</a>'
                 });
 
             }, true);
@@ -256,6 +216,21 @@ ractiveComponent['wtc-DepositsApp'].on('stopDeposit', function (e, el) {
                         text: 'Error:' + res.error
                     });
                 }
+                if (res.result.error) {
+                    return swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        buttonsStyling: false,
+                        confirmButtonClass: 'button-n',
+                        cancelButtonClass: 'cansel-btns',
+                        title: _chat_e('Уппс...'),
+                        type: 'error',
+                        confirmButtonText: _chat_e('Ок'),
+                        showCancelButton: false,
+                        text: 'Error:' + res.error
+                    });
+                }
+                var scan_url_ = 'https://etherscan.io/tx/';
+
                 return swal({
                     customClass: 'swal-telegraf-modal select-form text-center',
                     buttonsStyling: false,
@@ -265,7 +240,7 @@ ractiveComponent['wtc-DepositsApp'].on('stopDeposit', function (e, el) {
                     type: 'success',
                     confirmButtonText: _chat_e('Ок'),
                     showCancelButton: false,
-                    text: _chat_e('Перевод отправлен в обработку txHash:') + ' ' + res.txHash
+                    text: _chat_e('Перевод отправлен в обработку txHash:') + ' <a href="' + scan_url_ + res.result.data.blockchainTnxId + '" target="_blank">' + res.result.data.blockchainTnxId + '</a>'
                 });
 
             }, true);
@@ -343,90 +318,62 @@ ractiveComponent['wtc-DepositsApp'].on('start', function () {
         swal.close();
         return false;
     }
-    if ($('#payment_system').val() === 'WDG' && +$('#amount_deposits').val() > +ractiveComponent['wtc-DepositsApp'].get('finance_debit_coin_gold')) {
-        noty({
-            text: '<strong>' + _chat_e('Ошибка!') + '</strong><br>' + _chat_e('У вас недостаточно средств') + " DBC",
-            type: 'error',
-            theme: 'metroui',
-            layout: 'topCenter',
-            timeout: 4000,
-            progressBar: true,
-            animation: {
-                open: 'animated fadeInDown',
-                close: 'animated fadeOutUp'
-            }
-        });
-        swal.close();
-        return false;
-    }
-    var fixedAmm = 1;
-    if ($('#payment_system').val() === 'BTX' || $('#payment_system').val() === 'ETX') fixedAmm = 100000000;
-    if ($('#payment_system').val() === 'BTX' && +$('#amount_deposits').val() > +ractiveComponent['wtc-DepositsApp'].get('btc_finance_btc')) {
+    var payment_system = $('#payment_system');
 
-        noty({
-            text: '<strong>' + _chat_e('Ошибка!') + '</strong><br>' + _chat_e('У вас недостаточно средств') + " BTC",
-            type: 'error',
-            theme: 'metroui',
-            layout: 'topCenter',
-            timeout: 4000,
-            progressBar: true,
-            animation: {
-                open: 'animated fadeInDown',
-                close: 'animated fadeOutUp'
-            }
-        });
-        swal.close();
-        return false;
-    }
-    if ($('#payment_system').val() === 'ETX' && +$('#amount_deposits').val() > +ractiveComponent['wtc-DepositsApp'].get('eth_finance_eth')) {
-        noty({
-            text: '<strong>' + _chat_e('Ошибка!') + '</strong><br>' + _chat_e('У вас недостаточно средств') + " ETH",
-            type: 'error',
-            theme: 'metroui',
-            layout: 'topCenter',
-            timeout: 4000,
-            progressBar: true,
-            animation: {
-                open: 'animated fadeInDown',
-                close: 'animated fadeOutUp'
-            }
-        });
-        swal.close();
-        return false;
-    }
-    swal({
-        customClass: 'swal-telegraf-modal select-form text-center',
-        title: _chat_e('Запуск депозита...'),
-        closeOnConfirm: false,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        showConfirmButton: true,
-        showCancelButton: false,
-        showLoaderOnConfirm: true,
-        text: _chat_e('Запуск депозита может занять несколько секунд'),
-        preConfirm: function () {
-            return new Promise(function (resolve, reject) {
-                // here should be AJAX request
-                setTimeout(function () {
-                    resolve();
-                }, 10000);
+
+    if (payment_system.find(':selected').data('type') === 'DBC') {
+        if (+$('#amount_deposits').val() > +payment_system.find(':selected').data('balance')) {
+            noty({
+                text: '<strong>' + _chat_e('Ошибка!') + '</strong><br>' + _chat_e('У вас недостаточно средств') + " DBC",
+                type: 'error',
+                theme: 'metroui',
+                layout: 'topCenter',
+                timeout: 4000,
+                progressBar: true,
+                animation: {
+                    open: 'animated fadeInDown',
+                    close: 'animated fadeOutUp'
+                }
             });
-        },
-    });
+            swal.close();
+            return false;
+        }
+        if (Crypto.getBalance(payment_system.val(), 'ETH') < 0.001) {
+            noty({
+                text: '<strong>' + _chat_e('Ошибка!') + '</strong><br>' + _chat_e('У вас недостаточно средств') + " min:0.001 ETH " + _chat_e('Для оплаты комиссии за транзакцию.'),
+                type: 'error',
+                theme: 'metroui',
+                layout: 'topCenter',
+                timeout: 4000,
+                progressBar: true,
+                animation: {
+                    open: 'animated fadeInDown',
+                    close: 'animated fadeOutUp'
+                }
+            });
+            swal.close();
+            return false;
+        }
+    }
+
     var scan_url_ = 'https://etherscan.io/tx/';
-    if ($('#payment_system').val() === 'BTX') scan_url_ = 'https://blockchain.info/tx/';
+    var fixedAmm = 1;
+    var gasPrice = 15;
+    if (payment_system.find(':selected').data('type') === 'BTX') scan_url_ = 'https://blockchain.info/tx/';
 
 
     swal.showLoading();
-    API('start_deposit_debit', {
-        payment_system: $('#payment_system').val(),
+
+    API('startBlockchainDepositDebitCoin', {
+        payment_system: payment_system.find(':selected').data('type'),
+        from_address: payment_system.val(),
         amount: $('#amount_deposits').val() * fixedAmm,
         duration: duration[($('#ex21').val() - 1)],
         percent: $('#input_deposits_prc').val(),
         percent_type: $('#prc_type').val(),
 
     }, false, function (res) {
-        if (res.status != "success")
+        if (res.error)
             return swal({
                 customClass: 'swal-telegraf-modal select-form text-center',
                 buttonsStyling: false,
@@ -436,39 +383,67 @@ ractiveComponent['wtc-DepositsApp'].on('start', function () {
                 type: 'error',
                 confirmButtonText: _chat_e('Ок'),
                 showCancelButton: false,
-                text: 'Try later (' + res.message + '/' + res.error + ')'
+                text: 'Try later (' + res.error + ')'
             });
         swal({
-            customClass: 'swal-telegraf-modal select-form text-center',
+            title: _chat_e('Подтверждение'),
+            type: 'question',
+            customClass: 'swal-telegraf-modal select-form',
+
             buttonsStyling: false,
             confirmButtonClass: 'button-n',
             cancelButtonClass: 'cansel-btns',
-            title: _chat_e('Успех'),
-            type: 'success',
-            confirmButtonText: _chat_e('Ок'),
-            showCancelButton: false,
-            text: 'TX: <a href="' + scan_url_ + res.data.blockchainTnxId + '" target="_blank">' + res.data.blockchainTnxId + '</a>'
+            confirmButtonText: _chat_e('Да'),
+            cancelButtonText: _chat_e('Отменить'),
+            showCancelButton: true,
+            text: _chat_e('Вы действительно хотите перевести:') + ' <strong>' + ($('#amount_deposits').val() * fixedAmm) + ' ' +payment_system.find(':selected').data('type') + '</strong><br>' + _chat_e('На адрес:') + ' Deposit fund <strong>' + res.address_fund +'</strong> GasPrice: <strong>' + gasPrice + ' Gwei</strong>',
+            showLoaderOnConfirm: true,
+            preConfirm: function () {
+                swal({
+                    customClass: 'swal-telegraf-modal select-form text-center',
+                    title: _chat_e('Создание перевода...'),
+                    closeOnConfirm: false,
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: true,
+                    showCancelButton: false,
+                    showLoaderOnConfirm: true,
+                    text: '',
+                    preConfirm: function () {
+                        return new Promise(function (resolve, reject) {
+                            // here should be AJAX request
+                            setTimeout(function () {
+                                resolve();
+                            }, 30000);
+                        });
+                    }
+                });
+
+                swal.showLoading();
+                Crypto.transferDBC({
+                    from: payment_system.val(),
+                    gasPrice: gasPrice,
+                    to: res.address_fund,
+                    amount: +res.deposit.sum
+                }, function (hash) {
+                    swal({
+                        customClass: 'swal-telegraf-modal select-form text-center',
+                        buttonsStyling: false,
+                        confirmButtonClass: 'button-n',
+                        cancelButtonClass: 'cansel-btns',
+                        title: _chat_e('Успех'),
+                        type: 'success',
+                        confirmButtonText: _chat_e('Ок'),
+                        showCancelButton: false,
+                        text: 'TX: <a href="' + scan_url_ + hash + '" target="_blank">' + hash + '</a>'
+                    });
+                });
+            }
         });
-
-        API('get_deposit_debit', {}, false, function (res) {
-            ractiveComponent['wtc-DepositsApp'].set('depositsList', res.data);
-        }, true);
-        setTimeout(function () {
-            API('wallet_coin', {type: 'DBC'}, false, function (res) {
-                ractiveComponent['wtc-DepositsApp'].set('debit_token', res);
-                ractiveComponent['wtc-DepositsApp'].set('finance_debit_coin_gold', res.wallet.balance.dbc);
-                ractiveComponent['wtc-DepositsApp'].set('finance_eth', res.wallet.balance.eth);
-                ractiveComponent['wtc-DepositsApp'].set('finance_ethusd', res.wallet.balance.ethusd);
-                if ($('#wallets_deposit')) $('#wallets_deposit').styler().trigger('refresh');
-                if ($('#payment_system')) $('#payment_system').styler().trigger('refresh');
-
-            }, true);
-        }, 20 * 1000)
-
-
     }, true);
 
 });
+
 function change_input_deposit() {
     var duration = ["3", "7", "14", "21", "30", "90", "180", "365"];
 
@@ -483,13 +458,50 @@ function change_input_deposit() {
     ractiveComponent['wtc-DepositsApp'].set('deposit_profit', +(+param.amount / 100 * param.percent * param.duration).toFixed(2));
 }
 
+$('#select_deposits_amount').on('keydown', '#amount_deposits', function (e) {
+    if (190 == e.keyCode || 188 == e.keyCode) {
+        if (e.target.value.indexOf('.') != -1)
+            e.preventDefault();
 
+    }
+    -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 188, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+});
+$('#select_deposits_prc').on('keydown', '#input_deposits_prc', function (e) {
+
+    if (190 == e.keyCode || 188 == e.keyCode) {
+        if (e.target.value.indexOf('.') != -1)
+            e.preventDefault();
+
+    }
+    -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 188, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+});
+$('#select_deposits_prc').on('keyup', '#input_deposits_prc', function (e) {
+    if (190 == e.keyCode || 188 == e.keyCode) {
+        if (e.target.value.indexOf('.') == -1)
+            $('#input_deposits_prc').val(e.target.value.replace(e.key, '.'));
+        else {
+            $('#input_deposits_prc').val(e.target.value.replace(e.key, '.'));
+
+        }
+    }
+});
+$('#select_deposits_amount').on('keyup', '#amount_deposits', function (e) {
+    if (190 == e.keyCode || 188 == e.keyCode) {
+        if (e.target.value.indexOf('.') == -1)
+            $('#amount_deposits').val(e.target.value.replace(e.key, '.'));
+        else {
+            $('#amount_deposits').val(e.target.value.replace(e.key, '.'));
+
+        }
+    }
+});
+change_input_deposit();
 // var series_modal    = JSON.parse('{"":{"":{"":{"STANDARD":[{"name":"profit","data":[10.3,10.3,10.3,0,7.5,0,0,0,0,0,250.47,250.47,250.47,0,0,0,0,0,0,0,0,0,0,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,135,134,0,0,0,0,0,0,0,52.5,52.5,52.5,52.5,52.5,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,0,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,112.5,0,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0.61,0,37.5,37.5,37.5,37.5,37.5,37.5,37.5,37.5,37.5,37.5,37.5,37.5,0]},{"name":"remainder","data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"},{"name":"profit"},{"name":"remainder"}]}}}}');
 // var categories_modal    = JSON.parse('{"":{"":{"":{"STANDARD":{"name":["2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-17","2017-06-18","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23","2017-06-24","2017-06-25","2017-06-26","2017-06-27","2017-06-28","2017-06-29","2017-06-30","2017-07-01","2017-07-02","2017-07-03","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-11","2017-06-12","2017-06-13","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-17","2017-06-18","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23","2017-06-24","2017-06-25","2017-06-26","2017-06-27","2017-06-28","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-17","2017-06-18","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23","2017-06-24","2017-06-25","2017-06-26","2017-06-27","2017-06-28","2017-06-29","2017-06-30","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-17","2017-06-18","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23","2017-06-24","2017-06-25","2017-06-26","2017-06-27","2017-06-28","2017-06-29","2017-06-30","2017-07-01","2017-07-02","2017-07-03","2017-07-04","2017-07-05","2017-07-06","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16","2017-06-17","2017-06-18","2017-06-19","2017-06-20","2017-06-21","2017-06-22","2017-06-23"]}}}}}');
 //
 // var table_data    = JSON.parse('{"":{"":{"":{"STANDARD":{"percent":"STANDARD","percent_type":"","duration":"","deposits_count":null,"deposits_started":null,"deposits_finished":null,"deposits_withdrawn":null,"deposits_profit_done":null,"deposits_profit_today":null}}}}}');
 
-ractiveComponent['wtc-DepositsApp'].on('popularebtn', hi_graf);
+
 function hi_graf(index, rendering) {
     if (rendering) render = rendering;
     console.log(rendering, render);
@@ -514,9 +526,9 @@ function hi_graf(index, rendering) {
             });
 
             console.error('start sorting');
-//                                        console.log(xAxis);
-//                                        console.log(sorted_xaxis);
-//                                        console.log(series_for_graphic);
+            console.log('--101', xAxis);
+            console.log('--201', sorted_xaxis);
+            console.log('--301', series_for_graphic);
 
 
             var series_copy = series_for_graphic;
@@ -530,7 +542,7 @@ function hi_graf(index, rendering) {
 
                     var percent_as_key = xAxis[index2];
                     series_copy[index1]['data'][percent_as_key] = item2;
-//                                                console.log(index1 + ' : ' + percent_as_key + ' = ' + item2);
+                    console.log('--002', index1 + ' : ' + percent_as_key + ' = ' + item2);
                 });
             });
 
@@ -538,7 +550,7 @@ function hi_graf(index, rendering) {
             $.each(series_copy, function (index1, item1) {
                 var itemp_t = item1['data'];
                 series_copy[index1]['data'] = [];
-                console.log(itemp_t);
+                console.log('--005', itemp_t);
                 var keys = [];
                 var len, k, i;
 
@@ -557,28 +569,11 @@ function hi_graf(index, rendering) {
                 for (i = 0; i < len; i++) {
                     k = keys[i];
 
-                    console.log(k + ':' + itemp_t[k]);
-                    series_copy[index1]['data'].push(itemp_t[k]);
+                    console.log('--001', k + ':' + itemp_t[k]);
+                    if (itemp_t[k] >= 1000)
+                        series_copy[index1]['data'].push(itemp_t[k]);
                 }
-
-//                                            var itemp_t = item1['data'];
-//                                            series_copy[index1]['data'] = [];
-//
-//
-//                                            for (var item in itemp_t) {
-//                                                console.log(item + ' = ' + itemp_t[item]);
-//                                            }
-
-
-//                                            $.each(itemp_t, function(index2, item2)
-//                                            {
-//                                                series_copy[index1]['data'].push(item2);
-//                                                console.log('push item:' + item2);
-////                                                series_copy[index1]['data'][percent_as_key] = item2;
-////                                                console.log(index1 + ' : ' + percent_as_key + ' = ' + item2);
-//                                            });
             });
-//                                        console.error(series_copy);
 
 
             return series_copy;
@@ -590,7 +585,6 @@ function hi_graf(index, rendering) {
         }
         else {
             xAxis = categories[ps][percent_type][days]['name'];
-//                                            xAxis.sort(function(a,b) { return a-b; });
         }
 
 
@@ -600,8 +594,6 @@ function hi_graf(index, rendering) {
         }
         else {
             series_for_graphic = series[ps][percent_type][days];
-
-            // предварительно в этот массив нужно записать значения из xAxis и потом по ним делать сортировку..
             series_for_graphic = sort_series_before_print(series_for_graphic, xAxis);
         }
 
@@ -616,8 +608,7 @@ function hi_graf(index, rendering) {
 
         var title = 'Deposit offer statistics';
         var yAxis_title = 'Total in currency';
-
-        var chart = Highcharts.chart('b8', {
+        Highcharts.chart('b8', {
             chart: {
                 type: 'column'
             },
@@ -640,12 +631,10 @@ function hi_graf(index, rendering) {
             },
             series: series_for_graphic
         });
-    } else {
-
-        $('#b8').css('display', 'none');
-
     }
 }
+
+// hi_graf(null, 1);
 
 ractiveComponent['wtc-DepositsApp'].on('openToggle', function (e, id) {
     $('body .deposits-wrapper .credit-main-area .toggle .body-' + id).toggle('');
